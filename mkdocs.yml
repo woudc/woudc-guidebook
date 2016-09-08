@@ -1,0 +1,9 @@
+site_name: Contributor Guide
+theme_dir: 'woudc_theme'
+markdown_extensions:
+    - admonition
+    - meta
+    - toc:
+        anchorlink: True
+#        permalink: True
+#        baselevel: 2
