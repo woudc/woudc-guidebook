@@ -623,7 +623,7 @@ Le Tableau 3.3 3 présente les tableaux devant être remplis pour la catégorie 
 
 **UTC_Mean**: Durée moyenne des observations (en heures décimales, UTC).
 
-#### 3.3.4.9 3.3.4.9	Tableau PROFILE
+#### 3.3.4.9	Tableau PROFILE
 **Duration**: Temps de vol écoulé depuis le lancement, exprimé en variables primaires.
 
 **Pressure**: Pression atmosphérique de chaque niveau, exprimée en hectopascals (hPa).
