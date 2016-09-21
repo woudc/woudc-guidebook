@@ -1,4 +1,6 @@
 site_name: Contributor Guide
+site_url: http://docs.woudc.org
+repo_url: https://github.com/woudc/woudc-guidebook
 theme_dir: 'woudc_theme'
 markdown_extensions:
     - admonition
@@ -7,3 +9,7 @@ markdown_extensions:
         anchorlink: True
 #        permalink: True
 #        baselevel: 2
+
+pages:
+- Contributor Guide: 'contributor-guide-en.md'
+- Guide du contributeur: 'contributor-guide-fr.md'
