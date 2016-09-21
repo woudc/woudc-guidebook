@@ -28,7 +28,7 @@ This package uses [mkdocs](http://mkdocs.org) as a static site generator.
 virtualenv woudc-guidebook
 cd woudc-guidebook
 . bin/activate  # yes that is a period
-git clone http://gitlab.ssc.etg.gc.ca/woudc/woudc-guidebook
+git clone http://gitlab.ssc.etg.gc.ca/woudc/woudc-guidebook.git
 cd woudc-guidebook
 pip install -r requirements.txt
 ```
