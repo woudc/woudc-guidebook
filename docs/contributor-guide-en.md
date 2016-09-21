@@ -119,7 +119,7 @@ Presently, the following data categories are defined:
 
 # Chapter 3 Standard Data Format
 ## 3.1 The WOUDC Data Format Standard
-The WOUDC uses an ASCII text format that leverages the Comma Separated Values (CSV) format and UTF-8 character set encoding needs to be ensured for data submissions. The WOUDC “extended” CSV (or extCSV) format provides the ability to specify multiple tables, multiple fields, table comments, file level comments, and table groupings (grouping tables into sets) within a single CSV. The extCSV file format supports both metadata information and high resolution (temporal and spatial) data. The WOUDC requires originators of data to submit their data using this standard format to assist in the efficient processing of data sets.
+The WOUDC uses an ASCII text format that leverages the Comma Separated Values (CSV) format. The UTF-8 character set encoding is required for data submissions. The WOUDC “extended” CSV (or extCSV) format provides the ability to specify multiple tables, multiple fields, table comments, file level comments, and table groupings (grouping tables into sets) within a single CSV. The extCSV file format supports both metadata information and high resolution (temporal and spatial) data. The WOUDC requires originators of data to submit their data using this standard format to assist in the efficient processing of data sets.
 
 ExtCSV files are divided into two main parts: a metadata section and a data content section. The metadata section can be considered a data file "header" as this portion is common to all files within the WOUDC in terms of table format and content. The data portion will be unique to the individual data categories (or types) such as total ozone or ozonesonde.
 
