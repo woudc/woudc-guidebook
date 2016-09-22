@@ -1147,7 +1147,7 @@ At a high level, the following is a summary of QA checks performed:
 **Structural Validation**
 
 - Checks if the incoming extCSV file conforms to the extCSV specification
-	- Checks the format of the file
+        - Checks the format of the file
 	- Checks all tables and fields in the file, etc.
 
 **Metadata Validation**

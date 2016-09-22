@@ -84,13 +84,10 @@ Le présent document est destiné à être utilisé par les contributeurs du cen
 ## 1.2	But
 Le but de ce document est de décrire les procédures pour la soumission de données au WOUDC. Cela inclut, sans toutefois s’y limiter : 
 
-•	l’inscription des contributeurs;
-
-•	l’inscription des stations;
-
-•	la soumission de données;
-
-•	les formats et descriptions de fichier supportés.
+- l’inscription des contributeurs;
+- l’inscription des stations;
+- la soumission de données;
+- les formats et descriptions de fichier supportés.
 
 
 
@@ -107,43 +104,34 @@ L’adresse du site Web du WOUDC est [http://woudc.org](http://woudc.org). Il of
 
 ## 1.6	Contribution au WOUDC
 Le WOUDC est le système d’archivage standard pour les données sur l’ozone et le rayonnement ultraviolet. Les contributeurs de données profitent des avantages suivants : 
-•	un service de stockage et de sauvegarde de données sans frais, indépendant et sécuritaire; 
-
-•	un accès Web 24 heures par jour, 7 jours par semaine à leurs données par le biais de divers mécanismes de consultation de données offrant une expérience utilisateur améliorée, ainsi qu'un accès multi-application;
-
-•	des capacités de recherche, de visualisation et de consultation de données à valeur ajoutée reposant sur des normes internationales;
-
-•	un accès à des produits à valeur ajoutée créés à l’aide de leurs données, comme des formats de données géospatiales/du SIG, des cartes et des graphiques. 
+- un service de stockage et de sauvegarde de données sans frais, indépendant et sécuritaire; 
+- un accès Web 24 heures par jour, 7 jours par semaine à leurs données par le biais de divers mécanismes de consultation de données offrant une expérience utilisateur améliorée, ainsi qu'un accès multi-application;
+- des capacités de recherche, de visualisation et de consultation de données à valeur ajoutée reposant sur des normes internationales;
+- un accès à des produits à valeur ajoutée créés à l’aide de leurs données, comme des formats de données géospatiales/du SIG, des cartes et des graphiques. 
 
 Pour qu’un contributeur soit admissible à soumettre des données, il doit : 
 
-•	s’inscrire auprès du WOUDC (il est aussi fortement recommandé de s’inscrire auprès du programme VAG); 
-
-•	inscrire ses stations auprès du WOUDC (et préférablement auprès du programme VAG);
-
-•	soumettre ses données (sur l’ozone et le rayonnement ultraviolet) dans le format de fichier supporté par le WOUDC, soit le format CSV « étendu » (extCSV).
+- s’inscrire auprès du WOUDC (il est aussi fortement recommandé de s’inscrire auprès du programme VAG); 
+- inscrire ses stations auprès du WOUDC (et préférablement auprès du programme VAG);
+- soumettre ses données (sur l’ozone et le rayonnement ultraviolet) dans le format de fichier supporté par le WOUDC, soit le format CSV « étendu » (extCSV).
 
 Si les données à soumettre ne sont pas liées à l’ozone ni au rayonnement ultraviolet, elles peuvent être admissibles à l’un des cinq autres centres mondiaux des données suivants : 
 
-•	Centre mondial de données relatives à la composition chimique des précipitations [http://www.qasac-americas.org](http://www.qasac-americas.org)
-
-•	Centre mondial de données relatives aux aérosols [http://ebas.nilu.no](http://ebas.nilu.no)
-
-•	Centre mondial de données relatives au rayonnement [http://wrdc.mgo.rssi.ru/wrdc_en_new.htm](http://wrdc.mgo.rssi.ru/wrdc_en_new.htm)
-
-•	Centre mondial de données relatives à la télédétection de l’atmosphère[http://wdc.dlr.de](http://wdc.dlr.de)
-
-•	Centre mondial de données relatives au gaz à effet de serre [http://ds.data.jma.go.jp/gmd/wdcgg](http://ds.data.jma.go.jp/gmd/wdcgg)
+- Centre mondial de données relatives à la composition chimique des précipitations [http://www.qasac-americas.org](http://www.qasac-americas.org)
+- Centre mondial de données relatives aux aérosols [http://ebas.nilu.no](http://ebas.nilu.no)
+- Centre mondial de données relatives au rayonnement [http://wrdc.mgo.rssi.ru/wrdc_en_new.htm](http://wrdc.mgo.rssi.ru/wrdc_en_new.htm)
+- Centre mondial de données relatives à la télédétection de l’atmosphère[http://wdc.dlr.de](http://wdc.dlr.de)
+- Centre mondial de données relatives au gaz à effet de serre [http://ds.data.jma.go.jp/gmd/wdcgg](http://ds.data.jma.go.jp/gmd/wdcgg)
 
 
 # Chapitre 2	Procédure de soumission de données
 ## 2.1	Inscription des contributeurs
 La demande d'inscription compte quatre étapes :
 
-1)	Le nouveau contributeur envoie une demande d'inscription à l'opérateur du WOUDC, à [http://woudc.org/contact.php?lang=fr](http://woudc.org/contact.php?lang=fr), dans laquelle il indique pourquoi il souhaite contribuer au WOUDC.
-2)	L'opérateur du centre de données vérifie la demande et indique au contributeur de fournir au WOUDC l'ID VAG de la station ou de s'inscrire à partir de GAWSIS pour obtenir un ID VAG, à [http://gaw.empa.ch/gawsis/codes.request.asp](http://gaw.empa.ch/gawsis/codes.request.asp).
-3)	Une fois qu'il a un ID VAG valide, le contributeur le fournit à l'opérateur du centre de données pour inscrire la nouvelle station en incluant celle-ci dans la base de données du WOUDC.
-4)	Une fois la station incluse dans la base de données du WOUDC, l'opérateur du centre de données envoie au contributeur ses nouveaux justificatifs de connexion privés pour le client FTP, qu'il utilisera pour télécharger des données.
+1. Le nouveau contributeur envoie une demande d'inscription à l'opérateur du WOUDC, à [http://woudc.org/contact.php?lang=fr](http://woudc.org/contact.php?lang=fr), dans laquelle il indique pourquoi il souhaite contribuer au WOUDC.
+2. L'opérateur du centre de données vérifie la demande et indique au contributeur de fournir au WOUDC l'ID VAG de la station ou de s'inscrire à partir de GAWSIS pour obtenir un ID VAG, à [http://gaw.empa.ch/gawsis/codes.request.asp](http://gaw.empa.ch/gawsis/codes.request.asp).
+3. Une fois qu'il a un ID VAG valide, le contributeur le fournit à l'opérateur du centre de données pour inscrire la nouvelle station en incluant celle-ci dans la base de données du WOUDC.
+4. Une fois la station incluse dans la base de données du WOUDC, l'opérateur du centre de données envoie au contributeur ses nouveaux justificatifs de connexion privés pour le client FTP, qu'il utilisera pour télécharger des données.
 
 La Figure 1 est un diagramme illustrant la procédure d’inscription des contributeurs. 
 ![pic](/uploads/fbdaf6972f05205073563c4f54bdce50/pic.png)
@@ -152,9 +140,9 @@ Figure 1 – Procédure d’inscription des contributeurs
 ## 2.2	Inscription d’une station
 Après s'être inscrit au WOUDC de la façon indiquée à la [section 2.1](#21-inscription-des-contributeurs), le contributeur peut ajouter des stations ou modifier l’information sur une station existante en soumettant un nouveau ID VAG ou en mettant à jour l'information sur une station avec GAWSIS :
 
-1)	Le contributeur obtient un nouvel ID VAG pour la nouvelle station ou modifie l'information sur une station existante à partir de GAWSIS [http://gaw.empa.ch/gawsis/codes.request.asp](http://gaw.empa.ch/gawsis/codes.request.asp).
-2)	Le contributeur envoie à l'opérateur du centre de données, à [http://woudc.org/contact.php?lang=fr](http://woudc.org/contact.php?lang=fr), la demande de changement visant à ajouter une nouvelle station ou à modifier l'Information sur une station existante. Il lui envoie aussi l'ID VAG. 
-3)	L'opérateur inclut la nouvelle station dans la base de données du WOUDC ou met à jour l'information sur une station existante.
+1. Le contributeur obtient un nouvel ID VAG pour la nouvelle station ou modifie l'information sur une station existante à partir de GAWSIS [http://gaw.empa.ch/gawsis/codes.request.asp](http://gaw.empa.ch/gawsis/codes.request.asp).
+2. Le contributeur envoie à l'opérateur du centre de données, à [http://woudc.org/contact.php?lang=fr](http://woudc.org/contact.php?lang=fr), la demande de changement visant à ajouter une nouvelle station ou à modifier l'Information sur une station existante. Il lui envoie aussi l'ID VAG. 
+3. L'opérateur inclut la nouvelle station dans la base de données du WOUDC ou met à jour l'information sur une station existante.
 
 
 ## 2.3	Soumission des données
@@ -165,17 +153,12 @@ Le WOUDC permet aux contributeurs de soumettre des données par le biais d’un 
 
 Une fois que le contributeur est dûment inscrit :
 
-1)	Le contributeur téléverse des données dans le format extCSV vers le site FTP.
-
-2)	Le WOUDC récupère les données sur le site FTP.
-
-3)	Une période d’attente de 72 heures est prévue avant le traitement des données pour permettre au contributeur de soumettre des données révisées, le cas échéant. 
-
-4)	Le WOUDC traite les données (validation du contributeur et des données).
-
-5)	Si l’opérateur du WOUDC relève des problèmes pendant la validation, il doit en aviser le contributeur. 
-
-6)	Si aucun problème n’est relevé, les données sont publiées sur le site Web et peuvent alors être téléchargées à partir du site Web, des services Web géospatiaux ou des dossiers accessibles sur le Web (WAF).
+1. Le contributeur téléverse des données dans le format extCSV vers le site FTP.
+2. Le WOUDC récupère les données sur le site FTP.
+3. Une période d’attente de 72 heures est prévue avant le traitement des données pour permettre au contributeur de soumettre des données révisées, le cas échéant. 
+4. Le WOUDC traite les données (validation du contributeur et des données).
+5. Si l’opérateur du WOUDC relève des problèmes pendant la validation, il doit en aviser le contributeur. 
+6. Si aucun problème n’est relevé, les données sont publiées sur le site Web et peuvent alors être téléchargées à partir du site Web, des services Web géospatiaux ou des dossiers accessibles sur le Web (WAF).
 
 La Figure 2 est un diagramme illustrant la procédure de soumission de données.
 ![pic2](/uploads/d38a507929e9eadcf1ec5458b2c52910/pic2.png)
@@ -188,24 +171,17 @@ Figure 2 – Procédure de soumission de données
 Les catégories de données suivantes ont été définies pour le moment (en anglais seulement) : 
 
 ***Ozone***
-•	Lidar
-
-•	Microwave (Micro-ondes)
-
-•	Ozonesonde (Sonde d'ozone)
-
-•	TotalOzone (Ozone total)
-
-•	Umkehr
+- Lidar
+- Microwave (Micro-ondes)
+- Ozonesonde (Sonde d'ozone)
+- TotalOzone (Ozone total)
+- Umkehr
 
 ***Rayonnement Ultraviolet***
-•	Spectral
-
-•	Multiband (Multibande)
-
-•	Broadband (Large bande)
-
-•	Pyranometer (Pyranomètre)
+- Spectral
+- Multiband (Multibande)
+- Broadband (Large bande)
+- Pyranometer (Pyranomètre)
 
 
 # Chapitre 3	Format de données standard
@@ -221,17 +197,12 @@ Un fichier extCSV est composé de deux sections : un en-tête de métadonnées e
 
 Voici les règles de syntaxe du format CSV étendu : 
 
-•	Les champs, dont la largeur est variable, doivent être séparés par une virgule (,).
-
-•	Lorsque le nom d’un champ ou les valeurs qu’il renferme comprennent une virgule (,) ou des guillemets (“), il faut placer l’ensemble du champ entre guillemets (").
-
-•	Les valeurs NULLES sont représentées par des champs vides (,,) et les lignes vides sont ignorées. 
-
-•	Les lignes qui commencent par un astérisque (*) sont des commentaires.
-
-•	Les lignes qui commencent par un carré (#) sont des noms de tableau.
-
-•	La première ligne après la ligne `#TABLENAME` sert à préciser le nom des colonnes (champs). Le nom de chaque colonne de données (champ) doit être séparé par une virgule.
+- Les champs, dont la largeur est variable, doivent être séparés par une virgule (,).
+- Lorsque le nom d’un champ ou les valeurs qu’il renferme comprennent une virgule (,) ou des guillemets (“), il faut placer l’ensemble du champ entre guillemets (").
+- Les valeurs NULLES sont représentées par des champs vides (,,) et les lignes vides sont ignorées. 
+- Les lignes qui commencent par un astérisque (*) sont des commentaires.
+- Les lignes qui commencent par un carré (#) sont des noms de tableau.
+- La première ligne après la ligne `#TABLENAME` sert à préciser le nom des colonnes (champs). Le nom de chaque colonne de données (champ) doit être séparé par une virgule.
 
 
 Example:
@@ -247,17 +218,12 @@ Field1, Field2, Comment
 
 Voici les règles relatives au contenu du WOUDC :
 
-•	Le nom des tableaux doit être saisi en MAJUSCULES et précédé du carré (#). Le nom des champs est sensible à la casse. 
-
-•	Un tableau se compose des trois sections suivantes : nom du tableau, nom des colonnes (champs) et un ou plusieurs enregistrements de données. Il est aussi possible d’insérer des commentaires dans les tableaux (facultatif). 
-
-•	Les attributs de données non spécifiés se voient attribuer une valeur « nulle ».
-
-•	Chaque fichier doit contenir une seule occurrence de chacun des tableaux de métadonnées statiques (`#CONTENT, #DATA_GENERATION, #INSTRUMENT et #PLATFORM`) et les appliquer à l’ensemble des données du fichier. 
-
-•	Chaque fichier doit contenir au moins une occurrence des tableaux de métadonnées dynamiques (`#LOCATION` et `#TIMESTAMP`), lesquelles sont en vigueur jusqu'à ce qu'elles soient mises à jour. Les données qui figurent dans les champs de ces tableaux peuvent modifier les attributs (p. ex., l'heure peut être mise à jour par des échantillons individuels). 
-
-•	Il est possible d’inclure d’autres renseignements sur les conditions et la météorologie des sites, des images du ciel, etc. sous forme de commentaires ou à l’aide d’autres tableaux générés à la discrétion du contributeur. Par exemple, si un contributeur souhaite insérer une remarque spéciale (« quelqu’un a heurté l’instrument pendant l’échantillonnage »), il est raisonnable de le faire au moyen d’un commentaire. Les variations dynamiques instantanées comme la météorologie (p. ex., conditions du ciel ou du vent) ou les données d’étalonnage doivent être présentées dans un tableau. 
+- Le nom des tableaux doit être saisi en MAJUSCULES et précédé du carré (#). Le nom des champs est sensible à la casse. 
+- Un tableau se compose des trois sections suivantes : nom du tableau, nom des colonnes (champs) et un ou plusieurs enregistrements de données. Il est aussi possible d’insérer des commentaires dans les tableaux (facultatif). 
+- Les attributs de données non spécifiés se voient attribuer une valeur « nulle ».
+- Chaque fichier doit contenir une seule occurrence de chacun des tableaux de métadonnées statiques (`#CONTENT, #DATA_GENERATION, #INSTRUMENT et #PLATFORM`) et les appliquer à l’ensemble des données du fichier. 
+- Chaque fichier doit contenir au moins une occurrence des tableaux de métadonnées dynamiques (`#LOCATION` et `#TIMESTAMP`), lesquelles sont en vigueur jusqu'à ce qu'elles soient mises à jour. Les données qui figurent dans les champs de ces tableaux peuvent modifier les attributs (p. ex., l'heure peut être mise à jour par des échantillons individuels). 
+- Il est possible d’inclure d’autres renseignements sur les conditions et la météorologie des sites, des images du ciel, etc. sous forme de commentaires ou à l’aide d’autres tableaux générés à la discrétion du contributeur. Par exemple, si un contributeur souhaite insérer une remarque spéciale (« quelqu’un a heurté l’instrument pendant l’échantillonnage »), il est raisonnable de le faire au moyen d’un commentaire. Les variations dynamiques instantanées comme la météorologie (p. ex., conditions du ciel ou du vent) ou les données d’étalonnage doivent être présentées dans un tableau. 
 
 
 <p><code>Example:
@@ -891,15 +857,15 @@ Le Tableau 3.3 10 présente les tableaux devant être remplis pour la catégorie
 
 **L**: Code de la paire de longueurs d’onde utilisée pour l’observation : 
 
-1 = paire de longueurs d’onde A 
+1=paire de longueurs d’onde A 
 
-2 = paire de longueurs d’onde B
+2=paire de longueurs d’onde B
 
-3 = paire de longueurs d’onde C
+3=paire de longueurs d’onde C
 
-4 = paire de longueurs d’onde D
+4=paire de longueurs d’onde D
 
-5 = observation non solaire ajustée en fonction d'une observation DS
+5=observation non solaire ajustée en fonction d'une observation DS
 
 **WLCode**: Code désignant la ou les paires de longueurs d’onde utilisées pour mesurer l’ozone total. Voir le Tableau 3.3 7 à la [section 3.3.5.3](#3353-tableaux-de-codes).
 
@@ -1237,13 +1203,10 @@ La [section 2.3](#23-soumission-des-données) fournit des procédures détaillé
 
 Essentiellement, les données soumises par les contributeurs sont reçues, traitées, puis archivées. Après qu’un fichier a été saisi dans le système, le processus de traitement s’amorce. On détermine d’abord le format du fichier entrant, puis on le valide pour s’assurer qu’il respecte le format de fichier standard du WOUDC (extCSV). Une fois que cela a été fait, le système tente de créer et de valider une taxonomie et une adresse URI pour le fichier. Enfin, le fichier est soumis à une rigoureuse série de validations appelée File Level Validation (FLV). La FLV permet : 
 
-•	de s’assurer que le fichier extCSV est conforme aux spécifications du programme VAG et du WOUDC sur le plan syntaxique;
-
-•	d’effectuer une validation des métadonnées pour s’assurer que les valeurs contenues dans les en têtes (`#TIMESTAMP`, `#PLATFORM`, `#INSTRUMENT`, `#CONTENT`, `#DATA_GENERATION`, `#LOCATION`) sont exactes et uniformes;
-
-•	d’effectuer une validation unique des tableaux, soit une série de tests servant à valider des tableaux d’ensemble de données spécifiques;
-
-•	de s’assurer que les valeurs sont modifiées conformément à la politique de « non-intervention » (c.-à-d. avec le moins de modifications syntaxiques possible).
+- de s’assurer que le fichier extCSV est conforme aux spécifications du programme VAG et du WOUDC sur le plan syntaxique;
+- d’effectuer une validation des métadonnées pour s’assurer que les valeurs contenues dans les en têtes (`#TIMESTAMP`, `#PLATFORM`, `#INSTRUMENT`, `#CONTENT`, `#DATA_GENERATION`, `#LOCATION`) sont exactes et uniformes;
+- d’effectuer une validation unique des tableaux, soit une série de tests servant à valider des tableaux d’ensemble de données spécifiques;
+- de s’assurer que les valeurs sont modifiées conformément à la politique de « non-intervention » (c.-à-d. avec le moins de modifications syntaxiques possible).
 
 
 Le fichier extCSV obtenu à la suite de la FLV est une version « nettoyée » du fichier original. Une fois que le fichier extCSV a réussi la validation de taxonomie, la validation de l’adresse URI et la FLV, il est prêt à être intégré à la base de données. Toutes les erreurs relevées pendant le processus de validation sont transmises au contributeur pour qu’il les corrige et ainsi faciliter l’intégration de leurs futurs fichiers de données. 
@@ -1256,24 +1219,21 @@ Voici un résumé des vérifications effectuées aux fins de l’assurance de la
 **Validation de la structure**
 
 - Permet de s’assurer que le fichier extCSV est conforme aux spécifications relatives aux fichiers extCSV : 
-    - Vérification du format du fichier;
-    - Vérification de l’ensemble des tableaux et des champs contenus dans le fichier, etc.
+        - Vérification du format du fichier;
+        - Vérification de l’ensemble des tableaux et des champs contenus dans le fichier, etc.
 
 
 **Validation des métadonnées**
 
-•	Validation de l’ensemble des métadonnées (organisation, station, instrument);
-
-•	Vérification de l’intégralité des métadonnées et correction des métadonnées incorrectes, dans la mesure du possible.
+- Validation de l’ensemble des métadonnées (organisation, station, instrument);
+- Vérification de l’intégralité des métadonnées et correction des métadonnées incorrectes, dans la mesure du possible.
 
 
 **Validation des données **
 
-•	Vérification de l’exactitude de l’ensemble des dates contenues dans le fichier (p. ex., la date de génération du fichier ne précède pas la date d’observation); 
-
-•	Vérification des valeurs dérivées contenues dans le fichier (p. ex., valeurs du champ TotalOzone dans le tableau `#MONTHLY`) :
-
-    o	    Correction des valeurs incorrectes et insertion des données manquantes.
+- Vérification de l’exactitude de l’ensemble des dates contenues dans le fichier (p. ex., la date de génération du fichier ne précède pas la date d’observation); 
+- Vérification des valeurs dérivées contenues dans le fichier (p. ex., valeurs du champ TotalOzone dans le tableau `#MONTHLY`) :
+        - Correction des valeurs incorrectes et insertion des données manquantes.
 
 
 Au départ, les fichiers sont validés pour confirmer qu’ils sont conformes aux spécifications relatives au format de fichier, mais, par la suite, des résumés statistiques plus généraux peuvent être générés, de manière à relever des valeurs erronées, des problèmes d’étalonnage, etc. Même si ces derniers exemples exigent une connaissance plus approfondie des données, les archives renferment déjà suffisamment de données pour porter des jugements critiques et faire des évaluations générales au sujet des données. À mesure que le volume de données augmentera et que les connaissances statistiques s’amélioreront, la portée de ces évaluations sera élargie. 
