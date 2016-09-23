@@ -8,7 +8,64 @@ This document describes the procedures for data submission and information about
 The WOUDC website is used to update information and serves as a virtual "bulletin board". As this guide is further developed, use the website to retrieve the latest version.
 
 # Table of Contents
-[TOC]
+[Chapter 1 Introduction](#chapter-1-introduction)
+  * 1. 1 [Intended Audience](#11-intended-audience)
+  * 1.2 [Purpose](#12-purpose)
+  * 1.3 [Document Location](#13-document-location)
+  * 1.4 [Document History and Update](#14-document-history-and-update)
+  * 1.5 [Website](#15-website)
+  * 1.6 [Contributing to WOUDC](#16-contributing-to-woudc)
+[Chapter 2 Data Submission Procedure](#chapter-2-data-submission-procedure)
+  * 2.1 [Contributor Registration](#21-contributor-registration)
+  * 2.2 [Station Registration](#22-station-registration)
+  * 2.3 [Data Submission](#23-data-submission)
+  * 2.4 [Data Type](#24-data-types)
+[Chapter 3 Standard Data Format](#chapter-3-standard-data-format)
+  * 3.1 [The WOUDC Data Format Standard](#31-the-woudc-data-format-standard)
+    * 3.1.1 [Extended CSV syntax Rules] (#311-extended-csv-syntax-rules)
+  * 3.2 [The WOUDC extCSV Data File Metadata](#32-the-woudc-extcsv-data-file-metadata)
+    * 3.2.1 [Introduction](#321-introduction)
+  * 3.3 [Ozone Specific Data Content](#33-ozone-specific-data-content)
+    * 3.3.1 [Introduction](#331-introduction)
+    * 3.3.2 [Category: Lidar](#332-category-lidar)
+    * 3.3.3 [Category: Microwave](#333-category-microwave)
+    * 3.3.4 [Category: Ozonesonde](#334-category-ozonesonde)
+    * 3.3.5 [Category: TotalOzoneObs](#335-category-totalozoneobs)
+    * 3.3.6 [Category: totalOzone](#336-category-totalozone)
+    * 3.3.7 [Category: UmkehrN14](#337-category-umkehr14)
+  * 3.4 [Ultraviolet Specific Data Content](#34-ultraviolet-specific-data-content)
+    * 3.4.1 [Introduction](#341-introduction)
+    * 3.4.2 [Category: Spectral](#342-category-spectral)
+    * 3.4.3 [Category: Multiband](#343-category-multiband)
+    * 3.4.4 [Category: Broadband](#344-category-broadband)
+    * 3.4.5 [Category: Pyranometer](#345-category-pyranometer)
+    * 3.4.6 [Ancillary and Auxiliary Data](#346-category-ancillary-and-auxiliary-data)i
+
+[Chapter 4 Data Handling](#chapter-4-data-handling)
+  * 4.1 [Data Policy](#41-data-policy)
+  * 4.2 [Data Flow and Processing](#42-data-flow-and-processing)
+
+[Chapter 5 Data Quality](#chapter-5-data-quality)
+
+[Chapter 6 Access and Data Retrieval](#chapter-6-access-and-data-retrieval)
+
+[Chapter 7 Contact](#chapter-7-contact)
+  * 7.1 [Contact Page](#71-contact-page)
+  * 7.2 [Address](#72-address)
+
+[Chapter 8 References](#chapter-8-references)
+
+[Appendix A    Examples](#appendix-a-examples)
+  * A.1 [Lidar Example](#a1-lidar-example)
+  * A.2 [Microwave Example](#a2-microwave-example)
+  * A.3 [Ozonesonde Example](#a3-ozonesonde-example)
+  * A.4 [TotalOzoneObs Example](#a4-totalozoneobs-example)
+  * A.5 [TotalOzone Example](#a5-totalozone-example)
+  * A.6 [UmkehrN14 Example](#a6-umkkehrn14-example)
+  * A.7 [Spectral Example](#a7-spectral-example)
+  * A.8 [Multiband Example](#a8-multiband-example)
+  * A.9 [Broadband Example](#a9-broadband-example)
+  * A.10 [Pyranometer Example](#a10-pyranometer-example)
 
 # Chapter 1 Introduction
 The World Ozone and Ultraviolet Data Centre (WOUDC) began as the World Ozone and Data Centre (WODC) starting in 1960. In 1922, Environment Canada agreed to accept solar ultraviolet radiation data and the data centre was renamed to the WOUDC. The WOUDC is operated by the Meteorological Service of Canada, a branch of Environment and Climate Change Canada.
