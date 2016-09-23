@@ -15,11 +15,13 @@ The WOUDC website is used to update information and serves as a virtual "bulleti
   * 1.4 [Document History and Update](#14-document-history-and-update)
   * 1.5 [Website](#15-website)
   * 1.6 [Contributing to WOUDC](#16-contributing-to-woudc)
+
 [Chapter 2 Data Submission Procedure](#chapter-2-data-submission-procedure)
   * 2.1 [Contributor Registration](#21-contributor-registration)
   * 2.2 [Station Registration](#22-station-registration)
   * 2.3 [Data Submission](#23-data-submission)
   * 2.4 [Data Type](#24-data-types)
+
 [Chapter 3 Standard Data Format](#chapter-3-standard-data-format)
   * 3.1 [The WOUDC Data Format Standard](#31-the-woudc-data-format-standard)
     * 3.1.1 [Extended CSV syntax Rules] (#311-extended-csv-syntax-rules)
