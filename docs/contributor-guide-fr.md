@@ -11,9 +11,6 @@ Le site Web du WOUDC est utilisé pour mettre à jour les renseignements et comm
 
 
 # Table des matières
-[Avant-propos](#avant-propos)
-
-[Table des matières](#table-des-matières)
 [Chapitre 1 Introduction](#chapitre-1-introduction)
   * 1.1 [Public cible](#11-public-cible)
   * 1.2 [But](#12-but)
