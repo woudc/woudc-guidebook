@@ -14,20 +14,21 @@ Le site Web du WOUDC est utilisé pour mettre à jour les renseignements et comm
 [Avant-propos](#avant-propos)
 
 [Table des matières](#table-des-matières)
-
-[Chapitre 1	Introduction](#chapitre-1-introduction)
-  * 1. 1 [Public cible](#11-public-cible)
+[Chapitre 1 Introduction](#chapitre-1-introduction)
+  * 1.1 [Public cible](#11-public-cible)
   * 1.2 [But](#12-but)
   * 1.3 [Emplacement du document](#13-emplacement-du-document)
   * 1.4 [Historique et mise à jour du document](#14-historique-et-mise-à-jour-du-document)
   * 1.5 [Site Web](#15-site-web)
   * 1.6 [Contribution au WOUDC](#16-contribution-au-woudc)
-[Chapitre 2	Procédure de soumission de données](#chapitre-2-procédure-de-soumission-de-données)
+
+[Chapitre 2 Procédure de soumission de données](#chapitre-2-procédure-de-soumission-de-données)
   * 2.1 [Inscription des contributeurs](#21-inscription-des-contributeurs)
   * 2.2 [Inscription d’une station](#22-inscription-dune-station)
   * 2.3 [Soumission des données](#23-soumission-des-données)
   * 2.4 [Types de données](#24-types-de-données)
-[Chapitre 3	Format de données standard](#chapitre-3-format-de-données-standard)
+
+[Chapitre 3 Format de données standard](#chapitre-3-format-de-données-standard)
   * 3.1 [Format de données standard du WOUDC ](#31-format-de-données-standard-du-woudc)
     * 3.1.1 [Règles de syntaxe du format CSV étendu] (#311-règles-de-syntaxe-du-format-csv-étendu)
   * 3.2 [Métadonnées des fichiers de données extCSV du WOUDC](#32-métadonnées-des-fichiers-de-données-extcsv-du-woudc)
@@ -47,21 +48,22 @@ Le site Web du WOUDC est utilisé pour mettre à jour les renseignements et comm
     * 3.4.4 [Catégorie: Broadband](#344-catégorie-broadband)
     * 3.4.5 [Catégorie: Pyranometer](#345-catégorie-pyranometer)
     * 3.4.6 [Données accessoires et auxiliaires ](#346-données-accessoires-et-auxiliaires)
-[Chapitre 4	Traitement des données](#chapter-4-chapitre-4-traitement-des-données)
+
+[Chapitre 4 Traitement des données](#chapter-4-chapitre-4-traitement-des-données)
   * 4.1 [Politique sur les données](#41-politique-sur-les-données)
   * 4.2 [Flux et traitement des données](#42-flux-et-traitement-des-données)
 
-[Chapitre 5	Qualité des données](#chapitre-5-qualité-des-données)
+[Chapitre 5 Qualité des données](#chapitre-5-qualité-des-données)
 
-[Chapitre 6	Consultation et extraction de données](#chapitre-6-consultation-et-extraction-de-données)
+[Chapitre 6 Consultation et extraction de données](#chapitre-6-consultation-et-extraction-de-données)
 
-[Chapitre 7	Coordonnées du WOUDC](#chapitre-7-coordonnées-du-woudc)
+[Chapitre 7 Coordonnées du WOUDC](#chapitre-7-coordonnées-du-woudc)
   * 7.1 [Le page de contact](#71-le-page-de-contact)
   * 7.2 [Adresse](#72-adresse)
 
-[Chapitre 8	Références](#chapitre-8-références)
+[Chapitre 8 Références](#chapitre-8-références)
 
-[Appendice A	Exemples](#appendice-a-exemples)
+[Appendice A Exemples](#appendice-a-exemples)
   * A.1 [Exemple pour la catégorie Lidar ](#a1-exemple-pour-la-catégorie-lidar)
   * A.2 [Exemple pour la catégorie Microwave ](#a2-exemple-pour-la-catégorie-microwave)
   * A.3 [Exemple pour la catégorie Ozonesonde ](#a3-exemple-pour-la-catégorie-ozonesonde)

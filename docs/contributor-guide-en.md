@@ -9,7 +9,7 @@ The WOUDC website is used to update information and serves as a virtual "bulleti
 
 # Table of Contents
 [Chapter 1 Introduction](#chapter-1-introduction)
-  * 1. 1 [Intended Audience](#11-intended-audience)
+  * 1.1 [Intended Audience](#11-intended-audience)
   * 1.2 [Purpose](#12-purpose)
   * 1.3 [Document Location](#13-document-location)
   * 1.4 [Document History and Update](#14-document-history-and-update)
