@@ -357,6 +357,7 @@ Vous trouverez ci-dessous un exemple d’en tête. Cet en-tête renferme l’ens
 Dessous est un tableau qui récapitule les tables requises dans le fichier WOUDC-EXTCSV pour différents ensembles de données.
 
 ***Tableau 3.2-3 - Tableau requise pour différents jeux de données***
+
 | Dataset | Table Name | Required/Optional | Number of Occurences | Incompatible |
 |--------|--------|--------|--------|--------|
 |`Common`|`#CONTENT`|`Required`|`1`|`N/A`|
