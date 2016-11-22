@@ -342,6 +342,48 @@ Below is an example of a header. This header includes all the required header ta
 `UTCOffset,Date,Time`
 `+00:00:00,1999-04-28,23:15:00`
 
+#### 3.2.1.8 Metadata Table Configuration ####
+Below is a table that summarizes the required tables in WOUDC-EXTCSV file for different datasets.
+
+***Table 3.2-3 - Required tables for different datasets***
+
+| Dataset | Table Name | Required/Optional | Number of Occurences | Incompatible |
+|--------|--------|--------|--------|--------|
+|`Common`|`#CONTENT`|`Required`|`1`|`N/A`|
+|`Common`|`#DATA_GENERATION`|`Required`|`1`|`N/A`|
+|`Common`|`#PLATFORM`|`Required`|`1`|`N/A`|
+|`Common`|`#INSTRUMENT`|`Required`|`1`|`N/A`|
+|`Common`|`#LOCATION`|`Required`|`1`|`N/A`|
+|`Board-band`|`#TIMESTAMP`|`Required`|`1`|`N/A`|
+|`Board-band`|`#DIFFUSE`|`Required`|`1`|`#GLOBAL`|
+|`Board-band`|`#GLOBAL`|`Required`|`1`|`#DIFFUSE`|
+|`Lidar`|`#TIMASTAMP`|`Required`|`1`|`N/A`|
+|`Lidar`|`#OZONE_SUMMARY`|`Required`|`1+`|`N/A`|
+|`Lidar`|`#OZONE_PROFILE`|`Required`|`1+`|`N/A`|
+|`Multi-band`|`#TIMESTAMP`|`Required`|`1`|`N/A`|
+|`Multi-band`|`#GLOBAL`|`Required`|`1`|`#SIMULATANEOUS`|
+|`Multi-band`|`#SIMULATANEOUS`|`Required`|`1`|`#GLOBAL`|
+|`OzoneSonde`|`#TIMESTAMP`|`Reqiured`|`1`|`N/A`|
+|`OzoneSonde`|`#FLIGHT_SUMMRAY`|`Required`|`1`|`N/A`|
+|`OzoneSonde`|`#PROFILE`|`Required`|`1`|`N/A`|
+|`OzoneSonde`|`#AUXILIARY_DATA`|`Optional`|`1`|`N/A`|
+|`OzoneSonde`|`#PUMP_CORRECTION`|`Optional`|`1`|`N/A`|
+|`Spectral`|`#TIMESTAMP`|`Optional`|`1+`|`N/A`|
+|`Spectral`|`#GLOBAL_SUMMARY_NSF`|`Required`|`1+`|`#GLOBAL_SUMMARY`|
+|`Spectral`|`#GLOBAL_SUMMARY`|`Required`|`1+`|`#GLOBAL_SUMMARY_NSF`|
+|`Spectral`|`#GLOBAL`|`Required`|`1+`|`N/A`|
+|`TotalOzone`|`#TIMESTAMP`|`Required`|`2`|`N/A`|
+|`TotalOzone`|`#DAILY`|`Required`|`1`|`N/A`|
+|`TotalOzone`|`#MONTHLY`|`Optional`|`1`|`N/A`|
+|`TotalOzone`|`#SAOZ_DATA_V2`|`Optional`|`1`|`N/A`|
+|`TotalOzoneObs`|`#TIMESTAMP`|`Required`|`1`|`N/A`|
+|`TotalOzoneObs`|`#OBSERVATIONS`|`Required`|`1`|`N/A`|
+|`TotalOzoneObs`|`#DAILY_SUMMARY`|`Required`|`1`|`N/A`|
+|`UmkehrN14`|`#TIMESTAMP`|`Required`|`2`|`N/A`|
+|`UmkehrN14`|`#N14_VALUES`|`Required`|`1`|`N/A`|
+|`UmkehrN14 level 2`|`#TIMESTAMP`|`Required`|`2`|`N/A`|
+|`UmkehrN14 level 2`|`#C_PROFILE`|`Required`|`1`|`N/A`|
+
 ## 3.3 Ozone Specific Data Content
 ### 3.3.1 Introduction
 This section discusses the data content of the various categories of Ozone data. Each category has a set of defined tables which includes the fields (columns) names, the order of the fields, and the required units.
