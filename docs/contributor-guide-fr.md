@@ -11,23 +11,21 @@ Le site Web du WOUDC est utilisé pour mettre à jour les renseignements et comm
 
 
 # Table des matières
-[Avant-propos](#avant-propos)
-
-[Table des matières](#table-des-matières)
-
-[Chapitre 1	Introduction](#chapitre-1-introduction)
-  * 1. 1 [Public cible](#11-public-cible)
+[Chapitre 1 Introduction](#chapitre-1-introduction)
+  * 1.1 [Public cible](#11-public-cible)
   * 1.2 [But](#12-but)
   * 1.3 [Emplacement du document](#13-emplacement-du-document)
   * 1.4 [Historique et mise à jour du document](#14-historique-et-mise-à-jour-du-document)
   * 1.5 [Site Web](#15-site-web)
   * 1.6 [Contribution au WOUDC](#16-contribution-au-woudc)
-[Chapitre 2	Procédure de soumission de données](#chapitre-2-procédure-de-soumission-de-données)
+
+[Chapitre 2 Procédure de soumission de données](#chapitre-2-procédure-de-soumission-de-données)
   * 2.1 [Inscription des contributeurs](#21-inscription-des-contributeurs)
   * 2.2 [Inscription d’une station](#22-inscription-dune-station)
   * 2.3 [Soumission des données](#23-soumission-des-données)
   * 2.4 [Types de données](#24-types-de-données)
-[Chapitre 3	Format de données standard](#chapitre-3-format-de-données-standard)
+
+[Chapitre 3 Format de données standard](#chapitre-3-format-de-données-standard)
   * 3.1 [Format de données standard du WOUDC ](#31-format-de-données-standard-du-woudc)
     * 3.1.1 [Règles de syntaxe du format CSV étendu] (#311-règles-de-syntaxe-du-format-csv-étendu)
   * 3.2 [Métadonnées des fichiers de données extCSV du WOUDC](#32-métadonnées-des-fichiers-de-données-extcsv-du-woudc)
@@ -47,21 +45,22 @@ Le site Web du WOUDC est utilisé pour mettre à jour les renseignements et comm
     * 3.4.4 [Catégorie: Broadband](#344-catégorie-broadband)
     * 3.4.5 [Catégorie: Pyranometer](#345-catégorie-pyranometer)
     * 3.4.6 [Données accessoires et auxiliaires ](#346-données-accessoires-et-auxiliaires)
-[Chapitre 4	Traitement des données](#chapter-4-chapitre-4-traitement-des-données)
+
+[Chapitre 4 Traitement des données](#chapter-4-chapitre-4-traitement-des-données)
   * 4.1 [Politique sur les données](#41-politique-sur-les-données)
   * 4.2 [Flux et traitement des données](#42-flux-et-traitement-des-données)
 
-[Chapitre 5	Qualité des données](#chapitre-5-qualité-des-données)
+[Chapitre 5 Qualité des données](#chapitre-5-qualité-des-données)
 
-[Chapitre 6	Consultation et extraction de données](#chapitre-6-consultation-et-extraction-de-données)
+[Chapitre 6 Consultation et extraction de données](#chapitre-6-consultation-et-extraction-de-données)
 
-[Chapitre 7	Coordonnées du WOUDC](#chapitre-7-coordonnées-du-woudc)
+[Chapitre 7 Coordonnées du WOUDC](#chapitre-7-coordonnées-du-woudc)
   * 7.1 [Le page de contact](#71-le-page-de-contact)
   * 7.2 [Adresse](#72-adresse)
 
-[Chapitre 8	Références](#chapitre-8-références)
+[Chapitre 8 Références](#chapitre-8-références)
 
-[Appendice A	Exemples](#appendice-a-exemples)
+[Appendice A Exemples](#appendice-a-exemples)
   * A.1 [Exemple pour la catégorie Lidar ](#a1-exemple-pour-la-catégorie-lidar)
   * A.2 [Exemple pour la catégorie Microwave ](#a2-exemple-pour-la-catégorie-microwave)
   * A.3 [Exemple pour la catégorie Ozonesonde ](#a3-exemple-pour-la-catégorie-ozonesonde)
@@ -190,6 +189,13 @@ Les contributeurs de données doivent soumettre leurs données au WOUDC en texte
 
 Les fichiers extCSV comportent deux sections principales : la section des métadonnées et la section du contenu des données. On peut considérer la section des métadonnées comme l’« en tête » d’un fichier de données, étant donné qu’elle est commune à tous les fichiers du WOUDC sur le plan du format et du contenu des tableaux. La section sur les données est propre à chacune des catégories (ou types) de données, comme TotalOzone et Ozonesonde.
 
+Les fichiers CSV < étendu> (extCSV) fournissent un format commun qui est indépendant du type d'instrument et du type de données (Ozone / Ultraviolet et sous-types comme décrit dans 2.4). Le format extCSV n’est pas produit directement par les instruments, mais ce format est produit par le traitement ultérieur des données de l'instrument pour créer des fichiers en format extCSV. Les noms de champ suivants sont utilisés par WOUDC de distinguer entre les données de l'instrument et des donnés en format extCSV pour WOUDC, ou le Level (<niveau de traitement>) d'un fichier de données:
+
+- level 0: données brutes ou primaire (des données non traitées qui viennent directement à partir de l'instrument). Par exemple, des fichiers "B-fichier" sont  des fichiers en format d'ozone produites par le logiciel d'exploitation Brewer ([http://kippzonen-brewer.com/wp-content/uploads/2014/10/KippZonen_Service_Manual_Brewer_MKIII_V1206-1.pdf](http://kippzonen-brewer.com/wp-content/uploads/2014/10/KippZonen_Service_Manual_Brewer_MKIII_V1206-1.pdf)).  Ces fichiers ne sont pas lire ou traitées par WOUDC directement, mais sont utilisés par des logiciels tels que O3Brewer ([http://www.o3soft.eu/doc/o3brewer.pdf](http://www.o3soft.eu/doc/o3brewer.pdf)).
+- level 1: Les données au format extCSV pour WOUDC qui sont produites et évalueés par le contributeur pour faire un contrôle de qualité. Les fichiers au Level 1 contiennent toute l’information pour la station, le type de données, l’information pour l’identification de la station, et des métadonnées d'une session de mesure dans un seul fichier, dans un format standard. Ces fichiers sont généralement produits par le contributeur par le traitement de données de Level 0 et en ajoutant les sections de métadonnées appropriées. Par exemple, le logiciel O3Brewer (de [http://www.o3soft.eu/doc/o3brewer.pdf](http://www.o3soft.eu/doc/o3brewer.pdf)) produira extCSV pour WOUDC (Level 1) des fichiers à partir de fichiers au Level 0 dans le "B-fichier" pour Brewer.
+
+- level 2: les données de niveau 2 sont des données de niveau 1 (le format extCSV WOUDC) qui a été transformés (comme interpolée, remaillées, lissée ou autre) pour l'analyse ou l'entrée dans un autre logiciel. Par exemple, les fichiers pour Umkehr au Level 2 sont produites par un traitement supplémentaire de fichiers de Level 1 (les données de Level 2 est indiqué dans les fichiers en format extCSV par un "2" dans le champ du tableau de contenu de level. Voir Section 3.2.1.1) 
+
 ### 3.1.1	Règles de syntaxe du format CSV étendu
 Le principal format de fichier utilisé par le WOUDC est le format extCSV (format de valeurs séparées par des virgules étendu), qui élargit les règles de syntaxe du format CSV standard de manière à pouvoir insérer des commentaires et de multiples contenus de données (tableaux) dans un seul et même fichier. Étant donné que les fichiers extCSV sont formatés en texte clair (ASCII), ils peuvent être utilisés dans l’ensemble des plateformes/systèmes d’exploitation et, par conséquent, être facilement importés dans divers outils d’analyse. 
 
@@ -268,10 +274,8 @@ Le Tableau 3.2 1 et le Tableau 3.2 2 présentent les tableaux devant se trouver 
 
 **Category**: Sous-groupe des données soumises (p. ex., Ozonesonde ou Lidar). 
 
-**Level**: Le niveau fait référence aux données. 
-Level 0 : données brutes ou primaires. 
-Level 1 : données traitées prêtes à être publiées. 
-Level 2 : données de niveau 1 interpolées ou filtrées.
+**Level**: Ce level se réfère au produit de données. Les valeurs acceptables sont "1" pour les données qui a été traité pour produire des données en format extCSV
+pour WOUDC (et donc les données sont prêtes à être soumis à WOUDC), ou "2" pour les données qui ont également été interpolées, re-quadrillées, lissées ou autrement traitées. (Notez que le Level n’est pas la même chose que la version qui est décrite dans 3.2.1.2. Le mot <Version> est utilisé pour indiquer qu’un fichier a été modifié ou révisées selon le processus utilisé par WOUDC tandis que le Level est utilisé pour indiquer « l’étapedu  traitement de données" dans un fichier (il est possible d’y avoir montré plusieurs versions pour les fichiers de Level 1 et les fichiers de Level 2).
 
 **Form**: La version du format des données qui suivent. La valeur initiale du champ `FORM` (valeur=1) fait référence à la description de base du tableau. Si un tableau existant est modifié ou qu’un nouveau tableau est ajouté, la valeur du champ `FORM` augmente. Prenons l’exemple d’un tableau composé d’un nombre donné de colonnes et dont la valeur du champ `FORM` est réglée à « 1 ». Si on ajoute une ou plusieurs colonnes au tableau, la valeur du champ `FORM` augmente de un après chaque modification. La valeur du champ `FORM` (index) se veut un indicateur du lecteur de fichiers requis pour les tableaux de données qui suivent, pour aider les programmeurs à lire le fichier. Seul le WOUDC peut apporter des modifications à cet index. 
 
@@ -348,6 +352,48 @@ Vous trouverez ci-dessous un exemple d’en tête. Cet en-tête renferme l’ens
 `#TIMESTAMP`
 `UTCOffset,Date,Time`
 `+00:00:00,1999-04-28,23:15:00`
+
+#### 3.2.1.8 Configuration des tableau de métadonnées ####
+Dessous est un tableau qui récapitule les tables requises dans le fichier WOUDC-EXTCSV pour différents ensembles de données.
+
+***Tableau 3.2-3 - Tableau requise pour différents jeux de données***
+
+| Dataset | Table Name | Required/Optional | Number of Occurences | Incompatible |
+|--------|--------|--------|--------|--------|
+|`Common`|`#CONTENT`|`Required`|`1`|`N/A`|
+|`Common`|`#DATA_GENERATION`|`Required`|`1`|`N/A`|
+|`Common`|`#PLATFORM`|`Required`|`1`|`N/A`|
+|`Common`|`#INSTRUMENT`|`Required`|`1`|`N/A`|
+|`Common`|`#LOCATION`|`Required`|`1`|`N/A`|
+|`Board-band`|`#TIMESTAMP`|`Required`|`1`|`N/A`|
+|`Board-band`|`#DIFFUSE`|`Required`|`1`|`#GLOBAL`|
+|`Board-band`|`#GLOBAL`|`Required`|`1`|`#DIFFUSE`|
+|`Lidar`|`#TIMASTAMP`|`Required`|`1`|`N/A`|
+|`Lidar`|`#OZONE_SUMMARY`|`Required`|`1+`|`N/A`|
+|`Lidar`|`#OZONE_PROFILE`|`Required`|`1+`|`N/A`|
+|`Multi-band`|`#TIMESTAMP`|`Required`|`1`|`N/A`|
+|`Multi-band`|`#GLOBAL`|`Required`|`1`|`#SIMULATANEOUS`|
+|`Multi-band`|`#SIMULATANEOUS`|`Required`|`1`|`#GLOBAL`|
+|`OzoneSonde`|`#TIMESTAMP`|`Reqiured`|`1`|`N/A`|
+|`OzoneSonde`|`#FLIGHT_SUMMRAY`|`Required`|`1`|`N/A`|
+|`OzoneSonde`|`#PROFILE`|`Required`|`1`|`N/A`|
+|`OzoneSonde`|`#AUXILIARY_DATA`|`Optional`|`1`|`N/A`|
+|`OzoneSonde`|`#PUMP_CORRECTION`|`Optional`|`1`|`N/A`|
+|`Spectral`|`#TIMESTAMP`|`Optional`|`1+`|`N/A`|
+|`Spectral`|`#GLOBAL_SUMMARY_NSF`|`Required`|`1+`|`#GLOBAL_SUMMARY`|
+|`Spectral`|`#GLOBAL_SUMMARY`|`Required`|`1+`|`#GLOBAL_SUMMARY_NSF`|
+|`Spectral`|`#GLOBAL`|`Required`|`1+`|`N/A`|
+|`TotalOzone`|`#TIMESTAMP`|`Required`|`2`|`N/A`|
+|`TotalOzone`|`#DAILY`|`Required`|`1`|`N/A`|
+|`TotalOzone`|`#MONTHLY`|`Optional`|`1`|`N/A`|
+|`TotalOzone`|`#SAOZ_DATA_V2`|`Optional`|`1`|`N/A`|
+|`TotalOzoneObs`|`#TIMESTAMP`|`Required`|`1`|`N/A`|
+|`TotalOzoneObs`|`#OBSERVATIONS`|`Required`|`1`|`N/A`|
+|`TotalOzoneObs`|`#DAILY_SUMMARY`|`Required`|`1`|`N/A`|
+|`UmkehrN14`|`#TIMESTAMP`|`Required`|`2`|`N/A`|
+|`UmkehrN14`|`#N14_VALUES`|`Required`|`1`|`N/A`|
+|`UmkehrN14 level 2`|`#TIMESTAMP`|`Required`|`2`|`N/A`|
+|`UmkehrN14 level 2`|`#C_PROFILE`|`Required`|`1`|`N/A`|
 
 ## 3.3	Contenu des données propres à l’ozone 
 ### 3.3.1	Introduction

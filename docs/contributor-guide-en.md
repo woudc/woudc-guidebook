@@ -9,7 +9,7 @@ The WOUDC website is used to update information and serves as a virtual "bulleti
 
 # Table of Contents
 [Chapter 1 Introduction](#chapter-1-introduction)
-  * 1. 1 [Intended Audience](#11-intended-audience)
+  * 1.1 [Intended Audience](#11-intended-audience)
   * 1.2 [Purpose](#12-purpose)
   * 1.3 [Document Location](#13-document-location)
   * 1.4 [Document History and Update](#14-document-history-and-update)
@@ -182,6 +182,13 @@ The WOUDC uses an ASCII text format that leverages the Comma Separated Values (C
 
 ExtCSV files are divided into two main parts: a metadata section and a data content section. The metadata section can be considered a data file "header" as this portion is common to all files within the WOUDC in terms of table format and content. The data portion will be unique to the individual data categories (or types) such as total ozone or ozonesonde.
 
+The extCSV files provide a common format that is independent of the type of instrument and the data type (Ozone/Ultraviolet and sub types as listed in 2.4). 
+The extCSV format is not produced directly by the instruments, but by further processing of instrument data to produce standard extCSV files.   The following Field Names are used by WOUDC to distinguish between instrument data versus WOUDC extCSV format, or the “level of processing” of a data file:
+
+- level-0: “Raw” or unprocessed data directly from the Instrument. For example, “B-file” format ozone files produced by the Brewer operating software ([http://kippzonen-brewer.com/wp-content/uploads/2014/10/KippZonen_Service_Manual_Brewer_MKIII_V1206-1.pdf](http://kippzonen-brewer.com/wp-content/uploads/2014/10/KippZonen_Service_Manual_Brewer_MKIII_V1206-1.pdf)). These files are not read or processed by WOUDC directly, but are used by software such as O3Brewer ([http://www.o3soft.eu/doc/o3brewer.pdf](http://www.o3soft.eu/doc/o3brewer.pdf)).
+- level-1:  Data in WOUDC extCSV format, produced and quality controlled by the contributor.  The level-1 files contain all of the station, data type, and other identifying information or metadata of a measurement session in a single file, in a standard format. These files are typically produced by the contributor by formatting level-0 data and adding the appropriate metadata sections.  For example, O3Brewer software  ([http://www.o3soft.eu/doc/o3brewer.pdf](http://www.o3soft.eu/doc/o3brewer.pdf)) will produce WOUDC extCSV (level-1) files from Brewer “B-file” (level-0) files. 
+- level-2: level-2 data is level-1 data (WOUDC extCSV format) that has been further processed (such as interpolated, re-gridded, smoothed or other) for analysis, or input into other software etc.  For example, UMKEHR level-2 files are produced by additional processing of level-1 files.  (level-2 data is indicated within extCSV files by a “2” in the level field of the CONTENT table.  See Sec. 3.2.1.1).
+
 ### 3.1.1 Extended CSV syntax Rules
 The main file format used by the WOUDC is an extended Comma Separated Value (extendedCSV or extCSV for short) which extends the standard CSV syntax rules to support comments and multiple data content (tables) within individual files. Since the extCSV formats in plain text (ASCII), they are platform/OS neutral and thus can be imported easily into many analytical tools.
 
@@ -258,10 +265,7 @@ Table 3.2-1 and Table 3.2-2 outline the tables required in all the WOUDC data fi
 
 **Category**: Sub group of data submitted (i.e., Ozonesonde or Lidar)
 
-**Level**: The level refers to the data product.
-Level 0: raw or primary data.
-Level 1: processed data ready for publication.
-Level 2: data interpolated or re-gridded Level 1 data.
+**Level**: The Level refers to the data product. Acceptable values are “1” for data that has been formatted into WOUDC extCSV format (and therefore ready for submission to WOUDC), or “2” for data that has also been interpolated, re-gridded or otherwise processed. (Note that level is not the same as Version as described in 3.2.1.2 – Version is used to indicate the “revision” of a file, where Level is used to indicate the “processing stage” of a file.   (There may be several versions of both level-1 and level-2 files). 
 
 **Form**: The version of the data format to follow. The initial specification for the `FORM` (value=1) refers to the basic table descriptions. If an existing table is altered or a new table added, the `FORM` index will be increased. For example, a data table already defined with form=1, with a specific number of columns, then the addition of one or more columns to that table would require the Form value to be incremented by one for each change. The `FORM` (index) value is intended as a file format reader indicator of the type of data tables to follow, to assist programmers with reading the file. Changes to this index will be made through the WOUDC only.
 
@@ -337,6 +341,48 @@ Below is an example of a header. This header includes all the required header ta
 `#TIMESTAMP`
 `UTCOffset,Date,Time`
 `+00:00:00,1999-04-28,23:15:00`
+
+#### 3.2.1.8 Metadata Table Configuration ####
+Below is a table that summarizes the required tables in WOUDC-EXTCSV file for different datasets.
+
+***Table 3.2-3 - Required tables for different datasets***
+
+| Dataset | Table Name | Required/Optional | Number of Occurences | Incompatible |
+|--------|--------|--------|--------|--------|
+|`Common`|`#CONTENT`|`Required`|`1`|`N/A`|
+|`Common`|`#DATA_GENERATION`|`Required`|`1`|`N/A`|
+|`Common`|`#PLATFORM`|`Required`|`1`|`N/A`|
+|`Common`|`#INSTRUMENT`|`Required`|`1`|`N/A`|
+|`Common`|`#LOCATION`|`Required`|`1`|`N/A`|
+|`Board-band`|`#TIMESTAMP`|`Required`|`1`|`N/A`|
+|`Board-band`|`#DIFFUSE`|`Required`|`1`|`#GLOBAL`|
+|`Board-band`|`#GLOBAL`|`Required`|`1`|`#DIFFUSE`|
+|`Lidar`|`#TIMASTAMP`|`Required`|`1`|`N/A`|
+|`Lidar`|`#OZONE_SUMMARY`|`Required`|`1+`|`N/A`|
+|`Lidar`|`#OZONE_PROFILE`|`Required`|`1+`|`N/A`|
+|`Multi-band`|`#TIMESTAMP`|`Required`|`1`|`N/A`|
+|`Multi-band`|`#GLOBAL`|`Required`|`1`|`#SIMULATANEOUS`|
+|`Multi-band`|`#SIMULATANEOUS`|`Required`|`1`|`#GLOBAL`|
+|`OzoneSonde`|`#TIMESTAMP`|`Reqiured`|`1`|`N/A`|
+|`OzoneSonde`|`#FLIGHT_SUMMRAY`|`Required`|`1`|`N/A`|
+|`OzoneSonde`|`#PROFILE`|`Required`|`1`|`N/A`|
+|`OzoneSonde`|`#AUXILIARY_DATA`|`Optional`|`1`|`N/A`|
+|`OzoneSonde`|`#PUMP_CORRECTION`|`Optional`|`1`|`N/A`|
+|`Spectral`|`#TIMESTAMP`|`Optional`|`1+`|`N/A`|
+|`Spectral`|`#GLOBAL_SUMMARY_NSF`|`Required`|`1+`|`#GLOBAL_SUMMARY`|
+|`Spectral`|`#GLOBAL_SUMMARY`|`Required`|`1+`|`#GLOBAL_SUMMARY_NSF`|
+|`Spectral`|`#GLOBAL`|`Required`|`1+`|`N/A`|
+|`TotalOzone`|`#TIMESTAMP`|`Required`|`2`|`N/A`|
+|`TotalOzone`|`#DAILY`|`Required`|`1`|`N/A`|
+|`TotalOzone`|`#MONTHLY`|`Optional`|`1`|`N/A`|
+|`TotalOzone`|`#SAOZ_DATA_V2`|`Optional`|`1`|`N/A`|
+|`TotalOzoneObs`|`#TIMESTAMP`|`Required`|`1`|`N/A`|
+|`TotalOzoneObs`|`#OBSERVATIONS`|`Required`|`1`|`N/A`|
+|`TotalOzoneObs`|`#DAILY_SUMMARY`|`Required`|`1`|`N/A`|
+|`UmkehrN14`|`#TIMESTAMP`|`Required`|`2`|`N/A`|
+|`UmkehrN14`|`#N14_VALUES`|`Required`|`1`|`N/A`|
+|`UmkehrN14 level 2`|`#TIMESTAMP`|`Required`|`2`|`N/A`|
+|`UmkehrN14 level 2`|`#C_PROFILE`|`Required`|`1`|`N/A`|
 
 ## 3.3 Ozone Specific Data Content
 ### 3.3.1 Introduction
