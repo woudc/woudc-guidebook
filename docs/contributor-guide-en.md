@@ -9,6 +9,7 @@ The WOUDC website is used to update information and serves as a virtual "bulleti
 
 # Table of Contents
 [Chapter 1 Introduction](#chapter-1-introduction)
+
   * 1.1 [Intended Audience](#11-intended-audience)
   * 1.2 [Purpose](#12-purpose)
   * 1.3 [Document Location](#13-document-location)
@@ -17,12 +18,14 @@ The WOUDC website is used to update information and serves as a virtual "bulleti
   * 1.6 [Contributing to WOUDC](#16-contributing-to-woudc)
 
 [Chapter 2 Data Submission Procedure](#chapter-2-data-submission-procedure)
+
   * 2.1 [Contributor Registration](#21-contributor-registration)
   * 2.2 [Station Registration](#22-station-registration)
   * 2.3 [Data Submission](#23-data-submission)
   * 2.4 [Data Type](#24-data-types)
 
 [Chapter 3 Standard Data Format](#chapter-3-standard-data-format)
+
   * 3.1 [The WOUDC Data Format Standard](#31-the-woudc-data-format-standard)
     * 3.1.1 [Extended CSV syntax Rules] (#311-extended-csv-syntax-rules)
   * 3.2 [The WOUDC extCSV Data File Metadata](#32-the-woudc-extcsv-data-file-metadata)
@@ -44,6 +47,7 @@ The WOUDC website is used to update information and serves as a virtual "bulleti
     * 3.4.6 [Ancillary and Auxiliary Data](#346-category-ancillary-and-auxiliary-data)i
 
 [Chapter 4 Data Handling](#chapter-4-data-handling)
+
   * 4.1 [Data Policy](#41-data-policy)
   * 4.2 [Data Flow and Processing](#42-data-flow-and-processing)
 
@@ -52,12 +56,14 @@ The WOUDC website is used to update information and serves as a virtual "bulleti
 [Chapter 6 Access and Data Retrieval](#chapter-6-access-and-data-retrieval)
 
 [Chapter 7 Contact](#chapter-7-contact)
+
   * 7.1 [Contact Page](#71-contact-page)
   * 7.2 [Address](#72-address)
 
 [Chapter 8 References](#chapter-8-references)
 
-[Appendix A    Examples](#appendix-a-examples)
+[Appendix A Examples](#appendix-a-examples)
+
   * A.1 [Lidar Example](#a1-lidar-example)
   * A.2 [Microwave Example](#a2-microwave-example)
   * A.3 [Ozonesonde Example](#a3-ozonesonde-example)
@@ -88,7 +94,7 @@ The purpose of this document is to describe the procedures for data submissions 
 As the WOUDC is further developed, this guide will be updated accordingly and will continue to be posted electronically on the WOUDC website. The WOUDC website is used to update information and serve as a virtual "bulletin board". As this guide is further developed, use the website to retrieve the latest version.
 
 ## 1.3 Document Location
-The canonical location of this document is: [http://woudc.org/archive/Documentation/GuideBooks/woudc-contributor-guide-en.pdf](http://woudc.org/archive/Documentation/GuideBooks/woudc-contributor-guide-en.pdf). In the event of discrepancy, the document location is to be considered normative.
+The canonical location of this document is [http://guide.woudc.org](http://guide.woudc.org). In the event of discrepancy, the document location is to be considered normative.
 
 ## 1.4 Document History and Update
 In the past, the contributor's guidebook had been split into two different guidebooks: one for ozone data submissions [1] and one for ultraviolet data submissions [2]. This guidebook unifies them in order to provide more clear and consistent documentation.
@@ -129,7 +135,7 @@ The application process consists of 4 steps:
 
 A flow chart highlighting the contributor registration procedure can be found in Figure 1.
 
-Figure 1 - Contributor registration procedure
+![Figure 1 - Contributor registration procedure](img/contributor-registration-procedure-en.jpg)
 
 ## 2.2 Station Registration
 Once a contributor has registered with the WOUDC as indicated in [section 2.1](#21-contributor-registration), additional stations or amendments to existing station information can be registered by submitting a new GAW ID or updating station information with GAWSIS:
@@ -155,7 +161,7 @@ Once a contributor has been registered:
 
 A flow chart highlighting the data submission procedure can be found in Figure 2.
 
-Figure 2 - Data submission procedure
+![Figure 2 - Data submission procedure](img/data-submission-procedure-en.jpg)
 
 !!! md-alert ""
     **Note:** The details of transferring files with FTP depend on your computer's operating system and FTP client software.
@@ -205,14 +211,15 @@ The following are the extended CSV syntax rules:
 
 Example:
 
-<p><code>* The following data are simulated...
-\#TABLENAME
+```
+* The following data are simulated...
+#TABLENAME
 Field1, Field2, Comment
 12,35.6,Clear sky.
 12.5,,Thunderstorm (can't measure Y).
 13,55.5,"It's raining, it's pouring!"
 13.5,70,"Better start ""The Ark""."
-</code></p>
+```
 
 The following are the WOUDC content rules:
 
@@ -221,19 +228,22 @@ The following are the WOUDC content rules:
 - Trailing nulls are assumed for unspecified data attributes.
 - Each file must contain only one (single) instance of the static metadata tables (`#CONTENT`, `#DATA_GENERATION`, `#INSTRUMENT`, and `#PLATFORM`) and apply to all data within the file.
 - Each file must contain at least one instance of the dynamic metadata tables (`#LOCATION`, and `#TIMESTAMP`) and are applied until they are re-stated. Class content that use the fields of these tables can modify the attributes (i.e., time can be updated by individual samples).
-- Further information about site conditions, meteorology, sky images, etc. may be included as comments or by other tables generated at the discretion of the data originator. For example, if a data originator wishes to indicate an occurrence of a special note ("instrument was bumped while sampling") then a comment is reasonable. Dynamic variations occurring instantaneously such as meteorology (e.g. sky or wind conditions) or the reporting of calibration data would be represented in a table.
+- Further information about site conditions, meteorology, sky images, etc. may be included as comments or by other tables generated at the discretion of the data originator. For example, if a data originator wishes to indicate an occurrence of a special note ("instrument was bumped while sampling") then a comment is reasonable. Dynamic variations occurring instantaneously such as meteorology (e.g. sky or wind conditions) or the reporting of calibration data would be represented in a table.
 
-<p><code>Example:
+Example:
+```
 #TABLENAME
 Field1,Field2,Field3
 Datum1,Datum2,Datum3
 *Table comment
 </code></p>
+```
 
-<p><code>Example:
+Example:
+```
 #SITE_METEOROLOGY
 Date,Time,Temperature,Pressure,WindDirection,WindSpeed
-</code></p>
+```
 
 ## 3.2 The WOUDC extCSV Data File Metadata
 ### 3.2.1 Introduction
@@ -274,7 +284,7 @@ Table 3.2-1 and Table 3.2-2 outline the tables required in all the WOUDC data fi
 
 **Agency**: The acronym of the submitting Agency.
 
-**Version**: Data version specified by the submitting Agency. These versions have the form "major.minor" (e.g., 3.2) where major values are incremented with changes to the processing algorithm and minor values are incremented when the characterisation or calibration values have changed. Note: minor values are reset to zero with changes to the processing algorithm.
+**Version**: Data version specified by the submitting Agency. These versions have the form "major.minor" (e.g., 3.2) where major values are incremented with changes to the processing algorithm and minor values are incremented when the characterisation or calibration values have changed. Note: minor values are reset to zero with changes to the processing algorithm.
 
 **ScientificAuthority**: The person(s) responsible for the data quality at the submitting Agency.
 
@@ -290,7 +300,7 @@ Table 3.2-1 and Table 3.2-2 outline the tables required in all the WOUDC data fi
 **GAW_ID**: three-letter GAW ID as issued by GAWSIS, if available (recommended).
 
 #### 3.2.1.4 Instrument
-**Name**: Common name of instrument. For example, the Brewer spectrophotometer is called the "Brewer" wheras the Brewer-Mast ozonesonde is called the "Brewer-Mast". Refer to the WOUDC website for a listing: [http://woudc.org/data/instruments](http://woudc.org/data/instruments).
+**Name**: Common name of instrument. For example, the Brewer spectrophotometer is called the "Brewer" wheras the Brewer-Mast ozonesonde is called the "Brewer-Mast". Refer to the WOUDC website for a listing: [http://woudc.org/data/instruments](http://woudc.org/data/instruments).
 
 **Model**: Model ID where applicable. Refer to the WOUDC instrument list: [http://woudc.org/data/instruments](http://woudc.org/data/instruments)
 
@@ -566,7 +576,7 @@ Table 3.3-3 outlines the tables needed for the category Ozonesonde (column Table
 **Number**: Interface card serial number.
 
 #### 3.3.4.4 SAMPLING_METHOD
-**TypeOzoneFreeAir**: Technique used to obtain ozone free air at the launch site just prior to launch (example would be "activated charcoal filter").
+**TypeOzoneFreeAir**: Technique used to obtain ozone free air at the launch site just prior to launch (example would be "activated charcoal filter").
 
 **CorrectionWettingFlow**: Factor applied to pump flow rate to compensate for using nonsaturated air during pre-flight calibration.
 
@@ -1240,7 +1250,7 @@ Essentially, data from contributors is received, processed, and archived. Once f
 - extCSV conforms syntactically to GAW-WOUDC specifications;
 - metadata validation which makes sure the values contained in the headers (`#TIMESTAMP`, `#PLATFORM`, `#INSTRUMENT`, `#CONTENT`, `#DATA_GENERATION`, `#LOCATION`) are accurate and consistent;
 - unique table validation which are sets of tests used to validate dataset specific tables; and
-- values are modified in accordance with â€œno-touchâ€ policy (i.e., minimal syntactical updates).
+- values are modified in accordance with "no-touch" policy (i.e., minimal syntactical updates).
 
 The extCSV that emerges once it has gone through FLV is a clean version of the original form. Once the extCSV has successfully passed the taxonomy validation, URI validation, and FLV, the files is ready to be ingested into the database. Any errors compiled throughout the process are provided to the contributor in order to help remediate the errors for an easier ingestion of their data.
 
@@ -1253,7 +1263,7 @@ At a high level, the following is a summary of QA checks performed:
 
 - Checks if the incoming extCSV file conforms to the extCSV specification
         - Checks the format of the file
-	- Checks all tables and fields in the file, etc.
+ - Checks all tables and fields in the file, etc.
 
 **Metadata Validation**
 
@@ -1264,7 +1274,7 @@ At a high level, the following is a summary of QA checks performed:
 
 - Checks that all dates in the file are consistent (e.g. the generation date of the file does not precede the observation date, etc.)
 - Checks the derived values in the file (e.g. TotalOzone `#MONTHLY` values)
-	- Corrects if the values are wrong; fills in if missing
+ - Corrects if the values are wrong; fills in if missing
 
 Initially, a file will be tested for adherence to the file format specifications, but later, higher level statistical summaries may be generated, which identify anomalous values, calibration problems, etc.. Although the later examples involve more detailed knowledge of the data, the archive already includes enough data to make some critical judgments and general assessments about the data. As the volume and statistical knowledge increase, the scope of these assessments will be broadened.
 

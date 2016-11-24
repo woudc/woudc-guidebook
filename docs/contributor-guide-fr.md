@@ -12,6 +12,7 @@ Le site Web du WOUDC est utilisé pour mettre à jour les renseignements et comm
 
 # Table des matières
 [Chapitre 1 Introduction](#chapitre-1-introduction)
+
   * 1.1 [Public cible](#11-public-cible)
   * 1.2 [But](#12-but)
   * 1.3 [Emplacement du document](#13-emplacement-du-document)
@@ -20,12 +21,14 @@ Le site Web du WOUDC est utilisé pour mettre à jour les renseignements et comm
   * 1.6 [Contribution au WOUDC](#16-contribution-au-woudc)
 
 [Chapitre 2 Procédure de soumission de données](#chapitre-2-procédure-de-soumission-de-données)
+
   * 2.1 [Inscription des contributeurs](#21-inscription-des-contributeurs)
   * 2.2 [Inscription d’une station](#22-inscription-dune-station)
   * 2.3 [Soumission des données](#23-soumission-des-données)
   * 2.4 [Types de données](#24-types-de-données)
 
 [Chapitre 3 Format de données standard](#chapitre-3-format-de-données-standard)
+
   * 3.1 [Format de données standard du WOUDC ](#31-format-de-données-standard-du-woudc)
     * 3.1.1 [Règles de syntaxe du format CSV étendu] (#311-règles-de-syntaxe-du-format-csv-étendu)
   * 3.2 [Métadonnées des fichiers de données extCSV du WOUDC](#32-métadonnées-des-fichiers-de-données-extcsv-du-woudc)
@@ -47,6 +50,7 @@ Le site Web du WOUDC est utilisé pour mettre à jour les renseignements et comm
     * 3.4.6 [Données accessoires et auxiliaires ](#346-données-accessoires-et-auxiliaires)
 
 [Chapitre 4 Traitement des données](#chapter-4-chapitre-4-traitement-des-données)
+
   * 4.1 [Politique sur les données](#41-politique-sur-les-données)
   * 4.2 [Flux et traitement des données](#42-flux-et-traitement-des-données)
 
@@ -55,12 +59,14 @@ Le site Web du WOUDC est utilisé pour mettre à jour les renseignements et comm
 [Chapitre 6 Consultation et extraction de données](#chapitre-6-consultation-et-extraction-de-données)
 
 [Chapitre 7 Coordonnées du WOUDC](#chapitre-7-coordonnées-du-woudc)
+
   * 7.1 [Le page de contact](#71-le-page-de-contact)
   * 7.2 [Adresse](#72-adresse)
 
 [Chapitre 8 Références](#chapitre-8-références)
 
 [Appendice A Exemples](#appendice-a-exemples)
+
   * A.1 [Exemple pour la catégorie Lidar ](#a1-exemple-pour-la-catégorie-lidar)
   * A.2 [Exemple pour la catégorie Microwave ](#a2-exemple-pour-la-catégorie-microwave)
   * A.3 [Exemple pour la catégorie Ozonesonde ](#a3-exemple-pour-la-catégorie-ozonesonde)
@@ -72,15 +78,15 @@ Le site Web du WOUDC est utilisé pour mettre à jour les renseignements et comm
   * A.9 [Exemple pour la catégorie Broadband ](#a9-exemple-pour-la-catégorie-broadband)
   * A.10 [Exemple pour la catégorie Pyranometer ](#a10-exemple-pour-la-catégorie-pyranometer)
 
-# Chapitre 1	Introduction
+# Chapitre 1 Introduction
 Le Centre mondial de données sur l’ozone et le rayonnement ultraviolet (WOUDC) a vu le jour en 1960 sous le nom de Centre mondial des données sur l’ozone (WODC). En 1992, Environnement Canada a accepté que les données sur le rayonnement ultraviolet soient ajoutées au WODC, et c’est à ce moment-là que le WODC est devenu le WOUDC. Le WOUDC est exploité par le Service météorologique du Canada, une division d’Environnement et Changement climatique Canada.
 
 Le WOUDC est régi par le programme de Veille de l’atmosphère du globe (VAG) de l’Organisation météorologique mondiale (OMM). Les groupes consultatifs scientifiques de l’OMM fournissent des conseils au WOUDC sur les enjeux liés à l’ozone et au rayonnement ultraviolet.
 
-## 1.1	Public cible
+## 1.1 Public cible
 Le présent document est destiné à être utilisé par les contributeurs du centre de données, mais il peut également s’avérer utile pour les utilisateurs du centre de données et les opérateurs du WOUDC.
 
-## 1.2	But
+## 1.2 But
 Le but de ce document est de décrire les procédures pour la soumission de données au WOUDC. Cela inclut, sans toutefois s’y limiter : 
 
 - l’inscription des contributeurs;
@@ -92,16 +98,16 @@ Le but de ce document est de décrire les procédures pour la soumission de donn
 
 Le guide sera mis à jour au fil de l’évolution du WOUDC et sera accessible électroniquement sur le site Web du WOUDC. Le site Web du WOUDC est utilisé pour mettre à jour les renseignements et comme « babillard » virtuel. Vous pouvez accéder au site Web pour télécharger la version la plus récente du guide, s’il y a lieu. 
 
-## 1.3	Emplacement du document
-L'emplacement de la version du document faisant autorité est le suivant : [http://woudc.org/archive/documentation/guidebooks/woudc-contributor-guide-fr.pdf](http://woudc.org/archive/documentation/guidebooks/woudc-contributor-guide-fr.pdf). Les versions ou copies du document qui seraient disponibles ailleurs qu'à cet emplacement ne font pas autorité.
+## 1.3 Emplacement du document
+L'emplacement de la version du document faisant autorité est le suivant [http://guide.woudc.org](http://guide.woudc.org). Les versions ou copies du document qui seraient disponibles ailleurs qu'à cet emplacement ne font pas autorité.
 
-## 1.4	Historique et mise à jour du document
+## 1.4 Historique et mise à jour du document
 Dans le passé, le guide du contributeur était divisé en deux guides distincts : le premier portait sur la soumission de données sur l’ozone [[1](#chapitre-8-références)] et le second, sur la soumission de données sur le rayonnement ultraviolet [[2](#chapitre-8-références)]. Ils ont été combinés dans le but d’offrir un document plus clair et uniforme. 
 
-## 1.5 	Site Web
+## 1.5  Site Web
 L’adresse du site Web du WOUDC est [http://woudc.org](http://woudc.org). Il offre une application Web pour la diffusion de données sur l’ozone et le rayonnement ultraviolet, des produits dérivés et des métadonnées.
 
-## 1.6	Contribution au WOUDC
+## 1.6 Contribution au WOUDC
 Le WOUDC est le système d’archivage standard pour les données sur l’ozone et le rayonnement ultraviolet. Les contributeurs de données profitent des avantages suivants : 
 - un service de stockage et de sauvegarde de données sans frais, indépendant et sécuritaire; 
 - un accès Web 24 heures par jour, 7 jours par semaine à leurs données par le biais de divers mécanismes de consultation de données offrant une expérience utilisateur améliorée, ainsi qu'un accès multi-application;
@@ -123,8 +129,8 @@ Si les données à soumettre ne sont pas liées à l’ozone ni au rayonnement u
 - Centre mondial de données relatives au gaz à effet de serre [http://ds.data.jma.go.jp/gmd/wdcgg](http://ds.data.jma.go.jp/gmd/wdcgg)
 
 
-# Chapitre 2	Procédure de soumission de données
-## 2.1	Inscription des contributeurs
+# Chapitre 2 Procédure de soumission de données
+## 2.1 Inscription des contributeurs
 La demande d'inscription compte quatre étapes :
 
 1. Le nouveau contributeur envoie une demande d'inscription à l'opérateur du WOUDC, à [http://woudc.org/contact.php?lang=fr](http://woudc.org/contact.php?lang=fr), dans laquelle il indique pourquoi il souhaite contribuer au WOUDC.
@@ -133,10 +139,10 @@ La demande d'inscription compte quatre étapes :
 4. Une fois la station incluse dans la base de données du WOUDC, l'opérateur du centre de données envoie au contributeur ses nouveaux justificatifs de connexion privés pour le client FTP, qu'il utilisera pour télécharger des données.
 
 La Figure 1 est un diagramme illustrant la procédure d’inscription des contributeurs. 
-![pic](/uploads/fbdaf6972f05205073563c4f54bdce50/pic.png)
-Figure 1 – Procédure d’inscription des contributeurs
 
-## 2.2	Inscription d’une station
+![Figure 1 - Procédure d’inscription des contributeurs](img/data-submission-procedure-fr.jpg)
+
+## 2.2 Inscription d’une station
 Après s'être inscrit au WOUDC de la façon indiquée à la [section 2.1](#21-inscription-des-contributeurs), le contributeur peut ajouter des stations ou modifier l’information sur une station existante en soumettant un nouveau ID VAG ou en mettant à jour l'information sur une station avec GAWSIS :
 
 1. Le contributeur obtient un nouvel ID VAG pour la nouvelle station ou modifie l'information sur une station existante à partir de GAWSIS [http://gaw.empa.ch/gawsis/codes.request.asp](http://gaw.empa.ch/gawsis/codes.request.asp).
@@ -144,7 +150,7 @@ Après s'être inscrit au WOUDC de la façon indiquée à la [section 2.1](#21-i
 3. L'opérateur inclut la nouvelle station dans la base de données du WOUDC ou met à jour l'information sur une station existante.
 
 
-## 2.3	Soumission des données
+## 2.3 Soumission des données
 Le WOUDC permet aux contributeurs de soumettre des données par le biais d’un client de protocole de transfert de fichiers (protocole FTP). Le site FTP du WOUDC est accessible à l’adresse suivante : [ftp://ftp.woudc.org](ftp://ftp.woudc.org). Il faut un nom d’utilisateur et un mot de passe valides pour pouvoir transférer des données au WOUDC. 
 
 !!! md-alert ""
@@ -160,13 +166,13 @@ Une fois que le contributeur est dûment inscrit :
 6. Si aucun problème n’est relevé, les données sont publiées sur le site Web et peuvent alors être téléchargées à partir du site Web, des services Web géospatiaux ou des dossiers accessibles sur le Web (WAF).
 
 La Figure 2 est un diagramme illustrant la procédure de soumission de données.
-![pic2](/uploads/d38a507929e9eadcf1ec5458b2c52910/pic2.png)
-Figure 2 – Procédure de soumission de données
+
+![Figure 2 - Procédure de soumission de données](img/data-submission-procedure-fr.jpg)
 
 !!! md-alert ""
     **Remarque :** La procédure détaillée pour le transfert de fichiers par FTP varie en fonction du système d’exploitation de votre ordinateur et de votre logiciel client FTP.
 
-## 2.4	Types de données
+## 2.4 Types de données
 Les catégories de données suivantes ont été définies pour le moment (en anglais seulement) : 
 
 ***Ozone***
@@ -183,8 +189,8 @@ Les catégories de données suivantes ont été définies pour le moment (en ang
 - Pyranometer (Pyranomètre)
 
 
-# Chapitre 3	Format de données standard
-## 3.1	Format de données standard du WOUDC 
+# Chapitre 3 Format de données standard
+## 3.1 Format de données standard du WOUDC 
 Les contributeurs de données doivent soumettre leurs données au WOUDC en texte ASCII dans un fichier au format de valeurs séparées par des virgules (CSV). Le codage de caractères UTF-8 est nécessaire pour la soumission de données. Le format CSV « étendu » du WOUDC (ou extCSV) permet de définir de multiples tableaux, de multiples champs, des commentaires sur les tableaux, des commentaires sur les fichiers et des groupes de tableaux (tableaux réunis pour former des ensembles) à l’intérieur d’un fichier CSV unique. Le format de fichier extCSV supporte à la fois les renseignements sur les métadonnées et les données de haute résolution (temporelles et spatiales). Le WOUDC exige que les contributeurs soumettent leurs données dans ce format standard afin de faciliter le traitement efficace des ensembles de données. 
 
 Les fichiers extCSV comportent deux sections principales : la section des métadonnées et la section du contenu des données. On peut considérer la section des métadonnées comme l’« en tête » d’un fichier de données, étant donné qu’elle est commune à tous les fichiers du WOUDC sur le plan du format et du contenu des tableaux. La section sur les données est propre à chacune des catégories (ou types) de données, comme TotalOzone et Ozonesonde.
@@ -196,7 +202,7 @@ Les fichiers CSV < étendu> (extCSV) fournissent un format commun qui est indép
 
 - level 2: les données de niveau 2 sont des données de niveau 1 (le format extCSV WOUDC) qui a été transformés (comme interpolée, remaillées, lissée ou autre) pour l'analyse ou l'entrée dans un autre logiciel. Par exemple, les fichiers pour Umkehr au Level 2 sont produites par un traitement supplémentaire de fichiers de Level 1 (les données de Level 2 est indiqué dans les fichiers en format extCSV par un "2" dans le champ du tableau de contenu de level. Voir Section 3.2.1.1) 
 
-### 3.1.1	Règles de syntaxe du format CSV étendu
+### 3.1.1 Règles de syntaxe du format CSV étendu
 Le principal format de fichier utilisé par le WOUDC est le format extCSV (format de valeurs séparées par des virgules étendu), qui élargit les règles de syntaxe du format CSV standard de manière à pouvoir insérer des commentaires et de multiples contenus de données (tableaux) dans un seul et même fichier. Étant donné que les fichiers extCSV sont formatés en texte clair (ASCII), ils peuvent être utilisés dans l’ensemble des plateformes/systèmes d’exploitation et, par conséquent, être facilement importés dans divers outils d’analyse. 
 
 Un fichier extCSV est composé de deux sections : un en-tête de métadonnées et des tableaux de données. Les règles relatives au format et au contenu des en-têtes de données sont strictes, mais celles liées aux tableaux de données sont plus souples et adaptées en fonction des types de données. 
@@ -213,14 +219,15 @@ Voici les règles de syntaxe du format CSV étendu :
 
 Example:
 
-<p><code>* The following data are simulated...
-\#TABLENAME
+```
+* The following data are simulated...
+#TABLENAME
 Field1, Field2, Comment
 12,35.6,Clear sky.
 12.5,,Thunderstorm (can't measure Y).
 13,55.5,"It's raining, it's pouring!"
 13.5,70,"Better start ""The Ark""."
-</code></p>
+```
 
 Voici les règles relatives au contenu du WOUDC :
 
@@ -231,21 +238,22 @@ Voici les règles relatives au contenu du WOUDC :
 - Chaque fichier doit contenir au moins une occurrence des tableaux de métadonnées dynamiques (`#LOCATION` et `#TIMESTAMP`), lesquelles sont en vigueur jusqu'à ce qu'elles soient mises à jour. Les données qui figurent dans les champs de ces tableaux peuvent modifier les attributs (p. ex., l'heure peut être mise à jour par des échantillons individuels). 
 - Il est possible d’inclure d’autres renseignements sur les conditions et la météorologie des sites, des images du ciel, etc. sous forme de commentaires ou à l’aide d’autres tableaux générés à la discrétion du contributeur. Par exemple, si un contributeur souhaite insérer une remarque spéciale (« quelqu’un a heurté l’instrument pendant l’échantillonnage »), il est raisonnable de le faire au moyen d’un commentaire. Les variations dynamiques instantanées comme la météorologie (p. ex., conditions du ciel ou du vent) ou les données d’étalonnage doivent être présentées dans un tableau. 
 
-
-<p><code>Example:
+Example:
+```
 #TABLENAME
 Field1,Field2,Field3
 Datum1,Datum2,Datum3
 *Table comment
-</code></p>
+```
 
-<p><code>Example:
+Example:
+```
 #SITE_METEOROLOGY
 Date,Time,Temperature,Pressure,WindDirection,WindSpeed
-</code></p>
+```
 
-## 3.2	Métadonnées des fichiers de données extCSV du WOUDC
-### 3.2.1	Introduction
+## 3.2 Métadonnées des fichiers de données extCSV du WOUDC
+### 3.2.1 Introduction
 L’en-tête du WOUDC renferme des métadonnées qui sont communes à tous les fichiers de données du WOUDC. Il est essentiel que les champs de l'en-tête soient toujours les mêmes. Ainsi, si on reçoit un fichier de données en double, il faut qu’au moins une des variables de l’en-tête ait été modifiée pour que le fichier soit accepté dans les archives. 
 
 Le Tableau 3.2 1 et le Tableau 3.2 2 présentent les tableaux devant se trouver dans tous les fichiers de données du WOUDC (colonne « Nom du tableau ») et le nom de leurs champs respectifs (colonne « Nom des champs (colonnes) »). Les [sections 3.2.1.1](#3211-tableau-content) à [3.2.1.6](#3216-tableau-timestamp) renferment des descriptions plus détaillées des champs de l’ensemble des tableaux. 
@@ -269,7 +277,7 @@ Le Tableau 3.2 1 et le Tableau 3.2 2 présentent les tableaux devant se trouver 
 !!! md-alert "" 
     **Remarque :** S’ils le veulent, les contributeurs peuvent inclure un historique des versions de leur fichier dans un bloc de commentaires à la fin du fichier extCSV. Les dates des versions doivent être présentées par ordre chronologique décroissant (date la plus récente en premier). 
 
-#### 3.2.1.1	Tableau CONTENT
+#### 3.2.1.1 Tableau CONTENT
 **Class**: Le type général de données qui suivent; la valeur WOUDC doit être utilisée ici.
 
 **Category**: Sous-groupe des données soumises (p. ex., Ozonesonde ou Lidar). 
@@ -279,7 +287,7 @@ pour WOUDC (et donc les données sont prêtes à être soumis à WOUDC), ou "2" 
 
 **Form**: La version du format des données qui suivent. La valeur initiale du champ `FORM` (valeur=1) fait référence à la description de base du tableau. Si un tableau existant est modifié ou qu’un nouveau tableau est ajouté, la valeur du champ `FORM` augmente. Prenons l’exemple d’un tableau composé d’un nombre donné de colonnes et dont la valeur du champ `FORM` est réglée à « 1 ». Si on ajoute une ou plusieurs colonnes au tableau, la valeur du champ `FORM` augmente de un après chaque modification. La valeur du champ `FORM` (index) se veut un indicateur du lecteur de fichiers requis pour les tableaux de données qui suivent, pour aider les programmeurs à lire le fichier. Seul le WOUDC peut apporter des modifications à cet index. 
 
-#### 3.2.1.2	Tableau DATA GENERATION
+#### 3.2.1.2 Tableau DATA GENERATION
 **Date**: Date à laquelle le fichier a été traité ou généré. La date est affichée selon le format de la norme ISO 8610, c.-à-d. AAAA-MM-JJ. Exemple : 2015-12-31.
 
 **Agency**: Sigle de l’organisation qui a soumis les données.
@@ -288,7 +296,7 @@ pour WOUDC (et donc les données sont prêtes à être soumis à WOUDC), ou "2" 
 
 **ScientificAuthority**: Nom de la ou des personnes responsables de la qualité des données au sein de l’organisation qui a soumis les données. 
 
-#### 3.2.1.3	Tableau PLATFORM
+#### 3.2.1.3 Tableau PLATFORM
 **Type**: Type de plateforme d’observation : stationnaire (STN) ou mobile (c.-à-d., aéroportée [FLT], embarquée [SHP], etc.). La valeur par défaut est STN. Par exemple, ce champ permet de tenir compte de l’installation à bord d’un aéronef effectuant des sondages d’ozone d’un système GPS qui détermine l’emplacement exact des sondages. Le cas échéant, il faut choisir FLT au lieu de STN.
 
 **ID**: ID de station ou de vol unique attribué par le WOUDC à chacune des plateformes inscrites. 
@@ -299,21 +307,21 @@ pour WOUDC (et donc les données sont prêtes à être soumis à WOUDC), ou "2" 
 
 **GAW_ID**: ID VAG de trois lettres attribué par le système GAWSIS, s’il y a lieu (recommandé).
 
-#### 3.2.1.4	Tableau INSTRUMENT
+#### 3.2.1.4 Tableau INSTRUMENT
 **Name**: Nom courant de l’instrument. Par exemple, le spectrophotomètre Brewer est appelé « Brewer » et la sonde d’ozone Brewer-Mast est appelée « Brewer-Mast ». Reportez-vous à la liste des instruments sur le site Web du WOUDC : [http://woudc.org/data/instruments/?lang=fr](http://woudc.org/data/instruments/?lang=fr).
 
 **Model**: ID du modèle, s’il y a lieu. Reportez-vous à la liste des instruments sur le site Web du WOUDC : [http://woudc.org/data/instruments/?lang=fr](http://woudc.org/data/instruments/?lang=fr)
 
 **Number**: Numéro de série de l’instrument, tel qu’il a été attribué par le fabricant.
 
-#### 3.2.1.5	Tableau LOCATION
+#### 3.2.1.5 Tableau LOCATION
 **Latitude**: Latitude de l’instrument. En règle générale, les instruments sont installés dans un lieu fixe à la même latitude que la plateforme à laquelle ils sont associés. Elle est exprimée en degrés (deg.) avec deux décimales significatives (valeur positive pour le Nord et négative pour le Sud).
 
 **Longitude**: Longitude de l’instrument. En règle générale, les instruments sont installés dans un lieu fixe à la même longitude que la plateforme à laquelle ils sont associés. Elle est exprimée en degrés (deg.) avec deux décimales significatives (valeur positive pour l’Est et négative pour l’Ouest). 
 
 **Height**: Altitude, élévation ou hauteur de la plateforme et de l’instrument au-dessus du niveau de la mer. En règle générale, les instruments sont installés dans un lieu fixe à la même altitude que la plateforme à laquelle ils sont associés. Elle est exprimée en mètres au-dessus du niveau de la mer. 
 
-#### 3.2.1.6	Tableau Timestamp
+#### 3.2.1.6 Tableau Timestamp
 **UTCOffset**: Le décalage UTC représente le temps qui doit être soustrait de l’heure locale pour obtenir le temps universel (où l’Est est positif et l’heure locale définie par le contributeur des données). Le décalage UTC est indiqué selon le format de la norme ISO 8601, c’est-à-dire hh:mm:ss. Par défaut, l’heure est donnée en UTC. Par conséquent, UTCOffset=+00:00:00. Si l’heure n’est pas donnée en UTC dans la section Data Content, alors l’heure correspond à l’heure locale et le décalage UTC doit être précisée avec une valeur autre que zéro.
 
 !!! md-alert ""
@@ -395,14 +403,14 @@ Dessous est un tableau qui récapitule les tables requises dans le fichier WOUDC
 |`UmkehrN14 level 2`|`#TIMESTAMP`|`Required`|`2`|`N/A`|
 |`UmkehrN14 level 2`|`#C_PROFILE`|`Required`|`1`|`N/A`|
 
-## 3.3	Contenu des données propres à l’ozone 
-### 3.3.1	Introduction
+## 3.3 Contenu des données propres à l’ozone 
+### 3.3.1 Introduction
 La présente section porte sur le contenu des données des différentes catégories de données relatives à l’ozone. Chaque catégorie comporte un ensemble de tableaux définis. Vous trouverez ci-après, pour chacun des tableaux, le nom des champs (colonnes) qu’ils contiennent, l’ordre de ces champs, selon lesquelles les données doivent être consignées. 
 
-#### 3.3.1.1	Lidar
+#### 3.3.1.1 Lidar
 Lidar est l’abréviation de l’expression « détection et télémétrie par ondes lumineuses) ». Il s’agit de données de télédétection dont la plage temporelle par fichier correspond à la durée d’une période d’observation (habituellement un ou deux jours pour l’obtention d’un profil unique).
 
-#### 3.3.1.2	Microwave
+#### 3.3.1.2 Microwave
 Cette catégorie de données contient des renseignements sur les profils verticaux de l’ozone. Il s’agit de données de télédétection dont la plage temporelle par fichier correspond à la durée d’une période d’observation (habituellement un ou deux jours pour l’obtention d’un profil unique).
 
 #### 3.3.1.3 Ozonesonde
@@ -414,10 +422,10 @@ Les observations de l’ozone total (TotalOzoneObs) sont des mesures de la colon
 #### 3.3.1.5 TotalOzone
 L’ozone total (TotalOzone) est une mesure de la colonne d’ozone total exprimée en unités Dobson. Il s’agit de données de télédétection dont la plage temporelle par fichier correspond à un mois de synthèses quotidiennes.
 
-#### 3.3.1.6	UmkehrN14
+#### 3.3.1.6 UmkehrN14
 Les mesures Umkehr (UmkehrN14) sont des profils d’ozone établis à l’aide de 14 valeurs N (qui correspondent à 14 angles du zénith solaire). Il s’agit de données de télédétection dont la plage temporelle par fichier correspond à un mois de synthèses quotidiennes.
 
-### 3.3.2	Catégorie : Lidar 
+### 3.3.2 Catégorie : Lidar 
 La catégorie Lidar comporte deux tableaux obligatoires : `#PROFILE_SUMMARY` et `#OZONE_PROFILE`.
 
 !!! md-alert ""
@@ -432,7 +440,7 @@ Le Tableau 3.3 1 présente les tableaux devant être remplis pour la catégorie 
 |`#PROFILE_SUMMARY`|`Altitudes, MinAltitude, MaxAltitude, StartDate, StartTime, EndDate, EndTime, PulsesAveraged`|
 |`#OZONE_PROFILE`|`Altitude, OzoneDensity, StandardError, RangeResolution, AirDensity, Temperature`|
 
-#### 3.3.2.1	Tableau PROFILE_SUMMARY
+#### 3.3.2.1 Tableau PROFILE_SUMMARY
 **Altitudes**: Nombre de niveaux (couches) observés.
 
 **MinAltitude**: Altitude minimale du profil en mètres (m).
@@ -449,7 +457,7 @@ Le Tableau 3.3 1 présente les tableaux devant être remplis pour la catégorie 
 
 **PulsesAveraged**: Nombre d’impulsions utilisées pour intégrer le profil.
 
-#### 3.3.2.2	Table OZONE_PROFILE
+#### 3.3.2.2 Table OZONE_PROFILE
 **Altitude**: Altitude (plage) en mètres (m).
 
 **OzoneDensity**: Densité (concentration) de l’ozone (molécules*cm-3).
@@ -465,7 +473,7 @@ Le Tableau 3.3 1 présente les tableaux devant être remplis pour la catégorie 
 #### 3.3.2.3 Exemple
 Vous trouverez un exemple de fichier de données pour la catégorie Lidar à l’[annexe A.1](#a1-exemple-pour-la-catégorie-lidar) et en ligne à l’adresse [http://woudc.org/archive/Documentation/Examples-extCSV/Lidar.csv](http://woudc.org/archive/Documentation/Examples-extCSV/Lidar.csv).
 
-### 3.3.3	Catégorie : Microwave
+### 3.3.3 Catégorie : Microwave
 La catégorie Microwave comporte deux tableaux obligatoires : `#PROFILE_SUMMARY` et `#OZONE_PROFILE`. 
 
 !!! md-alert ""
@@ -480,7 +488,7 @@ Le Tableau 3.3 2 présente les tableaux devant être remplis pour la catégorie 
 |`#PROFILE_SUMMARY`|`Levels, AveragingTime, ZenithAngle, NoiseTemperature, TTF, CalculatedSpectrum`|
 |`#OZONE_PROFILE`|`Altitude, OzoneVMR, VariableError, FixedError, SmoothingError, TotalError, A-priori, Temperature, Pressure`|
 
-#### 3.3.3.1	Tableau PROFILE_SUMMARY
+#### 3.3.3.1 Tableau PROFILE_SUMMARY
 **Levels**: Nombre de niveaux (couches) observés.
 
 **AveragingTime**: Durée moyenne
@@ -493,7 +501,7 @@ Le Tableau 3.3 2 présente les tableaux devant être remplis pour la catégorie 
 
 **CalculatedSpectrum**: État de la mesure – spectre calculé (K).
 
-#### 3.3.3.2	Tableau OZONE_PROFILE
+#### 3.3.3.2 Tableau OZONE_PROFILE
 **Altitude**: Altitude en mètres au-dessus du niveau de la mer.
 
 **OzoneVMR**: Rapport de mélange en volume (VMR) de l’ozone (ppm).
@@ -555,7 +563,7 @@ Le Tableau 3.3 3 présente les tableaux devant être remplis pour la catégorie 
 
 **OzonesondeResponseTime**: Temps de réponse à 1/e (en minutes) mesuré pendant le test de détérioration en laboratoire.
 
-#### 3.3.4.2	Tableau RADIOSONDE
+#### 3.3.4.2 Tableau RADIOSONDE
 **Manufacturer**: Fabricant de la radiosonde sur laquelle le capteur d’ozone est installé. 
 
 !!! md-alert ""
@@ -565,7 +573,7 @@ Le Tableau 3.3 3 présente les tableaux devant être remplis pour la catégorie 
 
 **Number**: Numéro de série de la radiosonde.
 
-#### 3.3.4.3	Tableau INTERFACE_CARD
+#### 3.3.4.3 Tableau INTERFACE_CARD
 **Manufacturer**: Fabricant de la carte d’interface entre la radiosonde et le capteur d’ozone. 
 
 !!! md-alert ""
@@ -575,7 +583,7 @@ Le Tableau 3.3 3 présente les tableaux devant être remplis pour la catégorie 
 
 **Number**: Numéro de série de la carte d’interface. 
 
-#### 3.3.4.4	Tableau SAMPLING_METHOD
+#### 3.3.4.4 Tableau SAMPLING_METHOD
 **TypeOzoneFreeAir**: Technique utilisée pour prélever de l’air dépourvue d’ozone au site de lancement avant le lancement de la radiosonde (p. ex., « filtre à charbon actif »).
 
 **CorrectionWettingFlow**: Facteur de correction appliqué au débit de la pompe pour compenser l’utilisation d’air non saturé au cours de l’étalonnage préalable au vol. 
@@ -594,19 +602,19 @@ Le Tableau 3.3 3 présente les tableaux devant être remplis pour la catégorie 
 
 **ProcessingSoftware**: Logiciel de traitement après vol.
 
-#### 3.3.4.5	Tableau PUMP_SETTINGS
+#### 3.3.4.5 Tableau PUMP_SETTINGS
 **MotorCurrent**: Courant électrique alimentant le moteur de la pompe (mA).
 
 **HeadPressure**: Pression maximale lorsque l’orifice de refoulement de la pompe est à l’arrêt (hPa).
 
 **VacuumPressure**: Pression minimale lorsque l’orifice d’aspiration de la pompe est à l’arrêt (hPa).
 
-#### 3.3.4.6	Tableau PUMP_CORRECTION
+#### 3.3.4.6 Tableau PUMP_CORRECTION
 **Pressure**: Niveau de pression en hectopascals (hPa).
 
 **PumpCorrectionFactor**: Facteur de correction appliqué au débit de la pompe en fonction du niveau de pression.
 
-#### 3.3.4.7	Tableau FLIGHT_SUMMARY
+#### 3.3.4.7 Tableau FLIGHT_SUMMARY
 **IntegratedO3**: Quantité intégrée d’ozone entre la plateforme de lancement et l’altitude d’éclatement du ballon (DU).
 
 **CorrectionCode**: Code de l’algorithme utilisé pour estimer la concentration de l’ozone (résiduel calculé) au-dessus de l’altitude d’éclatement du ballon jusqu’au sommet de l’atmosphère. (Voir le Tableau 3.3 4 à la [section 3.3.4.13](#33413-tableaux-de-codes)).
@@ -619,7 +627,7 @@ Le Tableau 3.3 3 présente les tableaux devant être remplis pour la catégorie 
 
 **SampleTemperatureType**: Méthode utilisée pour calculer la température de l’air échantillonné par la sonde d’ozone. Il peut s’agir d’une valeur estimative, d’une constante, ou d’une mesure prise par un capteur à thermistor installé dans la boîte, la pompe ou le tube d’admission.
 
-#### 3.3.4.8	Tableau OZONE_REFERENCE
+#### 3.3.4.8 Tableau OZONE_REFERENCE
 **Name**: Nom courant de l’instrument de mesure de l’ozone, par exemple « Brewer » ou « TOMS ». Pour la liste des instruments, voir le site Web du WOUDC :  [http://woudc.org/data/instruments/?lang=fr](http://woudc.org/data/instruments/?lang=fr).
 
 **Model**: ID du modèle, s’il y a lieu. Voir la liste des instruments du WOUDC :  [http://woudc.org/data/instruments/?lang=fr](http://woudc.org/data/instruments/?lang=fr).
@@ -639,7 +647,7 @@ Le Tableau 3.3 3 présente les tableaux devant être remplis pour la catégorie 
 
 **UTC_Mean**: Durée moyenne des observations (en heures décimales, UTC).
 
-#### 3.3.4.9	Tableau PROFILE
+#### 3.3.4.9 Tableau PROFILE
 **Duration**: Temps de vol écoulé depuis le lancement, exprimé en variables primaires.
 
 **Pressure**: Pression atmosphérique de chaque niveau, exprimée en hectopascals (hPa).
@@ -672,7 +680,7 @@ Le Tableau 3.3 3 présente les tableaux devant être remplis pour la catégorie 
 
 **Height**: Hauteur géographique (p. ex., à partir d’un GPS) (mètres au-dessus du niveau de la mer).
 
-#### 3.3.4.10	Tableau PROFILE_UNCERTAINTY
+#### 3.3.4.10 Tableau PROFILE_UNCERTAINTY
 Il faut saisir le degré estimatif d’incertitude (si disponible) relatif à chacun des paramètres de profil mesurés dans le tableau `#PROFILE`, en fonction de la durée. 
 
 **Duration**: Temps de vol écoulé depuis le lancement, exprimé en variables primaires.
@@ -708,17 +716,17 @@ Il faut saisir le degré estimatif d’incertitude (si disponible) relatif à ch
 **Height**: Hauteur géographique (p. ex., à partir d’un GPS) (mètres au-dessus du niveau de la mer).
 
 
-#### 3.3.4.11	Tableau PRELAUNCH
+#### 3.3.4.11 Tableau PRELAUNCH
 Données enregistrées par un système de télémétrie (c.-à-d. d'acquisition de données) avant le lancement de la sonde, y compris les vérifications de prélancement et les mesures de surface.
 
 Comme la durée est relative à l’heure du lancement (délai avant le lancement, en secondes), il s’agit d’une valeur négative. Tous les autres paramètres du tableau correspondent à ceux du tableau `#PROFILE_UNCERTAINTY` ([section 3.3.4.10](#33410-tableau-profile_uncertainty)).
 
-#### 3.3.4.12	Tableau DESELECTED_DATA
+#### 3.3.4.12 Tableau DESELECTED_DATA
 Données enregistrées par la sonde d’ozone qui ne sont pas consignées dans le tableau `#PROFILE`.
 
 Cela inclut les données qui ont été rejetées en raison de problèmes de télémétrie ou d’instrument présumés et les données enregistrées après l’éclatement du ballon (profil de descente). Les paramètres du tableau sont les mêmes que ceux du tableau `#PROFILE_UNCERTAINTY` ([section 3.3.4.10](#33410-tableau-profile_uncertainty)). La valeur `O3PartialPressure` peut être calculée, mais elle n’est pas obligatoire. 
 
-#### 3.3.4.13	Tableaux de codes
+#### 3.3.4.13 Tableaux de codes
 ***Tableau 3.3 4 – Codes d’algorithme de l’ozone résiduel (correction)***
 
 | Code de correction | Algorithme |
@@ -748,10 +756,10 @@ Ozone résiduel (DU) = 7,892 * pression partielle de l’ozone (mPa) à la haute
 |4|Moyenne de niveau|
 |Other codes|D’autres codes seront générés, au besoin, conformément au modèle simple ci-dessous :  <p></p>**Code de niveau – Description**: <table><tr><td>8</td><td>important pour la température</td></tr><tr><td>16</td><td>important pour l’ozone</td></tr><tr><td>32</td><td>important pour l’HR</td></tr> </table>P. ex., un niveau standard qui serait important pour la température et l’ozone serait établi comme suit : 1+2+8+16 = 27|
 
-#### 3.3.4.14	Exemple
+#### 3.3.4.14 Exemple
 Vous trouverez un exemple de fichier de données pour la catégorie Ozonesonde à l’[annexe A.3](#a3-exemple-pour-la-catégorie-ozonesonde) et en ligne à l’adresse  [http://woudc.org/archive/Documentation/Examples-extCSV/Ozonesonde.csv](http://woudc.org/archive/Documentation/Examples-extCSV/Ozonesonde.csv).
 
-### 3.3.5	Categorie : TotalOzoneObs
+### 3.3.5 Categorie : TotalOzoneObs
 La catégorie TotalOzoneObs comporte deux tableaux obligatoires : `#OBSERVATIONS` et `#DAILY_SUMMARY`. 
 
 Le Tableau 3.3 6 présente les tableaux devant être remplis pour la catégorie TotalOzoneObs (colonne Nom du tableau) et le nom de leurs champs respectifs. Les [sections 3.3.5.1](#3351-tableau-observations) et [3.3.5.2](#3352-tableau-daily_summary) renferment des descriptions plus détaillées des champs de l’ensemble des tableaux. La [section 3.3.5.3](#3353-tableaux-de-codes) comporte deux tableaux de codes : Tableau 3.3 7 – Codes de longueur d’onde et le Tableau 3.3 8 – .
@@ -763,7 +771,7 @@ Le Tableau 3.3 6 présente les tableaux devant être remplis pour la catégorie 
 |`#OBERVATIONS`|`Time, WLCode, ObsCode, Airmass, ColumnO3, StdDevO3, ColumnSO2, StdDevSO2`|
 |`#DAILY_SUMMARY`|`WLCode, ObsCode, nObs, MeanO3, StdDevO3`|
 
-#### 3.3.5.1	Tableau OBSERVATIONS
+#### 3.3.5.1 Tableau OBSERVATIONS
 
 **Time** : hh : mm : ss
 
@@ -781,7 +789,7 @@ Le Tableau 3.3 6 présente les tableaux devant être remplis pour la catégorie 
 
 **StdDevSO2**: Écart-type de la mesure de la quantité totale de SO2 de la colonne (s’il y a lieu).
 
-#### 3.3.5.2	Tableau DAILY_SUMMARY
+#### 3.3.5.2 Tableau DAILY_SUMMARY
 
 **WLCode**: Code désignant la ou les paires de longueurs d’onde utilisées pour mesurer l’ozone total. Les codes 0 à 7 sont utilisés pour les instruments Dobson seulement, le code 8, pour les instruments Filter seulement, et le code 9, pour les instruments Brewer seulement. Voir le Tableau 3.3 7 à la [section 3.3.5.3](#3353-tableaux-de-codes).
 
@@ -793,7 +801,7 @@ Le Tableau 3.3 6 présente les tableaux devant être remplis pour la catégorie 
 
 **StdDevO3**: Écart-type de la mesure de la colonne d’ozone total (s’il y a lieu)
 
-#### 3.3.5.3	Tableaux de codes
+#### 3.3.5.3 Tableaux de codes
 
 ***Tableau 3.3 7 – Codes de longueur d’onde***
 
@@ -830,7 +838,7 @@ Le Tableau 3.3 6 présente les tableaux devant être remplis pour la catégorie 
 #### 3.3.5.4 Exemple
 Vous trouverez un exemple de fichier de données pour la catégorie TotalOzoneObs à l’[annexe A.4](#a4-exemple-pour-la-catégorie-totalozoneobs) et en ligne à l’adresse [http://woudc.org/archive/Documentation/Examples-extCSV/TotalOzoneObs.csv.](#http://woudc.org/archive/Documentation/Examples-extCSV/TotalOzoneObs.csv.)
 
-### 3.3.6	Catégorie : TotalOzone
+### 3.3.6 Catégorie : TotalOzone
 
 La catégorie TotalOzone comporte deux tableaux obligatoires : `#DAILY` et `#MONTHLY`.
 
@@ -844,7 +852,7 @@ Le Tableau 3.3 9 présente les tableaux devant être remplis pour la catégorie 
 |`#MONTHLY`|`Date, ColumnO3, StdDevO3, Npts`|
 
 
-#### 3.3.6.1	Tableu DAILY
+#### 3.3.6.1 Tableu DAILY
 
 **Date**: yyyy - mm - dd
 
@@ -868,7 +876,7 @@ Le Tableau 3.3 9 présente les tableaux devant être remplis pour la catégorie 
 
 **ColumnSO2**: Quantité quotidienne totale de dioxyde de soufre (SO2) calculée en tant que moyenne des quantités individiduelles de SO2 (en unités Dobson, c.-à-d. m-atm-cm) relevées grâce aux mêmes observations ayant permis de déterminer la quantité d’O3.
 
-#### 3.3.6.2	Tableau MONTHLY
+#### 3.3.6.2 Tableau MONTHLY
 
 **Date**: aaaa-mm-jj (le premier jour du mois est la valeur par défaut).
 
@@ -882,7 +890,7 @@ Le Tableau 3.3 9 présente les tableaux devant être remplis pour la catégorie 
 
 Vous trouverez un exemple de fichier de données pour la catégorie TotalOzone à l’[annexe A.5](#a5-exemple-pour-la-catégorie-totalozone) et en ligne à l’adresse [http://woudc.org/archive/Documentation/Examples-extCSV/TotalOzone-Brewer.csv](#http://woudc.org/archive/Documentation/Examples-extCSV/TotalOzone-Brewer.csv).
 
-### 3.3.7	Catégorie : UmkehrN14
+### 3.3.7 Catégorie : UmkehrN14
 
 La catégorie UmkehrN14 comporte deux tableaux obligatoires : `#N14_VALUES` et `#C_PROFILE`.
 
@@ -895,7 +903,7 @@ Le Tableau 3.3 10 présente les tableaux devant être remplis pour la catégorie
 |`#DAILY`|`Date, H, L, WLCode, ObsCode, ColumnO#, N600, N650, N700, N740, N750, N770, N800, N830, N840, N850, N865, N880, N890, N900`|
 |`#MONTHLY`| `Date, H, L, ColumnO3Obs, ColumnO3Retr, Layer10, Layer9, Layer8, Layer7, Layer6, Layer5, Layer4, Layer3, Layer2, Layer1, ITER, SX, SZA_1, nSZA, DFMRS, FEPS, RMSRES|
 
-#### 3.3.7.1	Tableau N14_VALUES
+#### 3.3.7.1 Tableau N14_VALUES
 
 **Date**: aaaa-mm-jj
 
@@ -924,7 +932,7 @@ Le Tableau 3.3 10 présente les tableaux devant être remplis pour la catégorie
 !!! md-alert ""
     **Remarque :** La mantisse est de seulement trois décimales après le point décimal du logarithme Log(I'/I) + C). La caractéristique du logarithme est déduite par inférence. Les valeurs n sont indiquées en fonction des angles du zénith solaire correspondant : 60, 65, 70, 74, 75, 77, 80, 83, 84, 86,5, 88, 89 et 90 degrés.
 
-#### 3.3.7.2	Tableau C_PROFILE
+#### 3.3.7.2 Tableau C_PROFILE
 
 **Date**: aaaa-mm-jj
 
@@ -960,30 +968,30 @@ C = Matrice de covariance climatologique
 
 Vous trouverez un exemple de fichier pour la catégorie Umkehr14 à l’[annexe A.6](#a6-exemple-pour-la-catégorie-umkehrn14) et en ligne aux adresses suivantes : [http://woudc.org/archive/Documentation/Examples-extCSV/Umkehr-N_values-Dobson.csv](#http://woudc.org/archive/Documentation/Examples-extCSV/Umkehr-N_values-Dobson.csv) (niveau 1) et  [http://woudc.org/archive/Documentation/Examples-extCSV/Umkehr_UMK92Retrieval-Dobson.csv](#http://woudc.org/archive/Documentation/Examples-extCSV/Umkehr_UMK92Retrieval-Dobson.csv) (niveau 2).
 
-## 3.4	Contenu des données propres au rayonnement ultraviolet
-### 3.4.1	Introduction
+## 3.4 Contenu des données propres au rayonnement ultraviolet
+### 3.4.1 Introduction
 
 La présente section porte sur le contenu des données des différentes catégories relatives au rayonnement ultraviolet. Chaque catégorie comporte un ensemble de tableaux défini. Vous trouverez ci-après, pour chacun des tableaux, le nom des champs (colonnes) qu’ils contiennent, l’ordre de ces champs, selon lesquelles les données doivent être consignées. 
 
 On invite les contributeurs de données à soumettre les données accessoires ou auxiliaires qu’ils jugent pertinentes. Les données accessoires sont des données qui décrivent des variables atmosphériques et diverses caractéristiques relatives au site, notamment sur la température, l’ozone, la pression, l’ennuagement (p. ex., au moyen d’un index de nuages ou d’une image du ciel) ou l’albédo, ou encore des données de pyranomètre (renseignements sur les caractéristiques permanentes du site de mesure). Les données auxiliaires incluent les caractéristiques/propriétés de l’instrument ayant servi à prendre les mesures, les renseignements sur la façon dont on a utilisé l’instrument, les algorithmes qui ont servi à calculer les valeurs mesurées à partir des signaux de l’instrument, etc. Les données auxiliaires peuvent s’avérer utiles pour l’utilisateur, ou encore absolument essentielles lorsque les données de base sont brutes (niveau 0).
 
-#### 3.4.1.1	Spectral
+#### 3.4.1.1 Spectral
 
 Le rayonnement spectral est un rayonnement mesuré dans une bande spectrale continue, avec une résolution inférieure ou égale à 2 nm.
 
-#### 3.4.1.2	Multibande
+#### 3.4.1.2 Multibande
 
 Le rayonnement multibande est mesuré à l’aide de plusieurs filtres passe-bande discrets dont la résolution spectrale nominale (LTMH) est de 2 à 10 nm.
 
-#### 3.4.1.3	Large bande
+#### 3.4.1.3 Large bande
 
 Le rayonnement à large bande est la mesure des rayons UVA et UVB, ou rayonnement ultraviolet pondéré par le spectre érythémal.
 
-#### 3.4.1.4	Pyranometer
+#### 3.4.1.4 Pyranometer
 
 Un pyranomètre sert à mesurer l'éclairement énergétique solaire.
 
-### 3.4.2	Catégorie : Spectral
+### 3.4.2 Catégorie : Spectral
 
 La catégorie Spectral comporte quatre tableaux obligatoires : `#GLOBAL`, `#DIRECT`, `#DIFFUSE` et `#ACTINOMETRIC`.
 
@@ -1001,7 +1009,7 @@ Le Tableau 3.4 1 présente les tableaux devant être remplis pour la catégorie 
 !!! md-alert ""
     **Remarque :** Time est en italiques pour indiquer qu’une place est réservée pour ce champ, mais qu’il ne doit pas obligatoirement être rempli.
 
-#### 3.4.2.1	Tableau GLOBAL
+#### 3.4.2.1 Tableau GLOBAL
 
 **Wavelength**: Exprimée en nanomètres (nm).
 
@@ -1009,22 +1017,22 @@ Le Tableau 3.4 1 présente les tableaux devant être remplis pour la catégorie 
 
 **Time**: Heure affichée selon le format de la norme ISO 8601, c’est-à-dire hh : mm : ss.
 
-#### 3.4.2.2	Tableau DIRECT
+#### 3.4.2.2 Tableau DIRECT
 
 Pour une description des champs du tableau `#DIRECT`, voir la [section 3.4.2.1](#3421-tableau-global) sur le tableau `#GLOBAL`.
 
-#### 3.4.2.3	Tableau DIFFUSE
+#### 3.4.2.3 Tableau DIFFUSE
 
 Pour une description des champs du tableau `#DIFFUSE`, voir la [section 3.4.2.1](#3421-tableau-global) sur le tableau `#GLOBAL`.
 
-#### 3.4.2.4	Tableau ACTINOMETRIC
+#### 3.4.2.4 Tableau ACTINOMETRIC
 
 Pour une description des champs du tableau `#ACTINOMETRIC`, voir la [section 3.4.2.1](#3421-tableau-global) sur le tableau `#GLOBAL`.
 
 #### 3.4.2.5 Exemple
 Vous trouverez un exemple de fichier de données pour la catégorie Spectral à l’[annexe A.7](#a7-exemple-pour-la-catégorie-spectral) et en ligne à l’adresse [http://woudc.org/archive/Documentation/Examples-extCSV/Spectral.csv](#http://woudc.org/archive/Documentation/Examples-extCSV/Spectral.csv).
 
-### 3.4.3	Catégorie : Multiband
+### 3.4.3 Catégorie : Multiband
 
 La catégorie Multiband comporte cinq tableaux obligatoires : `#GLOBAL`, `#DIRECT`, `#DIFFUSE`, `#ACTINOMETRIC` et `#SIMULTANEOUS`. 
 
@@ -1043,7 +1051,7 @@ Le Tableau 3.4 2 présente les tableaux devant être remplis pour la catégorie 
 !!! md-alert ""
     **Remarque :** Time, DFS-Irradiance et DRS-Irradiance sont en italiques pour indiquer qu’une place est réservée pour ces champs, mais qu’ils ne doivent pas obligatoirement être remplis.
 
-#### 3.4.3.1	Tableau GLOBAL
+#### 3.4.3.1 Tableau GLOBAL
 
 **Wavelength**: Exprimée en nanomètres (nm).
 
@@ -1051,19 +1059,19 @@ Le Tableau 3.4 2 présente les tableaux devant être remplis pour la catégorie 
 
 **Time**: Heure affichée selon le format de la norme ISO 8601, c’est-à-dire hh : mm : ss.
 
-#### 3.4.3.2	Tableau DIRECT
+#### 3.4.3.2 Tableau DIRECT
 
 Pour une description des champs du tableau `#DIRECT`, voir la [section 3.4.3.1](#3431-tableau-global) sur le tableau `#GLOBAL`.
 
-#### 3.4.3.3	Tableau DIFFUSE
+#### 3.4.3.3 Tableau DIFFUSE
 
 Pour une description des champs du tableau `#DIFFUSE`, voir la [section 3.4.3.1](#3431-tableau-global) sur le tableau `#GLOBAL`.
 
-#### 3.4.3.4	Tableau ACTINOMETRIC
+#### 3.4.3.4 Tableau ACTINOMETRIC
 
 Pour une description des champs du tableau `#ACTINOMETRIC`, voir la [section 3.4.3.1](#3431-tableau-global) sur le tableau `#GLOBAL`.
 
-#### 3.4.3.5	Tableau SIMULTANEOUS
+#### 3.4.3.5 Tableau SIMULTANEOUS
 
 **Wavelength**: Exprimée en nanomètres (nm).
 
@@ -1082,7 +1090,7 @@ Pour une description des champs du tableau `#ACTINOMETRIC`, voir la [section 3.4
 
 Vous trouverez un exemple de fichier de données pour la catégorie Multiband à l’[annexe A.8](#a8-exemple-pour-la-catégorie-multiband) et en ligne à l’adresse [http://woudc.org/archive/Documentation/Examples-extCSV/Multi-band.csv](#http://woudc.org/archive/Documentation/Examples-extCSV/Multi-band.csv).
 
-### 3.4.4	Catégorie : Broadband
+### 3.4.4 Catégorie : Broadband
 
 La catégorie Broadband comporte cinq tableaux obligatoires : `#GLOBAL`, `#DIRECT`,0 `#DIFFUSE`, `#ACTINOMETRIC` et `#SIMULTANEOUS`.
 
@@ -1101,25 +1109,25 @@ Le Tableau 3.4 3 présente les tableaux devant être remplis pour la catégorie 
 !!! md-alert ""
     **Remarque :** DF-Irradiance et DR-Irradiance sont en italiques pour indiquer qu’une place est réservée pour ces champs, mais qu’ils ne doivent pas obligatoirement être remplis.
 
-#### 3.4.4.1	Tableau GLOBAL
+#### 3.4.4.1 Tableau GLOBAL
 
 **Time**: Heure affichée selon le format de la norme ISO 8601, c’est-à-dire hh : mm : ss.
 
 **S - Irradiance**: Éclairement énergétique spectral, exprimé en Wm^-2.
 
-#### 3.4.4.2	Tableau DIRECT
+#### 3.4.4.2 Tableau DIRECT
 
 Pour une description des champs du tableau `#DIRECT`, voir la [section 3.4.4.1](#3441-tableau-global) sur le tableau `#GLOBAL`.
 
-#### 3.4.4.3	Tableau DIFFUSE
+#### 3.4.4.3 Tableau DIFFUSE
 
 Pour une description des champs du tableau `#DIFFUSE`, voir la [section 3.4.4.1](#3441-tableau-global) sur le tableau `#GLOBAL`.
 
-#### 3.4.4.4	Tableau ACTINOMETRIC
+#### 3.4.4.4 Tableau ACTINOMETRIC
 
 Pour une description des champs du tableau `#ACTINOMETRIC`, voir la [section 3.4.4.1](#3441-tableau-global) sur le tableau `#GLOBAL`.
 
-#### 3.4.4.5	Tableau SIMULTANEOUS
+#### 3.4.4.5 Tableau SIMULTANEOUS
 
 **Time**: Heure affichée selon le format de la norme ISO 8601, c’est-à-dire hh : mm : ss.
 
@@ -1136,7 +1144,7 @@ Pour une description des champs du tableau `#ACTINOMETRIC`, voir la [section 3.4
 
 Vous trouverez un exemple de fichier de données pour la catégorie Broadband à l’[annexe A.9](#a9-exemple-pour-la-catégorie-broadband) et en ligne à l’adresse [http://woudc.org/archive/Documentation/Examples-extCSV/Broad-band.csv](#http://woudc.org/archive/Documentation/Examples-extCSV/Broad-band.csv).
 
-### 3.4.5	Catégorie : Pyranometer
+### 3.4.5 Catégorie : Pyranometer
 
 La catégorie Pyranometer comporte quatre tableaux obligatoires : `#GLOBAL`, `#DIRECT`, `#DIFFUSE` et `#ACTINOMETRIC`.
 
@@ -1155,21 +1163,21 @@ Le Tableau 3.4 4 présente les tableaux devant être remplis pour la catégorie 
 !!! md-alert ""
     **Remarque : ** DF-Irradiance et DR-Irradiance sont en italiques pour indiquer qu’une place est réservée pour ces champs, mais qu’ils ne doivent pas obligatoirement être remplis.
 
-#### 3.4.5.1	Tableau GLOBAL
+#### 3.4.5.1 Tableau GLOBAL
 
 **Time**: Heure affichée selon le format de la norme ISO 8601, c’est-à-dire hh : mm : ss.
 
 **S - Irradiance**: Éclairement énergétique spectral, exprimé en Wm-2.
 
-#### 3.4.5.2	Tableau DIRECT
+#### 3.4.5.2 Tableau DIRECT
 
 Pour une description des champs du tableau `#DIRECT`, voir la [section 3.4.5.1](#3451-tableau-global) sur le tableau `#GLOBAL`.
 
-#### 3.4.5.3	Tableau DIFFUSE
+#### 3.4.5.3 Tableau DIFFUSE
 
 Pour une description des champs du tableau `#DIFFUSE`, voir la [section 3.4.5.1](#3451-tableau-global) sur le tableau `#GLOBAL`.
 
-#### 3.4.5.4	Tableau SIMULTANEOUS
+#### 3.4.5.4 Tableau SIMULTANEOUS
 
 **Time**: Heure affichée selon le format de la norme ISO 8601, c’est-à-dire hh : mm : ss.
 
@@ -1186,7 +1194,7 @@ Pour une description des champs du tableau `#DIFFUSE`, voir la [section 3.4.5.1]
 
 Vous trouverez un exemple de fichier de données pour la catégorie Pyranometer à l’[annexe A.10](#a10-exemple-pour-la-catégorie-pyranometer).
 
-### 3.4.6	Données accessoires et auxiliaires 
+### 3.4.6 Données accessoires et auxiliaires 
 
 On invite les contributeurs de données à soumettre des données accessoires ou auxiliaires qu’ils jugent pertinentes. 
 
@@ -1240,11 +1248,11 @@ Le Tableau 3.4 6 énumère l’ensemble des champs obligatoires et facultatifs p
 |WindSpeed|ms^-1|Aucun commentaire|
 |WindDirection|Degrés décimaux|Aucun commentaire|
 
-# Chapter 4 Chapitre 4	Traitement des données
-## 4.1	Politique sur les données
+# Chapter 4 Chapitre 4 Traitement des données
+## 4.1 Politique sur les données
 L’utilisation des données du WOUDC est régie par la politique sur les données de l’OMM ([https://www.wmo.int/pages/about/exchangingdata_en.html](https://www.wmo.int/pages/about/exchangingdata_en.html)) et par la politique sur l’utilisation des données du programme VAG de l’OMM ([http://gaw.empa.ch/gawsis/faqs.asp](http://gaw.empa.ch/gawsis/faqs.asp)). Pour plus de renseignements sur la politique d’utilisation des données du WOUDC, allez à l’adresse [http://woudc.org/about/data-policy.php?lang=fr](http://woudc.org/about/data-policy.php?lang=fr).
 
-## 4.2	Flux et traitement des données
+## 4.2 Flux et traitement des données
 La [section 2.3](#23-soumission-des-données) fournit des procédures détaillées concernant le traitement des données. Il est possible d’accéder aux données correctement soumises par le biais des dossiers accessibles sur le Web (WAF), des services Web géospatiaux et de la fonction de recherche. 
 
 Essentiellement, les données soumises par les contributeurs sont reçues, traitées, puis archivées. Après qu’un fichier a été saisi dans le système, le processus de traitement s’amorce. On détermine d’abord le format du fichier entrant, puis on le valide pour s’assurer qu’il respecte le format de fichier standard du WOUDC (extCSV). Une fois que cela a été fait, le système tente de créer et de valider une taxonomie et une adresse URI pour le fichier. Enfin, le fichier est soumis à une rigoureuse série de validations appelée File Level Validation (FLV). La FLV permet : 
@@ -1257,7 +1265,7 @@ Essentiellement, les données soumises par les contributeurs sont reçues, trait
 
 Le fichier extCSV obtenu à la suite de la FLV est une version « nettoyée » du fichier original. Une fois que le fichier extCSV a réussi la validation de taxonomie, la validation de l’adresse URI et la FLV, il est prêt à être intégré à la base de données. Toutes les erreurs relevées pendant le processus de validation sont transmises au contributeur pour qu’il les corrige et ainsi faciliter l’intégration de leurs futurs fichiers de données. 
 
-# Chapitre 5	Qualité des données
+# Chapitre 5 Qualité des données
 Une fois qu’un fichier a été soumis au WOUDC, la qualité des données qu’il contient est évaluée à différentes étapes du processus de traitement des données. Le contrôle de la qualité comprend la vérification du format de fichier et du contenu des métadonnées, l’inspection des plages de valeurs des données et des vérifications relatives à la redondance de données.
 
 Voici un résumé des vérifications effectuées aux fins de l’assurance de la qualité des données : 
@@ -1284,16 +1292,16 @@ Voici un résumé des vérifications effectuées aux fins de l’assurance de la
 
 Au départ, les fichiers sont validés pour confirmer qu’ils sont conformes aux spécifications relatives au format de fichier, mais, par la suite, des résumés statistiques plus généraux peuvent être générés, de manière à relever des valeurs erronées, des problèmes d’étalonnage, etc. Même si ces derniers exemples exigent une connaissance plus approfondie des données, les archives renferment déjà suffisamment de données pour porter des jugements critiques et faire des évaluations générales au sujet des données. À mesure que le volume de données augmentera et que les connaissances statistiques s’amélioreront, la portée de ces évaluations sera élargie. 
 
-# Chapitre 6	Consultation et extraction de données
+# Chapitre 6 Consultation et extraction de données
 La consultation et l’extraction de données sont des fonctions de base du WOUDC. Le grand public a accès gratuitement aux données du WOUDC. Pour des renseignements sur la façon de consulter les données, allez à l’adresse [http://woudc.org/about/data-access.php?lang=fr.](http://woudc.org/about/data-access.php?lang=fr).
 
-# Chapitre 7	Coordonnées du WOUDC
+# Chapitre 7 Coordonnées du WOUDC
 La principal moyenne de communication avec le WOUDC est par le page de contact. La boîte de réception est vérifiée sur une base quotidienne par les services opérationnels des centres de données. Conformément à sa norme de service, le WOUDC est tenu à répondre à toutes les demandes de renseignements transmises sur l'internet dans un délai de deux jours ouvrables.
 
-## 7.1	Le page de contact
+## 7.1 Le page de contact
 [http://woudc.org/contact.php?lang=fr](http://woudc.org/contact.php?lang=fr).
 
-## 7.2	Adresse
+## 7.2 Adresse
 
 Centre mondial de données sur l’ozone et le rayonnement ultraviolet
 
@@ -1308,7 +1316,7 @@ Toronto (Ontario)   M3H 5T4
 Canada
 
 
-# Chapitre 8	Références
+# Chapitre 8 Références
 \[1] User Guide to the WMO/GAW World Ozone Data Centre Version 3.1, Environment Canada publication, 2013.
 
 \[2] Guide to the WMO/GAW World Ultraviolet Radiation Data Centre Version 6.0, Environment Canada publication, 2006.
@@ -1321,7 +1329,7 @@ Canada
 
 \[6] R. Dogniaux, et al., "Solar Meteorology: Units and Symbols": Int. J. Solar Energy, 1984, volume 2 number 3, pages 249-255.
 
-# Appendice A	Exemples
+# Appendice A Exemples
 ## A.1  Exemple pour la catégorie Lidar 
 
 Vous trouverez ci-dessous un exemple de soumission de données pour la catégorie Lidar. Vous pouvez aussi consulter un exemple en ligne à l’adresse  [http://woudc.org/archive/Documentation/Examples-extCSV/Lidar.csv](#http://woudc.org/archive/Documentation/Examples-extCSV/Lidar.csv).
