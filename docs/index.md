@@ -128,8 +128,8 @@ If the data being submitted is not of ozone or ultraviolet, it may be eligible t
 ## 2.1 Contributor Registration
 The application process consists of 4 steps:
 
-1. A new contributor sends a request to the WOUDC's operator at [http://woudc.org/contact.php](http://woudc.org/contact.php) stating their interest in being a contributor.
-2. The data centre operator will check the request and direct the contributor to either provide WOUDC the station GAW ID or to complete the registration process from GAWSIS to obtain a GAW ID at [http://gaw.empa.ch/gawsis/codes.request.asp](http://gaw.empa.ch/gawsis/codes.request.asp).
+1. A new contributor sends a [request](http://woudc.org/contact.php) to WOUDC stating their interest in being a contributor.
+2. The data centre operator will check the request and direct the contributor to either provide WOUDC the station GAW ID or to complete the registration process from [GAWSIS](https://gawsis.meteoswiss.ch) to obtain a GAW ID.
 3. Once the contributor has a valid GAW ID, the contributor will provide that ID to the data centre operator to complete the new station registration process by including the station into the WOUDC database.
 4. Once the station is included in the WOUDC database, the data centre operator will send a new, private, FTP login credential to the contributor for use to upload data.
 
@@ -140,22 +140,22 @@ A flow chart highlighting the contributor registration procedure can be found in
 ## 2.2 Station Registration
 Once a contributor has registered with the WOUDC as indicated in [section 2.1](#21-contributor-registration), additional stations or amendments to existing station information can be registered by submitting a new GAW ID or updating station information with GAWSIS:
 
-1. Contributor to obtain a new GAW ID for new station or make amendments to existing station through GAWSIS ([http://gaw.empa.ch/gawsis/codes.request.asp](http://gaw.empa.ch/gawsis/codes.request.asp)).
-2. Contact the WOUDC operator at [http://woudc.org/contact.php](http://woudc.org/contact.php) with the change request for adding a new station or making amendments to an existing station. Provide GAW ID to operator.
+1. Contributor to obtain a new GAW ID for new station or make amendments to existing station through [GAWSIS](https://gawsis.meteoswiss.ch).
+2. Contact [WOUDC](http://woudc.org/contact.php) with the change request for adding a new station or making amendments to an existing station. Provide GAW ID to operator.
 3. Operator includes new station into the WOUDC database or updates existing station.
 
 ## 2.3 Data Submission
 The WOUDC provides a File Transfer Protocol (FTP) capability for contributors to submit data. The WOUDC FTP site is located at [ftp://ftp.woudc.org](ftp://ftp.woudc.org). The site requires username and password credentials in order to transfer data to the WOUDC.
 
 !!! md-alert ""
-    **Note:** the FTP site does not provide data access capabilities (see Data Access [http://woudc.org/about/data-access.php](http://woudc.org/about/data-access.php).
+    **Note:** the FTP site does not provide data access capabilities (see [Data Access](http://woudc.org/about/data-access.php)).
 
 Once a contributor has been registered:
 
 1. The contributor uploads data in extCSV format to the FTP site.
 2. The WOUDC collects data from the FTP.
 3. There is a 72 hour waiting period before processing to allow for submission of revised data by the contributor.
-4. The WOUDC processes data â€“ validates contributor and site information.
+4. The WOUDC processes data, validates contributor and site information.
 5. If issues are discovered during validation, the WOUDC operator will inform the contributor.
 6. If no issues are found, data will be published on the website and available for download from the website, geospatial web services or Web Accessible Folder (WAF).
 
@@ -359,14 +359,14 @@ Below is a table that summarizes the required tables in WOUDC-EXTCSV file for di
 
 | Dataset | Table Name | Required/Optional | Number of Occurences | Incompatible |
 |--------|--------|--------|--------|--------|
-|`Common`|`#CONTENT`|`Required`|`1`|`N/A`|
-|`Common`|`#DATA_GENERATION`|`Required`|`1`|`N/A`|
-|`Common`|`#PLATFORM`|`Required`|`1`|`N/A`|
-|`Common`|`#INSTRUMENT`|`Required`|`1`|`N/A`|
-|`Common`|`#LOCATION`|`Required`|`1`|`N/A`|
-|`Board-band`|`#TIMESTAMP`|`Required`|`1`|`N/A`|
-|`Board-band`|`#DIFFUSE`|`Required`|`1`|`#GLOBAL`|
-|`Board-band`|`#GLOBAL`|`Required`|`1`|`#DIFFUSE`|
+|All|`#CONTENT`|`Required`|`1`|`N/A`|
+|All|`#DATA_GENERATION`|`Required`|`1`|`N/A`|
+|All|`#PLATFORM`|`Required`|`1`|`N/A`|
+|All|`#INSTRUMENT`|`Required`|`1`|`N/A`|
+|All|`#LOCATION`|`Required`|`1`|`N/A`|
+|`Broad-band`|`#TIMESTAMP`|`Required`|`1`|`N/A`|
+|`Broad-band`|`#DIFFUSE`|`Required`|`1`|`#GLOBAL`|
+|`Broad-band`|`#GLOBAL`|`Required`|`1`|`#DIFFUSE`|
 |`Lidar`|`#TIMASTAMP`|`Required`|`1`|`N/A`|
 |`Lidar`|`#OZONE_SUMMARY`|`Required`|`1+`|`N/A`|
 |`Lidar`|`#OZONE_PROFILE`|`Required`|`1+`|`N/A`|
@@ -1240,7 +1240,7 @@ The originator of the data is encouraged to submit any ancillary and/or auxiliar
 
 # Chapter 4 Data Handling
 ## 4.1 Data Policy
-Use of the WOUDC data are governed by the WMO data policy ([https://www.wmo.int/pages/about/exchangingdata_en.html](https://www.wmo.int/pages/about/exchangingdata_en.html)) and WMO GAW data use policy ([http://gaw.empa.ch/gawsis/faqs.asp](http://gaw.empa.ch/gawsis/faqs.asp)). More information about WOUDC's data policy can be found online at [http://woudc.org/about/data-policy.php](http://woudc.org/about/data-policy.php).
+Use of the WOUDC data are governed by the [WMO data policy](https://www.wmo.int/pages/about/exchangingdata_en.html) and [WMO GAW data use policy](https://gawsis.meteoswiss.ch/GAWSIS/index.html#/faq). More information about WOUDC's data policy can be found [online](http://woudc.org/about/data-policy.php).
 
 ## 4.2 Data Flow and Processing
 [Section 2.3](#23-data-submission) provides detailed procedures regarding data processing. Successfully ingested data submissions are made available to the WAF, geospatial web services and search. 
@@ -1279,7 +1279,7 @@ At a high level, the following is a summary of QA checks performed:
 Initially, a file will be tested for adherence to the file format specifications, but later, higher level statistical summaries may be generated, which identify anomalous values, calibration problems, etc.. Although the later examples involve more detailed knowledge of the data, the archive already includes enough data to make some critical judgments and general assessments about the data. As the volume and statistical knowledge increase, the scope of these assessments will be broadened.
 
 # Chapter 6 Access and Data Retrieval
-Data access and retrieval are core capabilities of the WOUDC. The WOUDC data is freely available for public use. Information on how to access the data can be found at [http://woudc.org/about/data-access.php](http://woudc.org/about/data-access.php).
+Data access and retrieval are core capabilities of the WOUDC. The WOUDC data is freely available for public use. For more information, see the WOUDC [Data Access page](http://woudc.org/about/data-access.php).
 
 # Chapter 7 Contact
 The primary means of contacting the WOUDC is by the contact page on the WOUDC site, which is monitored on a daily basis by data centre operations. WOUDC operates with a service standard to response to all email inquiries within 2 business days.
