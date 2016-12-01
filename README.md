@@ -28,7 +28,7 @@ This package uses [mkdocs](http://mkdocs.org) as a static site generator.
 virtualenv woudc-guidebook
 cd woudc-guidebook
 . bin/activate  # yes that is a period
-git clone http://gitlab.ssc.etg.gc.ca/woudc/woudc-guidebook.git
+git clone https://github.com/woudc/woudc-guidebook.git
 cd woudc-guidebook
 pip install -r requirements.txt
 ```
@@ -36,14 +36,14 @@ pip install -r requirements.txt
 ### Workflow
 
 ```bash
-# build documentation
+# build local documentation
 mkdocs build  # output in site/
 # serve on your host's IP, port 8000
 # docs are live rebuilt as you make changes
 mkdocs serve -a 0.0.0.0:8000  
-# pages available at /contributor-guide-en and /contributor-guide-fr
+# pages available at /index-en and /index-fr
 ```
 
 ## Issues
 
-Issues are managed at http://gitlab.ssc.etg.gc.ca/woudc/woudc-guidebook/issues
+Issues are managed at https://github.com/woudc/woudc-guidebook/issues
