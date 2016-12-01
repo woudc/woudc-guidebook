@@ -5,43 +5,40 @@
 <head>
     <meta charset="utf-8"><!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
         wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
-    <title>WOUDC - {{ site_name }}</title>
+    <title>{{ site_name }}</title>
     <meta content="width=device-width, initial-scale=1" name="viewport"><!-- Meta Data -->
-    <meta content="WOUDC {{ sitename }}" name="dcterms.title" title="ISO639-2">
+    <meta content="{{ sitename }}" name="dcterms.title" title="ISO639-2">
     <meta content="en" name="dcterms.language" title="ISO639-2"><!-- custom page metadata start -->
     <meta content="Description about WOUDC" name="description">
     <meta content="Government of Canada, Environment and Climate Change Canada, Meteorological Service of Canada, Weather and Environmental Monitoring, Monitoring Strategies and Data Management Division, Data Management Section" name="dcterms.creator">
     <meta content="WOUDC,about,overview,ozone,ultraviolet radiation" name="dcterms.subject" title="scheme"><!-- end of custom metadata -->
-    <!--
-    woudc-guidebook Guidebook {{ meta.date[0] }}
 
-    woudc-www-1.12.2
-    Build date: Tue Jul 12 13:13:01 GMT 2016
-    -->
+    <!-- woudc-guidebook {{ config.extra.version }} {{ meta.date[0] }} -->
+
     <!-- global link relations -->
-    <link href="http://woudc.org/about/index.php" rel="canonical">
-    <link href="/about/index.php?lang=fr" lang="fr" rel="alternate">
-    <link href="http://woudc.org/about/index.php?lang=en" rel="author" title="Author information">
-    <link href="http://woudc.org/data/explore.php?lang=en" rel="search" title="Search this site">
-    <link href="http://woudc.org/home.php?lang=en" rel="home" title="Front page">
-    <link href="http://woudc.org/about/data-policy.php?lang=en" rel="license" title="Data Policy">
-    <link href="http://woudc.org/news/feed/?lang=en" rel="alternate" title="Notices" type="application/atom+xml"><!-- Twitter Cards / OpenGraph -->
+    <link href="{{ site_url }}" rel="canonical">
+    <link href="{{ site_url }}/index-fr" lang="fr" rel="alternate">
+    <link href="http://woudc.org/about/index.php" rel="author" title="Author information">
+    <link href="http://woudc.org/data/explore.php" rel="search" title="Search this site">
+    <link href="http://woudc.org/home.php" rel="home" title="Front page">
+    <link href="http://woudc.org/about/data-policy.php" rel="license" title="Data Policy">
+    <link href="http://woudc.org/news/feed/" rel="alternate" title="Notices" type="application/atom+xml"><!-- Twitter Cards / OpenGraph -->
     <meta content="summary" name="twitter:card">
     <meta content="Contributor Guide" name="og:title">
     <meta content="website" name="og:type">
-    <meta content="http://woudc.org/about/index.php" name="og:url">
+    <meta content="{{ site_url }}" name="og:url">
     <meta content="Description about WOUDC" name="og:description">
-    <meta content="../static/site/img/wmo_acronym_vertical_sm.jpg" name="og:image">
-    <meta content="../static/site/img/gaw_acronym_vertical_sm.jpg" name="og:image"><!--[if gte IE 9 | !IE ]><!-->
-    <link href="../static/libs/js/wet-boew-theme-gcwu-fegc/css/wet-boew.min.css" rel="stylesheet"><!--<![endif]-->
-    <link href="../static/libs/js/wet-boew-theme-gcwu-fegc/css/theme.min.css" rel="stylesheet">
-    <link href="../static/libs/css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="../static/site/css/font-awesome-fix.css" rel="stylesheet"><!--[if lt IE 9]><link rel="stylesheet" href="../static/libs/js/wet-boew-theme-gcwu-fegc/css/ie8-wet-boew.min.css"/>
+    <meta content="http://woudc.org/static/site/img/wmo_acronym_vertical_sm.jpg" name="og:image">
+    <meta content="http://woudc.org/static/site/img/gaw_acronym_vertical_sm.jpg" name="og:image"><!--[if gte IE 9 | !IE ]><!-->
+    <link href="/static/libs/js/wet-boew-theme-gcwu-fegc/css/wet-boew.min.css" rel="stylesheet"><!--<![endif]-->
+    <link href="/static/libs/js/wet-boew-theme-gcwu-fegc/css/theme.min.css" rel="stylesheet">
+    <link href="/static/libs/css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/static/site/css/font-awesome-fix.css" rel="stylesheet"><!--[if lt IE 9]><link rel="stylesheet" href="/static/libs/js/wet-boew-theme-gcwu-fegc/css/ie8-wet-boew.min.css"/>
     
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="../static/libs/js/wet-boew-theme-gcwu-fegc/js/ie8-wet-boew.min.js"></script><![endif]-->
+    <script src="/static/libs/js/wet-boew-theme-gcwu-fegc/js/ie8-wet-boew.min.js"></script><![endif]-->
      <noscript>
-    <link href="../static/libs/js/wet-boew-theme-gcwu-fegc/css/noscript.min.css" rel="stylesheet"></noscript><!-- CustomCSSStart -->
+    <link href="/static/libs/js/wet-boew-theme-gcwu-fegc/css/noscript.min.css" rel="stylesheet"></noscript><!-- CustomCSSStart -->
     <!-- CustomCSSEnd -->
 
     <style type="text/css">
@@ -71,7 +68,7 @@
             <div id="wb-bar">
                 <div class="container">
                     <div class="row">
-                        <object aria-label="Government of Canada" data="../static/libs/js/wet-boew-theme-gcwu-fegc/assets/sig-en.svg" id="gcwu-sig" role="img" tabindex="-1" type="image/svg+xml">
+                        <object aria-label="Government of Canada" data="/static/libs/js/wet-boew-theme-gcwu-fegc/assets/sig-en.svg" id="gcwu-sig" role="img" tabindex="-1" type="image/svg+xml">
                         </object>
                         <ul class="list-inline" id="gc-bar">
                             <li>
@@ -87,7 +84,7 @@
                                 <h2>Language selection</h2>
                                 <ul class="list-inline">
                                     <li>
-                                        <a href="base_fr.html" lang="fr">Fran&ccedil;ais</a>
+                                        <a href="/index-fr" lang="fr">Fran&ccedil;ais</a>
                                     </li>
                                 </ul>
                             </li>
@@ -108,7 +105,7 @@
                 <div class="row">
                     <div class="col-md-5" id="wb-sttl">
                         <a href="./home.php"><span>WOUDC Guidebook</span></a>
-                    </div><object aria-label="Symbol of the Government of Canada" data="../static/libs/js/wet-boew-theme-gcwu-fegc/assets/wmms.svg" id="wmms" role="img" tabindex="-1" type="image/svg+xml">
+                    </div><object aria-label="Symbol of the Government of Canada" data="/static/libs/js/wet-boew-theme-gcwu-fegc/assets/wmms.svg" id="wmms" role="img" tabindex="-1" type="image/svg+xml">
                     </object>
                 </div>
             </div>
@@ -229,7 +226,7 @@
             <dd>{{ config.extra.version }}</dd>
         </dl>
         <div class="wb-share pull-right text-right" data-wb-share='{"pnlId": "pnl1"}' id="share-wdg-woudc"></div>
-        <div class="pull-right text-right align-bottom hidden-xs hidden-sm" id="share-qr-woudc"><img alt="WOUDC - About the Data - About WOUDC" height="50" src="https://chart.googleapis.com/chart?chs=50x50&cht=qr&chl=http%3A%2F%2Fwoudc.org%2Fabout%2Findex.php" title="WOUDC - About the Data - About WOUDC" width="50"></div>
+        <div class="pull-right text-right align-bottom hidden-xs hidden-sm" id="share-qr-woudc"><img alt="{{ site_name }}" height="50" src="https://chart.googleapis.com/chart?chs=50x50&cht=qr&chl=http%3A%2F%2F{{site_url}}" title="{{ site_name }}" width="50"></div>
     </main>
     <footer class="visible-sm visible-md visible-lg wb-navcurr" id="wb-info" role="contentinfo">
         <div class="container">
@@ -318,9 +315,9 @@
     <!--[if gte IE 9 | !IE ]><!-->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js">
     </script> 
-    <script src="../static/libs/js/wet-boew-theme-gcwu-fegc/js/wet-boew.min.js">
+    <script src="/static/libs/js/wet-boew-theme-gcwu-fegc/js/wet-boew.min.js">
     </script> <!--<![endif]-->
-     <!--[if lt IE 9]><script src="../static/libs/js/wet-boew-theme-gcwu-fegc/js/ie8-wet-boew2.min.js"></script><![endif]-->
+     <!--[if lt IE 9]><script src="/static/libs/js/wet-boew-theme-gcwu-fegc/js/ie8-wet-boew2.min.js"></script><![endif]-->
      <!-- ScriptsEnd -->
      <!-- CustomScriptsStart -->
      

@@ -1,13 +1,8 @@
-site_name: WOUDC Guides
-site_url: http://docs.woudc.org
+site_name: WOUDC Contributor Guide
+site_url: http://guide.woudc.org
 repo_url: https://github.com/woudc/woudc-guidebook
 
-#site_dir: 'site_bootstrap'
-#theme_dir: 'bootstrap_theme'
-#theme: bootstrap
-
 theme_dir: 'woudc_theme'
-site_dir: 'site_woudc'
 
 markdown_extensions:
     - admonition
@@ -18,7 +13,8 @@ markdown_extensions:
 #        baselevel: 2
 
 pages:
-- Contributor Guide: 'contributor-guide-en.md'
-- Guide du contributeur: 'contributor-guide-fr.md'
+- Contributor Guide: 'index.md'
+- Guide du contributeur: 'index-fr.md'
+
 extra:
     version: 1.0
