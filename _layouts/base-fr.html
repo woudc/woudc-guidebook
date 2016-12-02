@@ -5,28 +5,27 @@
 <head>
     <meta charset="utf-8"><!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
         wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
-    <title>WOUDC Guideook - {{ site_name }}</title>
+    <title>{{ site.name_fr }}</title>
     <meta content="width=device-width, initial-scale=1" name="viewport"><!-- Meta Data -->
-     <meta content="{{ sitename }}" name="dcterms.title" title="ISO639-2">
+    <meta content="{{ site.name_fr }}" name="dcterms.title" title="ISO639-2">
     <meta content="fr" name="dcterms.language" title="ISO639-2"><!-- custom page metadata start -->
-    <meta content="Liens vers les Procédures d'utilisation normalisées (PUN) sur l’ozone et les rayons UV Données sur le rayonnement." name="description">
-    <meta content="Gouvernement du Canada, Environnement et Changement climatique Canada, Service météorologique du Canada, Surveillance météorologique et environnementale, Stratégies de surveillance et de gestion des données et de la Recherche climatique, Gestion de l’information et des données" name="dcterms.creator">
-    <meta content="WOUDC, instructions d’opération, ozone, rayons ultraviolets, ozone, données qualité, qa, qc, assurance de la qualité, contrôle de la qualité, PUN, normes, manuel" name="dcterms.subject" title="scheme"><!-- end of custom metadata -->
+    <meta content="{{ site.description_fr }}" name="description">
+    <meta content="{{ site.creator_fr }}" name="dcterms.creator">
+    <meta content="{{ site.keywords_fr }}" name="dcterms.subject" title="scheme"><!-- end of custom metadata -->
     
     <!-- woudc-guidebook {{ config.extra.version }} {{ meta.date[0] }} -->
     
     <!-- global link relations -->
-    <link href="{{ site_url }}" rel="canonical">
-    <link href="/resources/sop.php?lang=en" lang="en" rel="alternate">
-    <link href="http://woudc.orgabout/index.php?lang=fr" rel="author" title="Information à propos de l’auteur">
-    <link href="http://woudc.orgdata/explore.php?lang=fr" rel="search" title="Rechercher sur le site">
-    <link href="http://woudc.orghome.php?lang=fr" rel="home" title="Page d’accueil">
-    <link href="http://woudc.orgabout/data-policy.php?lang=fr" rel="license" title="Politiques en matière de données">
-    <link href="http://woudc.orgnews/feed/?lang=fr" rel="alternate" title="Annonces" type="application/atom+xml"><!-- Twitter Cards / OpenGraph -->
+    <link href="/" rel="canonical">
+    <link href="http://woudc.org/about/index.php?lang=fr" rel="author" title="Information à propos de l’auteur">
+    <link href="http://woudc.org/data/explore.php?lang=fr" rel="search" title="Rechercher sur le site">
+    <link href="http://woudc.org/home.php?lang=fr" rel="home" title="Page d’accueil">
+    <link href="http://woudc.org/about/data-policy.php?lang=fr" rel="license" title="Politiques en matière de données">
+    <link href="http://woudc.org/news/feed/?lang=fr" rel="alternate" title="Annonces" type="application/atom+xml"><!-- Twitter Cards / OpenGraph -->
     <meta content="summary" name="twitter:card">
-    <meta content="{{ site_name }}" name="og:title">
+    <meta content="{{ site.name_fr }}" name="og:title">
     <meta content="website" name="og:type">
-    <meta content="{{ site_url }}" name="og:url">
+    <meta content="{{ site.url }}" name="og:url">
     <meta content="{{ site_description }}" name="og:description">
     <meta content="http://woudc.org/static/site/img/wmo_acronym_vertical_sm.jpg" name="og:image">
     <meta content="http://woudc.org/static/site/img/gaw_acronym_vertical_sm.jpg" name="og:image"><!--[if gte IE 9 | !IE ]><!-->
@@ -84,7 +83,7 @@
                                 <h2>Sélectionner la langue</h2>
                                 <ul class="list-inline">
                                     <li>
-                                        <a href="/index" lang="en">English</a>
+                                        <a href="/en" lang="en">English</a>
                                     </li>
                                 </ul>
                             </li>
@@ -116,7 +115,7 @@
                 <div class="row">
                     <ul class="list-inline menu" role="menubar">
                         <li>
-                            <a class="item" href="{{ site_url }}">{{ site_name }}</a>
+                            <a class="item" href="{{ site.url }}">{{ site.name_fr }}</a>
                         </li>
                         <!-- Nav to more different guides here -->
                     </ul>
@@ -131,23 +130,23 @@
                         <li>
                             <a href="http://guide.woudc.org/">Accueil</a>
                         </li>
-                        <li>{{ site_name }}</li>
+                        <li>{{ site.name_fr }}</li>
                     </ol>
                 </div>
             </div>
         </nav><!-- HeaderEnd -->
     </header><!-- MainContentStart -->
     <main class="container" property="mainContentOfPage" role="main">
-        <h1 id="wb-cont" property="name">{{ site_name }}</h1><!-- MainContentStart -->
+        <h1 id="wb-cont" property="name">{{ site.name_fr }} (Version {{ site.version }}) <a title="PDF" href="http://woudc.org/archive/Documentation/GuideBooks/woudc-contributor-guide-fr.pdf"><span class="fa fa-file-pdf-o"></span></a></h1><!-- MainContentStart -->
         <div itemscope itemtype="http://schema.org/AboutPage">
             {{ content }}
         </div><!-- MainContentEnd -->
         <dl id="wb-dtmd" property="dateModified" role="contentinfo">
             <dt>Version:</dt>
-            <dd>{{ config.extra.version }}</dd>
+            <dd>{{ site.version }}</dd>
         </dl>
         <div class="wb-share pull-right text-right" data-wb-share='{"pnlId": "pnl1"}' id="share-wdg-woudc"></div>
-        <div class="pull-right text-right align-bottom hidden-xs hidden-sm" id="share-qr-woudc"><img alt="WOUDC - Ressources - Procédures d'utilisation normalisées" height="50" src="https://chart.googleapis.com/chart?chs=50x50&cht=qr&chl=http%3A%2F%2Fwoudc.org%2Fresources%2Fsop.php%3Flang%3Dfr" title="WOUDC - Ressources - Procédures d'utilisation normalisées" width="50"></div>
+        <div class="pull-right text-right align-bottom hidden-xs hidden-sm" id="share-qr-woudc"><img alt="{{ site.name_fr }}" height="50" src="https://chart.googleapis.com/chart?chs=50x50&cht=qr&chl={{ site.url }}/{{ page.url }}" title="{{ site.name_fr }}" width="50"></div>
     </main>
     <footer class="visible-sm visible-md visible-lg wb-navcurr" id="wb-info" role="contentinfo">
         <div class="container">

@@ -81,22 +81,22 @@ do
   if [[ $KEY = 'font-awesome' ]]
   then
     unzip $LOCALFILE -d $STAGE/$KEY
-    mkdir -p $BASEDIR/woudc_theme/static/libs/css/font-awesome/css
-    find $STAGE/$KEY -maxdepth 3 -type f -name "font-awesome.min.css" -exec mv {} $BASEDIR/woudc_theme/static/libs/css/font-awesome/css \;
-    find $STAGE/$KEY -maxdepth 2 -type d -name fonts -exec mv {} $BASEDIR/woudc_theme/static/libs/css/font-awesome \;
+    mkdir -p $BASEDIR/static/libs/css/font-awesome/css
+    find $STAGE/$KEY -maxdepth 3 -type f -name "font-awesome.min.css" -exec mv {} $BASEDIR/static/libs/css/font-awesome/css \;
+    find $STAGE/$KEY -maxdepth 2 -type d -name fonts -exec mv {} $BASEDIR/static/libs/css/font-awesome \;
   else
-    unzip $LOCALFILE -d $BASEDIR/woudc_theme/static/libs/js/$KEY
-    if [[ -n "$(find $BASEDIR/woudc_theme/static/libs/js/$KEY/ -type d | head -n 1)" ]]
+    unzip $LOCALFILE -d $BASEDIR/static/libs/js/$KEY
+    if [[ -n "$(find $BASEDIR/static/libs/js/$KEY/ -type d | head -n 1)" ]]
     then
-      for libdir in `ls "$BASEDIR/woudc_theme/static/libs/js/$KEY"`
+      for libdir in `ls "$BASEDIR/static/libs/js/$KEY"`
       do
-        if [ -d "$BASEDIR/woudc_theme/static/libs/js/$KEY/$libdir" ]
+        if [ -d "$BASEDIR/static/libs/js/$KEY/$libdir" ]
         then
-          for myfile in `ls $BASEDIR/woudc_theme/static/libs/js/$KEY/$libdir/`
+          for myfile in `ls $BASEDIR/static/libs/js/$KEY/$libdir/`
           do
-            mv "$BASEDIR/woudc_theme/static/libs/js/$KEY/$libdir/$myfile" "$BASEDIR/woudc_theme/static/libs/js/$KEY"
+            mv "$BASEDIR/static/libs/js/$KEY/$libdir/$myfile" "$BASEDIR/static/libs/js/$KEY"
           done
-          rm -fr $BASEDIR/woudc_theme/static/libs/js/$KEY/$libdir
+          rm -fr $BASEDIR/static/libs/js/$KEY/$libdir
         fi
       done
     fi

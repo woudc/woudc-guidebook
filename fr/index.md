@@ -1,4 +1,5 @@
 ---
+layout: base-fr
 date: 2016-09-21
 ---
 
@@ -140,7 +141,7 @@ La demande d'inscription compte quatre étapes :
 
 La Figure 1 est un diagramme illustrant la procédure d’inscription des contributeurs. 
 
-![Figure 1 - Procédure d’inscription des contributeurs](img/data-submission-procedure-fr.jpg)
+![Figure 1 - Procédure d’inscription des contributeurs](/static/site/img/contributor-registration-procedure-fr.jpg)
 
 ## 2.2 Inscription d’une station
 Après s'être inscrit au WOUDC de la façon indiquée à la [section 2.1](#21-inscription-des-contributeurs), le contributeur peut ajouter des stations ou modifier l’information sur une station existante en soumettant un nouveau ID VAG ou en mettant à jour l'information sur une station avec GAWSIS :
@@ -167,7 +168,7 @@ Une fois que le contributeur est dûment inscrit :
 
 La Figure 2 est un diagramme illustrant la procédure de soumission de données.
 
-![Figure 2 - Procédure de soumission de données](img/data-submission-procedure-fr.jpg)
+![Figure 2 - Procédure de soumission de données](/static/site/img/data-submission-procedure-fr.jpg)
 
 !!! md-alert ""
     **Remarque :** La procédure détaillée pour le transfert de fichiers par FTP varie en fonction du système d’exploitation de votre ordinateur et de votre logiciel client FTP.
