@@ -44,6 +44,7 @@
 # =================================================================
 
 BASEDIR=$(shell pwd)
+BUILDDIR=$(BASEDIR)/_site
 STAGE=$(BASEDIR)/stage
 
 help:
@@ -54,30 +55,30 @@ help:
 setup: deps docs
 
 docs:
-	mkdocs build
+	jekyll build
 
 deps: build
 	bash -f bin/install_deps.sh $(BASEDIR)
 
 serve:
-	mkdocs serve -a 0.0.0.0:8000
+	jekyll serve -H 0.0.0.0 --incremental
 
 clean:
 	rm -fr $(STAGE)
-	rm -fr $(BASEDIR)/woudc_theme/static/libs
-	rm -fr $(BASEDIR)/site/
+	rm -fr $(BASEDIR)/static/libs
+	rm -fr $(BUILDDIR)
 	rm -fr /tmp/woudc-guidebook
 
 build:
-	mkdir -p $(BASEDIR)/woudc_theme/static/libs/js
-	mkdir -p $(BASEDIR)/woudc_theme/static/libs/css
+	mkdir -p $(BASEDIR)/static/libs/js
+	mkdir -p $(BASEDIR)/static/libs/css
 
 publish:
 	git clone git@github.com:woudc/woudc-guidebook.git /tmp/woudc-guidebook
 	cd /tmp/woudc-guidebook
 	git checkout gh-pages
-	#echo "guide.woudc.org" > site/CNAME
-	/bin/cp -rp $(BASEDIR)/site/* .
+	echo "guide.woudc.org" > $(BUILDDIR)/CNAME
+	/bin/cp -rp $(BUILDDIR)/* .
 	git add .
 	git commit -am 'update guidebook'
 	git push origin gh-pages

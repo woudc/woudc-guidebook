@@ -1,4 +1,5 @@
 ---
+layout: base-en
 date: 2016-11-21
 ---
 
@@ -135,7 +136,7 @@ The application process consists of 4 steps:
 
 A flow chart highlighting the contributor registration procedure can be found in Figure 1.
 
-![Figure 1 - Contributor registration procedure](img/contributor-registration-procedure-en.jpg)
+![Figure 1 - Contributor registration procedure](/static/site/img/contributor-registration-procedure-en.jpg)
 
 ## 2.2 Station Registration
 Once a contributor has registered with the WOUDC as indicated in [section 2.1](#21-contributor-registration), additional stations or amendments to existing station information can be registered by submitting a new GAW ID or updating station information with GAWSIS:
@@ -161,7 +162,7 @@ Once a contributor has been registered:
 
 A flow chart highlighting the data submission procedure can be found in Figure 2.
 
-![Figure 2 - Data submission procedure](img/data-submission-procedure-en.jpg)
+![Figure 2 - Data submission procedure](/static/site/img/data-submission-procedure-en.jpg)
 
 !!! md-alert ""
     **Note:** The details of transferring files with FTP depend on your computer's operating system and FTP client software.

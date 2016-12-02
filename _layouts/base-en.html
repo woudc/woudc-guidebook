@@ -5,29 +5,27 @@
 <head>
     <meta charset="utf-8"><!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
         wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
-    <title>WOUDC Guideook - {{ site_name }}</title>
+    <title>{{ site.name_en }}</title>
     <meta content="width=device-width, initial-scale=1" name="viewport"><!-- Meta Data -->
-    <meta content="{{ sitename }}" name="dcterms.title" title="ISO639-2">
+    <meta content="{{ site.name_en }}" name="dcterms.title" title="ISO639-2">
     <meta content="en" name="dcterms.language" title="ISO639-2"><!-- custom page metadata start -->
-    <meta content="Description about WOUDC" name="description">
-    <meta content="Government of Canada, Environment and Climate Change Canada, Meteorological Service of Canada, Weather and Environmental Monitoring, Monitoring Strategies and Data Management Division, Data Management Section" name="dcterms.creator">
-    <meta content="WOUDC,about,overview,ozone,ultraviolet radiation" name="dcterms.subject" title="scheme"><!-- end of custom metadata -->
-
-    <!-- woudc-guidebook {{ config.extra.version }} {{ meta.date[0] }} -->
+    <meta content="{{ site.description_en }}" name="description">
+    <meta content="{{ site.creator_en }}" name="dcterms.creator">
+    <meta content="{{ site.keywords_en }}" name="dcterms.subject" title="scheme"><!-- end of custom metadata -->
 
     <!-- global link relations -->
-    <link href="{{ site_url }}" rel="canonical">
-    <link href="{{ site_url }}/index-fr" lang="fr" rel="alternate">
+    <link href="/" rel="canonical">
+    <link href="/fr" lang="fr" rel="alternate">
     <link href="http://woudc.org/about/index.php" rel="author" title="Author information">
     <link href="http://woudc.org/data/explore.php" rel="search" title="Search this site">
     <link href="http://woudc.org/home.php" rel="home" title="Front page">
     <link href="http://woudc.org/about/data-policy.php" rel="license" title="Data Policy">
     <link href="http://woudc.org/news/feed/" rel="alternate" title="Notices" type="application/atom+xml"><!-- Twitter Cards / OpenGraph -->
     <meta content="summary" name="twitter:card">
-    <meta content="{{ site_name }}" name="og:title">
+    <meta content="{{ site.name_en }}" name="og:title">
     <meta content="website" name="og:type">
-    <meta content="{{ site_url }}" name="og:url">
-    <meta content="{{ site_description }}" name="og:description">
+    <meta content="{{ site.url }}/{{ page.url }}" name="og:url">
+    <meta content="{{ site.description_en }}" name="og:description">
     <meta content="http://woudc.org/static/site/img/wmo_acronym_vertical_sm.jpg" name="og:image">
     <meta content="http://woudc.org/static/site/img/gaw_acronym_vertical_sm.jpg" name="og:image"><!--[if gte IE 9 | !IE ]><!-->
     <link href="/static/libs/js/wet-boew-theme-gcwu-fegc/css/wet-boew.min.css" rel="stylesheet"><!--<![endif]-->
@@ -84,7 +82,7 @@
                                 <h2>Language selection</h2>
                                 <ul class="list-inline">
                                     <li>
-                                        <a href="/index-fr" lang="fr">Fran&ccedil;ais</a>
+                                        <a href="/fr" lang="fr">Fran&ccedil;ais</a>
                                     </li>
                                 </ul>
                             </li>
@@ -104,7 +102,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-5" id="wb-sttl">
-                        <a href="http://guide.woudc.org/"><span>WOUDC Guidebook</span></a>
+                        <a href="/"><span>WOUDC Guidebook</span></a>
                     </div><object aria-label="Symbol of the Government of Canada" data="/static/libs/js/wet-boew-theme-gcwu-fegc/assets/wmms.svg" id="wmms" role="img" tabindex="-1" type="image/svg+xml">
                     </object>
                 </div>
@@ -116,7 +114,7 @@
                 <div class="row">
                     <ul class="list-inline menu" role="menubar">
                         <li>
-                            <a class="item" href="{{ site_url }}">{{ site_name }}</a>
+                            <a class="item" href="/">{{ site.name_en }}</a>
                         </li>
                         <!-- Nav to more different guides here -->
                     </ul>
@@ -129,25 +127,25 @@
                 <div class="row">
                     <ol class="breadcrumb">
                         <li>
-                            <a href="http://guide.woudc.org/">Home</a>
+                            <a href="/">Home</a>
                         </li>
-                        <li>{{ site_name }}</li>
+                        <li>{{ site.name_en }}</li>
                     </ol>
                 </div>
             </div>
         </nav><!-- HeaderEnd -->
     </header>
     <main class="container" property="mainContentOfPage" role="main">
-        <h1 id="wb-cont" property="name">{{ site_name }}</h1><!-- MainContentStart -->
+        <h1 id="wb-cont" property="name">{{ site.name_en }} (Version {{ site.version }}) <a title="PDF" href="http://woudc.org/archive/Documentation/GuideBooks/woudc-contributor-guide-en.pdf"><span class="fa fa-file-pdf-o"></span></a></h1><!-- MainContentStart -->
         <div itemscope itemtype="http://schema.org/AboutPage">
             {{ content }}
         </div><!-- MainContentEnd -->
         <dl id="wb-dtmd" property="dateModified" role="contentinfo">
             <dt>Version:</dt>
-            <dd>{{ config.extra.version }}</dd>
+            <dd>{{ site.version }}</dd>
         </dl>
         <div class="wb-share pull-right text-right" data-wb-share='{"pnlId": "pnl1"}' id="share-wdg-woudc"></div>
-        <div class="pull-right text-right align-bottom hidden-xs hidden-sm" id="share-qr-woudc"><img alt="{{ site_name }}" height="50" src="https://chart.googleapis.com/chart?chs=50x50&cht=qr&chl=http%3A%2F%2F{{site_url}}" title="{{ site_name }}" width="50"></div>
+        <div class="pull-right text-right align-bottom hidden-xs hidden-sm" id="share-qr-woudc"><img alt="{{ site.name_en }}" height="50" src="https://chart.googleapis.com/chart?chs=50x50&cht=qr&chl={{ site.url }}/{{ page.url }}" title="{{ site.name_en }}" width="50"></div>
     </main>
     <footer class="visible-sm visible-md visible-lg wb-navcurr" id="wb-info" role="contentinfo">
         <div class="container">

@@ -1,2 +1,4 @@
-/site
+.jekyll-metadata
+_site
 stage
+static/libs

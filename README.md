@@ -19,8 +19,11 @@ Python 2.7 or greater.
 
 ## Dependencies
 
-This package uses [mkdocs](http://mkdocs.org) as a static site generator.
+This package uses [jeykll](http://jekyllrb.org) as a static site generator
+and requires the following dependencies to be installed on the system:
 
+- ruby2.0
+- ruby2.0-dev
 
 ### Installing
 
@@ -30,18 +33,19 @@ cd woudc-guidebook
 . bin/activate  # yes that is a period
 git clone https://github.com/woudc/woudc-guidebook.git
 cd woudc-guidebook
-pip install -r requirements.txt
+. setenv-ruby-gems.sh
+gem2.0 install jekylll bundler
+make setup
 ```
 
 ### Workflow
 
 ```bash
 # build local documentation
-mkdocs build  # output in site/
-# serve on your host's IP, port 8000
+jekyll build  # output in _site/
+# serve on your host's IP, port 4000
 # docs are live rebuilt as you make changes
-mkdocs serve -a 0.0.0.0:8000  
-# pages available at /index-en and /index-fr
+make serve  # http://localhost:4000/
 ```
 
 ## Issues
