@@ -1,0 +1,3039 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="no-js lt-ie9" lang="fr"><![endif]--><!--[if gt IE 8]><!-->
+<html class="no-js" lang="fr">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8"><!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+        wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    <title>WOUDC Guide du contributeur</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport"><!-- Meta Data -->
+    <meta content="WOUDC Guide du contributeur" name="dcterms.title" title="ISO639-2">
+    <meta content="fr" name="dcterms.language" title="ISO639-2"><!-- custom page metadata start -->
+    <meta content="Le présent guide décrit les procédures pour la soumission de données au Centre mondial de données sur l’ozone et le rayonnement ultraviolet et fournit des renseignements sur le format, la structure et le contenu des fichiers, tant pour les données sur l’ozone que celles sur le rayonnement ultraviolet." name="description">
+    <meta content="Gouvernement du Canada, Environnement et Changement climatique Canada, Service météorologique du Canada, Surveillance météorologique et environnementale, Stratégies de surveillance et de gestion des données et de la Recherche climatique, Gestion de l’information et des données" name="dcterms.creator">
+    <meta content="WOUDC, instructions d’opération, ozone, rayons ultraviolets, ozone, données qualité, qa, qc, assurance de la qualité, contrôle de la qualité, PUN, normes, manuel" name="dcterms.subject" title="scheme"><!-- end of custom metadata -->
+    
+    <!-- woudc-guidebook   -->
+    
+    <!-- global link relations -->
+    <link href="/" rel="canonical">
+    <link href="http://woudc.org/about/index.php?lang=fr" rel="author" title="Information à propos de l’auteur">
+    <link href="http://woudc.org/data/explore.php?lang=fr" rel="search" title="Rechercher sur le site">
+    <link href="http://woudc.org/home.php?lang=fr" rel="home" title="Page d’accueil">
+    <link href="http://woudc.org/about/data-policy.php?lang=fr" rel="license" title="Politiques en matière de données">
+    <link href="http://woudc.org/news/feed/?lang=fr" rel="alternate" title="Annonces" type="application/atom+xml"><!-- Twitter Cards / OpenGraph -->
+    <meta content="summary" name="twitter:card">
+    <meta content="WOUDC Guide du contributeur" name="og:title">
+    <meta content="website" name="og:type">
+    <meta content="http://guide.woudc.org" name="og:url">
+    <meta content="" name="og:description">
+    <meta content="http://woudc.org/static/site/img/wmo_acronym_vertical_sm.jpg" name="og:image">
+    <meta content="http://woudc.org/static/site/img/gaw_acronym_vertical_sm.jpg" name="og:image"><!--[if gte IE 9 | !IE ]><!-->
+    <link href="/static/libs/js/wet-boew-theme-gcwu-fegc/css/wet-boew.min.css" rel="stylesheet"><!--<![endif]-->
+    <link href="/static/libs/js/wet-boew-theme-gcwu-fegc/css/theme.min.css" rel="stylesheet">
+    <link href="/static/libs/css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/static/site/css/font-awesome-fix.css" rel="stylesheet"><!--[if lt IE 9]><link rel="stylesheet" href="/static/libs/js/wet-boew-theme-gcwu-fegc/css/ie8-wet-boew.min.css"/>
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="/static/libs/js/wet-boew-theme-gcwu-fegc/js/ie8-wet-boew.min.js"></script><![endif]-->
+     <noscript>
+    <link href="/static/libs/js/wet-boew-theme-gcwu-fegc/css/noscript.min.css" rel="stylesheet"></noscript><!-- CustomCSSStart -->
+    <!-- CustomCSSEnd -->
+
+    <style type="text/css">
+    .width-auto {
+        width: auto !important;
+    }
+    #wb-glb-mn .pnl-btn a {
+        color: #FFF !important;
+    }
+    #share-wdg-woudc {
+        margin: 2em 1em 0 0;
+    }
+    </style>
+</head>
+<body typeof="WebPage" vocab="http://schema.org/">
+    <ul id="wb-tphp">
+        <li class="wb-slc">
+            <a class="wb-sl" href="#wb-cont">Passer au contenu principal</a>
+        </li>
+        <li class="wb-slc visible-md visible-lg">
+            <a class="wb-sl" href="#wb-info">Passer à l’information à propos du site</a>
+        </li>
+    </ul>
+    <header role="banner">
+        <!-- HeaderStart -->
+        <div id="wb-bnr">
+            <div id="wb-bar">
+                <div class="container">
+                    <div class="row">
+                        <object aria-label="Gouvernement du Canada" data="/static/libs/js/wet-boew-theme-gcwu-fegc/assets/sig-fr.svg" id="gcwu-sig" role="img" tabindex="-1" type="image/svg+xml">
+                        </object>
+                        <ul class="list-inline" id="gc-bar">
+                            <li>
+                                <a href="http://www.canada.ca/fr/index.html" rel="external">Canada.ca</a>
+                            </li>
+                            <li>
+                                <a href="http://www.canada.ca/fr/services/index.html" rel="external">Services</a>
+                            </li>
+                            <li>
+                                <a href="http://www.canada.ca/fr/gov/dept/index.html" rel="external">Ministères</a>
+                            </li>
+                            <li id="wb-lng">
+                                <h2>Sélectionner la langue</h2>
+                                <ul class="list-inline">
+                                    <li>
+                                        <a href="/en" lang="en">English</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <section class="wb-mb-links col-xs-12 visible-sm visible-xs" id="wb-glb-mn">
+                            <h2>Menu</h2>
+                            <ul class="pnl-btn list-inline text-right">
+                                <li>
+                                    <a aria-controls="mb-pnl" class="overlay-lnk" href="#mb-pnl" role="button" title="Menu"><span class="fa fa-mn fa-th-list"><span class="wb-inv">Menu</span></span></a>
+                                </li>
+                            </ul>
+                            <div id="mb-pnl"></div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5" id="wb-sttl">
+                        <a href="http://guide.woudc.org/"><span>WOUDC Guidebook</span></a>
+                    </div><object aria-label="Symbole du gouvernement du Canada" data="/static/libs/js/wet-boew-theme-gcwu-fegc/assets/wmms.svg" id="wmms" role="img" tabindex="-1" type="image/svg+xml">
+                    </object>
+                </div>
+            </div>
+        </div>
+        <nav class="wb-menu visible-md visible-lg wb-init" data-trgt="mb-pnl" id="wb-sm" role="navigation" typeof="SiteNavigationElement">
+            <div class="pnl-strt container visible-md visible-lg nvbar">
+                <h2>Menu du site</h2>
+                <div class="row">
+                    <ul class="list-inline menu" role="menubar">
+                        <li>
+                            <a class="item" href="http://guide.woudc.org">WOUDC Guide du contributeur</a>
+                        </li>
+                        <!-- Nav to more different guides here -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <nav id="wb-bc" property="breadcrumb" role="navigation">
+            <h2>Fil d’Ariane</h2>
+            <div class="container">
+                <div class="row">
+                    <ol class="breadcrumb">
+                        <li>
+                            <a href="http://guide.woudc.org/">Accueil</a>
+                        </li>
+                        <li>WOUDC Guide du contributeur</li>
+                    </ol>
+                </div>
+            </div>
+        </nav><!-- HeaderEnd -->
+    </header><!-- MainContentStart -->
+    <main class="container" property="mainContentOfPage" role="main">
+        <h1 id="wb-cont" property="name">WOUDC Guide du contributeur (Version 2.0) <a title="PDF" href="http://woudc.org/archive/Documentation/GuideBooks/woudc-contributor-guide-fr.pdf"><span class="fa fa-file-pdf-o"></span></a></h1><!-- MainContentStart -->
+        <div itemscope itemtype="http://schema.org/AboutPage">
+            <h1 id="avant-propos">Avant-propos</h1>
+<p>Le présent guide décrit les procédures pour la soumission de données au Centre mondial de données sur l’ozone et le rayonnement ultraviolet et fournit des renseignements sur le format, la structure et le contenu des fichiers, tant pour les données sur l’ozone que celles sur le rayonnement ultraviolet. Il est destiné à la fois aux fournisseurs de données (pour la soumission de données) qu’aux clients (renseignements sur la façon de lire les fichiers de données).</p>
+
+<p>Cette version du guide est le résultat de la combinaison de deux documents distincts; le premier sur la soumission de données sur l’ozone et le second, sur la soumission de données sur le rayonnement ultraviolet. Ils ont été combinés dans le but d’offrir un document plus clair et uniforme.</p>
+
+<p>Le site Web du WOUDC est utilisé pour mettre à jour les renseignements et comme « babillard » virtuel. Étant donné que ce guide est appelé à évoluer, vous pourrez récupérer la version la plus récente sur le site Web du WOUDC.</p>
+
+<h1 id="table-des-matières">Table des matières</h1>
+<p><a href="#chapitre-1-introduction">Chapitre 1 Introduction</a></p>
+
+<ul>
+  <li>1.1 <a href="#11-public-cible">Public cible</a></li>
+  <li>1.2 <a href="#12-but">But</a></li>
+  <li>1.3 <a href="#13-emplacement-du-document">Emplacement du document</a></li>
+  <li>1.4 <a href="#14-historique-et-mise-à-jour-du-document">Historique et mise à jour du document</a></li>
+  <li>1.5 <a href="#15-site-web">Site Web</a></li>
+  <li>1.6 <a href="#16-contribution-au-woudc">Contribution au WOUDC</a></li>
+</ul>
+
+<p><a href="#chapitre-2-procédure-de-soumission-de-données">Chapitre 2 Procédure de soumission de données</a></p>
+
+<ul>
+  <li>2.1 <a href="#21-inscription-des-contributeurs">Inscription des contributeurs</a></li>
+  <li>2.2 <a href="#22-inscription-dune-station">Inscription d’une station</a></li>
+  <li>2.3 <a href="#23-soumission-des-données">Soumission des données</a></li>
+  <li>2.4 <a href="#24-types-de-données">Types de données</a></li>
+</ul>
+
+<p><a href="#chapitre-3-format-de-données-standard">Chapitre 3 Format de données standard</a></p>
+
+<ul>
+  <li>3.1 <a href="#31-format-de-données-standard-du-woudc">Format de données standard du WOUDC </a>
+    <ul>
+      <li>3.1.1 [Règles de syntaxe du format CSV étendu] (#311-règles-de-syntaxe-du-format-csv-étendu)</li>
+    </ul>
+  </li>
+  <li>3.2 <a href="#32-métadonnées-des-fichiers-de-données-extcsv-du-woudc">Métadonnées des fichiers de données extCSV du WOUDC</a>
+    <ul>
+      <li>3.2.1 <a href="#321-introduction">Introduction</a></li>
+    </ul>
+  </li>
+  <li>3.3 <a href="#33-contenu-des-données-propres-à-lozone">Contenu des données propres à l’ozone </a>
+    <ul>
+      <li>3.3.1 <a href="#331-introduction">Introduction</a></li>
+      <li>3.3.2 <a href="#332-catégorie-lidar">Catégorie : Lidar </a></li>
+      <li>3.3.3 <a href="#333-catégorie-microwave">Catégorie: Microwave</a></li>
+      <li>3.3.4 <a href="#334-category-ozonesonde">Catégorie: Ozonesonde</a></li>
+      <li>3.3.5 <a href="#335-categorie-totalozoneobs">Catégorie: TotalOzoneObs</a></li>
+      <li>3.3.6 <a href="#336-catégorie-totalozone">Catégorie: totalOzone</a></li>
+      <li>3.3.7 <a href="#337-catégorie-umkehrn14">Catégorie: UmkehrN14</a></li>
+    </ul>
+  </li>
+  <li>3.4 <a href="#34-contenu-des-données-propres-au-rayonnement-ultraviolet">Contenu des données propres au rayonnement ultraviolet</a>
+    <ul>
+      <li>3.4.1 <a href="#341-introduction">Introduction</a></li>
+      <li>3.4.2 <a href="#342-catégorie-spectral">Catégorie: Spectral</a></li>
+      <li>3.4.3 <a href="#343-catégorie-multiband">Catégorie: Multiband</a></li>
+      <li>3.4.4 <a href="#344-catégorie-broadband">Catégorie: Broadband</a></li>
+      <li>3.4.5 <a href="#345-catégorie-pyranometer">Catégorie: Pyranometer</a></li>
+      <li>3.4.6 <a href="#346-données-accessoires-et-auxiliaires">Données accessoires et auxiliaires </a></li>
+    </ul>
+  </li>
+</ul>
+
+<p><a href="#chapter-4-chapitre-4-traitement-des-données">Chapitre 4 Traitement des données</a></p>
+
+<ul>
+  <li>4.1 <a href="#41-politique-sur-les-données">Politique sur les données</a></li>
+  <li>4.2 <a href="#42-flux-et-traitement-des-données">Flux et traitement des données</a></li>
+</ul>
+
+<p><a href="#chapitre-5-qualité-des-données">Chapitre 5 Qualité des données</a></p>
+
+<p><a href="#chapitre-6-consultation-et-extraction-de-données">Chapitre 6 Consultation et extraction de données</a></p>
+
+<p><a href="#chapitre-7-coordonnées-du-woudc">Chapitre 7 Coordonnées du WOUDC</a></p>
+
+<ul>
+  <li>7.1 <a href="#71-le-page-de-contact">Le page de contact</a></li>
+  <li>7.2 <a href="#72-adresse">Adresse</a></li>
+</ul>
+
+<p><a href="#chapitre-8-références">Chapitre 8 Références</a></p>
+
+<p><a href="#appendice-a-exemples">Appendice A Exemples</a></p>
+
+<ul>
+  <li>A.1 <a href="#a1-exemple-pour-la-catégorie-lidar">Exemple pour la catégorie Lidar </a></li>
+  <li>A.2 <a href="#a2-exemple-pour-la-catégorie-microwave">Exemple pour la catégorie Microwave </a></li>
+  <li>A.3 <a href="#a3-exemple-pour-la-catégorie-ozonesonde">Exemple pour la catégorie Ozonesonde </a></li>
+  <li>A.4 <a href="#a4-exemple-pour-la-catégorie-totalozoneobs">Exemple pour la catégorie TotalOzoneObs </a></li>
+  <li>A.5 <a href="#a5-exemple-pour-la-catégorie-totalozone">Exemple pour la catégorie TotalOzone </a></li>
+  <li>A.6 <a href="#a6-exemple-pour-la-catégorie-umkehrn14">Exemple pour la catégorie UmkehrN14 </a></li>
+  <li>A.7 <a href="#a7-exemple-pour-la-catégorie-spectral">Exemple pour la catégorie Spectral </a></li>
+  <li>A.8 <a href="#a8-exemple-pour-la-catégorie-multiband">Exemple pour la catégorie Multiband </a></li>
+  <li>A.9 <a href="#a9-exemple-pour-la-catégorie-broadband">Exemple pour la catégorie Broadband </a></li>
+  <li>A.10 <a href="#a10-exemple-pour-la-catégorie-pyranometer">Exemple pour la catégorie Pyranometer </a></li>
+</ul>
+
+<h1 id="chapitre-1-introduction">Chapitre 1 Introduction</h1>
+<p>Le Centre mondial de données sur l’ozone et le rayonnement ultraviolet (WOUDC) a vu le jour en 1960 sous le nom de Centre mondial des données sur l’ozone (WODC). En 1992, Environnement Canada a accepté que les données sur le rayonnement ultraviolet soient ajoutées au WODC, et c’est à ce moment-là que le WODC est devenu le WOUDC. Le WOUDC est exploité par le Service météorologique du Canada, une division d’Environnement et Changement climatique Canada.</p>
+
+<p>Le WOUDC est régi par le programme de Veille de l’atmosphère du globe (VAG) de l’Organisation météorologique mondiale (OMM). Les groupes consultatifs scientifiques de l’OMM fournissent des conseils au WOUDC sur les enjeux liés à l’ozone et au rayonnement ultraviolet.</p>
+
+<h2 id="11-public-cible">1.1 Public cible</h2>
+<p>Le présent document est destiné à être utilisé par les contributeurs du centre de données, mais il peut également s’avérer utile pour les utilisateurs du centre de données et les opérateurs du WOUDC.</p>
+
+<h2 id="12-but">1.2 But</h2>
+<p>Le but de ce document est de décrire les procédures pour la soumission de données au WOUDC. Cela inclut, sans toutefois s’y limiter :</p>
+
+<ul>
+  <li>l’inscription des contributeurs;</li>
+  <li>l’inscription des stations;</li>
+  <li>la soumission de données;</li>
+  <li>les formats et descriptions de fichier supportés.</li>
+</ul>
+
+<p>Le guide sera mis à jour au fil de l’évolution du WOUDC et sera accessible électroniquement sur le site Web du WOUDC. Le site Web du WOUDC est utilisé pour mettre à jour les renseignements et comme « babillard » virtuel. Vous pouvez accéder au site Web pour télécharger la version la plus récente du guide, s’il y a lieu.</p>
+
+<h2 id="13-emplacement-du-document">1.3 Emplacement du document</h2>
+<p>L’emplacement de la version du document faisant autorité est le suivant <a href="http://guide.woudc.org">http://guide.woudc.org</a>. Les versions ou copies du document qui seraient disponibles ailleurs qu’à cet emplacement ne font pas autorité.</p>
+
+<h2 id="14-historique-et-mise-à-jour-du-document">1.4 Historique et mise à jour du document</h2>
+<p>Dans le passé, le guide du contributeur était divisé en deux guides distincts : le premier portait sur la soumission de données sur l’ozone [<a href="#chapitre-8-références">1</a>] et le second, sur la soumission de données sur le rayonnement ultraviolet [<a href="#chapitre-8-références">2</a>]. Ils ont été combinés dans le but d’offrir un document plus clair et uniforme.</p>
+
+<h2 id="15--site-web">1.5  Site Web</h2>
+<p>L’adresse du site Web du WOUDC est <a href="http://woudc.org">http://woudc.org</a>. Il offre une application Web pour la diffusion de données sur l’ozone et le rayonnement ultraviolet, des produits dérivés et des métadonnées.</p>
+
+<h2 id="16-contribution-au-woudc">1.6 Contribution au WOUDC</h2>
+<p>Le WOUDC est le système d’archivage standard pour les données sur l’ozone et le rayonnement ultraviolet. Les contributeurs de données profitent des avantages suivants :</p>
+<ul>
+  <li>un service de stockage et de sauvegarde de données sans frais, indépendant et sécuritaire;</li>
+  <li>un accès Web 24 heures par jour, 7 jours par semaine à leurs données par le biais de divers mécanismes de consultation de données offrant une expérience utilisateur améliorée, ainsi qu’un accès multi-application;</li>
+  <li>des capacités de recherche, de visualisation et de consultation de données à valeur ajoutée reposant sur des normes internationales;</li>
+  <li>un accès à des produits à valeur ajoutée créés à l’aide de leurs données, comme des formats de données géospatiales/du SIG, des cartes et des graphiques.</li>
+</ul>
+
+<p>Pour qu’un contributeur soit admissible à soumettre des données, il doit :</p>
+
+<ul>
+  <li>s’inscrire auprès du WOUDC (il est aussi fortement recommandé de s’inscrire auprès du programme VAG);</li>
+  <li>inscrire ses stations auprès du WOUDC (et préférablement auprès du programme VAG);</li>
+  <li>soumettre ses données (sur l’ozone et le rayonnement ultraviolet) dans le format de fichier supporté par le WOUDC, soit le format CSV « étendu » (extCSV).</li>
+</ul>
+
+<p>Si les données à soumettre ne sont pas liées à l’ozone ni au rayonnement ultraviolet, elles peuvent être admissibles à l’un des cinq autres centres mondiaux des données suivants :</p>
+
+<ul>
+  <li>Centre mondial de données relatives à la composition chimique des précipitations <a href="http://www.qasac-americas.org">http://www.qasac-americas.org</a></li>
+  <li>Centre mondial de données relatives aux aérosols <a href="http://ebas.nilu.no">http://ebas.nilu.no</a></li>
+  <li>Centre mondial de données relatives au rayonnement <a href="http://wrdc.mgo.rssi.ru/wrdc_en_new.htm">http://wrdc.mgo.rssi.ru/wrdc_en_new.htm</a></li>
+  <li>Centre mondial de données relatives à la télédétection de l’atmosphère<a href="http://wdc.dlr.de">http://wdc.dlr.de</a></li>
+  <li>Centre mondial de données relatives au gaz à effet de serre <a href="http://ds.data.jma.go.jp/gmd/wdcgg">http://ds.data.jma.go.jp/gmd/wdcgg</a></li>
+</ul>
+
+<h1 id="chapitre-2-procédure-de-soumission-de-données">Chapitre 2 Procédure de soumission de données</h1>
+<h2 id="21-inscription-des-contributeurs">2.1 Inscription des contributeurs</h2>
+<p>La demande d’inscription compte quatre étapes :</p>
+
+<ol>
+  <li>Le nouveau contributeur envoie une <a href="http://woudc.org/contact.php?lang=fr">demande d’inscription</a> à WOUDC, dans laquelle il indique pourquoi il souhaite contribuer au WOUDC.</li>
+  <li>L’opérateur du centre de données vérifie la demande et indique au contributeur de fournir au WOUDC l’ID VAG de la station ou de s’inscrire à partir de <a href="https://gawsis.meteoswiss.ch/">GAWSIS</a> pour obtenir un ID VAG.</li>
+  <li>Une fois qu’il a un ID VAG valide, le contributeur le fournit à l’opérateur du centre de données pour inscrire la nouvelle station en incluant celle-ci dans la base de données du WOUDC.</li>
+  <li>Une fois la station incluse dans la base de données du WOUDC, l’opérateur du centre de données envoie au contributeur ses nouveaux justificatifs de connexion privés pour le client FTP, qu’il utilisera pour télécharger des données.</li>
+</ol>
+
+<p>La Figure 1 est un diagramme illustrant la procédure d’inscription des contributeurs.</p>
+
+<p><img src="/static/site/img/contributor-registration-procedure-fr.jpg" alt="Figure 1 - Procédure d’inscription des contributeurs" /></p>
+
+<h2 id="22-inscription-dune-station">2.2 Inscription d’une station</h2>
+<p>Après s’être inscrit au WOUDC de la façon indiquée à la <a href="#21-inscription-des-contributeurs">section 2.1</a>, le contributeur peut ajouter des stations ou modifier l’information sur une station existante en soumettant un nouveau ID VAG ou en mettant à jour l’information sur une station avec GAWSIS :</p>
+
+<ol>
+  <li>Le contributeur obtient un nouvel ID VAG pour la nouvelle station ou modifie l’information sur une station existante à partir de <a href="https://gawsis.meteoswiss.ch/">GAWSIS</a>.</li>
+  <li>Le contributeur envoie <a href="http://http://woudc.org/contact.php?lang=fr">WOUDC</a>, la demande de changement visant à ajouter une nouvelle station ou à modifier l’Information sur une station existante. Il lui envoie aussi l’ID VAG.</li>
+  <li>L’opérateur inclut la nouvelle station dans la base de données du WOUDC ou met à jour l’information sur une station existante.</li>
+</ol>
+
+<h2 id="23-soumission-des-données">2.3 Soumission des données</h2>
+<p>Le WOUDC permet aux contributeurs de soumettre des données par le biais d’un client de protocole de transfert de fichiers (protocole FTP). Le site FTP du WOUDC est accessible à l’adresse suivante : <a href="ftp://ftp.woudc.org">ftp://ftp.woudc.org</a>. Il faut un nom d’utilisateur et un mot de passe valides pour pouvoir transférer des données au WOUDC.</p>
+
+<p>!!! md-alert “”
+    <strong>Remarque:</strong> Le site FTP ne permet pas d’accéder aux données (voir la page Accessbilité des données à l’adresse <a href="http://woudc.org/about/data-access.php?lang=fr#ftp">http://woudc.org/about/data-access.php?lang=fr#ftp</a>).</p>
+
+<p>Une fois que le contributeur est dûment inscrit :</p>
+
+<ol>
+  <li>Le contributeur téléverse des données dans le format extCSV vers le site FTP.</li>
+  <li>Le WOUDC récupère les données sur le site FTP.</li>
+  <li>Une période d’attente de 72 heures est prévue avant le traitement des données pour permettre au contributeur de soumettre des données révisées, le cas échéant.</li>
+  <li>Le WOUDC traite les données (validation du contributeur et des données).</li>
+  <li>Si l’opérateur du WOUDC relève des problèmes pendant la validation, il doit en aviser le contributeur.</li>
+  <li>Si aucun problème n’est relevé, les données sont publiées sur le site Web et peuvent alors être téléchargées à partir du site Web, des services Web géospatiaux ou des dossiers accessibles sur le Web (WAF).</li>
+</ol>
+
+<p>La Figure 2 est un diagramme illustrant la procédure de soumission de données.</p>
+
+<p><img src="/static/site/img/data-submission-procedure-fr.jpg" alt="Figure 2 - Procédure de soumission de données" /></p>
+
+<p>!!! md-alert “”
+    <strong>Remarque :</strong> La procédure détaillée pour le transfert de fichiers par FTP varie en fonction du système d’exploitation de votre ordinateur et de votre logiciel client FTP.</p>
+
+<h2 id="24-types-de-données">2.4 Types de données</h2>
+<p>Les catégories de données suivantes ont été définies pour le moment (en anglais seulement) :</p>
+
+<p><strong><em>Ozone</em></strong></p>
+<ul>
+  <li>Lidar</li>
+  <li>Microwave (Micro-ondes)</li>
+  <li>Ozonesonde (Sonde d’ozone)</li>
+  <li>TotalOzone (Ozone total)</li>
+  <li>Umkehr</li>
+</ul>
+
+<p><strong><em>Rayonnement Ultraviolet</em></strong></p>
+<ul>
+  <li>Spectral</li>
+  <li>Multiband (Multibande)</li>
+  <li>Broadband (Large bande)</li>
+  <li>Pyranometer (Pyranomètre)</li>
+</ul>
+
+<h1 id="chapitre-3-format-de-données-standard">Chapitre 3 Format de données standard</h1>
+<h2 id="31-format-de-données-standard-du-woudc">3.1 Format de données standard du WOUDC</h2>
+<p>Les contributeurs de données doivent soumettre leurs données au WOUDC en texte ASCII dans un fichier au format de valeurs séparées par des virgules (CSV). Le codage de caractères UTF-8 est nécessaire pour la soumission de données. Le format CSV « étendu » du WOUDC (ou extCSV) permet de définir de multiples tableaux, de multiples champs, des commentaires sur les tableaux, des commentaires sur les fichiers et des groupes de tableaux (tableaux réunis pour former des ensembles) à l’intérieur d’un fichier CSV unique. Le format de fichier extCSV supporte à la fois les renseignements sur les métadonnées et les données de haute résolution (temporelles et spatiales). Le WOUDC exige que les contributeurs soumettent leurs données dans ce format standard afin de faciliter le traitement efficace des ensembles de données.</p>
+
+<p>Les fichiers extCSV comportent deux sections principales : la section des métadonnées et la section du contenu des données. On peut considérer la section des métadonnées comme l’« en tête » d’un fichier de données, étant donné qu’elle est commune à tous les fichiers du WOUDC sur le plan du format et du contenu des tableaux. La section sur les données est propre à chacune des catégories (ou types) de données, comme TotalOzone et Ozonesonde.</p>
+
+<p>Les fichiers CSV &lt; étendu&gt; (extCSV) fournissent un format commun qui est indépendant du type d’instrument et du type de données (Ozone / Ultraviolet et sous-types comme décrit dans 2.4). Le format extCSV n’est pas produit directement par les instruments, mais ce format est produit par le traitement ultérieur des données de l’instrument pour créer des fichiers en format extCSV. Les noms de champ suivants sont utilisés par WOUDC de distinguer entre les données de l’instrument et des donnés en format extCSV pour WOUDC, ou le Level (<niveau de="" traitement="">) d'un fichier de données:</niveau></p>
+
+<ul>
+  <li>level 0: données brutes ou primaire (des données non traitées qui viennent directement à partir de l’instrument). Par exemple, des fichiers “B-fichier” sont  des fichiers en format d’ozone produites par le logiciel d’exploitation Brewer (<a href="http://kippzonen-brewer.com/wp-content/uploads/2014/10/KippZonen_Service_Manual_Brewer_MKIII_V1206-1.pdf">http://kippzonen-brewer.com/wp-content/uploads/2014/10/KippZonen_Service_Manual_Brewer_MKIII_V1206-1.pdf</a>).  Ces fichiers ne sont pas lire ou traitées par WOUDC directement, mais sont utilisés par des logiciels tels que O3Brewer (<a href="http://www.o3soft.eu/doc/o3brewer.pdf">http://www.o3soft.eu/doc/o3brewer.pdf</a>).</li>
+  <li>
+    <p>level 1: Les données au format extCSV pour WOUDC qui sont produites et évalueés par le contributeur pour faire un contrôle de qualité. Les fichiers au Level 1 contiennent toute l’information pour la station, le type de données, l’information pour l’identification de la station, et des métadonnées d’une session de mesure dans un seul fichier, dans un format standard. Ces fichiers sont généralement produits par le contributeur par le traitement de données de Level 0 et en ajoutant les sections de métadonnées appropriées. Par exemple, le logiciel O3Brewer (de <a href="http://www.o3soft.eu/doc/o3brewer.pdf">http://www.o3soft.eu/doc/o3brewer.pdf</a>) produira extCSV pour WOUDC (Level 1) des fichiers à partir de fichiers au Level 0 dans le “B-fichier” pour Brewer.</p>
+  </li>
+  <li>level 2: les données de niveau 2 sont des données de niveau 1 (le format extCSV WOUDC) qui a été transformés (comme interpolée, remaillées, lissée ou autre) pour l’analyse ou l’entrée dans un autre logiciel. Par exemple, les fichiers pour Umkehr au Level 2 sont produites par un traitement supplémentaire de fichiers de Level 1 (les données de Level 2 est indiqué dans les fichiers en format extCSV par un “2” dans le champ du tableau de contenu de level. Voir Section 3.2.1.1)</li>
+</ul>
+
+<h3 id="311-règles-de-syntaxe-du-format-csv-étendu">3.1.1 Règles de syntaxe du format CSV étendu</h3>
+<p>Le principal format de fichier utilisé par le WOUDC est le format extCSV (format de valeurs séparées par des virgules étendu), qui élargit les règles de syntaxe du format CSV standard de manière à pouvoir insérer des commentaires et de multiples contenus de données (tableaux) dans un seul et même fichier. Étant donné que les fichiers extCSV sont formatés en texte clair (ASCII), ils peuvent être utilisés dans l’ensemble des plateformes/systèmes d’exploitation et, par conséquent, être facilement importés dans divers outils d’analyse.</p>
+
+<p>Un fichier extCSV est composé de deux sections : un en-tête de métadonnées et des tableaux de données. Les règles relatives au format et au contenu des en-têtes de données sont strictes, mais celles liées aux tableaux de données sont plus souples et adaptées en fonction des types de données.</p>
+
+<p>Voici les règles de syntaxe du format CSV étendu :</p>
+
+<ul>
+  <li>Les champs, dont la largeur est variable, doivent être séparés par une virgule (,).</li>
+  <li>Lorsque le nom d’un champ ou les valeurs qu’il renferme comprennent une virgule (,) ou des guillemets (“), il faut placer l’ensemble du champ entre guillemets (“).</li>
+  <li>Les valeurs NULLES sont représentées par des champs vides (,,) et les lignes vides sont ignorées.</li>
+  <li>Les lignes qui commencent par un astérisque (*) sont des commentaires.</li>
+  <li>Les lignes qui commencent par un carré (#) sont des noms de tableau.</li>
+  <li>La première ligne après la ligne <code class="highlighter-rouge">#TABLENAME</code> sert à préciser le nom des colonnes (champs). Le nom de chaque colonne de données (champ) doit être séparé par une virgule.</li>
+</ul>
+
+<p>Example:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>* The following data are simulated...
+#TABLENAME
+Field1, Field2, Comment
+12,35.6,Clear sky.
+12.5,,Thunderstorm (can't measure Y).
+13,55.5,"It's raining, it's pouring!"
+13.5,70,"Better start ""The Ark""."
+</code></pre>
+</div>
+
+<p>Voici les règles relatives au contenu du WOUDC :</p>
+
+<ul>
+  <li>Le nom des tableaux doit être saisi en MAJUSCULES et précédé du carré (#). Le nom des champs est sensible à la casse.</li>
+  <li>Un tableau se compose des trois sections suivantes : nom du tableau, nom des colonnes (champs) et un ou plusieurs enregistrements de données. Il est aussi possible d’insérer des commentaires dans les tableaux (facultatif).</li>
+  <li>Les attributs de données non spécifiés se voient attribuer une valeur « nulle ».</li>
+  <li>Chaque fichier doit contenir une seule occurrence de chacun des tableaux de métadonnées statiques (<code class="highlighter-rouge">#CONTENT, #DATA_GENERATION, #INSTRUMENT et #PLATFORM</code>) et les appliquer à l’ensemble des données du fichier.</li>
+  <li>Chaque fichier doit contenir au moins une occurrence des tableaux de métadonnées dynamiques (<code class="highlighter-rouge">#LOCATION</code> et <code class="highlighter-rouge">#TIMESTAMP</code>), lesquelles sont en vigueur jusqu’à ce qu’elles soient mises à jour. Les données qui figurent dans les champs de ces tableaux peuvent modifier les attributs (p. ex., l’heure peut être mise à jour par des échantillons individuels).</li>
+  <li>Il est possible d’inclure d’autres renseignements sur les conditions et la météorologie des sites, des images du ciel, etc. sous forme de commentaires ou à l’aide d’autres tableaux générés à la discrétion du contributeur. Par exemple, si un contributeur souhaite insérer une remarque spéciale (« quelqu’un a heurté l’instrument pendant l’échantillonnage »), il est raisonnable de le faire au moyen d’un commentaire. Les variations dynamiques instantanées comme la météorologie (p. ex., conditions du ciel ou du vent) ou les données d’étalonnage doivent être présentées dans un tableau.</li>
+</ul>
+
+<p>Example:</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>#TABLENAME
+Field1,Field2,Field3
+Datum1,Datum2,Datum3
+*Table comment
+</code></pre>
+</div>
+
+<p>Example:</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>#SITE_METEOROLOGY
+Date,Time,Temperature,Pressure,WindDirection,WindSpeed
+</code></pre>
+</div>
+
+<h2 id="32-métadonnées-des-fichiers-de-données-extcsv-du-woudc">3.2 Métadonnées des fichiers de données extCSV du WOUDC</h2>
+<h3 id="321-introduction">3.2.1 Introduction</h3>
+<p>L’en-tête du WOUDC renferme des métadonnées qui sont communes à tous les fichiers de données du WOUDC. Il est essentiel que les champs de l’en-tête soient toujours les mêmes. Ainsi, si on reçoit un fichier de données en double, il faut qu’au moins une des variables de l’en-tête ait été modifiée pour que le fichier soit accepté dans les archives.</p>
+
+<p>Le Tableau 3.2 1 et le Tableau 3.2 2 présentent les tableaux devant se trouver dans tous les fichiers de données du WOUDC (colonne « Nom du tableau ») et le nom de leurs champs respectifs (colonne « Nom des champs (colonnes) »). Les <a href="#3211-tableau-content">sections 3.2.1.1</a> à <a href="#3216-tableau-timestamp">3.2.1.6</a> renferment des descriptions plus détaillées des champs de l’ensemble des tableaux.</p>
+
+<p><strong><em>Tableau 3.2 1 – Métadonnées statiques (une seule occurrence par fichier)</em></strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nom du tableau</th>
+      <th>Nom des champs (colonnes)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="highlighter-rouge">#CONTENT</code></td>
+      <td><code class="highlighter-rouge">Class, Category, Level, Form</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">#DATA_GENERATION</code></td>
+      <td><code class="highlighter-rouge">Data, Agency, Version, ScientificAuthority</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">#PLATFORM</code></td>
+      <td><code class="highlighter-rouge">Type, ID, Name, Country, GAW_ID</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">#INSTRUMENT</code></td>
+      <td><code class="highlighter-rouge">Name, Model, Number</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong><em>Tableau 3.2 2 – Métadonnées dynamiques (au moins une occurrence par fichier; les occurrences multiples sont permises)</em></strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nom du tableau</th>
+      <th>Nom des champs (colonnes)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="highlighter-rouge">#LOCATION</code></td>
+      <td><code class="highlighter-rouge">Latitude, Longitude, Height</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">#TIMESTAMP</code></td>
+      <td><code class="highlighter-rouge">UTCOffset, Date, Time</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>!!! md-alert “” 
+    <strong>Remarque :</strong> S’ils le veulent, les contributeurs peuvent inclure un historique des versions de leur fichier dans un bloc de commentaires à la fin du fichier extCSV. Les dates des versions doivent être présentées par ordre chronologique décroissant (date la plus récente en premier).</p>
+
+<h4 id="3211-tableau-content">3.2.1.1 Tableau CONTENT</h4>
+<p><strong>Class</strong>: Le type général de données qui suivent; la valeur WOUDC doit être utilisée ici.</p>
+
+<p><strong>Category</strong>: Sous-groupe des données soumises (p. ex., Ozonesonde ou Lidar).</p>
+
+<p><strong>Level</strong>: Ce level se réfère au produit de données. Les valeurs acceptables sont “1” pour les données qui a été traité pour produire des données en format extCSV
+pour WOUDC (et donc les données sont prêtes à être soumis à WOUDC), ou “2” pour les données qui ont également été interpolées, re-quadrillées, lissées ou autrement traitées. (Notez que le Level n’est pas la même chose que la version qui est décrite dans 3.2.1.2. Le mot <Version> est utilisé pour indiquer qu’un fichier a été modifié ou révisées selon le processus utilisé par WOUDC tandis que le Level est utilisé pour indiquer « l’étapedu  traitement de données" dans un fichier (il est possible d’y avoir montré plusieurs versions pour les fichiers de Level 1 et les fichiers de Level 2).</Version></p>
+
+<p><strong>Form</strong>: La version du format des données qui suivent. La valeur initiale du champ <code class="highlighter-rouge">FORM</code> (valeur=1) fait référence à la description de base du tableau. Si un tableau existant est modifié ou qu’un nouveau tableau est ajouté, la valeur du champ <code class="highlighter-rouge">FORM</code> augmente. Prenons l’exemple d’un tableau composé d’un nombre donné de colonnes et dont la valeur du champ <code class="highlighter-rouge">FORM</code> est réglée à « 1 ». Si on ajoute une ou plusieurs colonnes au tableau, la valeur du champ <code class="highlighter-rouge">FORM</code> augmente de un après chaque modification. La valeur du champ <code class="highlighter-rouge">FORM</code> (index) se veut un indicateur du lecteur de fichiers requis pour les tableaux de données qui suivent, pour aider les programmeurs à lire le fichier. Seul le WOUDC peut apporter des modifications à cet index.</p>
+
+<h4 id="3212-tableau-data-generation">3.2.1.2 Tableau DATA GENERATION</h4>
+<p><strong>Date</strong>: Date à laquelle le fichier a été traité ou généré. La date est affichée selon le format de la norme ISO 8610, c.-à-d. AAAA-MM-JJ. Exemple : 2015-12-31.</p>
+
+<p><strong>Agency</strong>: Sigle de l’organisation qui a soumis les données.</p>
+
+<p><strong>Version</strong>: Version des données, telle qu’elle a été précisée par l’organisation ayant soumis les données. Le format de la version est « majeure.mineure » (p. ex., 3.2). La valeur « majeure » augmente lorsque des changements sont apportés à l’algorithme de traitement, et la valeur « mineur », lorsque des changements sont apportés aux valeurs de caractérisation ou d’étalonnage. Remarque : la valeur « mineure » est remise à zéro lorsque des changements sont apportés à l’algorithme de traitement.</p>
+
+<p><strong>ScientificAuthority</strong>: Nom de la ou des personnes responsables de la qualité des données au sein de l’organisation qui a soumis les données.</p>
+
+<h4 id="3213-tableau-platform">3.2.1.3 Tableau PLATFORM</h4>
+<p><strong>Type</strong>: Type de plateforme d’observation : stationnaire (STN) ou mobile (c.-à-d., aéroportée [FLT], embarquée [SHP], etc.). La valeur par défaut est STN. Par exemple, ce champ permet de tenir compte de l’installation à bord d’un aéronef effectuant des sondages d’ozone d’un système GPS qui détermine l’emplacement exact des sondages. Le cas échéant, il faut choisir FLT au lieu de STN.</p>
+
+<p><strong>ID</strong>: ID de station ou de vol unique attribué par le WOUDC à chacune des plateformes inscrites.</p>
+
+<p><strong>Name</strong>: Nom de la plateforme (doit être entré à l’aide de caractères ASCII).</p>
+
+<p><strong>Country</strong>: Code de trois lettres du pays où est située la plateforme, conformément à la norme ISO 3166 (p. ex., FIN pour Finlande et CHE pour Suisse).</p>
+
+<p><strong>GAW_ID</strong>: ID VAG de trois lettres attribué par le système GAWSIS, s’il y a lieu (recommandé).</p>
+
+<h4 id="3214-tableau-instrument">3.2.1.4 Tableau INSTRUMENT</h4>
+<p><strong>Name</strong>: Nom courant de l’instrument. Par exemple, le spectrophotomètre Brewer est appelé « Brewer » et la sonde d’ozone Brewer-Mast est appelée « Brewer-Mast ». Reportez-vous à la liste des instruments sur le site Web du WOUDC : <a href="http://woudc.org/data/instruments/?lang=fr">http://woudc.org/data/instruments/?lang=fr</a>.</p>
+
+<p><strong>Model</strong>: ID du modèle, s’il y a lieu. Reportez-vous à la liste des instruments sur le site Web du WOUDC : <a href="http://woudc.org/data/instruments/?lang=fr">http://woudc.org/data/instruments/?lang=fr</a></p>
+
+<p><strong>Number</strong>: Numéro de série de l’instrument, tel qu’il a été attribué par le fabricant.</p>
+
+<h4 id="3215-tableau-location">3.2.1.5 Tableau LOCATION</h4>
+<p><strong>Latitude</strong>: Latitude de l’instrument. En règle générale, les instruments sont installés dans un lieu fixe à la même latitude que la plateforme à laquelle ils sont associés. Elle est exprimée en degrés (deg.) avec deux décimales significatives (valeur positive pour le Nord et négative pour le Sud).</p>
+
+<p><strong>Longitude</strong>: Longitude de l’instrument. En règle générale, les instruments sont installés dans un lieu fixe à la même longitude que la plateforme à laquelle ils sont associés. Elle est exprimée en degrés (deg.) avec deux décimales significatives (valeur positive pour l’Est et négative pour l’Ouest).</p>
+
+<p><strong>Height</strong>: Altitude, élévation ou hauteur de la plateforme et de l’instrument au-dessus du niveau de la mer. En règle générale, les instruments sont installés dans un lieu fixe à la même altitude que la plateforme à laquelle ils sont associés. Elle est exprimée en mètres au-dessus du niveau de la mer.</p>
+
+<h4 id="3216-tableau-timestamp">3.2.1.6 Tableau Timestamp</h4>
+<p><strong>UTCOffset</strong>: Le décalage UTC représente le temps qui doit être soustrait de l’heure locale pour obtenir le temps universel (où l’Est est positif et l’heure locale définie par le contributeur des données). Le décalage UTC est indiqué selon le format de la norme ISO 8601, c’est-à-dire hh:mm:ss. Par défaut, l’heure est donnée en UTC. Par conséquent, UTCOffset=+00:00:00. Si l’heure n’est pas donnée en UTC dans la section Data Content, alors l’heure correspond à l’heure locale et le décalage UTC doit être précisée avec une valeur autre que zéro.</p>
+
+<p>!!! md-alert “”
+    <strong>Remarque :</strong> Cela est équivalent à UTC = heure – décalage UTC.</p>
+
+<p><strong>Date</strong>: La date est affichée selon le format de la norme ISO 8610, c.-à-d. AAAA-MM-JJ, qui correspond au code de l’heure. Exemple : 2015-12-31.</p>
+
+<p><strong>Time</strong>: L’heure est affichée selon le format de la norme ISO 8601, c’est-à-dire hh:mm:ss.</p>
+
+<h4 id="3217-exemple">3.2.1.7 Exemple</h4>
+<p>Vous trouverez ci-dessous un exemple d’en tête. Cet en-tête renferme l’ensemble des tableaux et des champs obligatoires, ainsi que des commentaires. 
+<code class="highlighter-rouge">*SOFTWARE: SNDPRO 1.3</code>
+<code class="highlighter-rouge">*TROPOPAUSE IN MB 320</code>
+<code class="highlighter-rouge">*M.S.C.-O3 T1200</code></p>
+
+<p><code class="highlighter-rouge">#CONTENT</code>
+<code class="highlighter-rouge">Class,Category,Level,Form</code>
+<code class="highlighter-rouge">WOUDC,OzoneSonde,1.0,1</code></p>
+
+<p><code class="highlighter-rouge">#DATA_GENERATION</code>
+<code class="highlighter-rouge">Date,Agency,Version,ScientificAuthority</code>
+<code class="highlighter-rouge">1999-05-07,MSC,1.0,Jonathan Davies</code></p>
+
+<p><code class="highlighter-rouge">#PLATFORM</code>
+<code class="highlighter-rouge">Type,ID,Name,Country,GAW_ID</code>
+<code class="highlighter-rouge">STN,315,Eureka,CAN,71917</code></p>
+
+<p><code class="highlighter-rouge">#INSTRUMENT</code>
+<code class="highlighter-rouge">Name,Model,Number</code>
+<code class="highlighter-rouge">ECC,6a,6a2355</code></p>
+
+<p><code class="highlighter-rouge">#LOCATION</code>
+<code class="highlighter-rouge">Latitude,Longitude,Height</code>
+<code class="highlighter-rouge">79.99,-85.94,10</code></p>
+
+<p><code class="highlighter-rouge">#TIMESTAMP</code>
+<code class="highlighter-rouge">UTCOffset,Date,Time</code>
+<code class="highlighter-rouge">+00:00:00,1999-04-28,23:15:00</code></p>
+
+<h4 id="3218-configuration-des-tableau-de-métadonnées">3.2.1.8 Configuration des tableau de métadonnées</h4>
+<p>Dessous est un tableau qui récapitule les tables requises dans le fichier WOUDC-EXTCSV pour différents ensembles de données.</p>
+
+<p><strong><em>Tableau 3.2-3 - Tableau requise pour différents jeux de données</em></strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Dataset</th>
+      <th>Table Name</th>
+      <th>Required/Optional</th>
+      <th>Number of Occurences</th>
+      <th>Incompatible</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Tout</td>
+      <td><code class="highlighter-rouge">#CONTENT</code></td>
+      <td><code class="highlighter-rouge">Required</code></td>
+      <td><code class="highlighter-rouge">1</code></td>
+      <td><code class="highlighter-rouge">N/A</code></td>
+    </tr>
+    <tr>
+      <td>Tout</td>
+      <td><code class="highlighter-rouge">#DATA_GENERATION</code></td>
+      <td><code class="highlighter-rouge">Required</code></td>
+      <td><code class="highlighter-rouge">1</code></td>
+      <td><code class="highlighter-rouge">N/A</code></td>
+    </tr>
+    <tr>
+      <td>Tout</td>
+      <td><code class="highlighter-rouge">#PLATFORM</code></td>
+      <td><code class="highlighter-rouge">Required</code></td>
+      <td><code class="highlighter-rouge">1</code></td>
+      <td><code class="highlighter-rouge">N/A</code></td>
+    </tr>
+    <tr>
+      <td>Tout</td>
+      <td><code class="highlighter-rouge">#INSTRUMENT</code></td>
+      <td><code class="highlighter-rouge">Required</code></td>
+      <td><code class="highlighter-rouge">1</code></td>
+      <td><code class="highlighter-rouge">N/A</code></td>
+    </tr>
+    <tr>
+      <td>Tout</td>
+      <td><code class="highlighter-rouge">#LOCATION</code></td>
+      <td><code class="highlighter-rouge">Required</code></td>
+      <td><code class="highlighter-rouge">1</code></td>
+      <td><code class="highlighter-rouge">N/A</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">Broad-band</code></td>
+      <td><code class="highlighter-rouge">#TIMESTAMP</code></td>
+      <td><code class="highlighter-rouge">Required</code></td>
+      <td><code class="highlighter-rouge">1</code></td>
+      <td><code class="highlighter-rouge">N/A</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">Broadband</code></td>
+      <td><code class="highlighter-rouge">#DIFFUSE</code></td>
+      <td><code class="highlighter-rouge">Required</code></td>
+      <td><code class="highlighter-rouge">1</code></td>
+      <td><code class="highlighter-rouge">#GLOBAL</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">Broad-band</code></td>
+      <td><code class="highlighter-rouge">#GLOBAL</code></td>
+      <td><code class="highlighter-rouge">Required</code></td>
+      <td><code class="highlighter-rouge">1</code></td>
+      <td><code class="highlighter-rouge">#DIFFUSE</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">Lidar</code></td>
+      <td><code class="highlighter-rouge">#TIMASTAMP</code></td>
+      <td><code class="highlighter-rouge">Required</code></td>
+      <td><code class="highlighter-rouge">1</code></td>
+      <td><code class="highlighter-rouge">N/A</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">Lidar</code></td>
+      <td><code class="highlighter-rouge">#OZONE_SUMMARY</code></td>
+      <td><code class="highlighter-rouge">Required</code></td>
+      <td><code class="highlighter-rouge">1+</code></td>
+      <td><code class="highlighter-rouge">N/A</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">Lidar</code></td>
+      <td><code class="highlighter-rouge">#OZONE_PROFILE</code></td>
+      <td><code class="highlighter-rouge">Required</code></td>
+      <td><code class="highlighter-rouge">1+</code></td>
+      <td><code class="highlighter-rouge">N/A</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">Multi-band</code></td>
+      <td><code class="highlighter-rouge">#TIMESTAMP</code></td>
+      <td><code class="highlighter-rouge">Required</code></td>
+      <td><code class="highlighter-rouge">1</code></td>
+      <td><code class="highlighter-rouge">N/A</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">Multi-band</code></td>
+      <td><code class="highlighter-rouge">#GLOBAL</code></td>
+      <td><code class="highlighter-rouge">Required</code></td>
+      <td><code class="highlighter-rouge">1</code></td>
+      <td><code class="highlighter-rouge">#SIMULATANEOUS</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">Multi-band</code></td>
+      <td><code class="highlighter-rouge">#SIMULATANEOUS</code></td>
+      <td><code class="highlighter-rouge">Required</code></td>
+      <td><code class="highlighter-rouge">1</code></td>
+      <td><code class="highlighter-rouge">#GLOBAL</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">OzoneSonde</code></td>
+      <td><code class="highlighter-rouge">#TIMESTAMP</code></td>
+      <td><code class="highlighter-rouge">Reqiured</code></td>
+      <td><code class="highlighter-rouge">1</code></td>
+      <td><code class="highlighter-rouge">N/A</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">OzoneSonde</code></td>
+      <td><code class="highlighter-rouge">#FLIGHT_SUMMRAY</code></td>
+      <td><code class="highlighter-rouge">Required</code></td>
+      <td><code class="highlighter-rouge">1</code></td>
+      <td><code class="highlighter-rouge">N/A</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">OzoneSonde</code></td>
+      <td><code class="highlighter-rouge">#PROFILE</code></td>
+      <td><code class="highlighter-rouge">Required</code></td>
+      <td><code class="highlighter-rouge">1</code></td>
+      <td><code class="highlighter-rouge">N/A</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">OzoneSonde</code></td>
+      <td><code class="highlighter-rouge">#AUXILIARY_DATA</code></td>
+      <td><code class="highlighter-rouge">Optional</code></td>
+      <td><code class="highlighter-rouge">1</code></td>
+      <td><code class="highlighter-rouge">N/A</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">OzoneSonde</code></td>
+      <td><code class="highlighter-rouge">#PUMP_CORRECTION</code></td>
+      <td><code class="highlighter-rouge">Optional</code></td>
+      <td><code class="highlighter-rouge">1</code></td>
+      <td><code class="highlighter-rouge">N/A</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">Spectral</code></td>
+      <td><code class="highlighter-rouge">#TIMESTAMP</code></td>
+      <td><code class="highlighter-rouge">Optional</code></td>
+      <td><code class="highlighter-rouge">1+</code></td>
+      <td><code class="highlighter-rouge">N/A</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">Spectral</code></td>
+      <td><code class="highlighter-rouge">#GLOBAL_SUMMARY_NSF</code></td>
+      <td><code class="highlighter-rouge">Required</code></td>
+      <td><code class="highlighter-rouge">1+</code></td>
+      <td><code class="highlighter-rouge">#GLOBAL_SUMMARY</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">Spectral</code></td>
+      <td><code class="highlighter-rouge">#GLOBAL_SUMMARY</code></td>
+      <td><code class="highlighter-rouge">Required</code></td>
+      <td><code class="highlighter-rouge">1+</code></td>
+      <td><code class="highlighter-rouge">#GLOBAL_SUMMARY_NSF</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">Spectral</code></td>
+      <td><code class="highlighter-rouge">#GLOBAL</code></td>
+      <td><code class="highlighter-rouge">Required</code></td>
+      <td><code class="highlighter-rouge">1+</code></td>
+      <td><code class="highlighter-rouge">N/A</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">TotalOzone</code></td>
+      <td><code class="highlighter-rouge">#TIMESTAMP</code></td>
+      <td><code class="highlighter-rouge">Required</code></td>
+      <td><code class="highlighter-rouge">2</code></td>
+      <td><code class="highlighter-rouge">N/A</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">TotalOzone</code></td>
+      <td><code class="highlighter-rouge">#DAILY</code></td>
+      <td><code class="highlighter-rouge">Required</code></td>
+      <td><code class="highlighter-rouge">1</code></td>
+      <td><code class="highlighter-rouge">N/A</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">TotalOzone</code></td>
+      <td><code class="highlighter-rouge">#MONTHLY</code></td>
+      <td><code class="highlighter-rouge">Optional</code></td>
+      <td><code class="highlighter-rouge">1</code></td>
+      <td><code class="highlighter-rouge">N/A</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">TotalOzone</code></td>
+      <td><code class="highlighter-rouge">#SAOZ_DATA_V2</code></td>
+      <td><code class="highlighter-rouge">Optional</code></td>
+      <td><code class="highlighter-rouge">1</code></td>
+      <td><code class="highlighter-rouge">N/A</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">TotalOzoneObs</code></td>
+      <td><code class="highlighter-rouge">#TIMESTAMP</code></td>
+      <td><code class="highlighter-rouge">Required</code></td>
+      <td><code class="highlighter-rouge">1</code></td>
+      <td><code class="highlighter-rouge">N/A</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">TotalOzoneObs</code></td>
+      <td><code class="highlighter-rouge">#OBSERVATIONS</code></td>
+      <td><code class="highlighter-rouge">Required</code></td>
+      <td><code class="highlighter-rouge">1</code></td>
+      <td><code class="highlighter-rouge">N/A</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">TotalOzoneObs</code></td>
+      <td><code class="highlighter-rouge">#DAILY_SUMMARY</code></td>
+      <td><code class="highlighter-rouge">Required</code></td>
+      <td><code class="highlighter-rouge">1</code></td>
+      <td><code class="highlighter-rouge">N/A</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">UmkehrN14</code></td>
+      <td><code class="highlighter-rouge">#TIMESTAMP</code></td>
+      <td><code class="highlighter-rouge">Required</code></td>
+      <td><code class="highlighter-rouge">2</code></td>
+      <td><code class="highlighter-rouge">N/A</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">UmkehrN14</code></td>
+      <td><code class="highlighter-rouge">#N14_VALUES</code></td>
+      <td><code class="highlighter-rouge">Required</code></td>
+      <td><code class="highlighter-rouge">1</code></td>
+      <td><code class="highlighter-rouge">N/A</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">UmkehrN14 level 2</code></td>
+      <td><code class="highlighter-rouge">#TIMESTAMP</code></td>
+      <td><code class="highlighter-rouge">Required</code></td>
+      <td><code class="highlighter-rouge">2</code></td>
+      <td><code class="highlighter-rouge">N/A</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">UmkehrN14 level 2</code></td>
+      <td><code class="highlighter-rouge">#C_PROFILE</code></td>
+      <td><code class="highlighter-rouge">Required</code></td>
+      <td><code class="highlighter-rouge">1</code></td>
+      <td><code class="highlighter-rouge">N/A</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="33-contenu-des-données-propres-à-lozone">3.3 Contenu des données propres à l’ozone</h2>
+<h3 id="331-introduction">3.3.1 Introduction</h3>
+<p>La présente section porte sur le contenu des données des différentes catégories de données relatives à l’ozone. Chaque catégorie comporte un ensemble de tableaux définis. Vous trouverez ci-après, pour chacun des tableaux, le nom des champs (colonnes) qu’ils contiennent, l’ordre de ces champs, selon lesquelles les données doivent être consignées.</p>
+
+<h4 id="3311-lidar">3.3.1.1 Lidar</h4>
+<p>Lidar est l’abréviation de l’expression « détection et télémétrie par ondes lumineuses) ». Il s’agit de données de télédétection dont la plage temporelle par fichier correspond à la durée d’une période d’observation (habituellement un ou deux jours pour l’obtention d’un profil unique).</p>
+
+<h4 id="3312-microwave">3.3.1.2 Microwave</h4>
+<p>Cette catégorie de données contient des renseignements sur les profils verticaux de l’ozone. Il s’agit de données de télédétection dont la plage temporelle par fichier correspond à la durée d’une période d’observation (habituellement un ou deux jours pour l’obtention d’un profil unique).</p>
+
+<h4 id="3313-ozonesonde">3.3.1.3 Ozonesonde</h4>
+<p>Une sonde d’ozone est un instrument fixé à un ballon qui sert à mesurer le profil vertical de l’ozone dans l’atmosphère. Il s’agit de données de télédétection dont la plage temporelle par fichier correspond à la durée d’un vol de ballon (habituellement un seul vol).</p>
+
+<h4 id="3314-totalozoneobs">3.3.1.4 TotalOzoneObs</h4>
+<p>Les observations de l’ozone total (TotalOzoneObs) sont des mesures de la colonne d’ozone total exprimées en unités Dobson. Il s’agit de données de télédétection dont la plage temporelle par fichier correspond habituellement à un jour.</p>
+
+<h4 id="3315-totalozone">3.3.1.5 TotalOzone</h4>
+<p>L’ozone total (TotalOzone) est une mesure de la colonne d’ozone total exprimée en unités Dobson. Il s’agit de données de télédétection dont la plage temporelle par fichier correspond à un mois de synthèses quotidiennes.</p>
+
+<h4 id="3316-umkehrn14">3.3.1.6 UmkehrN14</h4>
+<p>Les mesures Umkehr (UmkehrN14) sont des profils d’ozone établis à l’aide de 14 valeurs N (qui correspondent à 14 angles du zénith solaire). Il s’agit de données de télédétection dont la plage temporelle par fichier correspond à un mois de synthèses quotidiennes.</p>
+
+<h3 id="332-catégorie--lidar">3.3.2 Catégorie : Lidar</h3>
+<p>La catégorie Lidar comporte deux tableaux obligatoires : <code class="highlighter-rouge">#PROFILE_SUMMARY</code> et <code class="highlighter-rouge">#OZONE_PROFILE</code>.</p>
+
+<p>!!! md-alert “”
+    <strong>Remarque :</strong> Les tableaux de la catégorie Lidar ont été tirés directement des fichiers formatés 2160 du Ames Research Centre de la NASA [3, 4] utilisés par le Network for the Detection of Atmospheric Composition Change (NDACC), anciennement appelé Network for Detection of Stratospheric Change (NDSC).</p>
+
+<p>Le Tableau 3.3 1 présente les tableaux devant être remplis pour la catégorie Lidar (colonne Nom du tableau) et le nom de leurs champs respectifs. Les <a href="#3321-tableau-profile_summary">sections 3.3.2.1</a> et <a href="#3322-table-ozone_profile">3.3.2.2</a> renferment des descriptions plus détaillées des champs de l’ensemble des tableaux.</p>
+
+<p><strong><em>Tableau 3.3 1 – Tableaux de données de la catégorie Lidar</em></strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nom du tableau</th>
+      <th>Nom des champs (colonnes) (dans l’ordre)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="highlighter-rouge">#PROFILE_SUMMARY</code></td>
+      <td><code class="highlighter-rouge">Altitudes, MinAltitude, MaxAltitude, StartDate, StartTime, EndDate, EndTime, PulsesAveraged</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">#OZONE_PROFILE</code></td>
+      <td><code class="highlighter-rouge">Altitude, OzoneDensity, StandardError, RangeResolution, AirDensity, Temperature</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="3321-tableau-profile_summary">3.3.2.1 Tableau PROFILE_SUMMARY</h4>
+<p><strong>Altitudes</strong>: Nombre de niveaux (couches) observés.</p>
+
+<p><strong>MinAltitude</strong>: Altitude minimale du profil en mètres (m).</p>
+
+<p><strong>MaxAltitude</strong>: Altitude maximale du profil en mètres (m).</p>
+
+<p><strong>StartDate</strong>: Date de début déterminée en fonction de la période d’observation. Le format de date de la norme ISO 8601 (aaaa-mm-jj) est utilisé.</p>
+
+<p><strong>StartTime</strong>: Heure de début déterminée en fonction de la période d’observation. Le format de l’heure de la norme ISO 8601 (hh : mm : ss) est utilisé.</p>
+
+<p><strong>EndDate</strong>: Date de fin déterminée en fonction de la période d’observation. Le format de date de la norme ISO 8601 (aaaa-mm-jj) est utilisé.</p>
+
+<p><strong>EndTime</strong>: Heure de fin déterminée en fonction de la période d’observation. Le format de l’heure de la norme ISO 8601 (hh : mm : ss) est utilisé.</p>
+
+<p><strong>PulsesAveraged</strong>: Nombre d’impulsions utilisées pour intégrer le profil.</p>
+
+<h4 id="3322-table-ozone_profile">3.3.2.2 Table OZONE_PROFILE</h4>
+<p><strong>Altitude</strong>: Altitude (plage) en mètres (m).</p>
+
+<p><strong>OzoneDensity</strong>: Densité (concentration) de l’ozone (molécules*cm-3).</p>
+
+<p><strong>StandardError</strong>: Erreur-type estimée de la concentration de l’ozone (molécules*cm-3).</p>
+
+<p><strong>RangeResolution</strong>: Résolution en distance, exprimée en mètres (m).</p>
+
+<p><strong>AirDensity</strong>: Densité de l’air (molécules*cm-3).</p>
+
+<p><strong>Temperature</strong>: Température (Kelvin).</p>
+
+<h4 id="3323-exemple">3.3.2.3 Exemple</h4>
+<p>Vous trouverez un exemple de fichier de données pour la catégorie Lidar à l’<a href="#a1-exemple-pour-la-catégorie-lidar">annexe A.1</a> et en ligne à l’adresse <a href="http://woudc.org/archive/Documentation/Examples-extCSV/Lidar.csv">http://woudc.org/archive/Documentation/Examples-extCSV/Lidar.csv</a>.</p>
+
+<h3 id="333-catégorie--microwave">3.3.3 Catégorie : Microwave</h3>
+<p>La catégorie Microwave comporte deux tableaux obligatoires : <code class="highlighter-rouge">#PROFILE_SUMMARY</code> et <code class="highlighter-rouge">#OZONE_PROFILE</code>.</p>
+
+<p>!!! md-alert “”
+    <strong>Remarque :</strong> Les tableaux de la catégorie Microwave sont fondés sur les sorties de données de la station météorologique de Payerne, en Suisse, qui est exploitée par MétéoSuisse [5].</p>
+
+<p>Le Tableau 3.3 2 présente les tableaux devant être remplis pour la catégorie Microwave (colonne Nom du tableau) et le nom de leurs champs respectifs. Les <a href="#3331-tableau-profile_summary">sections 3.3.3.1</a> et <a href="#3332-tableau-ozone_profile">3.3.3.2</a> renferment des descriptions plus détaillées des champs de l’ensemble des tableaux.</p>
+
+<p><em>**Tableau 3.3 2 – Tableaux de données de la catégorie Microwave **</em></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nom du tableau</th>
+      <th>Nom des champs (colonnes) (dans l’ordre)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="highlighter-rouge">#PROFILE_SUMMARY</code></td>
+      <td><code class="highlighter-rouge">Levels, AveragingTime, ZenithAngle, NoiseTemperature, TTF, CalculatedSpectrum</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">#OZONE_PROFILE</code></td>
+      <td><code class="highlighter-rouge">Altitude, OzoneVMR, VariableError, FixedError, SmoothingError, TotalError, A-priori, Temperature, Pressure</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="3331-tableau-profile_summary">3.3.3.1 Tableau PROFILE_SUMMARY</h4>
+<p><strong>Levels</strong>: Nombre de niveaux (couches) observés.</p>
+
+<p><strong>AveragingTime</strong>: Durée moyenne</p>
+
+<p><strong>ZenithAngle</strong>: Angle du zénith solaire (degrés décimaux).</p>
+
+<p><strong>NoiseTemperature</strong>: Température de bruit du système moyenne (K).</p>
+
+<p><strong>TTF</strong>: Facteur de transmission troposphérique (TTF).</p>
+
+<p><strong>CalculatedSpectrum</strong>: État de la mesure – spectre calculé (K).</p>
+
+<h4 id="3332-tableau-ozone_profile">3.3.3.2 Tableau OZONE_PROFILE</h4>
+<p><strong>Altitude</strong>: Altitude en mètres au-dessus du niveau de la mer.</p>
+
+<p><strong>OzoneVMR</strong>: Rapport de mélange en volume (VMR) de l’ozone (ppm).</p>
+
+<p><strong>VariableError</strong>: Erreur variable (stochastique) du VMR de l’ozone (ppm).</p>
+
+<p><strong>FixedError</strong>: Erreur fixe (systématique) du VMR de l’ozone (ppm).</p>
+
+<p><strong>SmoothingError</strong>: Erreur de lissage (ppm).</p>
+
+<p><strong>TotalError</strong>: Total des erreurs (ppm).</p>
+
+<p><strong>A-priori</strong>: Contribution de données a priori (%).</p>
+
+<p><strong>Temperature</strong>: Profil de température utilisé aux fins de récupération (K).</p>
+
+<p><strong>Pressure</strong>: Profil de pression utilisé aux fins de récupération (Pa).</p>
+
+<h4 id="3333-exemple">3.3.3.3 Exemple</h4>
+<p>Vous trouverez un exemple de fichier de données pour la catégorie Microwave à l’<a href="#a2-exemple-pour-la-catégorie-microwave">annexe A.2</a>.</p>
+
+<h3 id="334-category-ozonesonde">3.3.4 Category: Ozonesonde</h3>
+<p>La catégorie Ozonesonde comporte 12 tableaux obligatoires :  <code class="highlighter-rouge">#PREFLIGHT_SUMMARY</code>, <code class="highlighter-rouge">#RADIOSONDE</code>, <code class="highlighter-rouge">#INTERFACE_CARD</code>, <code class="highlighter-rouge">#SAMPLING_METHOD</code>, <code class="highlighter-rouge">#PUMP_SETTINGS</code>, <code class="highlighter-rouge">#PUMP_CORRECTION</code>, <code class="highlighter-rouge">#FLIGHT_SUMMARY</code>, <code class="highlighter-rouge">#OZONE_REFERENCE</code>, <code class="highlighter-rouge">#PROFILE</code>, <code class="highlighter-rouge">#PROFILE_UNCERTAINTY</code>, <code class="highlighter-rouge">#PRELAUNCH</code>, and <code class="highlighter-rouge">#DESELECTED_DATA</code>.</p>
+
+<p>!!! md-alert “”
+    <strong>Remarque :</strong> La valeur qui figure dans le champ <code class="highlighter-rouge">FORM</code> du tableau <code class="highlighter-rouge">#CONTENT</code> doit être « 2 ». La raison de cette modification est la suivante : la valeur du champ <code class="highlighter-rouge">FORM</code> (index) correspond à la version du format de données. Si un tableau existant est modifié ou qu’un nouveau tableau est ajouté, la valeur du champ <code class="highlighter-rouge">FORM</code> augmente de un après chaque modification. La valeur du champ <code class="highlighter-rouge">FORM</code> (indice) se veut un indicateur du lecteur de fichiers requis pour les tableaux de données qui suivent, pour aider les programmeurs à lire le fichier. Seul le WOUDC peut apporter des modifications à cet index. Par conséquent, l’ajout de tableaux ou les changements apportés aux tableaux originaux de la catégorie Ozonesonde exigent la modification de la valeur du champ <code class="highlighter-rouge">FORM</code>, qui, dans le présent cas, doit être réglée à « 2 » en date du « Jour Mois 2013 ». Pour plus de détails, veuillez vous reporter à la s<a href="#3211-tableau-content">ection 3.2.1.1</a>.</p>
+
+<p>Le Tableau 3.3 3 présente les tableaux devant être remplis pour la catégorie Ozonesonde (colonne Nom du tableau) et le nom de leurs champs respectifs. Les <a href="#3341-preflight_summary">sections 3.3.4.1</a> à <a href="#33412-tableau-deselected_data">section 3.3.4.12</a> renferment des descriptions plus détaillées des champs de l’ensemble des tableaux. La <a href="#33413-tableaux-de-codes">section 3.3.4.13</a> comporte deux tableaux de codes : le Tableau 3.3 4 – Codes d’algorithme de l’ozone résiduel (correction et le Tableau 3.3 5 – Codes de niveau .</p>
+
+<p><strong><em>Tableau 3.3 3 – Tableaux de données de la catégorie Ozonesonde</em></strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nom du tableau</th>
+      <th>Nom des champs (colonnes) (dans l’ordre)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="highlighter-rouge">#PREFLIGHT_SUMMARY</code></td>
+      <td><code class="highlighter-rouge">Ib0, ib1, ib2, SolutionType, SolutionVolume, PumpFlowRate, OzoneSondeResponseTime</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">#RADIOSONDE</code></td>
+      <td><code class="highlighter-rouge">Manufacturer, Model, Number</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">#INTERFACE_CARD</code></td>
+      <td><code class="highlighter-rouge">Manufacturer, Model, Number</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">#SAMPLING_METHOD</code></td>
+      <td><code class="highlighter-rouge">TypeOzoneFreeAir, CorrectionWettingFlow, SurfaceOzone, DurationSurfaceOzoneExposure, LengthBG, WMOTropopausePressure, BurstOzonePressure, GroundEquipment, ProcessingSoftware</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">#PUMP_SETTINGS</code></td>
+      <td><code class="highlighter-rouge">MotorCurrent, HeadPressure, VacuumPressure</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">#PUMP_CORRECTION</code></td>
+      <td><code class="highlighter-rouge">Pressure, PumpCorrectionFactor</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">#FLIGHT_SUMMARY</code></td>
+      <td><code class="highlighter-rouge">IntegratedO3, CorrectionCode, SondeTotalO3, NormalizationFactor, BackgroundCorrection, SampleTemperatureType</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">#OZONE_REFERENCE</code></td>
+      <td><code class="highlighter-rouge">Name, Model, Number, Version, TotalO3, WLCode, ObsType, UTC_Mean</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">#PROFILE</code></td>
+      <td><code class="highlighter-rouge">Duration, Pressure, O3PartialPressure, Temperature, WindSpeed, WindDirection, LevelCode, GPHeight, RelativeHumidity, SampleTemperature, SondeCurrent, PumpMotorCurrent, PumpMotorVoltage, Latitude, Longitude, Height</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">#PROFILE_UNCERTAINTY</code></td>
+      <td>As in <code class="highlighter-rouge">#PROFILE</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">#PRELAUNCH</code></td>
+      <td>As in <code class="highlighter-rouge">#PROFILE</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">#DESELECTED_DATA</code></td>
+      <td>As in <code class="highlighter-rouge">#PROFILE</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="3341-preflight_summary">3.3.4.1 PREFLIGHT_SUMMARY</h4>
+<p><strong>Ib0</strong>: Courant électrique de fond de la sonde d’ozone mesuré en laboratoire avant que la sonde ne soit exposée à de l’ozone (µA).</p>
+
+<p><strong>Ib1</strong>: Courant électrique de fond de la sonde d’ozone mesuré en laboratoire après que la sonde a été exposée à une quantité définie d’ozone (µA).</p>
+
+<p><strong>Ib2</strong>: Courant électrique de fond de la sonde d’ozone mesuré sur le site juste avant le lancement de la sonde (µA).</p>
+
+<p><strong>SolutionType</strong>: Composition chimique de la solution de détection de la sonde d’ozone.</p>
+
+<p><strong>SolutionVolume</strong>: Volume de la solution de détection dans la cellule de la sonde d’ozone (ml).</p>
+
+<p><strong>PumpFlowRate</strong>: Débit de la pompe mesuré en laboratoire dans des conditions de surface (corrigée en fonction de la teneur en humidité lorsque cela est possible : voir la section 3.2.4 du rapport no 201 du programme VAG – <a href="http://www.wmo.int/pages/prog/arep/gaw/documents/GAW_201.pdf">http://www.wmo.int/pages/prog/arep/gaw/documents/GAW_201.pdf</a>) (cm3/min).</p>
+
+<p><strong>OzonesondeResponseTime</strong>: Temps de réponse à 1/e (en minutes) mesuré pendant le test de détérioration en laboratoire.</p>
+
+<h4 id="3342-tableau-radiosonde">3.3.4.2 Tableau RADIOSONDE</h4>
+<p><strong>Manufacturer</strong>: Fabricant de la radiosonde sur laquelle le capteur d’ozone est installé.</p>
+
+<p>!!! md-alert “”
+    <strong>Remarque :</strong> Dans le rapport no 201 du programme VAG de janvier 2013, Quality Assurance and Quality Control for Ozonesonde Measurements in GAW (section 4.8.2, page 45), le nom de ce champ est « Name ».</p>
+
+<p><strong>Model</strong>: Modèle de la radiosonde.</p>
+
+<p><strong>Number</strong>: Numéro de série de la radiosonde.</p>
+
+<h4 id="3343-tableau-interface_card">3.3.4.3 Tableau INTERFACE_CARD</h4>
+<p><strong>Manufacturer</strong>: Fabricant de la carte d’interface entre la radiosonde et le capteur d’ozone.</p>
+
+<p>!!! md-alert “”
+    <strong>Remarque :</strong> Dans le rapport no 201 du programme VAG de janvier 2013, Quality Assurance and Quality Control for Ozonesonde Measurements in GAW (section 4.8.2, page 45), le nom de ce champ est « Name ».</p>
+
+<p><strong>Model</strong>: Modèle de la carte d’interface.</p>
+
+<p><strong>Number</strong>: Numéro de série de la carte d’interface.</p>
+
+<h4 id="3344-tableau-sampling_method">3.3.4.4 Tableau SAMPLING_METHOD</h4>
+<p><strong>TypeOzoneFreeAir</strong>: Technique utilisée pour prélever de l’air dépourvue d’ozone au site de lancement avant le lancement de la radiosonde (p. ex., « filtre à charbon actif »).</p>
+
+<p><strong>CorrectionWettingFlow</strong>: Facteur de correction appliqué au débit de la pompe pour compenser l’utilisation d’air non saturé au cours de l’étalonnage préalable au vol.</p>
+
+<p><strong>SurfaceOzone</strong>: Ozone troposphérique mesuré au moyen d’une méthode indépendante (ppbv).</p>
+
+<p><strong>DurationSurfaceOzoneExposure</strong>: Durée pendant laquelle la sonde d’ozone a mesuré (a été exposée) l’ozone troposphérique (min).</p>
+
+<p><strong>LengthBG</strong>: Distance entre la base du ballon et la charge utile ou nacelle de la sonde (m).</p>
+
+<p><strong>WMOTropopausePressure</strong>: Pression de l’air ambiant dans la tropopause établie en fonction de la définition de l’OMM (hPa).</p>
+
+<p><strong>BurstOzonePressure</strong>: Pression partielle de l’ozone à l’altitude d’éclatement du ballon (hPa).</p>
+
+<p><strong>GroundEquipment</strong>: Équipement de base utilisé au sol.</p>
+
+<p><strong>ProcessingSoftware</strong>: Logiciel de traitement après vol.</p>
+
+<h4 id="3345-tableau-pump_settings">3.3.4.5 Tableau PUMP_SETTINGS</h4>
+<p><strong>MotorCurrent</strong>: Courant électrique alimentant le moteur de la pompe (mA).</p>
+
+<p><strong>HeadPressure</strong>: Pression maximale lorsque l’orifice de refoulement de la pompe est à l’arrêt (hPa).</p>
+
+<p><strong>VacuumPressure</strong>: Pression minimale lorsque l’orifice d’aspiration de la pompe est à l’arrêt (hPa).</p>
+
+<h4 id="3346-tableau-pump_correction">3.3.4.6 Tableau PUMP_CORRECTION</h4>
+<p><strong>Pressure</strong>: Niveau de pression en hectopascals (hPa).</p>
+
+<p><strong>PumpCorrectionFactor</strong>: Facteur de correction appliqué au débit de la pompe en fonction du niveau de pression.</p>
+
+<h4 id="3347-tableau-flight_summary">3.3.4.7 Tableau FLIGHT_SUMMARY</h4>
+<p><strong>IntegratedO3</strong>: Quantité intégrée d’ozone entre la plateforme de lancement et l’altitude d’éclatement du ballon (DU).</p>
+
+<p><strong>CorrectionCode</strong>: Code de l’algorithme utilisé pour estimer la concentration de l’ozone (résiduel calculé) au-dessus de l’altitude d’éclatement du ballon jusqu’au sommet de l’atmosphère. (Voir le Tableau 3.3 4 à la <a href="#33413-tableaux-de-codes">section 3.3.4.13</a>).</p>
+
+<p><strong>SondeTotalO3</strong>: Intégré + résiduel calculé (DU).</p>
+
+<p><strong>NormalizationFactor</strong>: Facteur en fonction duquel la pression partielle d’ozone apparente a été multipliée pour que la valeur du champ <code class="highlighter-rouge">SondeTotalO3</code> concorde avec la valeur du champ <code class="highlighter-rouge">TotalO3</code> du tableau <code class="highlighter-rouge">#OZONE_REFERENCE</code>. Un facteur négatif indique qu’une valeur a été calculée, mais qu’elle n’a pas été appliquée.</p>
+
+<p><strong>BackgroundCorrection</strong>: Méthode utilisée pour tenir compte du courant électrique de fond produit par la sonde d’ozone en l’absence d’ozone.</p>
+
+<p><strong>SampleTemperatureType</strong>: Méthode utilisée pour calculer la température de l’air échantillonné par la sonde d’ozone. Il peut s’agir d’une valeur estimative, d’une constante, ou d’une mesure prise par un capteur à thermistor installé dans la boîte, la pompe ou le tube d’admission.</p>
+
+<h4 id="3348-tableau-ozone_reference">3.3.4.8 Tableau OZONE_REFERENCE</h4>
+<p><strong>Name</strong>: Nom courant de l’instrument de mesure de l’ozone, par exemple « Brewer » ou « TOMS ». Pour la liste des instruments, voir le site Web du WOUDC :  <a href="http://woudc.org/data/instruments/?lang=fr">http://woudc.org/data/instruments/?lang=fr</a>.</p>
+
+<p><strong>Model</strong>: ID du modèle, s’il y a lieu. Voir la liste des instruments du WOUDC :  <a href="http://woudc.org/data/instruments/?lang=fr">http://woudc.org/data/instruments/?lang=fr</a>.</p>
+
+<p><strong>Number</strong>: Numéro de série de l’instrument, tel qu’il a été attribué par le fabricant.</p>
+
+<p><strong>Version</strong>: Version des données définie par l’organisation qui a soumis les données. Le format de la version est « majeure.mineure » (p. ex., 3.2). La valeur « majeure » augmente lorsque des changements sont apportés à l’algorithme de traitement, et la valeur « mineur », lorsque des changements sont apportées aux valeurs de caractérisation ou d’étalonnage.</p>
+
+<p>!!! md-alert “”
+    <strong>Remarque :</strong> La valeur « mineure » est remise à zéro lorsque des changements sont apportés à l’algorithme de traitement.</p>
+
+<p><strong>TotalO3</strong>: Valeur quotidienne de l’ozone total de la colonne (en unités Dobson, c.-à-d. m-atm-cm), définie comme étant la « valeur la plus représentative » (généralement dans l’ordre suivant : DS, ZS et FM).</p>
+
+<p><strong>WLCode</strong>: Code désignant la ou les paires de longueurs d’onde utilisées pour mesurer l’ozone total. (Voir le Tableau 3.3 5 à la <a href="#33413-tableaux-de-codes">section 3.3.4.13</a>.)</p>
+
+<p><strong>ObsType</strong>: Code désignant le type de mesure d’ozone total. (Voir le Tableau 3.3 5 à la <a href="#33413-tableaux-de-codes">section 3.3.4.13</a>.)</p>
+
+<p><strong>UTC_Mean</strong>: Durée moyenne des observations (en heures décimales, UTC).</p>
+
+<h4 id="3349-tableau-profile">3.3.4.9 Tableau PROFILE</h4>
+<p><strong>Duration</strong>: Temps de vol écoulé depuis le lancement, exprimé en variables primaires.</p>
+
+<p><strong>Pressure</strong>: Pression atmosphérique de chaque niveau, exprimée en hectopascals (hPa).</p>
+
+<p><strong>O3PartialPressure</strong>: Pression partielle de l’ozone du niveau, exprimée en millipascals (mPa).</p>
+
+<p><strong>Temperature</strong>: Température du niveau, exprimée en degrés Celsius (C).</p>
+
+<p><strong>WindSpeed</strong>: Vitesse du vent, exprimée en mètres par seconde (m/s).</p>
+
+<p><strong>WindDirection</strong>: Direction du vent, exprimée en degrés.</p>
+
+<p><strong>LevelCode</strong>: Code du type de niveau. (Voir le Tableau 3.3 5 à la <a href="#33413-code-tables">Section 3.3.4.13</a>).</p>
+
+<p><strong>GPHeight</strong>: Hauteur géopotentielle, exprimée en mètres (m).</p>
+
+<p><strong>RelativeHumidity</strong>: Humidité relative, exprimée en pourcentage (%).</p>
+
+<p><strong>SampleTemperature</strong>: Température à l’endroit où l’échantillon est mesuré, exprimée en degrés Celsius (C).</p>
+
+<p><strong>SondeCurrent</strong>: Mesure du courant de la sonde d’ozone (µA), sans correction.</p>
+
+<p><strong>PumpMotorCurrent</strong>: Courant électrique (mA) mesuré par le biais du moteur de la pompe (s’il y a lieu).</p>
+
+<p><strong>PumpMotorVoltage</strong>: Tension appliquée (V) mesurée par le biais du moteur de la pompe (s’il y a lieu).</p>
+
+<p><strong>Latitude</strong>: Latitude géographique (p. ex., à partir d’un GPS) (-90 à +90 degrés décimaux).</p>
+
+<p><strong>Longitude</strong>: Longitude géographique (p. ex., à partir d’un GPS) (-180 à +180 degrés décimaux).</p>
+
+<p><strong>Height</strong>: Hauteur géographique (p. ex., à partir d’un GPS) (mètres au-dessus du niveau de la mer).</p>
+
+<h4 id="33410-tableau-profile_uncertainty">3.3.4.10 Tableau PROFILE_UNCERTAINTY</h4>
+<p>Il faut saisir le degré estimatif d’incertitude (si disponible) relatif à chacun des paramètres de profil mesurés dans le tableau <code class="highlighter-rouge">#PROFILE</code>, en fonction de la durée.</p>
+
+<p><strong>Duration</strong>: Temps de vol écoulé depuis le lancement, exprimé en variables primaires.</p>
+
+<p><strong>Pressure</strong>: Pression atmosphérique de chaque niveau, exprimée en hectopascals (hPa).</p>
+
+<p><strong>O3PartialPressure</strong>: Pression partielle de l’ozone du niveau, exprimée en millipascals (mPa).</p>
+
+<p><strong>Temperature</strong>: Température du niveau, exprimée en degrés Celsius (C).</p>
+
+<p><strong>WindSpeed</strong>: Vitesse du vent, exprimée en mètres par seconde (m/s).</p>
+
+<p><strong>WindDirection</strong>: Direction du vent, exprimée en degrés.</p>
+
+<p><strong>LevelCode</strong>: Espace réservé pour un usage futur; laisser vide.</p>
+
+<p><strong>GPHeight</strong>: Hauteur géopotentielle, exprimée en mètres (m).</p>
+
+<p><strong>RelativeHumidity</strong>: Humidité relative, exprimée en pourcentage (%).</p>
+
+<p><strong>SampleTemperature</strong>: Température à l’endroit où l’échantillon est mesuré, exprimée en degrés Celsius (C).</p>
+
+<p><strong>SondeCurrent</strong>: Mesure du courant de la sonde d’ozone (µA), sans correction.</p>
+
+<p><strong>PumpMotorCurrent</strong>: Courant électrique (mA) mesuré par le biais du moteur de la pompe (s’il y a lieu).</p>
+
+<p><strong>PumpMotorVoltage</strong>: Tension appliquée (V) mesurée par le biais du moteur de la pompe (s’il y a lieu).</p>
+
+<p><strong>Latitude</strong>: Latitude géographique (p. ex., à partir d’un GPS) (-90 à +90 degrés décimaux).</p>
+
+<p><strong>Longitude</strong>: Longitude géographique (p. ex., à partir d’un GPS) (-180 à +180 degrés décimaux).</p>
+
+<p><strong>Height</strong>: Hauteur géographique (p. ex., à partir d’un GPS) (mètres au-dessus du niveau de la mer).</p>
+
+<h4 id="33411-tableau-prelaunch">3.3.4.11 Tableau PRELAUNCH</h4>
+<p>Données enregistrées par un système de télémétrie (c.-à-d. d’acquisition de données) avant le lancement de la sonde, y compris les vérifications de prélancement et les mesures de surface.</p>
+
+<p>Comme la durée est relative à l’heure du lancement (délai avant le lancement, en secondes), il s’agit d’une valeur négative. Tous les autres paramètres du tableau correspondent à ceux du tableau <code class="highlighter-rouge">#PROFILE_UNCERTAINTY</code> (<a href="#33410-tableau-profile_uncertainty">section 3.3.4.10</a>).</p>
+
+<h4 id="33412-tableau-deselected_data">3.3.4.12 Tableau DESELECTED_DATA</h4>
+<p>Données enregistrées par la sonde d’ozone qui ne sont pas consignées dans le tableau <code class="highlighter-rouge">#PROFILE</code>.</p>
+
+<p>Cela inclut les données qui ont été rejetées en raison de problèmes de télémétrie ou d’instrument présumés et les données enregistrées après l’éclatement du ballon (profil de descente). Les paramètres du tableau sont les mêmes que ceux du tableau <code class="highlighter-rouge">#PROFILE_UNCERTAINTY</code> (<a href="#33410-tableau-profile_uncertainty">section 3.3.4.10</a>). La valeur <code class="highlighter-rouge">O3PartialPressure</code> peut être calculée, mais elle n’est pas obligatoire.</p>
+
+<h4 id="33413-tableaux-de-codes">3.3.4.13 Tableaux de codes</h4>
+<p><strong><em>Tableau 3.3 4 – Codes d’algorithme de l’ozone résiduel (correction)</em></strong></p>
+
+<p>| Code de correction | Algorithme |
+|:——–:|——–|
+|Aucun (vide)|Inconnu|
+|0|Aucun|
+|1|Climatologie par satellite obtenue à partir des données de SBUV (d’après un article de McPeters, R.D., Labow, G.J. et Johnson, B.J. publié dans JGR en 1997).|
+|2|Rapport de mélange constant extrapolé à partir de la valeur à la hauteur d’éclatement.
+Ozone résiduel (DU) = 7,892 * pression partielle de l’ozone (mPa) à la hauteur d’éclatement.
+|
+|3|Rapport de mélange constant extrapolé à partir de la moyenne des trois derniers niveaux significatifs au-dessus du 17 mbar (méthode du SMC). Ozone résiduel (DU) = 7,892 * pression atmosphérique totale * (moyenne du rapport de mélange d’au moins trois niveaux) (mPa)|
+|4|Rapport de mélange constant extrapolé à partir de la valeur à la hauteur d’éclatement. Ozone résiduel (DU) = 7,892 * pression partielle de l’ozone (mPa) à la hauteur d’éclatement. Toutefois, la hauteur de l’extrapolation est limitée à 7 hPa. Si le ballon atteint une hauteur supérieure à 7 hPa, le profil est intégré jusqu’à 7 hPa, puis la pression partielle de l’ozone (si le point de référence est bon) à ce point est multipliée par 7,892. Si le ballon éclate en dessous de 7 hPa, alors le profil est extrapolé à partir du point d’éclatement. |
+|5|La climatologie mensuelle moyenne du profil vertical de l’ozone est calculée spécialement pour Lauder à l’aide des données de 1992 à 1998 du radiomètre hyperfréquence de Lauder. Cette climatologie est similaire à celle de McPeters/Labow, en ce sens où elle est représentée par des incréments de 1 hPa, de 30 à 1 hPa.|
+|6|Climatology 2011: An MLS and sonde derived ozone climatology for satellite retrieval algorithms. (Article de McPeters, R.D. et Labow G.J. publié en 2012 dans JGR.)|
+|7-98|À déterminer par le WOUDC.|
+|99|Autre algorithme (pas encore défini) fourni par le contributeur de données.|</p>
+
+<p><em>**Tableau 3.3 5 – Codes de niveau **</em></p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Code de niveau</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">Aucun (vide)</td>
+      <td>Inconnu</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">0</td>
+      <td>Niveau régulier (valeur/point de référence)</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">1</td>
+      <td><strong>Niveau standard</strong>: Les 15 niveaux standard du WOUDC sont les suivants : 1000, 700, 500, 300, 200, 150, 100, 70, 50, 30, 20, 10, 7, 5, 3, 2 et 1 (hPa).</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">2</td>
+      <td><strong>Niveau important</strong>: Surface, tropopause ou autre important point d’inflexion pour l’ozone, la température, etc.</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">3</td>
+      <td>Niveau standard et niveau important</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">4</td>
+      <td>Moyenne de niveau</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Other codes</td>
+      <td>D’autres codes seront générés, au besoin, conformément au modèle simple ci-dessous :  &lt;p&gt;&lt;/p&gt;<strong>Code de niveau – Description</strong>: &lt;table&gt;&lt;tr&gt;&lt;td&gt;8&lt;/td&gt;&lt;td&gt;important pour la température&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;16&lt;/td&gt;&lt;td&gt;important pour l’ozone&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;32&lt;/td&gt;&lt;td&gt;important pour l’HR&lt;/td&gt;&lt;/tr&gt; &lt;/table&gt;P. ex., un niveau standard qui serait important pour la température et l’ozone serait établi comme suit : 1+2+8+16 = 27</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="33414-exemple">3.3.4.14 Exemple</h4>
+<p>Vous trouverez un exemple de fichier de données pour la catégorie Ozonesonde à l’<a href="#a3-exemple-pour-la-catégorie-ozonesonde">annexe A.3</a> et en ligne à l’adresse  <a href="http://woudc.org/archive/Documentation/Examples-extCSV/Ozonesonde.csv">http://woudc.org/archive/Documentation/Examples-extCSV/Ozonesonde.csv</a>.</p>
+
+<h3 id="335-categorie--totalozoneobs">3.3.5 Categorie : TotalOzoneObs</h3>
+<p>La catégorie TotalOzoneObs comporte deux tableaux obligatoires : <code class="highlighter-rouge">#OBSERVATIONS</code> et <code class="highlighter-rouge">#DAILY_SUMMARY</code>.</p>
+
+<p>Le Tableau 3.3 6 présente les tableaux devant être remplis pour la catégorie TotalOzoneObs (colonne Nom du tableau) et le nom de leurs champs respectifs. Les <a href="#3351-tableau-observations">sections 3.3.5.1</a> et <a href="#3352-tableau-daily_summary">3.3.5.2</a> renferment des descriptions plus détaillées des champs de l’ensemble des tableaux. La <a href="#3353-tableaux-de-codes">section 3.3.5.3</a> comporte deux tableaux de codes : Tableau 3.3 7 – Codes de longueur d’onde et le Tableau 3.3 8 – .</p>
+
+<p><em>**Tableau 3.3 6 – Tableaux de données de la catégorie TotalOzoneObs **</em></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nom du tableau</th>
+      <th>Nom des champs (colonnes) (dans l’ordre)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="highlighter-rouge">#OBERVATIONS</code></td>
+      <td><code class="highlighter-rouge">Time, WLCode, ObsCode, Airmass, ColumnO3, StdDevO3, ColumnSO2, StdDevSO2</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">#DAILY_SUMMARY</code></td>
+      <td><code class="highlighter-rouge">WLCode, ObsCode, nObs, MeanO3, StdDevO3</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="3351-tableau-observations">3.3.5.1 Tableau OBSERVATIONS</h4>
+
+<p><strong>Time</strong> : hh : mm : ss</p>
+
+<p><strong>WLCode</strong>: Code désignant la ou les paires de longueurs d’onde utilisées pour mesurer l’ozone total. Les codes 0 à 7 sont utilisés pour les instruments Dobson seulement, le code 8, pour les instruments Filter seulement, et le code 9, pour les instruments Brewer seulement. Voir le tableau Tableau 3.3 7 à la <a href="#3353-tableaux-de-codes">section 3.3.5.3</a>.</p>
+
+<p><strong>ObsCode</strong>: Code désignant le type de mesure d’ozone total. Voir le Tableau 3.3 8 à la section <a href="#3353-tableaux-de-codes">section 3.3.5.3</a>.</p>
+
+<p><strong>Airmass</strong>: Inclinaison relative dans l’atmosphère.</p>
+
+<p><strong>ColumnO3</strong>: Quantité totale distincte d’ozone (O3) de la colonne (en unités Dobson, c.-à-d. m-atm-cm) mesurée au moment de l’observation.</p>
+
+<p><strong>StdDevO3</strong>: Écart-type de la mesure de la quantité totale d’ozone de la colonne (s’il y a lieu).</p>
+
+<p><strong>ColumnSO2</strong>: Quantité totale distincte de dioxyde de soufre (SO2) de la colonne (en unités Dobson, c.-à-d. m-atm-cm) mesurée au moment de l’observation.</p>
+
+<p><strong>StdDevSO2</strong>: Écart-type de la mesure de la quantité totale de SO2 de la colonne (s’il y a lieu).</p>
+
+<h4 id="3352-tableau-daily_summary">3.3.5.2 Tableau DAILY_SUMMARY</h4>
+
+<p><strong>WLCode</strong>: Code désignant la ou les paires de longueurs d’onde utilisées pour mesurer l’ozone total. Les codes 0 à 7 sont utilisés pour les instruments Dobson seulement, le code 8, pour les instruments Filter seulement, et le code 9, pour les instruments Brewer seulement. Voir le Tableau 3.3 7 à la <a href="#3353-tableaux-de-codes">section 3.3.5.3</a>.</p>
+
+<p><strong>ObsCode</strong>: Code désignant le type de mesure d’ozone total. Voir le Tableau 3.3 8 à la <a href="#3353-tableaux-de-codes">section 3.3.5.3</a>.</p>
+
+<p><strong>nObs</strong>: Nombre d’observations utilisées pour calculer la valeur de l’ozone total de la colonne.</p>
+
+<p><strong>MeanO3</strong>: Valeur moyenne de la quantité totale d’ozone (O3) de la colonne (en unités Dobson, c.-à-d. m-atm-cm).</p>
+
+<p><strong>StdDevO3</strong>: Écart-type de la mesure de la colonne d’ozone total (s’il y a lieu)</p>
+
+<h4 id="3353-tableaux-de-codes">3.3.5.3 Tableaux de codes</h4>
+
+<p><strong><em>Tableau 3.3 7 – Codes de longueur d’onde</em></strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>WLCode</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>Longueurs d’onde AD, configuration ordinaire</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Longueurs d’onde BD, configuration ordinaire</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Longueurs d’onde CD, configuration ordinaire</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Longueurs d’onde CC’, configuration ordinaire</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Longueurs d’onde AD, image focalisée</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Longueurs d’onde BD, image focalisée</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Longueurs d’onde CD, image focalisée</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Longueurs d’onde CC’, image focalisée</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Utilisé pour désigner les instruments d’un ozonomètre à filtre</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Utilisé pour désigner les instruments d’un spectrophotomètre Brewer</td>
+    </tr>
+    <tr>
+      <td>10-n</td>
+      <td>À déterminer</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong><em>Tableau 3.3 8 – Codes d’observation</em></strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>ObsCode</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0 ou DS</td>
+      <td>Lumière solaire directe</td>
+    </tr>
+    <tr>
+      <td>1 ouFM</td>
+      <td>Lune dégagée</td>
+    </tr>
+    <tr>
+      <td>2 ou B</td>
+      <td>Ciel bleu au zénith</td>
+    </tr>
+    <tr>
+      <td>3 ou ZS</td>
+      <td>Nuages au zénith (couche peu opaque uniforme ou stratifiée)</td>
+    </tr>
+    <tr>
+      <td>4 ou ZS</td>
+      <td>Nuages au zénith (couche moyennement opaque uniforme ou modérément variable)</td>
+    </tr>
+    <tr>
+      <td>5 ou ZS</td>
+      <td>Nuages au zénith (couche hautement opaque uniforme ou modérément variable)</td>
+    </tr>
+    <tr>
+      <td>6 ou ZS</td>
+      <td>Nuages au zénith (couche hautement variable avec ou sans précipitations)</td>
+    </tr>
+    <tr>
+      <td>7 ou ZS</td>
+      <td>Nuages au zénith (brouillard)</td>
+    </tr>
+    <tr>
+      <td>8 ou UV</td>
+      <td>Ozone obtenu du spectre UV</td>
+    </tr>
+    <tr>
+      <td>9-n</td>
+      <td>À déterminer par le WOUDC. On invite les contributeurs de données à communiquer avec le WOUDC pour proposer de nouveaux codes, au besoin.</td>
+    </tr>
+    <tr>
+      <td>GI</td>
+      <td>Valeur de l’ozone total calculée à l’aide d’une mesure de l’éclairement énergétique (GI) global (pour les instruments Brewer).</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="3354-exemple">3.3.5.4 Exemple</h4>
+<p>Vous trouverez un exemple de fichier de données pour la catégorie TotalOzoneObs à l’<a href="#a4-exemple-pour-la-catégorie-totalozoneobs">annexe A.4</a> et en ligne à l’adresse <a href="#http://woudc.org/archive/Documentation/Examples-extCSV/TotalOzoneObs.csv.">http://woudc.org/archive/Documentation/Examples-extCSV/TotalOzoneObs.csv.</a></p>
+
+<h3 id="336-catégorie--totalozone">3.3.6 Catégorie : TotalOzone</h3>
+
+<p>La catégorie TotalOzone comporte deux tableaux obligatoires : <code class="highlighter-rouge">#DAILY</code> et <code class="highlighter-rouge">#MONTHLY</code>.</p>
+
+<p>Le Tableau 3.3 9 présente les tableaux devant être remplis pour la catégorie TotalOzone (colonne Nom du tableau) et le nom de leurs champs respectifs. Les <a href="#3361-tableu-daily">sections 3.3.6.1</a> et <a href="#3362-tableau-monthly">3.3.6.2</a> renferment des descriptions plus détaillées des champs de l’ensemble des tableaux.</p>
+
+<p><em>**Tableau 3.3 9 – Tableaux de données de la catégorie TotalOzone **</em></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nom du tableau</th>
+      <th>Nom des champs (colonnes) (dans l’ordre)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="highlighter-rouge">#DAILY</code></td>
+      <td><code class="highlighter-rouge">Data, WLCode, ObsCode, ColumnO3, StdDevO3, UTC_Begin, UTC_End, UTC_Mean, nObs, mMu, ColumnSO2</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">#MONTHLY</code></td>
+      <td><code class="highlighter-rouge">Date, ColumnO3, StdDevO3, Npts</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="3361-tableu-daily">3.3.6.1 Tableu DAILY</h4>
+
+<p><strong>Date</strong>: yyyy - mm - dd</p>
+
+<p><strong>WLCode</strong>: Code désignant la ou les paires de longueurs d’onde utilisées pour mesurer l’ozone total. (Voir le Tableau 3.3 7 à la <a href="#3353-tableaux-de-codes">section 3.3.5.3</a>.)</p>
+
+<p><strong>ObsCode</strong>: Code désignant le type de mesure d’ozone total. (Voir le Tableau 3.3 8 à la <a href="#3353-tableaux-de-codes">section 3.3.5.3</a>.)</p>
+
+<p><strong>ColumnO3</strong>: Valeur quotidienne de l’ozone total de la colonne (en unités Dobson, c.-à-d. m atm-cm) définie comme étant la « valeur la plus représentative » (généralement dans l’ordre suivant : DS, ZS et FM).</p>
+
+<p><strong>StdDevO3</strong>: Écart-type de la mesure de la quantité totale d’ozone utilisée pour la valeur quotidienne.</p>
+
+<p><strong>UTC_Begin</strong>: Heure de début des observations (en heures décimales, UTC).</p>
+
+<p><strong>UTC_END</strong>: Heure de fin des observations (en heures décimales, UTC).</p>
+
+<p><strong>UTC_Mean</strong>: Durée moyenne des observations (en heures décimales, UTC).</p>
+
+<p><strong>nObs</strong>: Nombre d’observations utilisées pour calculer la valeur de l’ozone total de la colonne.</p>
+
+<p><strong>mMu</strong>: Moyenne harmonique de l’inversion relative dans la couche d’ozone à 22 km (1) de chaque observation servant à calculer la valeur quotidienne. Il s’agit d’une statistique utile relativement aux effets des incertitudes liées aux extrapolations faites à partir de l’absorption atmosphérique nulle et à la génération de données à partir de données indépendantes. mMu=NN/$\sum$ (1/$\mu$i).</p>
+
+<p><strong>ColumnSO2</strong>: Quantité quotidienne totale de dioxyde de soufre (SO2) calculée en tant que moyenne des quantités individiduelles de SO2 (en unités Dobson, c.-à-d. m-atm-cm) relevées grâce aux mêmes observations ayant permis de déterminer la quantité d’O3.</p>
+
+<h4 id="3362-tableau-monthly">3.3.6.2 Tableau MONTHLY</h4>
+
+<p><strong>Date</strong>: aaaa-mm-jj (le premier jour du mois est la valeur par défaut).</p>
+
+<p><strong>ColumnO3</strong>: Valeur quotidienne de l’ozone total de la colonne (en unités Dobson, c.-à-d. m atm-cm) définie comme étant la « valeur la plus représentative » (généralement dans l’ordre suivant : DS, ZS et FM).</p>
+
+<p><strong>StdDevO3</strong>: Écart-type de la mesure de la quantité totale d’ozone de la colonne.</p>
+
+<p><strong>Npts</strong>: Nombre de points (en général, il s’agit du nombre de moyennes quotidiennes) utilisés pour estimer la valeur mensuelle moyenne de l’ozone.</p>
+
+<h4 id="3363-exemple">3.3.6.3 Exemple</h4>
+
+<p>Vous trouverez un exemple de fichier de données pour la catégorie TotalOzone à l’<a href="#a5-exemple-pour-la-catégorie-totalozone">annexe A.5</a> et en ligne à l’adresse <a href="#http://woudc.org/archive/Documentation/Examples-extCSV/TotalOzone-Brewer.csv">http://woudc.org/archive/Documentation/Examples-extCSV/TotalOzone-Brewer.csv</a>.</p>
+
+<h3 id="337-catégorie--umkehrn14">3.3.7 Catégorie : UmkehrN14</h3>
+
+<p>La catégorie UmkehrN14 comporte deux tableaux obligatoires : <code class="highlighter-rouge">#N14_VALUES</code> et <code class="highlighter-rouge">#C_PROFILE</code>.</p>
+
+<p>Le Tableau 3.3 10 présente les tableaux devant être remplis pour la catégorie UmkehrN14 (colonne Nom du tableau) et le nom de leurs champs respectifs. Les <a href="#3371-tableau-n14_values">sections 3.3.7.1</a> à <a href="#3372-tableau-c_profile">3.3.7.2</a> renferment des descriptions plus détaillées des champs de l’ensemble des tableaux.</p>
+
+<p><em>**Tableau 3.3 10 – Tableaux de données de la catégorie UmkehrN14 **</em></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nom du tableau</th>
+      <th>Nom des champs (colonnes) (dans l’ordre)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="highlighter-rouge">#DAILY</code></td>
+      <td><code class="highlighter-rouge">Date, H, L, WLCode, ObsCode, ColumnO#, N600, N650, N700, N740, N750, N770, N800, N830, N840, N850, N865, N880, N890, N900</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">#MONTHLY</code></td>
+      <td>`Date, H, L, ColumnO3Obs, ColumnO3Retr, Layer10, Layer9, Layer8, Layer7, Layer6, Layer5, Layer4, Layer3, Layer2, Layer1, ITER, SX, SZA_1, nSZA, DFMRS, FEPS, RMSRES</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="3371-tableau-n14_values">3.3.7.1 Tableau N14_VALUES</h4>
+
+<p><strong>Date</strong>: aaaa-mm-jj</p>
+
+<p><strong>H</strong>: Code correspondant à la période d’observation : 0 = inconnu, 1 = AM et 2 = PM.</p>
+
+<p><strong>L</strong>: Code de la paire de longueurs d’onde utilisée pour l’observation :</p>
+
+<p>1=paire de longueurs d’onde A</p>
+
+<p>2=paire de longueurs d’onde B</p>
+
+<p>3=paire de longueurs d’onde C</p>
+
+<p>4=paire de longueurs d’onde D</p>
+
+<p>5=observation non solaire ajustée en fonction d’une observation DS</p>
+
+<p><strong>WLCode</strong>: Code désignant la ou les paires de longueurs d’onde utilisées pour mesurer l’ozone total. Voir le Tableau 3.3 7 à la <a href="#3353-tableaux-de-codes">section 3.3.5.3</a>.</p>
+
+<p><strong>ObsCode</strong>: Code désignant le type de mesure d’ozone total. Voir le Tableau 3.3 8 à la <a href="#3353-tableaux-de-codes">section 3.3.5.3</a>.</p>
+
+<p><strong>ColumnO3</strong>: Quantité totale d’ozone de la colonne (en unités Dobson, c.-à-d. m-atm-cm) applicable à l’observation Umkehr.</p>
+
+<p><strong>N600 to N900</strong>: Le logarithme Log(I’/I + C) permet de déterminer les trois décimales (nnn) de l’angle du zénith solaire (_###). L’angle du zénith solaire est indiqué au dixième de degré près, sans signe décimal. Lorsque la valeur de Log(I’/I + C) est supérieure à une unité, il faut omettre l’entier relatif. Par exemple, si Log(I’/I + C)=1,231, le code nnn saisit doit être 231. Les données manquantes sont indiquées comme suit : « -1 ».</p>
+
+<p>!!! md-alert “”
+    <strong>Remarque :</strong> La mantisse est de seulement trois décimales après le point décimal du logarithme Log(I’/I) + C). La caractéristique du logarithme est déduite par inférence. Les valeurs n sont indiquées en fonction des angles du zénith solaire correspondant : 60, 65, 70, 74, 75, 77, 80, 83, 84, 86,5, 88, 89 et 90 degrés.</p>
+
+<h4 id="3372-tableau-c_profile">3.3.7.2 Tableau C_PROFILE</h4>
+
+<p><strong>Date</strong>: aaaa-mm-jj</p>
+
+<p><strong>H</strong>: Code correspondant à la période d’observation : 1 = AM et 2 = PM.</p>
+
+<p><strong>L</strong>: Zénith dégagé = 3, zénith ennuagé = 5 (utilisé à la station 035, Arosa seulement)</p>
+
+<p><strong>ColumnO3Obs</strong>: Valeur observée de l’ozone total de la colonne (similaire à TotalOzone) (en unités Dobson, c.-à-d. m-atm-cm).</p>
+
+<p><strong>ColumnO3Retr</strong>: Valeur récupérée de l’ozone total de la colonne, exprimée en unités Dobson (somme la quantité de chacune des couches).</p>
+
+<p><strong>Layer10 - Layer1</strong>: Quantité d’ozone calculée dans chaque zone, exprimée en unités Dobson. La somme des couches 10 à 1 = valeur du champ ColumnO3Retr.</p>
+
+<p><strong>ITER</strong>: Nombre d’itérations (2, 3, 4 ou 5).</p>
+
+<p><strong>SX</strong>: Matrice de covariance des erreurs a priori utilisée pour le traitement :100:</p>
+
+<p>U = Matrice de covariance uniforme</p>
+
+<p>C = Matrice de covariance climatologique</p>
+
+<p><strong>SZA_1</strong>: Code utilisé pour indiquer le premier angle du zénith solaire (SZA), par exemple : 1 = 60, 2 = 65 et 3 = 70 degrés.</p>
+
+<p><strong>NSZA</strong>: Nombre d’angles du zénith solaire : 9, 10, 11 ou 12.</p>
+
+<p><strong>DFMRS</strong>: Modification de la valeur efficace de la solution fragmentaire depuis la dernière itération.</p>
+
+<p><strong>FEPS</strong>: Modification de la valeur efficace du vecteur de forçage depuis la dernière itération.</p>
+
+<p><strong>RMSRES</strong>: Variance résiduelle de l’ajustement de la valeur efficace.</p>
+
+<h4 id="3373-exemple">3.3.7.3 Exemple</h4>
+
+<p>Vous trouverez un exemple de fichier pour la catégorie Umkehr14 à l’<a href="#a6-exemple-pour-la-catégorie-umkehrn14">annexe A.6</a> et en ligne aux adresses suivantes : <a href="#http://woudc.org/archive/Documentation/Examples-extCSV/Umkehr-N_values-Dobson.csv">http://woudc.org/archive/Documentation/Examples-extCSV/Umkehr-N_values-Dobson.csv</a> (niveau 1) et  <a href="#http://woudc.org/archive/Documentation/Examples-extCSV/Umkehr_UMK92Retrieval-Dobson.csv">http://woudc.org/archive/Documentation/Examples-extCSV/Umkehr_UMK92Retrieval-Dobson.csv</a> (niveau 2).</p>
+
+<h2 id="34-contenu-des-données-propres-au-rayonnement-ultraviolet">3.4 Contenu des données propres au rayonnement ultraviolet</h2>
+<h3 id="341-introduction">3.4.1 Introduction</h3>
+
+<p>La présente section porte sur le contenu des données des différentes catégories relatives au rayonnement ultraviolet. Chaque catégorie comporte un ensemble de tableaux défini. Vous trouverez ci-après, pour chacun des tableaux, le nom des champs (colonnes) qu’ils contiennent, l’ordre de ces champs, selon lesquelles les données doivent être consignées.</p>
+
+<p>On invite les contributeurs de données à soumettre les données accessoires ou auxiliaires qu’ils jugent pertinentes. Les données accessoires sont des données qui décrivent des variables atmosphériques et diverses caractéristiques relatives au site, notamment sur la température, l’ozone, la pression, l’ennuagement (p. ex., au moyen d’un index de nuages ou d’une image du ciel) ou l’albédo, ou encore des données de pyranomètre (renseignements sur les caractéristiques permanentes du site de mesure). Les données auxiliaires incluent les caractéristiques/propriétés de l’instrument ayant servi à prendre les mesures, les renseignements sur la façon dont on a utilisé l’instrument, les algorithmes qui ont servi à calculer les valeurs mesurées à partir des signaux de l’instrument, etc. Les données auxiliaires peuvent s’avérer utiles pour l’utilisateur, ou encore absolument essentielles lorsque les données de base sont brutes (niveau 0).</p>
+
+<h4 id="3411-spectral">3.4.1.1 Spectral</h4>
+
+<p>Le rayonnement spectral est un rayonnement mesuré dans une bande spectrale continue, avec une résolution inférieure ou égale à 2 nm.</p>
+
+<h4 id="3412-multibande">3.4.1.2 Multibande</h4>
+
+<p>Le rayonnement multibande est mesuré à l’aide de plusieurs filtres passe-bande discrets dont la résolution spectrale nominale (LTMH) est de 2 à 10 nm.</p>
+
+<h4 id="3413-large-bande">3.4.1.3 Large bande</h4>
+
+<p>Le rayonnement à large bande est la mesure des rayons UVA et UVB, ou rayonnement ultraviolet pondéré par le spectre érythémal.</p>
+
+<h4 id="3414-pyranometer">3.4.1.4 Pyranometer</h4>
+
+<p>Un pyranomètre sert à mesurer l’éclairement énergétique solaire.</p>
+
+<h3 id="342-catégorie--spectral">3.4.2 Catégorie : Spectral</h3>
+
+<p>La catégorie Spectral comporte quatre tableaux obligatoires : <code class="highlighter-rouge">#GLOBAL</code>, <code class="highlighter-rouge">#DIRECT</code>, <code class="highlighter-rouge">#DIFFUSE</code> et <code class="highlighter-rouge">#ACTINOMETRIC</code>.</p>
+
+<p>Le Tableau 3.4 1 présente les tableaux devant être remplis pour la catégorie Spectral (colonne Nom du tableau) et le nom de leurs champs respectifs. Les <a href="#3421-tableau-global">sections 3.4.2.1</a> à <a href="#3424-tableau-actinometric">3.4.2.4</a> renferment des descriptions plus détaillées des champs de l’ensemble des tableaux.</p>
+
+<p><em>**Tableau 3.4 1 – Tableaux de données de la catégorie Spectral **</em></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nom du tableau</th>
+      <th>Nom des champs (colonnes) (dans l’ordre)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="highlighter-rouge">#GLOBAL</code></td>
+      <td><code class="highlighter-rouge">Wavelength, S - Irradiance, Time</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">#DIRECT</code></td>
+      <td><code class="highlighter-rouge">Wavelength, S - Irradiance, Time</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">#DIFFUSE</code></td>
+      <td><code class="highlighter-rouge">Wavelength, S - Irradiance, Time</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">ACTINOMETRIC</code></td>
+      <td><code class="highlighter-rouge">Wavelength, S - Irradiance, Time</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>!!! md-alert “”
+    <strong>Remarque :</strong> Time est en italiques pour indiquer qu’une place est réservée pour ce champ, mais qu’il ne doit pas obligatoirement être rempli.</p>
+
+<h4 id="3421-tableau-global">3.4.2.1 Tableau GLOBAL</h4>
+
+<p><strong>Wavelength</strong>: Exprimée en nanomètres (nm).</p>
+
+<p><strong>S - Irradiance</strong>: Éclairement énergétique spectral, exprimé en Wm^-2nm^-1</p>
+
+<p><strong>Time</strong>: Heure affichée selon le format de la norme ISO 8601, c’est-à-dire hh : mm : ss.</p>
+
+<h4 id="3422-tableau-direct">3.4.2.2 Tableau DIRECT</h4>
+
+<p>Pour une description des champs du tableau <code class="highlighter-rouge">#DIRECT</code>, voir la <a href="#3421-tableau-global">section 3.4.2.1</a> sur le tableau <code class="highlighter-rouge">#GLOBAL</code>.</p>
+
+<h4 id="3423-tableau-diffuse">3.4.2.3 Tableau DIFFUSE</h4>
+
+<p>Pour une description des champs du tableau <code class="highlighter-rouge">#DIFFUSE</code>, voir la <a href="#3421-tableau-global">section 3.4.2.1</a> sur le tableau <code class="highlighter-rouge">#GLOBAL</code>.</p>
+
+<h4 id="3424-tableau-actinometric">3.4.2.4 Tableau ACTINOMETRIC</h4>
+
+<p>Pour une description des champs du tableau <code class="highlighter-rouge">#ACTINOMETRIC</code>, voir la <a href="#3421-tableau-global">section 3.4.2.1</a> sur le tableau <code class="highlighter-rouge">#GLOBAL</code>.</p>
+
+<h4 id="3425-exemple">3.4.2.5 Exemple</h4>
+<p>Vous trouverez un exemple de fichier de données pour la catégorie Spectral à l’<a href="#a7-exemple-pour-la-catégorie-spectral">annexe A.7</a> et en ligne à l’adresse <a href="#http://woudc.org/archive/Documentation/Examples-extCSV/Spectral.csv">http://woudc.org/archive/Documentation/Examples-extCSV/Spectral.csv</a>.</p>
+
+<h3 id="343-catégorie--multiband">3.4.3 Catégorie : Multiband</h3>
+
+<p>La catégorie Multiband comporte cinq tableaux obligatoires : <code class="highlighter-rouge">#GLOBAL</code>, <code class="highlighter-rouge">#DIRECT</code>, <code class="highlighter-rouge">#DIFFUSE</code>, <code class="highlighter-rouge">#ACTINOMETRIC</code> et <code class="highlighter-rouge">#SIMULTANEOUS</code>.</p>
+
+<p>Le Tableau 3.4 2 présente les tableaux devant être remplis pour la catégorie Multiband (colonne Nom du tableau) et le nom de leurs champs respectifs. Les <a href="#3431-tableau-global">sections 3.4.3.1</a> à <a href="#3435-tableau-simultaneous">3.4.3.5</a> renferment des descriptions plus détaillées des champs de l’ensemble des tableaux.</p>
+
+<p><strong><em>Tableau 3.4 2 – Tableaux de données de la catégorie Multiband</em></strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nom du tableau</th>
+      <th>Nom des champs (colonnes) (dans l’ordre)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="highlighter-rouge">#GLOBAL</code></td>
+      <td><code class="highlighter-rouge">Wavelength, S - Irradiance, Time</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">#DIRECT</code></td>
+      <td><code class="highlighter-rouge">Wavelength, S - Irradiance, Time</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">#DIFFUSE</code></td>
+      <td><code class="highlighter-rouge">Wavelength, S - Irradiance, Time</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">ACTINOMETRIC</code></td>
+      <td><code class="highlighter-rouge">Wavelength, S - Irradiance, Time</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">#SIMULTANEOUS</code></td>
+      <td><code class="highlighter-rouge">Wavelength, GLS - Irradiance, DFS - Irradiance, DRS - Irradiance, Time</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>!!! md-alert “”
+    <strong>Remarque :</strong> Time, DFS-Irradiance et DRS-Irradiance sont en italiques pour indiquer qu’une place est réservée pour ces champs, mais qu’ils ne doivent pas obligatoirement être remplis.</p>
+
+<h4 id="3431-tableau-global">3.4.3.1 Tableau GLOBAL</h4>
+
+<p><strong>Wavelength</strong>: Exprimée en nanomètres (nm).</p>
+
+<p><strong>S - Irradiance</strong> : Éclairement énergétique spectral, exprimé en Wm^-2nm^-1</p>
+
+<p><strong>Time</strong>: Heure affichée selon le format de la norme ISO 8601, c’est-à-dire hh : mm : ss.</p>
+
+<h4 id="3432-tableau-direct">3.4.3.2 Tableau DIRECT</h4>
+
+<p>Pour une description des champs du tableau <code class="highlighter-rouge">#DIRECT</code>, voir la <a href="#3431-tableau-global">section 3.4.3.1</a> sur le tableau <code class="highlighter-rouge">#GLOBAL</code>.</p>
+
+<h4 id="3433-tableau-diffuse">3.4.3.3 Tableau DIFFUSE</h4>
+
+<p>Pour une description des champs du tableau <code class="highlighter-rouge">#DIFFUSE</code>, voir la <a href="#3431-tableau-global">section 3.4.3.1</a> sur le tableau <code class="highlighter-rouge">#GLOBAL</code>.</p>
+
+<h4 id="3434-tableau-actinometric">3.4.3.4 Tableau ACTINOMETRIC</h4>
+
+<p>Pour une description des champs du tableau <code class="highlighter-rouge">#ACTINOMETRIC</code>, voir la <a href="#3431-tableau-global">section 3.4.3.1</a> sur le tableau <code class="highlighter-rouge">#GLOBAL</code>.</p>
+
+<h4 id="3435-tableau-simultaneous">3.4.3.5 Tableau SIMULTANEOUS</h4>
+
+<p><strong>Wavelength</strong>: Exprimée en nanomètres (nm).</p>
+
+<p><strong>GLS - Irradiance</strong> : Éclairement énergétique spectral global, exprimé en Wm^-2nm^-1.</p>
+
+<p><strong>DFS - Irradiance</strong>: Éclairement énergétique spectral diffus, exprimé en Wm^-2nm^-1.</p>
+
+<p><strong>DRS - Irradiance</strong>: Éclairement énergétique spectral direct, exprimé en Wm^-2nm^-1.</p>
+
+<p><strong>Time</strong>: Heure affichée selon le format de la norme ISO 8601, c’est-à-dire hh : mm : ss.</p>
+
+<p>!!! md-alert “”
+    <strong>Remarque :</strong> Le tableau <code class="highlighter-rouge">#SIMULTANEOUS</code> fait référence à un détecteur unique à l’aide duquel des mesures sont prises en mode quasi simultané, mais rapporté sur la même échelle de temps. Par exemple, les mesures sont enregistrées à des intervalles de 15 secondes, d’abord pour l’éclairement énergétique spectral global, puis pour l’éclairement énergétique spectral diffus, après quoi une valeur intégrée est rapportée toutes les 15 minutes. Pour les besoins de ce tableau, cette valeur intégrée est jugée comme étant « simultanée ». En ce qui concerne les mesures simultanées réalisées à l’aide de deux détecteurs indépendants ou plus, il faut un fichier de données pour chacun des détecteurs.</p>
+
+<h4 id="3436-exemple">3.4.3.6 Exemple</h4>
+
+<p>Vous trouverez un exemple de fichier de données pour la catégorie Multiband à l’<a href="#a8-exemple-pour-la-catégorie-multiband">annexe A.8</a> et en ligne à l’adresse <a href="#http://woudc.org/archive/Documentation/Examples-extCSV/Multi-band.csv">http://woudc.org/archive/Documentation/Examples-extCSV/Multi-band.csv</a>.</p>
+
+<h3 id="344-catégorie--broadband">3.4.4 Catégorie : Broadband</h3>
+
+<p>La catégorie Broadband comporte cinq tableaux obligatoires : <code class="highlighter-rouge">#GLOBAL</code>, <code class="highlighter-rouge">#DIRECT</code>,0 <code class="highlighter-rouge">#DIFFUSE</code>, <code class="highlighter-rouge">#ACTINOMETRIC</code> et <code class="highlighter-rouge">#SIMULTANEOUS</code>.</p>
+
+<p>Le Tableau 3.4 3 présente les tableaux devant être remplis pour la catégorie Broadband (colonne Nom du tableau) et le nom de leurs champs respectifs. Les <a href="#3441-tableau-global">sections 3.4.4.1</a> à <a href="#3445-tableau-simultaneous">3.4.4.5</a> renferment des descriptions plus détaillées des champs de l’ensemble des tableaux.</p>
+
+<p><em>**Tableau 3.4 3 – Tableaux de données de la catégorie Broadband **</em></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nom du tableau</th>
+      <th>Nom des champs (colonnes) (dans l’ordre)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="highlighter-rouge">#GLOBAL</code></td>
+      <td><code class="highlighter-rouge">S - Irradiance, Time</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">#DIRECT</code></td>
+      <td><code class="highlighter-rouge">S - Irradiance, Time</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">#DIFFUSE</code></td>
+      <td><code class="highlighter-rouge">S - Irradiance, Time</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">ACTINOMETRIC</code></td>
+      <td><code class="highlighter-rouge">S - Irradiance, Time</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">#SIMULTANEOUS</code></td>
+      <td><code class="highlighter-rouge">Time, GL - Irradiance, DF - Irradiance, DR - Irradiance</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>!!! md-alert “”
+    <strong>Remarque :</strong> DF-Irradiance et DR-Irradiance sont en italiques pour indiquer qu’une place est réservée pour ces champs, mais qu’ils ne doivent pas obligatoirement être remplis.</p>
+
+<h4 id="3441-tableau-global">3.4.4.1 Tableau GLOBAL</h4>
+
+<p><strong>Time</strong>: Heure affichée selon le format de la norme ISO 8601, c’est-à-dire hh : mm : ss.</p>
+
+<p><strong>S - Irradiance</strong>: Éclairement énergétique spectral, exprimé en Wm^-2.</p>
+
+<h4 id="3442-tableau-direct">3.4.4.2 Tableau DIRECT</h4>
+
+<p>Pour une description des champs du tableau <code class="highlighter-rouge">#DIRECT</code>, voir la <a href="#3441-tableau-global">section 3.4.4.1</a> sur le tableau <code class="highlighter-rouge">#GLOBAL</code>.</p>
+
+<h4 id="3443-tableau-diffuse">3.4.4.3 Tableau DIFFUSE</h4>
+
+<p>Pour une description des champs du tableau <code class="highlighter-rouge">#DIFFUSE</code>, voir la <a href="#3441-tableau-global">section 3.4.4.1</a> sur le tableau <code class="highlighter-rouge">#GLOBAL</code>.</p>
+
+<h4 id="3444-tableau-actinometric">3.4.4.4 Tableau ACTINOMETRIC</h4>
+
+<p>Pour une description des champs du tableau <code class="highlighter-rouge">#ACTINOMETRIC</code>, voir la <a href="#3441-tableau-global">section 3.4.4.1</a> sur le tableau <code class="highlighter-rouge">#GLOBAL</code>.</p>
+
+<h4 id="3445-tableau-simultaneous">3.4.4.5 Tableau SIMULTANEOUS</h4>
+
+<p><strong>Time</strong>: Heure affichée selon le format de la norme ISO 8601, c’est-à-dire hh : mm : ss.</p>
+
+<p><strong>GL - Irradiance</strong>: Éclairement énergétique global, exprimé en Wm^-2.</p>
+
+<p><strong>DF - Irradiance</strong>: Éclairement énergétique diffus, exprimé en Wm^-2.</p>
+
+<p><strong>DR - Irradiance</strong>: Éclairement énergétique direct, exprimé en Wm^-2.</p>
+
+<p>!!! md-alert “”
+    **Remarque : ** Le tableau <code class="highlighter-rouge">#SIMULTANEOUS</code> fait référence à un détecteur unique à l’aide duquel des mesures sont prises en mode quasi simultané, mais rapporté sur la même échelle de temps. Par exemple, les mesures sont enregistrées à des intervalles de 15 secondes, d’abord pour l’irradiance globale, puis pour l’irradiance diffuse, après quoi une valeur intégrée est rapportée toutes les 15 minutes. Pour les besoins de ce tableau, cette valeur intégrée est jugée comme étant « simultanée ». En ce qui concerne les mesures simultanées réalisées à l’aide de deux détecteurs indépendants ou plus, il faut un fichier de données pour chacun des détecteurs.</p>
+
+<h4 id="3446-exemple">3.4.4.6 Exemple</h4>
+
+<p>Vous trouverez un exemple de fichier de données pour la catégorie Broadband à l’<a href="#a9-exemple-pour-la-catégorie-broadband">annexe A.9</a> et en ligne à l’adresse <a href="#http://woudc.org/archive/Documentation/Examples-extCSV/Broad-band.csv">http://woudc.org/archive/Documentation/Examples-extCSV/Broad-band.csv</a>.</p>
+
+<h3 id="345-catégorie--pyranometer">3.4.5 Catégorie : Pyranometer</h3>
+
+<p>La catégorie Pyranometer comporte quatre tableaux obligatoires : <code class="highlighter-rouge">#GLOBAL</code>, <code class="highlighter-rouge">#DIRECT</code>, <code class="highlighter-rouge">#DIFFUSE</code> et <code class="highlighter-rouge">#ACTINOMETRIC</code>.</p>
+
+<p>Le Tableau 3.4 4 présente les tableaux devant être remplis pour la catégorie Pyranometer (colonne Nom du tableau) et le nom de leurs champs respectifs. Les <a href="#3451-tableau-global">sections 3.4.5.1</a> à <a href="#3454-tableau-simultaneous">3.4.5.4</a> renferment des descriptions plus détaillées des champs de l’ensemble des tableaux.</p>
+
+<p><em>**Tableau 3.4 4 – Tableaux de données de la catégorie Pyranometer **</em></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nom du tableau</th>
+      <th>Nom des champs (colonnes) (dans l’ordre)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="highlighter-rouge">#GLOBAL</code></td>
+      <td><code class="highlighter-rouge">S - Irradiance, Time</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">#DIRECT</code></td>
+      <td><code class="highlighter-rouge">S - Irradiance, Time</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">#DIFFUSE</code></td>
+      <td><code class="highlighter-rouge">S - Irradiance, Time</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">ACTINOMETRIC</code></td>
+      <td><code class="highlighter-rouge">S - Irradiance, Time</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">#SIMULTANEOUS</code></td>
+      <td><code class="highlighter-rouge">Time, GL - Irradiance, DF - Irradiance, DR - Irradiance</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>!!! md-alert “”
+    **Remarque : ** DF-Irradiance et DR-Irradiance sont en italiques pour indiquer qu’une place est réservée pour ces champs, mais qu’ils ne doivent pas obligatoirement être remplis.</p>
+
+<h4 id="3451-tableau-global">3.4.5.1 Tableau GLOBAL</h4>
+
+<p><strong>Time</strong>: Heure affichée selon le format de la norme ISO 8601, c’est-à-dire hh : mm : ss.</p>
+
+<p><strong>S - Irradiance</strong>: Éclairement énergétique spectral, exprimé en Wm-2.</p>
+
+<h4 id="3452-tableau-direct">3.4.5.2 Tableau DIRECT</h4>
+
+<p>Pour une description des champs du tableau <code class="highlighter-rouge">#DIRECT</code>, voir la <a href="#3451-tableau-global">section 3.4.5.1</a> sur le tableau <code class="highlighter-rouge">#GLOBAL</code>.</p>
+
+<h4 id="3453-tableau-diffuse">3.4.5.3 Tableau DIFFUSE</h4>
+
+<p>Pour une description des champs du tableau <code class="highlighter-rouge">#DIFFUSE</code>, voir la <a href="#3451-tableau-global">section 3.4.5.1</a> sur le tableau <code class="highlighter-rouge">#GLOBAL</code>.</p>
+
+<h4 id="3454-tableau-simultaneous">3.4.5.4 Tableau SIMULTANEOUS</h4>
+
+<p><strong>Time</strong>: Heure affichée selon le format de la norme ISO 8601, c’est-à-dire hh : mm : ss.</p>
+
+<p><strong>GL - Irradiance</strong>: Éclairement énergétique global, exprimé en Wm^-2.</p>
+
+<p><strong>DF - Irradiance</strong>: Éclairement énergétique diffus, exprimé en Wm^-2.</p>
+
+<p><strong>DR - Irradiance</strong>: Éclairement énergétique direct, exprimé en Wm^-2.</p>
+
+<p>!!! md-alert “”
+    <strong>Remarque :</strong> Le tableau <code class="highlighter-rouge">#SIMULTANEOUS</code> fait référence à un détecteur unique à l’aide duquel des mesures sont prises en mode quasi simultané, mais rapporté sur la même échelle de temps. Par exemple, les mesures sont enregistrées à des intervalles de 15 secondes, d’abord pour l’éclairement énergétique global, puis pour l’éclairement énergétique diffus, après quoi une valeur intégrée est rapportée toutes les 15 minutes. Pour les besoins de ce tableau, cette valeur intégrée est jugée comme étant « simultanée ». En ce qui concerne les mesures simultanées réalisées à l’aide de deux détecteurs indépendants ou plus, il faut un fichier de données pour chacun des détecteurs.</p>
+
+<h4 id="3455-exemple">3.4.5.5 Exemple</h4>
+
+<p>Vous trouverez un exemple de fichier de données pour la catégorie Pyranometer à l’<a href="#a10-exemple-pour-la-catégorie-pyranometer">annexe A.10</a>.</p>
+
+<h3 id="346-données-accessoires-et-auxiliaires">3.4.6 Données accessoires et auxiliaires</h3>
+
+<p>On invite les contributeurs de données à soumettre des données accessoires ou auxiliaires qu’ils jugent pertinentes.</p>
+
+<p>!!! md-alert “”
+    <strong>Remarque :</strong> Il est préférable de soumettre les données accessoires et auxiliaires dans des fichiers distincts.</p>
+
+<p>Le Tableau 3.4 5 présente les différents tableaux permettant de soumettre des données accessoires et auxiliaires.</p>
+
+<p>!!! md-alert “”
+    <strong>Remarque :</strong> Chacun des tableaux est accompagné d’exemples de nom de champ pouvant être inclus dans les catégories associées au rayonnement ultraviolet.</p>
+
+<p><strong><em>Tableau 3.4 5 – Exemple de données accessoires et auxiliaires</em></strong></p>
+
+<table class="foo">
+  <thead>
+    <tr>
+      <th>Nom du tableau</th>
+      <th>Noms de champ suggérés</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="highlighter-rouge">#CALIBRATION</code></td>
+      <td>Specified by the data originator (Scientific Authority)</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">#METEOROLOGY</code></td>
+      <td>Temperature, Pressure, Relative Humidity</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">METEOROLOGY_SUMMARY</code></td>
+      <td>Time, Temperature, Pressure, Relative Humidity</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">SURFACE_CONDITIONS</code></td>
+      <td>Albedo, Comments about Surface cover (Example: “Snow” or “Shrubland” or “Grassland”)</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">IMAGE</code></td>
+      <td>Filename, Comments (Example: sky97001.gif)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Le Tableau 3.4 6 énumère l’ensemble des champs obligatoires et facultatifs pour la soumission de données au WOUDC, accompagnés de commentaires et de leur unité physique respective [6].</p>
+
+<p><strong><em>Tableau 3.4 6 – Nom des champs</em></strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nom du champ</th>
+      <th>Unité physique</th>
+      <th>Commentaires</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Albedo</td>
+      <td>Dimensionless</td>
+      <td>Aucun commentaire</td>
+    </tr>
+    <tr>
+      <td>Cloud Amount</td>
+      <td>Aucune unité</td>
+      <td>Codes spéciaux</td>
+    </tr>
+    <tr>
+      <td>Date</td>
+      <td>aaaa-mm-jj</td>
+      <td>Norme ISO-8601</td>
+    </tr>
+    <tr>
+      <td>DF - Irradiance</td>
+      <td>Wm^-2</td>
+      <td>Éclairement énergétique diffus</td>
+    </tr>
+    <tr>
+      <td>DFS - Irradiance</td>
+      <td>Wm^-2 nm^-1</td>
+      <td>Éclairement énergétique spectral diffus</td>
+    </tr>
+    <tr>
+      <td>DR - Irradiance</td>
+      <td>Wm^-2</td>
+      <td>Éclairement énergétique direct</td>
+    </tr>
+    <tr>
+      <td>DRS - Irradiance</td>
+      <td>Wm^-2 nm^-1</td>
+      <td>Éclairement énergétique spectral direct</td>
+    </tr>
+    <tr>
+      <td>GL - Irradiance</td>
+      <td>Wm^-2</td>
+      <td>Éclairement énergétique global</td>
+    </tr>
+    <tr>
+      <td>GLS - Irradiance</td>
+      <td>Wm^-2 nm^-1</td>
+      <td>Éclairement énergétique spectral global</td>
+    </tr>
+    <tr>
+      <td>Height</td>
+      <td>Mètres (m))</td>
+      <td>Au-dessus du niveau de la mer</td>
+    </tr>
+    <tr>
+      <td>Image filename and -path</td>
+      <td>Aucune unité</td>
+      <td>*.bmp, *.gif, *.jpeg etc.</td>
+    </tr>
+    <tr>
+      <td>Irradiance</td>
+      <td>Wm^-2</td>
+      <td>Aucun commentaire</td>
+    </tr>
+    <tr>
+      <td>Irradiation</td>
+      <td>KJ m^-2 m,^-1</td>
+      <td>Éclairement énergétique intégré quotidien</td>
+    </tr>
+    <tr>
+      <td>Latitude</td>
+      <td>Degrés décimaux</td>
+      <td>Nord positif</td>
+    </tr>
+    <tr>
+      <td>Longitude</td>
+      <td>Degrés décimaux</td>
+      <td>Est positif</td>
+    </tr>
+    <tr>
+      <td>Pressure</td>
+      <td>Hectopascal (hPa)</td>
+      <td>Aucun commentaire</td>
+    </tr>
+    <tr>
+      <td>RelativeHumidity</td>
+      <td>Sans dimension (%)</td>
+      <td>Aucun commentaire</td>
+    </tr>
+    <tr>
+      <td>S- Irradiance</td>
+      <td>Wm^-2 nm^-1</td>
+      <td>Éclairement énergétique spectral</td>
+    </tr>
+    <tr>
+      <td>S - Irradiation</td>
+      <td>KJm^-2</td>
+      <td>Irradiation spectral</td>
+    </tr>
+    <tr>
+      <td>Time</td>
+      <td>hh : mm : ss</td>
+      <td>ISO-8601 standard</td>
+    </tr>
+    <tr>
+      <td>Temperature</td>
+      <td>Degrees Celsius (°C)</td>
+      <td>Aucun commentaire</td>
+    </tr>
+    <tr>
+      <td>Wavelength</td>
+      <td>Nanomètres (nm)</td>
+      <td>Aucun commentaire</td>
+    </tr>
+    <tr>
+      <td>WindSpeed</td>
+      <td>ms^-1</td>
+      <td>Aucun commentaire</td>
+    </tr>
+    <tr>
+      <td>WindDirection</td>
+      <td>Degrés décimaux</td>
+      <td>Aucun commentaire</td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="chapter-4-chapitre-4-traitement-des-données">Chapter 4 Chapitre 4 Traitement des données</h1>
+<h2 id="41-politique-sur-les-données">4.1 Politique sur les données</h2>
+<p>L’utilisation des données du WOUDC est régie par la <a href="https://www.wmo.int/pages/about/exchangingdata_en.html">politique sur les données de l’OMM</a> et par la <a href="https://gawsis.meteoswiss.ch/GAWSIS/index.html#/faq">politique sur l’utilisation des données du programme VAG de l’OMM</a>. Pour plus de renseignements sur la politique d’utilisation des données du WOUDC, allez à l’adresse <a href="http://woudc.org/about/data-policy.php?lang=fr">enligne</a>.</p>
+
+<h2 id="42-flux-et-traitement-des-données">4.2 Flux et traitement des données</h2>
+<p>La <a href="#23-soumission-des-données">section 2.3</a> fournit des procédures détaillées concernant le traitement des données. Il est possible d’accéder aux données correctement soumises par le biais des dossiers accessibles sur le Web (WAF), des services Web géospatiaux et de la fonction de recherche.</p>
+
+<p>Essentiellement, les données soumises par les contributeurs sont reçues, traitées, puis archivées. Après qu’un fichier a été saisi dans le système, le processus de traitement s’amorce. On détermine d’abord le format du fichier entrant, puis on le valide pour s’assurer qu’il respecte le format de fichier standard du WOUDC (extCSV). Une fois que cela a été fait, le système tente de créer et de valider une taxonomie et une adresse URI pour le fichier. Enfin, le fichier est soumis à une rigoureuse série de validations appelée File Level Validation (FLV). La FLV permet :</p>
+
+<ul>
+  <li>de s’assurer que le fichier extCSV est conforme aux spécifications du programme VAG et du WOUDC sur le plan syntaxique;</li>
+  <li>d’effectuer une validation des métadonnées pour s’assurer que les valeurs contenues dans les en têtes (<code class="highlighter-rouge">#TIMESTAMP</code>, <code class="highlighter-rouge">#PLATFORM</code>, <code class="highlighter-rouge">#INSTRUMENT</code>, <code class="highlighter-rouge">#CONTENT</code>, <code class="highlighter-rouge">#DATA_GENERATION</code>, <code class="highlighter-rouge">#LOCATION</code>) sont exactes et uniformes;</li>
+  <li>d’effectuer une validation unique des tableaux, soit une série de tests servant à valider des tableaux d’ensemble de données spécifiques;</li>
+  <li>de s’assurer que les valeurs sont modifiées conformément à la politique de « non-intervention » (c.-à-d. avec le moins de modifications syntaxiques possible).</li>
+</ul>
+
+<p>Le fichier extCSV obtenu à la suite de la FLV est une version « nettoyée » du fichier original. Une fois que le fichier extCSV a réussi la validation de taxonomie, la validation de l’adresse URI et la FLV, il est prêt à être intégré à la base de données. Toutes les erreurs relevées pendant le processus de validation sont transmises au contributeur pour qu’il les corrige et ainsi faciliter l’intégration de leurs futurs fichiers de données.</p>
+
+<h1 id="chapitre-5-qualité-des-données">Chapitre 5 Qualité des données</h1>
+<p>Une fois qu’un fichier a été soumis au WOUDC, la qualité des données qu’il contient est évaluée à différentes étapes du processus de traitement des données. Le contrôle de la qualité comprend la vérification du format de fichier et du contenu des métadonnées, l’inspection des plages de valeurs des données et des vérifications relatives à la redondance de données.</p>
+
+<p>Voici un résumé des vérifications effectuées aux fins de l’assurance de la qualité des données :</p>
+
+<p><strong>Validation de la structure</strong></p>
+
+<ul>
+  <li>Permet de s’assurer que le fichier extCSV est conforme aux spécifications relatives aux fichiers extCSV : 
+      - Vérification du format du fichier;
+      - Vérification de l’ensemble des tableaux et des champs contenus dans le fichier, etc.</li>
+</ul>
+
+<p><strong>Validation des métadonnées</strong></p>
+
+<ul>
+  <li>Validation de l’ensemble des métadonnées (organisation, station, instrument);</li>
+  <li>Vérification de l’intégralité des métadonnées et correction des métadonnées incorrectes, dans la mesure du possible.</li>
+</ul>
+
+<p>**Validation des données **</p>
+
+<ul>
+  <li>Vérification de l’exactitude de l’ensemble des dates contenues dans le fichier (p. ex., la date de génération du fichier ne précède pas la date d’observation);</li>
+  <li>Vérification des valeurs dérivées contenues dans le fichier (p. ex., valeurs du champ TotalOzone dans le tableau <code class="highlighter-rouge">#MONTHLY</code>) :
+      - Correction des valeurs incorrectes et insertion des données manquantes.</li>
+</ul>
+
+<p>Au départ, les fichiers sont validés pour confirmer qu’ils sont conformes aux spécifications relatives au format de fichier, mais, par la suite, des résumés statistiques plus généraux peuvent être générés, de manière à relever des valeurs erronées, des problèmes d’étalonnage, etc. Même si ces derniers exemples exigent une connaissance plus approfondie des données, les archives renferment déjà suffisamment de données pour porter des jugements critiques et faire des évaluations générales au sujet des données. À mesure que le volume de données augmentera et que les connaissances statistiques s’amélioreront, la portée de ces évaluations sera élargie.</p>
+
+<h1 id="chapitre-6-consultation-et-extraction-de-données">Chapitre 6 Consultation et extraction de données</h1>
+<p>La consultation et l’extraction de données sont des fonctions de base du WOUDC. Le grand public a accès gratuitement aux données du WOUDC. Pour des renseignements sur la façon de consulter les données, voir le page <a href="http://woudc.org/about/data-access.php?lang=fr">Accessibilité des données</a>.</p>
+
+<h1 id="chapitre-7-coordonnées-du-woudc">Chapitre 7 Coordonnées du WOUDC</h1>
+<p>La principal moyenne de communication avec le WOUDC est par le page de contact. La boîte de réception est vérifiée sur une base quotidienne par les services opérationnels des centres de données. Conformément à sa norme de service, le WOUDC est tenu à répondre à toutes les demandes de renseignements transmises sur l’internet dans un délai de deux jours ouvrables.</p>
+
+<h2 id="71-le-page-de-contact">7.1 Le page de contact</h2>
+<p><a href="http://woudc.org/contact.php?lang=fr">http://woudc.org/contact.php?lang=fr</a>.</p>
+
+<h2 id="72-adresse">7.2 Adresse</h2>
+
+<p>Centre mondial de données sur l’ozone et le rayonnement ultraviolet</p>
+
+<p>Service météorologique du Canada</p>
+
+<p>Environnement et Changement climatique Canada</p>
+
+<p>4905, rue Dufferin</p>
+
+<p>Toronto (Ontario)   M3H 5T4</p>
+
+<p>Canada</p>
+
+<h1 id="chapitre-8-références">Chapitre 8 Références</h1>
+<p>[1] User Guide to the WMO/GAW World Ozone Data Centre Version 3.1, Environment Canada publication, 2013.</p>
+
+<p>[2] Guide to the WMO/GAW World Ultraviolet Radiation Data Centre Version 6.0, Environment Canada publication, 2006.</p>
+
+<p>[3] Gaines, S.E. and R.S. Hipskind, Format Specification for Data Exchange Version 1.0, NASA Ames Research Center publication, 1990.</p>
+
+<p>[4] Gaines, S.E. and R.S. Hipskind, Format Specification for Data Exchange Version 3.1, NASA Ames Research Center publication, 1998.</p>
+
+<p>[5] Ruffieux, D., Personal communication, 2006</p>
+
+<p>[6] R. Dogniaux, et al., “Solar Meteorology: Units and Symbols”: Int. J. Solar Energy, 1984, volume 2 number 3, pages 249-255.</p>
+
+<h1 id="appendice-a-exemples">Appendice A Exemples</h1>
+<h2 id="a1--exemple-pour-la-catégorie-lidar">A.1  Exemple pour la catégorie Lidar</h2>
+
+<p>Vous trouverez ci-dessous un exemple de soumission de données pour la catégorie Lidar. Vous pouvez aussi consulter un exemple en ligne à l’adresse  <a href="#http://woudc.org/archive/Documentation/Examples-extCSV/Lidar.csv">http://woudc.org/archive/Documentation/Examples-extCSV/Lidar.csv</a>.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>`*NOTE:One Event per file
+* This file was generated by NA2110LI - version 1.0.
+* Originating NASA-Ames file: NDSC\EUREKA\euo39302.cal
+* --- NASA-Ames MNAME ---
+* NDSC
+#CONTENT
+Class,Category,Level,Form
+WOUDC,Lidar,1.0,1
+#DATA_GENERATION
+Date,Agency,Version,ScientificAuthority
+1993-12-14,CRESTech,0.0,"(Carswell, A. I.), (carswell@lidar.ists.ca) 416-665-5418"
+#PLATFORM
+Type,ID,Name,Country,GAW_ID
+STN,315,Eureka,CAN
+#INSTRUMENT
+Name,Model,Number
+DIAL,Lotard,1
+* --- NASA-Ames SCOM ---
+* Data processed using version 2.0 software
+* --- NASA-Ames NCOM ---
+* Temperature and Density data above about 25 Km
+* is lidar derivied. Temperature and density below
+* 15-25 Km (maximum sonde height) is that given
+* by the nearest in time Eureka radiosonde.
+* Between the maximum sonde height up to
+* around 25 Km the temperature and denisty is
+* estimated by interpolationg between the sonde
+* and lidar values.
+#LOCATION
+Latitude,Longitude,Height
+80,-85.9,607
+#TIMESTAMP
+UTCOffset,Date,Time
++00:00:00,1993-02-10,13:11:00
+#OZONE_SUMMARY
+Altitudes,MinAltitude,MaxAltitude,StartDate,StartTime,EndDate,EndTime,PulsesAveraged
+112,12150,45430,1993-02-10,13:11:00,,,1.26e+006
+#OZONE_PROFILE
+Altitude,OzoneDensity,StandardError,RangeResolution,AirDensity,Temperature
+12150.,2.428e+012,4.67e+010,1000
+12450.,2.761e+012,4.82e+010,1000
+12750.,2.996e+012,5.02e+010,1000
+… etc
+</code></pre>
+</div>
+<h2 id="a2--exemple-pour-la-catégorie-microwave">A.2  Exemple pour la catégorie Microwave</h2>
+
+<p>Vous trouverez ci-dessous un exemple de soumission de données pour la catégorie Microwave.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>*NOTE: One Event per file
+
+* This file was originally received in NASA-Ames 2110 format and has been
+* translated into WOUDC extCSV format using converter software XXX ver xx
+*
+* --------------------------------------------------------------
+* NOTE: Original file header information is appended at the end of this file.
+* --------------------------------------------------------------
+*
+
+#CONTENT
+Class,Category,Level,Form
+WOUDC,Microwave,1.0,1
+
+#DATA_GENERATION
+Date,Agency,Version,ScientificAuthority
+2006-07-01,Meteoswiss,1.0,Dominique Ruffieux
+
+#PLATFORM
+Type,ID,Name,Country,GAW_ID
+STN,156,Payerne,CHE
+
+#INSTRUMENT
+Name,Model,Number
+SOMORA,???,???
+
+#LOCATION
+Latitude,Longitude,Height
+46.82,6.95,491 
+
+* Observing technique: total power 
+* Center frequency: 142.175 GHz 
+* Inversion method: Optimal Estimation 
+* Temp. and press. profiles : CIRA 86 + daily NCEP + Payerne radiosondes
+* A-priori profile: season standard atmosphere 
+* Measurement Error Cov.: variable, adjusted to wings BT 
+* A Priori Error Cov.: 0 - 1.5 ppm (correlation 3-5 km)
+
+#TIMESTAMP
+UTCOffset,Date,Time
++0:00:00,2005-10-09,00:18:00
+
+*282.01 25 2005 10 9 0 18 30 46.82 6.95 491 52.0 2741 0.57 0.13
+#PROFILE_SUMMARY
+Levels,AveragingTime,ZenithAngle,NoiseTemperature,TTF,CalculatedSpectrum
+25,30,52.0,2741,0.57,0.13
+
+#OZONE_PROFILE
+Altitude,OzoneVMR,VariableError,FixedError,SmoothingError,TotalError,A-Priori,
+Temperature,Pressure
+13000,0.40,0.01,0.05,0.28,0.29,18,213.75,172.92
+15000,0.69,0.03,0.12,0.43,0.45,18,214.17,125.88
+17000,1.29,0.05,0.18,0.44,0.48,17,213.04,91.56
+…
+73500,0.56,0.03,0.02,0.11,0.12,64,216.68,,0.03
+76500,0.54,0.02,0.01,0.10,0.10,73,214.20,,0.02
+
+#TIMESTAMP
+UTCOffset,Date,Time
++0:00:00,2005-10-09,00:48:00
+
+*282.03 25 2005 10 9 0 48 30 46.82 6.95 491 52.0 2748 0.57 0.13
+#PROFILE_SUMMARY
+Levels,AveragingTime,ZenithAngle,NoiseTemperature,TTF,CalculatedSpectrum
+25,30,52.0,2748,0.57,0.13
+
+#OZONE_PROFILE
+Altitude,OzoneVMR,VariableError,FixedError,SmoothingError,TotalError,A-Priori,
+Temperature,Pressure
+13000,0.42,0.01,0.05,0.28,0.29,18,213.75,172.92
+15000,0.74,0.03,0.11,0.43,0.45,17,214.17,125.88
+17000,1.34,0.05,0.18,0.44,0.48,17,213.04, 91.56
+…
+70500,0.59,0.05,0.03,0.14,0.15,56,219.34,,0.04
+73500,0.56,0.03,0.02,0.11,0.12,65,216.68,,0.03
+76500,0.53,0.02,0.01,0.10,0.10,74,214.20,,0.02
+
+etc ...
+
+#TIMESTAMP
+UTCOffset,Date,Time
++0:00:00,2005-10-09,23:47:00
+
+*282.99 25 2005 10 9 23 47 25 46.82 6.95 491 52.0 2740 0.63 0.18
+#PROFILE_SUMMARY
+Levels,AveragingTime,ZenithAngle,NoiseTemperature,TTF,CalculatedSpectrum
+25,25,52.0,2740,0.63,0.18
+
+#OZONE_PROFILE
+Altitude,OzoneVMR,VariableError,FixedError,SmoothingError,TotalError,A-Priori,Temperature,Pressure
+13000,0.34,0.01,0.04,0.28,0.29,24,211.78,174.52
+15000,0.53,0.03,0.11,0.43,0.44,22,212.61,126.65
+17000,1.01,0.05,0.16,0.43,0.46,21,211.64, 91.94
+…
+70500,0.55,0.06,0.03,0.14,0.15,56,219.34,,0.04
+73500,0.53,0.03,0.02,0.11,0.12,66,216.68,,0.03
+76500,0.52,0.02,0.01,0.10,0.10,76,214.20,,0.02
+
+* RUFFIEUX D.,,,, MWAVE,,, PAYERNE,, OZONE,,, 09-Oct-2005 00:18:0009-Oct-2005 23:47:001001 
+* 47 2110 
+* RUFFIEUX, Dominique 
+* MeteoSwiss, Station Aerologique de Payerne, Switzerland 
+* Stratospheric Ozone Monitoring Radiometer (SOMORA) / Payerne 
+* NDSC / GAW 
+* 1 1 
+* 2005 10,9 2005 10 10 
+* 0.0 0.0 
+* Altitude (m) 
+* Fractional day (day of year) 
+* 8 
+* 1 1 1 1 1 1 1 100 
+* 99.99 99.99 99.99 99.99 99.99 999 999.99 9999.99 
+* Ozone VMR (ppm) 
+* Variable (stochastic) error for ozone VMR (ppm) 
+* Fixed (systematic) error for ozone VMR (ppm) 
+* Smoothing error (ppm) 
+* Total error (ppm) 
+* A-priori data contribution (%) 
+* Temperature profile used for retrieval (K) 
+* Pressure profile used for retrieval (Pa) 
+* 14 
+* 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+* 99 9999 99 99 99 99 999 99.99 99.99 999 99 9999 9.99 9.99 
+* Number of altitudes recorded in subsequent data records 
+* Year 
+* Month 
+* Day 
+* Hour (Time=UT) 
+* Minutes 
+* Averaging Time (Minutes) 
+* Latitude (Deg. north) 
+* Longitude (Deg. east) 
+* Altitude above sea level (m) 
+* Zenith angle (Deg.) 
+* Mean system noise temperature (K) 
+* Tropospheric Transmission Factor 
+* Std. of Meas. - Calc. Spectrum (K) 
+* 0 
+* 7 
+* Observing technique: total power 
+* Center frequency: 142.175 GHz 
+* Inversion method: Optimal Estimation 
+* Temp. and press. profiles : CIRA 86 + daily NCEP + Payerne radiosondes
+* A-priori profile: season standard atmosphere 
+* Measurement Error Cov.: variable, adjusted to wings BT 
+* A Priori Error Cov.: 0 - 1.5 ppm (correlation 3-5 km)
+</code></pre>
+</div>
+
+<h2 id="a3--exemple-pour-la-catégorie-ozonesonde">A.3  Exemple pour la catégorie Ozonesonde</h2>
+
+<p>Vous trouverez ci-dessous un exemple de soumission de données pour la catégorie Ozonesonde. Vous pouvez aussi consulter un exemple en ligne à l’adresse <a href="#http://woudc.org/archive/Documentation/Examples-extCSV/Ozonesonde.csv">http://woudc.org/archive/Documentation/Examples-extCSV/Ozonesonde.csv</a>.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>#CONTENT
+Class,Category,Level,Form
+WOUDC,OzoneSonde,1.0,2
+
+#DATA_GENERATION
+Date, Agency, Version, ScientificAuthority
+2013-02-11, Environment Canada,1.0,Jonathan Davies
+
+#PLATFORM
+Type,ID,Name,Country,GAW_ID
+STN,21,Stonyplain,CAN
+
+#INSTRUMENT
+Name,Model,Number
+ECC,Z,Z14850
+
+#LOCATION
+Latitude,Longitude,Height
+53.54,-114.1,766
+
+#TIMESTAMP
+UTCOffset,Date,Time
++00:00:00,2013-01-30,11:16:00
+
+*EXAMPLE OF NEW OZONESONDE 
+*FILE FORMAT* 
+* ----- correction applied for 1% KI solution in ENSCI sonde ----------
+* ----- correction applied for 2.5 cc of solution instead of 3.0 ---
+* ----- residual ozone interpolated from 2011 MLS climatology (McPeters and Labow) ---
+
+#PREFLIGHT_SUMMARY
+ib0,ib1,1b2,SolutionType,SolutionVolume,PumpFlowRate,OzoneSondeResponseTime
+0.1,0.04,0.04,1%KIFullBuffer,2.5,214.36,0.34
+
+#RADIOSONDE
+Manufacturer,Model,Number
+Vaisala,RS92-SGP,H0513477
+
+#INTERFACE_CARD
+Manufacturer,Model,Number
+Vaisala,RSA921,G14513056
+
+#SAMPLING_METHOD
+TypeOzoneFreeAir,CorrectionWettingFlow,SurfaceOzone, LengthBG,WMOTropopausePressure,BurstOzonePressure,GroundEquipment,ProcessingSoftware
+activated charcoal filter,0.98,20,30,295,13.099,DigiCORA III,SNDPRO 2.0
+
+#PUMP_SETTINGS
+MotorCurrent,HeadPressure,VacuumPressure
+79.9,1600,200
+
+#PUMP_CORRECTION
+Pressure,Correction
+2,1.16,
+3,1.124
+5,1.087,
+10,1.054
+20,1.033
+30,1.024
+50,1.015
+100,1.01
+200,1.007
+300,1.005
+500,1.002
+1000,1.0
+
+#FLIGHT_SUMMARY
+IntegratedO3,CorrectionCode,SondeTotalO3,NormalizationFactor,BackgroundCorrection,SampleTemeratureType
+318.5,6,404.3,-0.984,Pressure_ib2,Pump_Intern
+
+#OZONE_REFERENCE
+Name,Model,Number,Version,TotalO3,WLCode,ObsType,UTC_Mean
+Brewer,Single,55,1,398,9,0,19.6
+
+#PROFILE
+Duration,Pressure,O3PartialPressure,Temperature,WindSpeed,WindDirection,LevelCode,GPHeight,RelativeHumidity,SampleTemperature,SondeCurrent,PumpMotorCurrent,PumpMotorVoltage,Latitude,Longitude,Height
+0,924.59,1.973,-23.1,2.6,360,2,766,76,36.6,0.566924
+2,924.13,1.973,-23.2,2.2,350,0,770,72,36.6,0.566904
+4,923.46,1.992,-23.4,2.6,349,0,774,72,36.6,0.572229
+6,922.56,1.992,-23.5,3,350,0,783,73,36.6,0.572192
+8,921.21,1.982,-23.6,3.3,350,0,793,74,36.6,0.569459
+10,919.86,1.981,-23.7,3.6,350,0,803,75,36.6,0.569403
+...
+7510,20.11,13.167,-61.2,13.2,64,0,26282,1,11.7,3.89304
+7512,20.09,13.205,-61.1,13,64,0,26287,1,11.7,3.90423
+7514,20.07,13.186,-61.1,12.8,64,0,26293,1,11.7,3.89851
+7516,20.05,13.176,-61,12.6,65,0,26300,1,11.6,3.89697
+7518,20.02,13.175,-60.9,12.4,65,0,26307,1,11.6,3.89685
+7520,20,13.099,-61,12.2,65,2,26314,1,11.6,3.87421
+
+
+#PROFILE_UNCERTAINTY
+Duration,Pressure,O3PartialPressure,Temperature,WindSpeed,WindDirection,LevelCode,GPHeight,RelativeHumidity,SampleTemperature,SondeCurrent,PumpMotorCurrent,PumpMotorVoltage,Latitude,Longitude,Height
+
+!!! md-alert ""
+    **Note:** At present this is a placeholder for estimated uncertainty for each of the measured profile parameters listed here. Guidelines for this will be released probably first in 2014/2015
+
+</code></pre>
+</div>
+
+<h2 id="a4--exemple-pour-la-catégorie-totalozoneobs">A.4  Exemple pour la catégorie TotalOzoneObs</h2>
+
+<p>Vous trouverez ci-dessous un exemple de soumission de données pour la catégorie TotalOzoneObs data submission. Vous pouvez aussi consulter un exemple en ligne à l’adresse <a href="#http://woudc.org/archive/Documentation/Examples-extCSV/TotalOzoneObs.csv">http://woudc.org/archive/Documentation/Examples-extCSV/TotalOzoneObs.csv</a>.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>*Example of a single day of observations
+*One observation day per file
+#CONTENT
+Class,Category,Level,Form
+WOUDC,TotalOzoneObs,1.0,1
+#DATA_GENERATION
+Date,Agency,Version,ScientificAuthority
+1999-05-07,MSC,1.0,J. Kerr
+#PLATFORM
+Type,ID,Name,Country,GAW_ID
+STN,065,Toronto,CAN,71638
+#INSTRUMENT
+Name,Model,Number
+Brewer,MKII,014
+#LOCATION
+Latitude,Longitude,Height
+43.78,-79.47,198
+#TIMESTAMP
+UTCOffset,Date,Time
++00:00:00,1999-04-10
+#OBSERVATIONS
+Time,WLcode,ObsCode,Airmass,ColumnO3,StdDevO3,ColumnSO2,StdDevSO2
+10:03:01,9,DS,2.39,350.0,2.0,1.13,0.02
+10:25:11,9,DS,2.35,351.2,1.9,0.98,0.02
+11:13:01,9,DS,2.21,348.4,1.5
+…
+17:03:23,9,DS,2.89,350.0,2.0,1.13,0.08
+17:25:01,9,DS,2.99,350.8,2.2
+17:50:01,9,DS,3.09,355.0,2.3
+18:09:51,9,DS,3.29,351.4,2.7,2.13,0.6
+#DAILY_SUMMARY
+WLcode,ObsCode,nObs,MeanO3,StdDevO3
+9,DS,9,350.0,2.0
+</code></pre>
+</div>
+
+<h2 id="a5--exemple-pour-la-catégorie-totalozone">A.5  Exemple pour la catégorie TotalOzone</h2>
+
+<p>Vous trouverez ci-dessous un exemple de soumission de données pour la catégorie TotalOzone. Vous pouvez aussi consulter un exemple en ligne à l’adresse <a href="#http://woudc.org/archive/Documentation/Examples-extCSV/TotalOzone-Brewer.csv">http://woudc.org/archive/Documentation/Examples-extCSV/TotalOzone-Brewer.csv</a>.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>*Example of daily ozone values
+*One month per file
+#CONTENT
+Class,Category,Level,Form
+WOUDC,TotalOzone,1.0,1
+#DATA_GENERATION
+Date,Agency,Version,ScientificAuthority
+1999-06-07,MSC,1.0,J. Kerr
+#PLATFORM
+Type,ID,Name,Country,GAW_ID
+STN,065,Toronto,CAN,71638
+#INSTRUMENT
+Name,Model,Number
+Brewer,MKII,014
+#LOCATION
+Latitude,Longitude,Height
+43.78,-79.47,198
+* NOTE: the date defaults to the first day of the month.
+#TIMESTAMP
+UTCOffset,Date,Time
++00:00:00,1999-04-01
+* Precipitation on April 2, 28, 29
+#DAILY
+Date,WLCode,ObsCode,ColumnO3,StdDevO3,UTC_Begin,UTC_End,UTC_Mean,nObs,mMu,ColumnS
+O2
+1999-04-01,9,0,350.0,5.0,,,13.75,27,1.28,5.13
+1999-04-03,9,0,341.1,4.1,,,12.75,19,1.12
+1999-04-04,9,0,353.8,3.0,,,13.01,35,1.2
+…
+1999-04-26,9,0,355.0,5.0,,,13.05,37,1.21,3.33
+1999-04-27,9,0,355.0,5.0,,,12.66,37,1.19
+1999-04-30,9,0,369.0,5.0,,,13.7,25,1.3
+#TIMESTAMP
+UTCOffset,Date,Time
++00:00:00,1999-04-30
+* NOTE: the date of the MONTHLY table defaults to the first day of the month.
+#MONTHLY
+Date,ColumnO3,StdDevO3,Npts
+1999-04-01,350.0,5.0,13
+</code></pre>
+</div>
+
+<h2 id="a6--exemple-pour-la-catégorie-umkehrn14">A.6  Exemple pour la catégorie UmkehrN14</h2>
+
+<p>Vous trouverez ci-dessous un exemple de soumission de données pour la catégorie UmkehrN14. Vous pouvez aussi consulter des exemples en ligne aux adresses suivantes :  <a href="#http://woudc.org/archive/Documentation/Examples-extCSV/Umkehr-N_values-Dobson.csv">http://woudc.org/archive/Documentation/Examples-extCSV/Umkehr-N_values-Dobson.csv</a> (niveau 1.0) et <a href="#http://woudc.org/archive/Documentation/Examples-extCSV/Umkehr_UMK92Retrieval-Dobson.csv">http://woudc.org/archive/Documentation/Examples-extCSV/Umkehr_UMK92Retrieval-Dobson.csv</a> (niveau 2.0).</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>*NOAA-CMDL is the Agency acronym for the National Oceanographic and
+*Atmospheric Administration-Climate Monitoring and Diagnostics Laboratory
+
+*One month per file
+
+#CONTENT
+Class,Category,Level,Form
+WOUDC,UmkehrN14,1.0,1
+
+#DATA_GENERATION
+Date,Agency,Version,ScientificAuthority
+1996-07-02,NOAA_CMDL,1.0, Gloria Koenig
+
+#PLATFORM
+Type,ID,Name,Country,GAW_ID
+STN,067,Boulder,USA
+
+#INSTRUMENT
+Name,Model,Number
+Dobson,Beck,082
+
+#LOCATION
+Latitude,Longitude,Height
+40.03,-105.25,832
+
+#TIMESTAMP
+UTCOffset,Date,Time
+-07:00:00,1992-10-07
+
+#N14_VALUES
+Date,H,L,WLCode,ObsCode,ColumnO3,N600,N650,N700,N740,N750,N770,N800,N830,N840,N850,N865,N880,N890,N900
+1992-10-07,1,1,0,0,268,-1,145,356,572,627,746,913,957,942,916,844,763,705,630
+1992-10-07,1,3,0,0,268,467,538,645,768,800,877,44,231,295,343,363,344,316,271
+1992-10-07,1,4,0,0,268,208,244,292,254,371,416,504,629,681,734,817,893,920,917
+1992-10-07,2,1,0,0,244,-1,145,356,572,627,746,913,957,942,916,844,763,705,630
+1992-10-07,2,3,0,0,244,467,538,645,768,800,877,044,231,295,343,363,344,316,271
+…
+1992-10-28,1,1,0,0,268,-1,145,356,572,627,746,913,957,942,916,844,763,705,630
+1992-10-28,1,3,0,0,268,467,538,645,768,800,877,44,231,295,343,363,344,316,271
+1992-10-28,1,4,0,0,268,208,244,292,254,371,416,504,629,681,734,817,893,920,917
+1992-10-28,2,1,0,0,244,-1,145,356,572,627,746,913,957,942,916,844,763,705,630
+1992-10-28,2,3,0,0,244,467,538,645,768,800,877,044,231,295,343,363,344,316,271
+
+#TIMESTAMP
+UTCOffset,Date,Time
+-07:00:00,1992-10-28
+
+#METEOROLOGY
+Temperature,Pressure,Relative Humidity
+,1642 
+</code></pre>
+</div>
+
+<h2 id="a7--exemple-pour-la-catégorie-spectral">A.7  Exemple pour la catégorie Spectral</h2>
+
+<p>Vous trouverez ci-dessous un exemple de soumission de données pour la catégorie Spectral. Vous pouvez aussi consulter un exemple en ligne à l’adresse <a href="#http://woudc.org/archive/Documentation/Examples-extCSV/Spectral.csv">http://woudc.org/archive/Documentation/Examples-extCSV/Spectral.csv</a>.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>#CONTENT
+Class,Category,Level,Form
+WOUDC,Spectral,1.0,1
+
+#DATA_GENERATION
+Date,Agency,Version,ScientificAuthority
+2009-02-12,JMA,1.0,Head of Ozone Layer Monitoring Office
+
+#PLATFORM
+Type,ID,Name,Country,GAW_ID
+STN,014,Tsukuba(Tateno),JPN,47646
+
+#INSTRUMENT
+Name,Model,Number
+Brewer,MKIII,173
+
+#LOCATION
+Latitude,Longitude,Height
+36.06,140.13,31
+
+* Provisional
+
+* by UV routine; back and forth scan between 290nm and 325nm
+
+#TIMESTAMP
+UTCOffset,Date,Time
++09:00:00,2009-01-01,07:00:02
+
+#GLOBAL_SUMMARY
+Time,IntACGIH,IntCIE,ZenAngle,MuValue,AzimAngle,Flag,TempC
+07:00:02,3.108E-05,1.737E-04,89.10,11.86,119.68,,13.2
+
+#GLOBAL
+Wavelength,S-Irradiance,Time
+290.0,0.000E+00
+290.5,0.000E+00
+291.0,0.000E+00
+291.5,0.000E+00
+292.0,0.000E+00
+292.5,0.000E+00
+293.0,0.000E+00
+293.5,0.000E+00
+294.0,0.000E+00
+294.5,0.000E+00
+295.0,0.000E+00
+
+#TIMESTAMP
+UTCOffset,Date,Time
++09:00:00,2009-01-01,07:59:58
+
+#GLOBAL_SUMMARY
+Time,IntACGIH,IntCIE,ZenAngle,MuValue,AzimAngle,Flag,TempC
+07:59:58,4.376E-04,2.565E-03,79.11,4.86,129.23,,14.0
+
+#GLOBAL
+Wavelength,S-Irradiance,Time
+290.0,0.000E+00
+290.5,0.000E+00
+291.0,0.000E+00
+291.5,0.000E+00
+292.0,0.000E+00
+292.5,0.000E+00
+293.0,0.000E+00
+293.5,0.000E+00
+294.0,0.000E+00
+294.5,0.000E+00
+295.0,0.000E+00
+
+#TIMESTAMP
+UTCOffset,Date,Time
++09:00:00,2009-01-01,08:59:31
+
+#GLOBAL_SUMMARY
+Time,IntACGIH,IntCIE,ZenAngle,MuValue,AzimAngle,Flag,TempC
+08:59:31,1.695E-03,9.518E-03,70.56,2.92,140.33,,14.4
+
+#GLOBAL
+Wavelength,S-Irradiance,Time
+290.0,0.000E+00
+290.5,0.000E+00
+291.0,0.000E+00
+291.5,0.000E+00
+292.0,0.000E+00
+292.5,0.000E+00
+293.0,0.000E+00
+293.5,0.000E+00
+294.0,0.000E+00
+294.5,0.000E+00
+295.0,0.000E+00
+
+#TIMESTAMP
+UTCOffset,Date,Time
++09:00:00,2009-01-01,10:00:04
+
+#GLOBAL_SUMMARY
+Time,IntACGIH,IntCIE,ZenAngle,MuValue,AzimAngle,Flag,TempC
+10:00:04,3.722E-03,1.982E-02,63.87,2.24,153.58,,14.9
+
+#GLOBAL
+Wavelength,S-Irradiance,Time
+290.0,0.000E+00
+290.5,0.000E+00
+291.0,0.000E+00
+291.5,0.000E+00
+292.0,0.000E+00
+292.5,0.000E+00
+293.0,0.000E+00
+293.5,0.000E+00
+294.0,0.000E+00
+294.5,0.000E+00
+</code></pre>
+</div>
+
+<h2 id="a8--exemple-pour-la-catégorie-multiband">A.8  Exemple pour la catégorie Multiband</h2>
+
+<p>Vous trouverez ci-dessous un exemple de soumission de données pour la catégorie Multiband. Vous pouvez aussi consulter un exemple en ligne à l’adresse  <a href="#http://woudc.org/archive/Documentation/Examples-extCSV/Multi-band.csv">http://woudc.org/archive/Documentation/Examples-extCSV/Multi-band.csv</a>.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>#CONTENT
+Class,Category,Level,Form
+WOUDC,Multi-band,1.0,1
+
+#DATA_GENERATION
+Date,Agency,Version,ScientificAuthority
+2006-09-08,USDA_CSU,3.0,James R. Slusser
+
+#PLATFORM
+Type,ID,Name,Country,GAW_ID
+STN,256,Lauder,NZL
+
+#INSTRUMENT
+Name,Model,Number
+Yankee,UVMFR-7,231
+
+#LOCATION
+Latitude,Longitude,Height
+-45.038,169.684,370
+
+#TIMESTAMP
+UTCOffset,Date,Time
+12:00:00,2006-01-01
+* The direct normal, the diffuse horizontal and the total horizontal
+* radiation have been corrected for the measured angular response of
+* each channel of the detectors.  Diffuse horizontal corrections were
+* made assuming an isotropic distribution of sky radiance.
+
+#SIMULTANEOUS
+Wavelength,GLS-Irradiance,DFS-Irradiance,DRS-Irradiance,Time,Airmass,SZA
+299.96,,,,05:00:00,37.3375,89.96
+305.36,,,,05:00:00,37.3375,89.96
+311.53,,,,05:00:00,37.3375,89.96
+317.63,,,,05:00:00,37.3375,89.96
+325.34,,,,05:00:00,37.3375,89.96
+332.46,,,,05:00:00,37.3375,89.96
+367.92,,,,05:00:00,37.3375,89.96
+299.96,,,,05:03:00,33.1052,89.65
+305.36,,,,05:03:00,33.1052,89.65
+311.53,,,,05:03:00,33.1052,89.65
+317.63,,,,05:03:00,33.1052,89.65
+325.34,,,,05:03:00,33.1052,89.65
+332.46,,,,05:03:00,33.1052,89.65
+367.92,,,,05:03:00,33.1052,89.65
+299.96,0.000000,0.000000,0.000000,05:06:00,29.2088,89.30
+305.36,0.000000,0.000000,0.000000,05:06:00,29.2088,89.30
+311.53,0.000199,0.000199,0.000000,05:06:00,29.2088,89.30
+317.63,0.000000,0.000000,0.000000,05:06:00,29.2088,89.30
+325.34,0.002551,0.002551,0.000000,05:06:00,29.2088,89.30
+…
+</code></pre>
+</div>
+
+<h2 id="a9--exemple-pour-la-catégorie-broadband">A.9  Exemple pour la catégorie Broadband</h2>
+
+<p>Vous trouverez ci-dessous un exemple de soumission de données pour la catégorie Broadband. Vous pouvez aussi consulter un exemple en ligne à l’adresse  <a href="#http://woudc.org/archive/Documentation/Examples-extCSV/Broad-band.csv">http://woudc.org/archive/Documentation/Examples-extCSV/Broad-band.csv</a>.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>* UV dekodavimas ExtCSV formavimas, V 1.018 beta
+
+#CONTENT
+Class,Category,Level,Form
+WOUDC,Broad-band,1.0,1
+
+#DATA_GENERATION
+Date,Agency,Version,ScientificAuthority
+2009-02-10,LHMS,1.0,Tomas Zumaras
+
+#INSTRUMENT
+Name,Model,Number
+UV-Biometer,501A,4399
+
+#PLATFORM
+Type,ID,Name,Country,GAW_ID
+STN,312,Kaunas,LTU
+
+#LOCATION
+Latitude,Longitude,Height
+54.53,23.50,76.1
+
+#TIMESTAMP
+UTCOffset,Date
++03:25:00,2009-01-01
+
+#GLOBAL
+Time,Irradiance
+00:00:00,0.0000000
+00:05:00,0.0000000
+00:10:00,0.0000000
+00:15:00,0.0000000
+00:20:00,0.0000000
+00:25:00,0.0000000
+00:30:00,0.0000000
+00:35:00,0.0000000
+00:40:00,0.0000000
+00:45:00,0.0000000
+00:50:00,0.0001749
+00:55:00,0.0000000
+01:00:00,0.0000000
+01:05:00,0.0000000
+01:10:00,0.0000000
+…
+</code></pre>
+</div>
+
+<h2 id="a10--exemple-pour-la-catégorie-pyranometer">A.10  Exemple pour la catégorie Pyranometer</h2>
+
+<p>Vous trouverez ci-dessous un exemple de soumission de données pour la catégorie Pyranometer.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>* Data file 2 Pyranometer Data (Global)
+#CONTENT
+Name,Category,Level,Form
+WOUDC,Pyranometer,1.0,1
+
+#DATA_GENERATION
+Date,Agency,Version,ScientificAuthority
+1997-07-02,AES,1.0,Bruce McArthur
+
+#INSTRUMENT
+Name,Model,Number
+Kipp and Zonen,CM21,920065
+
+#PLATFORM
+Type,ID,Name,Country,GAW_ID
+STN,338,Regina,CAN,72863
+
+#LOCATION
+Latitude,Longitude,Height
+50.21,-104.71,592
+
+#TIMESTAMP
+UTCOffset,Date,Time
+-06:59:08,1997-06-08
+* In this example, the pyranometer data are concatenated into one table
+*(#GLOBAL), with a single #TIMESTAMP table. The #METEOROLOGY and
+*#INSTRUMENT_CONDITIONS_SUMMARY tables are a summary.
+
+#GLOBAL
+Time,Irradiance
+06:45:00,201
+07:00:00,212
+07:15:00,243
+…
+22:00:00,244
+
+#METEOROLOGY_SUMMARY
+Time,Temperature,Pressure,RelativeHumidity
+07:00:00,15,972
+08:00:00,16,973
+…
+
+#INSTRUMENT_CONDITIONS_SUMMARY
+Time,Temperature
+06:45:00,15.8
+07:00:00,16.0
+…
+</code></pre>
+</div>
+
+
+        </div><!-- MainContentEnd -->
+        <dl id="wb-dtmd" property="dateModified" role="contentinfo">
+            <dt>Version:</dt>
+            <dd>2.0</dd>
+        </dl>
+        <div class="wb-share pull-right text-right" data-wb-share='{"pnlId": "pnl1"}' id="share-wdg-woudc"></div>
+        <div class="pull-right text-right align-bottom hidden-xs hidden-sm" id="share-qr-woudc"><img alt="WOUDC Guide du contributeur" height="50" src="https://chart.googleapis.com/chart?chs=50x50&cht=qr&chl=http://guide.woudc.org//fr/" title="WOUDC Guide du contributeur" width="50"></div>
+    </main>
+    <footer class="visible-sm visible-md visible-lg wb-navcurr" id="wb-info" role="contentinfo">
+        <div class="container">
+            <nav role="navigation">
+                <h2>Information à propos du site web</h2>
+                <ul class="list-inline" id="gc-tctr">
+                    <li>
+                        <a href="http://ec.gc.ca/default.asp?lang=FR&amp;xml=5830C36B-1773-4E3E-AF8C-B21F54633E0A" rel="license">Avis</a>
+                    </li>
+                    <li>
+                        <a href="http://ec.gc.ca/transparence-transparency/default.asp?lang=Fr&amp;n=3C401D5C-1">Transparence</a>
+                    </li>
+                </ul>
+                <div class="row">
+                    <!-- FooterStart -->
+                    <section class="col-sm-3">
+                        <h3>À propos d’Environnement et Changement climatique Canada</h3>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="http://www.ec.gc.ca/default.asp?lang=Fr&amp;n=BD3CE17D-1">Notre mandat</a>
+                            </li>
+                            <li>
+                                <a href="http://ec.gc.ca/default.asp?lang=Fr&amp;n=B6832638-1">Le ministre</a>
+                            </li>
+                            <li>
+                                <a href="http://woudc.org/sitemap.php?lang=fr">Plan du site</a>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="col-sm-3">
+                        <h3>WOUDC</h3>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="http://woudc.org/news/?lang=fr">Nouvelles</a>
+                            </li>
+                            <li>
+                                <a href="http://woudc.org/contact.php?lang=fr">Communiquez avec le WOUDC</a>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="col-sm-3">
+                        <h3>OMM</h3>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="http://www.wmo.int/pages/about/index_fr.html" rel="external">L’OMM en bref</a>
+                            </li>
+                            <li>
+                                <a href="http://www.wmo.int/pages/mediacentre/news/index_fr.html" rel="external">Nouvelles</a>
+                            </li>
+                            <li>
+                                <a href="http://www.wmo.int/gaw" rel="external">VAG</a>
+                            </li>
+                        </ul>
+                    </section><!-- FooterEnd -->
+                </div>
+            </nav>
+        </div>
+        <div id="gc-info">
+            <div class="container">
+                <nav role="navigation">
+                    <h2>Government of Canada footer</h2>
+                    <ul class="list-inline">
+                        <li>
+                            <a href="http://healthycanadians.gc.ca/index-fra.php"><span>Santé</span>canadiensensante.gc.ca</a>
+                        </li>
+                        <li>
+                            <a href="http://www.travel.gc.ca/index-fra.asp"><span>Voyage</span>voyage.gc.ca</a>
+                        </li>
+                        <li>
+                            <a href="http://www.servicecanada.gc.ca/fra/accueil.shtml"><span>Service Canada</span>servicecanada.gc.ca</a>
+                        </li>
+                        <li>
+                            <a href="http://www.jobbank.gc.ca/intro-fra.aspx"><span>Emplois</span>guichetemplois.gc.ca</a>
+                        </li>
+                        <li>
+                            <a href="http://actionplan.gc.ca/fr"><span>Économie</span>plandaction.gc.ca</a>
+                        </li>
+                        <li id="canada-ca">
+                            <a href="http://www.canada.ca/fr/index.html">Canada.ca</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer><!-- ScriptsStart -->
+    <!--[if gte IE 9 | !IE ]><!-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js">
+    </script> 
+    <script src="/static/libs/js/wet-boew-theme-gcwu-fegc/js/wet-boew.min.js">
+    </script> <!--<![endif]-->
+     <!--[if lt IE 9]><script src="/static/libs/js/wet-boew-theme-gcwu-fegc/js/ie8-wet-boew2.min.js"></script><![endif]-->
+     <!-- ScriptsEnd -->
+     <!-- CustomScriptsStart -->
+     
+    <script type="text/javascript">
+       (function() {
+          $('.md-alert').addClass('alert alert-info');
+          $('table').addClass('table');
+          })();
+    </script> <!-- CustomScriptsEnd -->
+</body>
+</html>
