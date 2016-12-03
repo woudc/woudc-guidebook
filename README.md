@@ -15,11 +15,11 @@ The official WOUDC guidebook is available at [http://docs.woudc.org/contributor-
 
 ### Requirements
 
-Python 2.7 or greater.
+Ruby 2.0 or greater.
 
 ## Dependencies
 
-This package uses [jeykll](http://jekyllrb.org) as a static site generator
+This package uses [jekyll](https://jekyllrb.com) as a static site generator
 and requires the following dependencies to be installed on the system:
 
 - ruby2.0
@@ -34,7 +34,7 @@ cd woudc-guidebook
 git clone https://github.com/woudc/woudc-guidebook.git
 cd woudc-guidebook
 . setenv-ruby-gems.sh
-gem2.0 install jekylll bundler
+gem2.0 install jekyll bundler
 make setup
 ```
 
