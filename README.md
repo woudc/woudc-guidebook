@@ -9,7 +9,7 @@ World Data Centres which are part of the
 [Global Atmosphere Watch](http://www.wmo.int/gaw) programme of the World
 Meteorological Organization.
 
-The official WOUDC guidebook is available at [http://docs.woudc.org/contributor-guide](http://docs.woudc.org/contributor-guide).
+The official WOUDC guidebook is available at [http://guide.woudc.org](http://guide.woudc.org).
 
 ## Installation
 
