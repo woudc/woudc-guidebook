@@ -31,7 +31,7 @@ Le site Web du WOUDC est utilisé pour mettre à jour les renseignements et comm
 [Chapitre 3 Format de données standard](#chapitre-3-format-de-données-standard)
 
   * 3.1 [Format de données standard du WOUDC ](#31-format-de-données-standard-du-woudc)
-    * 3.1.1 [Règles de syntaxe du format CSV étendu] (#311-règles-de-syntaxe-du-format-csv-étendu)
+    * 3.1.1 [Règles de syntaxe du format CSV étendu](#311-règles-de-syntaxe-du-format-csv-étendu)
   * 3.2 [Métadonnées des fichiers de données extCSV du WOUDC](#32-métadonnées-des-fichiers-de-données-extcsv-du-woudc)
     * 3.2.1 [Introduction](#321-introduction)
   * 3.3 [Contenu des données propres à l’ozone ](#33-contenu-des-données-propres-à-lozone)

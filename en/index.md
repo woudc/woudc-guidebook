@@ -28,7 +28,7 @@ The WOUDC website is used to update information and serves as a virtual "bulleti
 [Chapter 3 Standard Data Format](#chapter-3-standard-data-format)
 
   * 3.1 [The WOUDC Data Format Standard](#31-the-woudc-data-format-standard)
-    * 3.1.1 [Extended CSV syntax Rules] (#311-extended-csv-syntax-rules)
+    * 3.1.1 [Extended CSV syntax Rules](#311-extended-csv-syntax-rules)
   * 3.2 [The WOUDC extCSV Data File Metadata](#32-the-woudc-extcsv-data-file-metadata)
     * 3.2.1 [Introduction](#321-introduction)
   * 3.3 [Ozone Specific Data Content](#33-ozone-specific-data-content)
