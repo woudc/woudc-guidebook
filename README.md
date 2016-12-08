@@ -34,7 +34,8 @@ cd woudc-guidebook
 git clone https://github.com/woudc/woudc-guidebook.git
 cd woudc-guidebook
 . setenv-ruby-gems.sh
-gem2.0 install jekyll bundler
+gem2.0 install bundler
+bundle install
 make setup
 ```
 
