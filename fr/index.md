@@ -40,7 +40,7 @@ Le site Web du WOUDC est utilisé pour mettre à jour les renseignements et comm
     * 3.3.3 [Catégorie: Microwave](#333-catégorie-microwave)
     * 3.3.4 [Catégorie: Ozonesonde](#334-category-ozonesonde)
     * 3.3.5 [Catégorie: TotalOzoneObs](#335-categorie-totalozoneobs)
-    * 3.3.6 [Catégorie: totalOzone](#336-catégorie-totalozone)
+    * 3.3.6 [Catégorie: TotalOzone](#336-catégorie-totalozone)
     * 3.3.7 [Catégorie: UmkehrN14](#337-catégorie-umkehrn14)
   * 3.4 [Contenu des données propres au rayonnement ultraviolet](#34-contenu-des-données-propres-au-rayonnement-ultraviolet)
     * 3.4.1 [Introduction](#341-introduction)

@@ -37,7 +37,7 @@ The WOUDC website is used to update information and serves as a virtual "bulleti
     * 3.3.3 [Category: Microwave](#333-category-microwave)
     * 3.3.4 [Category: Ozonesonde](#334-category-ozonesonde)
     * 3.3.5 [Category: TotalOzoneObs](#335-category-totalozoneobs)
-    * 3.3.6 [Category: totalOzone](#336-category-totalozone)
+    * 3.3.6 [Category: TotalOzone](#336-category-totalozone)
     * 3.3.7 [Category: UmkehrN14](#337-category-umkehr14)
   * 3.4 [Ultraviolet Specific Data Content](#34-ultraviolet-specific-data-content)
     * 3.4.1 [Introduction](#341-introduction)
@@ -45,7 +45,7 @@ The WOUDC website is used to update information and serves as a virtual "bulleti
     * 3.4.3 [Category: Multiband](#343-category-multiband)
     * 3.4.4 [Category: Broadband](#344-category-broadband)
     * 3.4.5 [Category: Pyranometer](#345-category-pyranometer)
-    * 3.4.6 [Ancillary and Auxiliary Data](#346-category-ancillary-and-auxiliary-data)i
+    * 3.4.6 [Ancillary and Auxiliary Data](#346-category-ancillary-and-auxiliary-data)
 
 [Chapter 4 Data Handling](#chapter-4-data-handling)
 
