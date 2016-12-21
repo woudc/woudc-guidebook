@@ -44,10 +44,10 @@ Le site Web du WOUDC est utilisé pour mettre à jour les renseignements et comm
     * 3.3.7 [Catégorie: UmkehrN14](#337-catégorie--umkehrn14)
   * 3.4 [Contenu des données propres au rayonnement ultraviolet](#34-contenu-des-données-propres-au-rayonnement-ultraviolet)
     * 3.4.1 [Introduction](#341-introduction)
-    * 3.4.2 [Catégorie: Spectral](#342-catégorie-spectral)
-    * 3.4.3 [Catégorie: Multiband](#343-catégorie-multiband)
-    * 3.4.4 [Catégorie: Broadband](#344-catégorie-broadband)
-    * 3.4.5 [Catégorie: Pyranometer](#345-catégorie-pyranometer)
+    * 3.4.2 [Catégorie: Spectral](#342-catégorie--spectral)
+    * 3.4.3 [Catégorie: Multiband](#343-catégorie--multiband)
+    * 3.4.4 [Catégorie: Broadband](#344-catégorie--broadband)
+    * 3.4.5 [Catégorie: Pyranometer](#345-catégorie--pyranometer)
     * 3.4.6 [Données accessoires et auxiliaires ](#346-données-accessoires-et-auxiliaires)
 
 [Chapitre 4 Traitement des données](#chapter-4-chapitre-4-traitement-des-données)
@@ -68,16 +68,16 @@ Le site Web du WOUDC est utilisé pour mettre à jour les renseignements et comm
 
 [Appendice A Exemples](#appendice-a-exemples)
 
-  * A.1 [Exemple pour la catégorie Lidar ](#a1-exemple-pour-la-catégorie-lidar)
-  * A.2 [Exemple pour la catégorie Microwave ](#a2-exemple-pour-la-catégorie-microwave)
-  * A.3 [Exemple pour la catégorie Ozonesonde ](#a3-exemple-pour-la-catégorie-ozonesonde)
-  * A.4 [Exemple pour la catégorie TotalOzoneObs ](#a4-exemple-pour-la-catégorie-totalozoneobs)
-  * A.5 [Exemple pour la catégorie TotalOzone ](#a5-exemple-pour-la-catégorie-totalozone)
-  * A.6 [Exemple pour la catégorie UmkehrN14 ](#a6-exemple-pour-la-catégorie-umkehrn14)
-  * A.7 [Exemple pour la catégorie Spectral ](#a7-exemple-pour-la-catégorie-spectral)
-  * A.8 [Exemple pour la catégorie Multiband ](#a8-exemple-pour-la-catégorie-multiband)
-  * A.9 [Exemple pour la catégorie Broadband ](#a9-exemple-pour-la-catégorie-broadband)
-  * A.10 [Exemple pour la catégorie Pyranometer ](#a10-exemple-pour-la-catégorie-pyranometer)
+  * A.1 [Exemple pour la catégorie Lidar ](#a1--exemple-pour-la-catégorie-lidar)
+  * A.2 [Exemple pour la catégorie Microwave ](#a2--exemple-pour-la-catégorie-microwave)
+  * A.3 [Exemple pour la catégorie Ozonesonde ](#a3--exemple-pour-la-catégorie-ozonesonde)
+  * A.4 [Exemple pour la catégorie TotalOzoneObs ](#a4--exemple-pour-la-catégorie-totalozoneobs)
+  * A.5 [Exemple pour la catégorie TotalOzone ](#a5--exemple-pour-la-catégorie-totalozone)
+  * A.6 [Exemple pour la catégorie UmkehrN14 ](#a6--exemple-pour-la-catégorie-umkehrn14)
+  * A.7 [Exemple pour la catégorie Spectral ](#a7--exemple-pour-la-catégorie-spectral)
+  * A.8 [Exemple pour la catégorie Multiband ](#a8--exemple-pour-la-catégorie-multiband)
+  * A.9 [Exemple pour la catégorie Broadband ](#a9--exemple-pour-la-catégorie-broadband)
+  * A.10 [Exemple pour la catégorie Pyranometer ](#a10--exemple-pour-la-catégorie-pyranometer)
 
 # Chapitre 1 Introduction
 Le Centre mondial de données sur l’ozone et le rayonnement ultraviolet (WOUDC) a vu le jour en 1960 sous le nom de Centre mondial des données sur l’ozone (WODC). En 1992, Environnement Canada a accepté que les données sur le rayonnement ultraviolet soient ajoutées au WODC, et c’est à ce moment-là que le WODC est devenu le WOUDC. Le WOUDC est exploité par le Service météorologique du Canada, une division d’Environnement et Changement climatique Canada.
