@@ -1989,7 +1989,7 @@ Time,Irradiance
 …
 ```
 
-## A.10 Pyranometer
+## A.10 Pyranometer Example
 
 Below is an example of a Pyranometer data submission.
 
