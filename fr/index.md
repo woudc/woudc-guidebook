@@ -161,10 +161,9 @@ Une fois que le contributeur est dûment inscrit :
 
 1. Le contributeur téléverse des données dans le format extCSV vers le site FTP.
 2. Le WOUDC récupère les données sur le site FTP.
-3. Une période d’attente de 72 heures est prévue avant le traitement des données pour permettre au contributeur de soumettre des données révisées, le cas échéant. 
-4. Le WOUDC traite les données (validation du contributeur et des données).
-5. Si l’opérateur du WOUDC relève des problèmes pendant la validation, il doit en aviser le contributeur. 
-6. Si aucun problème n’est relevé, les données sont publiées sur le site Web et peuvent alors être téléchargées à partir du site Web, des services Web géospatiaux ou des dossiers accessibles sur le Web (WAF).
+3. Le WOUDC traite les données (validation du contributeur et des données).
+4. Si l’opérateur du WOUDC relève des problèmes pendant la validation, il doit en aviser le contributeur. 
+5. Si aucun problème n’est relevé, les données sont publiées sur le site Web et peuvent alors être téléchargées à partir du site Web, des services Web géospatiaux ou des dossiers accessibles sur le Web (WAF).
 
 La Figure 2 est un diagramme illustrant la procédure de soumission de données.
 
@@ -873,7 +872,7 @@ Le Tableau 3.3 9 présente les tableaux devant être remplis pour la catégorie 
 
 **nObs**: Nombre d’observations utilisées pour calculer la valeur de l’ozone total de la colonne.
 
-**mMu**: Moyenne harmonique de l’inversion relative dans la couche d’ozone à 22 km (1) de chaque observation servant à calculer la valeur quotidienne. Il s’agit d’une statistique utile relativement aux effets des incertitudes liées aux extrapolations faites à partir de l'absorption atmosphérique nulle et à la génération de données à partir de données indépendantes. mMu=NN/$\sum$ (1/$\mu$i).
+**mMu**: Moyenne harmonique de l’inversion relative dans la couche d’ozone à 22 km\( \mu \ M \)) de chaque observation servant à calculer la valeur quotidienne. Il s’agit d’une statistique utile relativement aux effets des incertitudes liées aux extrapolations faites à partir de l'absorption atmosphérique nulle et à la génération de données à partir de données indépendantes. mMu=NN\( \sigma \ \Sigma \) (1/\( \mu \ M \)).
 
 **ColumnSO2**: Quantité quotidienne totale de dioxyde de soufre (SO2) calculée en tant que moyenne des quantités individiduelles de SO2 (en unités Dobson, c.-à-d. m-atm-cm) relevées grâce aux mêmes observations ayant permis de déterminer la quantité d’O3.
 
