@@ -155,10 +155,9 @@ Once a contributor has been registered:
 
 1. The contributor uploads data in extCSV format to the FTP site.
 2. The WOUDC collects data from the FTP.
-3. There is a 72 hour waiting period before processing to allow for submission of revised data by the contributor.
-4. The WOUDC processes data, validates contributor and site information.
-5. If issues are discovered during validation, the WOUDC operator will inform the contributor.
-6. If no issues are found, data will be published on the website and available for download from the website, geospatial web services or Web Accessible Folder (WAF).
+3. The WOUDC processes data, validates contributor and site information.
+4. If issues are discovered during validation, the WOUDC operator will inform the contributor.
+5. If no issues are found, data will be published on the website and available for download from the website, geospatial web services or Web Accessible Folder (WAF).
 
 A flow chart highlighting the data submission procedure can be found in Figure 2.
 
@@ -792,7 +791,7 @@ Table 3.3-6 outlines the tables needed for the category TotalOzoneObs (column Ta
 
 **MeanO3**: Mean value of total column ozone (O3) amount (in Dobson Units, i.e., milli atm-cm).
 
-**StdDevO3**: Standard Deviation of total column ozone measurement (where applicable).
+**StdDevO3**: Standard Deviation of total column ozone measurement (where applicable). (For DS, and ZS the maximum deviation defaults to 5.0, for FM, default is 12.0. See Table 3.3-8 - Observation Codes in [section 3.3.5.3](#3353-code-tables)).
 
 #### 3.3.5.3 Code Tables
 
@@ -853,7 +852,7 @@ There are two tables required for the TotalOzone Category: `#DAILY`, and `#MONTH
 
 **ObsCode**: Code to designate the type of total ozone measurement. Refer to Table 3.3-8 in [section 3.3.5.3](#3353-code-tables).
 
-**ColumnO3**: Daily value of total column ozone amount (in Dobson Units, i.e., milli atm-cm) defined as the “best representative value”; typically in the order of DS, ZS and FM.
+**ColumnO3**: Daily value of total column ozone amount (in Dobson Units, i.e., milli atm-cm) defined as the “best representative value”typically in the order of DS, ZS and FM. (Derived from StdDev03 value. Valid range is 100 to 700.)
 
 **StdDevO3**: Is the estimated population standard deviation of the total column ozone measurements used for the daily value.
 
@@ -865,7 +864,7 @@ There are two tables required for the TotalOzone Category: `#DAILY`, and `#MONTH
 
 **nObs**: Number of observations used to calculate the total column ozone value.
 
-**mMu**: The harmonic mean of the relative slant path through the ozone layer at 22Km ($\mu$1) for each of the observations used to compute the daily value. It is a useful statistic in relation to the effects of uncertainties in the zero airmass extrapolations and in the generation of simulated data from independent data. mMu=NN/$\sum$ (1/$\mu$i).
+**mMu**: The harmonic mean of the relative slant path through the ozone layer at 22Km ($mu;) for each of the observations used to compute the daily value. It is a useful statistic in relation to the effects of uncertainties in the zero airmass extrapolations and in the generation of simulated data from independent data. mMu=NN$Sum; (1/$mu;).
 
 **ColumnSO2**: The daily total column sulphur dioxide (SO2) amount calculated as the mean of the individual SO2 amounts (in Dobson Units, i.e., milli-atm-cm) from the same observation used for the O3 amount.
 
