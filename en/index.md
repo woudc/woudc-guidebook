@@ -864,7 +864,7 @@ There are two tables required for the TotalOzone Category: `#DAILY`, and `#MONTH
 
 **nObs**: Number of observations used to calculate the total column ozone value.
 
-**mMu**: The harmonic mean of the relative slant path through the ozone layer at 22Km ($mu;) for each of the observations used to compute the daily value. It is a useful statistic in relation to the effects of uncertainties in the zero airmass extrapolations and in the generation of simulated data from independent data. mMu=NN$Sum; (1/$mu;).
+**mMu**: The harmonic mean of the relative slant path through the ozone layer at 22Km (&mu;) for each of the observations used to compute the daily value. It is a useful statistic in relation to the effects of uncertainties in the zero airmass extrapolations and in the generation of simulated data from independent data. mMu=NN&Sum; (1/&mu;).
 
 **ColumnSO2**: The daily total column sulphur dioxide (SO2) amount calculated as the mean of the individual SO2 amounts (in Dobson Units, i.e., milli-atm-cm) from the same observation used for the O3 amount.
 
