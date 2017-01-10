@@ -198,8 +198,8 @@ Les fichiers extCSV comportent deux sections principales : la section des métad
 Les fichiers CSV < étendu> (extCSV) fournissent un format commun qui est indépendant du type d'instrument et du type de données (Ozone / Ultraviolet et sous-types comme décrit dans 2.4). Le format extCSV n’est pas produit directement par les instruments, mais ce format est produit par le traitement ultérieur des données de l'instrument pour créer des fichiers en format extCSV. Les noms de champ suivants sont utilisés par WOUDC de distinguer entre les données de l'instrument et des donnés en format extCSV pour WOUDC, ou le Level (<niveau de traitement>) d'un fichier de données:
 
 - level 0: données brutes ou primaire (des données non traitées qui viennent directement à partir de l'instrument). Par exemple, des fichiers "B-fichier" sont  des fichiers en format d'ozone produites par le logiciel d'exploitation Brewer ([http://kippzonen-brewer.com/wp-content/uploads/2014/10/KippZonen_Service_Manual_Brewer_MKIII_V1206-1.pdf](http://kippzonen-brewer.com/wp-content/uploads/2014/10/KippZonen_Service_Manual_Brewer_MKIII_V1206-1.pdf)).  Ces fichiers ne sont pas lire ou traitées par WOUDC directement, mais sont utilisés par des logiciels tels que O3Brewer ([http://www.o3soft.eu/doc/o3brewer.pdf](http://www.o3soft.eu/doc/o3brewer.pdf)).
+- level 0.5: Les donné au format extCSV pour WOUDC qui sont produites par le contributeur. Les fichiers de Level-0.5 contiennent toute l.information pour la station, les types de donné and des autres informations d.identification ou des médonné pour une session de mesure dans un fichier unique en format standard. Ces fichiers sont produits géralement par le contributeur en formatant des donné de Level-0 et en ajoutant les sections de médonné approprié pour se conformer aux normes <extCSV>. Contrairement au Level-1, le Level-0.5 peut contenir des donné préminaires qui ne sont pas prês pour la publication qui est néssaire pour les donné au Level-1. Les donné brutes (comme on se trouve pour les donné au Level-0) qui incluent les en-tês en format <extCSV> et les médonné peuvent êe consideré comme les donné au Level-0.5.
 - level 1: Les données au format extCSV pour WOUDC qui sont produites et évalueés par le contributeur pour faire un contrôle de qualité. Les fichiers au Level 1 contiennent toute l’information pour la station, le type de données, l’information pour l’identification de la station, et des métadonnées d'une session de mesure dans un seul fichier, dans un format standard. Ces fichiers sont généralement produits par le contributeur par le traitement de données de Level 0 et en ajoutant les sections de métadonnées appropriées. Par exemple, le logiciel O3Brewer (de [http://www.o3soft.eu/doc/o3brewer.pdf](http://www.o3soft.eu/doc/o3brewer.pdf)) produira extCSV pour WOUDC (Level 1) des fichiers à partir de fichiers au Level 0 dans le "B-fichier" pour Brewer.
-
 - level 2: les données de niveau 2 sont des données de niveau 1 (le format extCSV WOUDC) qui a été transformés (comme interpolée, remaillées, lissée ou autre) pour l'analyse ou l'entrée dans un autre logiciel. Par exemple, les fichiers pour Umkehr au Level 2 sont produites par un traitement supplémentaire de fichiers de Level 1 (les données de Level 2 est indiqué dans les fichiers en format extCSV par un "2" dans le champ du tableau de contenu de level. Voir Section 3.2.1.1) 
 
 ### 3.1.1 Règles de syntaxe du format CSV étendu
@@ -799,7 +799,7 @@ Le Tableau 3.3 6 présente les tableaux devant être remplis pour la catégorie 
 
 **MeanO3**: Valeur moyenne de la quantité totale d’ozone (O3) de la colonne (en unités Dobson, c.-à-d. m-atm-cm).
 
-**StdDevO3**: Écart-type de la mesure de la colonne d’ozone total (s’il y a lieu)
+**StdDevO3**: Écart-type de la mesure de la colonne d’ozone total (s’il y a lie) (Pour les codes d.observation de DS et ZS, l'ért maximal est par déut de 5. Le code FM a le nombre 12.0 par déut. Voir le tableau 3.3-8 pour les code d.observation.)
 
 #### 3.3.5.3 Tableaux de codes
 
@@ -860,7 +860,7 @@ Le Tableau 3.3 9 présente les tableaux devant être remplis pour la catégorie 
 
 **ObsCode**: Code désignant le type de mesure d’ozone total. (Voir le Tableau 3.3 8 à la [section 3.3.5.3](#3353-tableaux-de-codes).)
 
-**ColumnO3**: Valeur quotidienne de l’ozone total de la colonne (en unités Dobson, c.-à-d. m atm-cm) définie comme étant la « valeur la plus représentative » (généralement dans l’ordre suivant : DS, ZS et FM).
+**ColumnO3**: Valeur quotidienne de l’ozone total de la colonne (en unités Dobson, c.-à-d. m atm-cm) définie comme étant la « valeur la plus représentative » (généralement dans l’ordre suivant : DS, ZS et FM). (La valeur est dévéde la valeur de StdDev03. La plage valide pour la valeur est de 100 à00.)
 
 **StdDevO3**: Écart-type de la mesure de la quantité totale d’ozone utilisée pour la valeur quotidienne.
 
