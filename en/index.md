@@ -155,10 +155,9 @@ Once a contributor has been registered:
 
 1. The contributor uploads data in extCSV format to the FTP site.
 2. The WOUDC collects data from the FTP.
-3. There is a 72 hour waiting period before processing to allow for submission of revised data by the contributor.
-4. The WOUDC processes data, validates contributor and site information.
-5. If issues are discovered during validation, the WOUDC operator will inform the contributor.
-6. If no issues are found, data will be published on the website and available for download from the website, geospatial web services or Web Accessible Folder (WAF).
+3. The WOUDC processes data, validates contributor and site information.
+4. If issues are discovered during validation, the WOUDC operator will inform the contributor.
+5. If no issues are found, data will be published on the website and available for download from the website, geospatial web services or Web Accessible Folder (WAF).
 
 A flow chart highlighting the data submission procedure can be found in Figure 2.
 
@@ -193,6 +192,7 @@ The extCSV files provide a common format that is independent of the type of inst
 The extCSV format is not produced directly by the instruments, but by further processing of instrument data to produce standard extCSV files.   The following Field Names are used by WOUDC to distinguish between instrument data versus WOUDC extCSV format, or the “level of processing” of a data file:
 
 - level-0: “Raw” or unprocessed data directly from the Instrument. For example, “B-file” format ozone files produced by the Brewer operating software ([http://kippzonen-brewer.com/wp-content/uploads/2014/10/KippZonen_Service_Manual_Brewer_MKIII_V1206-1.pdf](http://kippzonen-brewer.com/wp-content/uploads/2014/10/KippZonen_Service_Manual_Brewer_MKIII_V1206-1.pdf)). These files are not read or processed by WOUDC directly, but are used by software such as O3Brewer ([http://www.o3soft.eu/doc/o3brewer.pdf](http://www.o3soft.eu/doc/o3brewer.pdf)).
+- level-0.5: Data in WOUDC extCSV format, produced by the contributor. Level-0.5 files contain all of the station, data type, and other identifying information or metadata of a measurement session in a single file, in a standard format. These files are typically produced by the contributor by formatting level-0 data and adding the appropriate metadata sections to comply with extCSV standards. Unlike level-1, level-0.5 may contain preliminary data that is not ready for publication as level-1. Raw instrument data such as level-0 but with extCSV headers and metadata for example, could be considered level-0.5
 - level-1:  Data in WOUDC extCSV format, produced and quality controlled by the contributor.  The level-1 files contain all of the station, data type, and other identifying information or metadata of a measurement session in a single file, in a standard format. These files are typically produced by the contributor by formatting level-0 data and adding the appropriate metadata sections.  For example, O3Brewer software  ([http://www.o3soft.eu/doc/o3brewer.pdf](http://www.o3soft.eu/doc/o3brewer.pdf)) will produce WOUDC extCSV (level-1) files from Brewer “B-file” (level-0) files. 
 - level-2: level-2 data is level-1 data (WOUDC extCSV format) that has been further processed (such as interpolated, re-gridded, smoothed or other) for analysis, or input into other software etc.  For example, UMKEHR level-2 files are produced by additional processing of level-1 files.  (level-2 data is indicated within extCSV files by a “2” in the level field of the CONTENT table.  See Sec. 3.2.1.1).
 
@@ -791,7 +791,7 @@ Table 3.3-6 outlines the tables needed for the category TotalOzoneObs (column Ta
 
 **MeanO3**: Mean value of total column ozone (O3) amount (in Dobson Units, i.e., milli atm-cm).
 
-**StdDevO3**: Standard Deviation of total column ozone measurement (where applicable).
+**StdDevO3**: Standard Deviation of total column ozone measurement (where applicable). (For DS, and ZS the maximum deviation defaults to 5.0, for FM, default is 12.0. See Table 3.3-8 - Observation Codes in [section 3.3.5.3](#3353-code-tables)).
 
 #### 3.3.5.3 Code Tables
 
@@ -852,7 +852,7 @@ There are two tables required for the TotalOzone Category: `#DAILY`, and `#MONTH
 
 **ObsCode**: Code to designate the type of total ozone measurement. Refer to Table 3.3-8 in [section 3.3.5.3](#3353-code-tables).
 
-**ColumnO3**: Daily value of total column ozone amount (in Dobson Units, i.e., milli atm-cm) defined as the “best representative value”; typically in the order of DS, ZS and FM.
+**ColumnO3**: Daily value of total column ozone amount (in Dobson Units, i.e., milli atm-cm) defined as the “best representative value”typically in the order of DS, ZS and FM. (Derived from StdDev03 value. Valid range is 100 to 700.)
 
 **StdDevO3**: Is the estimated population standard deviation of the total column ozone measurements used for the daily value.
 
@@ -864,7 +864,7 @@ There are two tables required for the TotalOzone Category: `#DAILY`, and `#MONTH
 
 **nObs**: Number of observations used to calculate the total column ozone value.
 
-**mMu**: The harmonic mean of the relative slant path through the ozone layer at 22Km ($\mu$1) for each of the observations used to compute the daily value. It is a useful statistic in relation to the effects of uncertainties in the zero airmass extrapolations and in the generation of simulated data from independent data. mMu=NN/$\sum$ (1/$\mu$i).
+**mMu**: The harmonic mean of the relative slant path through the ozone layer at 22Km (\(\mu \ M \)) for each of the observations used to compute the daily value. It is a useful statistic in relation to the effects of uncertainties in the zero airmass extrapolations and in the generation of simulated data from independent data. mMu=NN \( \sigma \ \Sigma \) (1/\(\mu \ M \)).
 
 **ColumnSO2**: The daily total column sulphur dioxide (SO2) amount calculated as the mean of the individual SO2 amounts (in Dobson Units, i.e., milli-atm-cm) from the same observation used for the O3 amount.
 
@@ -1989,7 +1989,7 @@ Time,Irradiance
 …
 ```
 
-## A.10 Pyranometer
+## A.10 Pyranometer Example
 
 Below is an example of a Pyranometer data submission.
 

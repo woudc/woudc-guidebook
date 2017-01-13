@@ -18,7 +18,7 @@ Le site Web du WOUDC est utilisé pour mettre à jour les renseignements et comm
   * 1.2 [But](#12-but)
   * 1.3 [Emplacement du document](#13-emplacement-du-document)
   * 1.4 [Historique et mise à jour du document](#14-historique-et-mise-à-jour-du-document)
-  * 1.5 [Site Web](#15-site-web)
+  * 1.5 [Site Web](#15--site-web)
   * 1.6 [Contribution au WOUDC](#16-contribution-au-woudc)
 
 [Chapitre 2 Procédure de soumission de données](#chapitre-2-procédure-de-soumission-de-données)
@@ -36,18 +36,18 @@ Le site Web du WOUDC est utilisé pour mettre à jour les renseignements et comm
     * 3.2.1 [Introduction](#321-introduction)
   * 3.3 [Contenu des données propres à l’ozone ](#33-contenu-des-données-propres-à-lozone)
     * 3.3.1 [Introduction](#331-introduction)
-    * 3.3.2 [Catégorie : Lidar ](#332-catégorie-lidar)
-    * 3.3.3 [Catégorie: Microwave](#333-catégorie-microwave)
+    * 3.3.2 [Catégorie : Lidar ](#332-catégorie--lidar)
+    * 3.3.3 [Catégorie: Microwave](#333-catégorie--microwave)
     * 3.3.4 [Catégorie: Ozonesonde](#334-category-ozonesonde)
-    * 3.3.5 [Catégorie: TotalOzoneObs](#335-categorie-totalozoneobs)
-    * 3.3.6 [Catégorie: TotalOzone](#336-catégorie-totalozone)
-    * 3.3.7 [Catégorie: UmkehrN14](#337-catégorie-umkehrn14)
+    * 3.3.5 [Catégorie: TotalOzoneObs](#335-categorie--totalozoneobs)
+    * 3.3.6 [Catégorie: TotalOzone](#336-catégorie--totalozone)
+    * 3.3.7 [Catégorie: UmkehrN14](#337-catégorie--umkehrn14)
   * 3.4 [Contenu des données propres au rayonnement ultraviolet](#34-contenu-des-données-propres-au-rayonnement-ultraviolet)
     * 3.4.1 [Introduction](#341-introduction)
-    * 3.4.2 [Catégorie: Spectral](#342-catégorie-spectral)
-    * 3.4.3 [Catégorie: Multiband](#343-catégorie-multiband)
-    * 3.4.4 [Catégorie: Broadband](#344-catégorie-broadband)
-    * 3.4.5 [Catégorie: Pyranometer](#345-catégorie-pyranometer)
+    * 3.4.2 [Catégorie: Spectral](#342-catégorie--spectral)
+    * 3.4.3 [Catégorie: Multiband](#343-catégorie--multiband)
+    * 3.4.4 [Catégorie: Broadband](#344-catégorie--broadband)
+    * 3.4.5 [Catégorie: Pyranometer](#345-catégorie--pyranometer)
     * 3.4.6 [Données accessoires et auxiliaires ](#346-données-accessoires-et-auxiliaires)
 
 [Chapitre 4 Traitement des données](#chapter-4-chapitre-4-traitement-des-données)
@@ -68,16 +68,16 @@ Le site Web du WOUDC est utilisé pour mettre à jour les renseignements et comm
 
 [Appendice A Exemples](#appendice-a-exemples)
 
-  * A.1 [Exemple pour la catégorie Lidar ](#a1-exemple-pour-la-catégorie-lidar)
-  * A.2 [Exemple pour la catégorie Microwave ](#a2-exemple-pour-la-catégorie-microwave)
-  * A.3 [Exemple pour la catégorie Ozonesonde ](#a3-exemple-pour-la-catégorie-ozonesonde)
-  * A.4 [Exemple pour la catégorie TotalOzoneObs ](#a4-exemple-pour-la-catégorie-totalozoneobs)
-  * A.5 [Exemple pour la catégorie TotalOzone ](#a5-exemple-pour-la-catégorie-totalozone)
-  * A.6 [Exemple pour la catégorie UmkehrN14 ](#a6-exemple-pour-la-catégorie-umkehrn14)
-  * A.7 [Exemple pour la catégorie Spectral ](#a7-exemple-pour-la-catégorie-spectral)
-  * A.8 [Exemple pour la catégorie Multiband ](#a8-exemple-pour-la-catégorie-multiband)
-  * A.9 [Exemple pour la catégorie Broadband ](#a9-exemple-pour-la-catégorie-broadband)
-  * A.10 [Exemple pour la catégorie Pyranometer ](#a10-exemple-pour-la-catégorie-pyranometer)
+  * A.1 [Exemple pour la catégorie Lidar ](#a1--exemple-pour-la-catégorie-lidar)
+  * A.2 [Exemple pour la catégorie Microwave ](#a2--exemple-pour-la-catégorie-microwave)
+  * A.3 [Exemple pour la catégorie Ozonesonde ](#a3--exemple-pour-la-catégorie-ozonesonde)
+  * A.4 [Exemple pour la catégorie TotalOzoneObs ](#a4--exemple-pour-la-catégorie-totalozoneobs)
+  * A.5 [Exemple pour la catégorie TotalOzone ](#a5--exemple-pour-la-catégorie-totalozone)
+  * A.6 [Exemple pour la catégorie UmkehrN14 ](#a6--exemple-pour-la-catégorie-umkehrn14)
+  * A.7 [Exemple pour la catégorie Spectral ](#a7--exemple-pour-la-catégorie-spectral)
+  * A.8 [Exemple pour la catégorie Multiband ](#a8--exemple-pour-la-catégorie-multiband)
+  * A.9 [Exemple pour la catégorie Broadband ](#a9--exemple-pour-la-catégorie-broadband)
+  * A.10 [Exemple pour la catégorie Pyranometer ](#a10--exemple-pour-la-catégorie-pyranometer)
 
 # Chapitre 1 Introduction
 Le Centre mondial de données sur l’ozone et le rayonnement ultraviolet (WOUDC) a vu le jour en 1960 sous le nom de Centre mondial des données sur l’ozone (WODC). En 1992, Environnement Canada a accepté que les données sur le rayonnement ultraviolet soient ajoutées au WODC, et c’est à ce moment-là que le WODC est devenu le WOUDC. Le WOUDC est exploité par le Service météorologique du Canada, une division d’Environnement et Changement climatique Canada.
@@ -161,10 +161,9 @@ Une fois que le contributeur est dûment inscrit :
 
 1. Le contributeur téléverse des données dans le format extCSV vers le site FTP.
 2. Le WOUDC récupère les données sur le site FTP.
-3. Une période d’attente de 72 heures est prévue avant le traitement des données pour permettre au contributeur de soumettre des données révisées, le cas échéant. 
-4. Le WOUDC traite les données (validation du contributeur et des données).
-5. Si l’opérateur du WOUDC relève des problèmes pendant la validation, il doit en aviser le contributeur. 
-6. Si aucun problème n’est relevé, les données sont publiées sur le site Web et peuvent alors être téléchargées à partir du site Web, des services Web géospatiaux ou des dossiers accessibles sur le Web (WAF).
+3. Le WOUDC traite les données (validation du contributeur et des données).
+4. Si l’opérateur du WOUDC relève des problèmes pendant la validation, il doit en aviser le contributeur. 
+5. Si aucun problème n’est relevé, les données sont publiées sur le site Web et peuvent alors être téléchargées à partir du site Web, des services Web géospatiaux ou des dossiers accessibles sur le Web (WAF).
 
 La Figure 2 est un diagramme illustrant la procédure de soumission de données.
 
@@ -199,8 +198,8 @@ Les fichiers extCSV comportent deux sections principales : la section des métad
 Les fichiers CSV < étendu> (extCSV) fournissent un format commun qui est indépendant du type d'instrument et du type de données (Ozone / Ultraviolet et sous-types comme décrit dans 2.4). Le format extCSV n’est pas produit directement par les instruments, mais ce format est produit par le traitement ultérieur des données de l'instrument pour créer des fichiers en format extCSV. Les noms de champ suivants sont utilisés par WOUDC de distinguer entre les données de l'instrument et des donnés en format extCSV pour WOUDC, ou le Level (<niveau de traitement>) d'un fichier de données:
 
 - level 0: données brutes ou primaire (des données non traitées qui viennent directement à partir de l'instrument). Par exemple, des fichiers "B-fichier" sont  des fichiers en format d'ozone produites par le logiciel d'exploitation Brewer ([http://kippzonen-brewer.com/wp-content/uploads/2014/10/KippZonen_Service_Manual_Brewer_MKIII_V1206-1.pdf](http://kippzonen-brewer.com/wp-content/uploads/2014/10/KippZonen_Service_Manual_Brewer_MKIII_V1206-1.pdf)).  Ces fichiers ne sont pas lire ou traitées par WOUDC directement, mais sont utilisés par des logiciels tels que O3Brewer ([http://www.o3soft.eu/doc/o3brewer.pdf](http://www.o3soft.eu/doc/o3brewer.pdf)).
+- level 0.5: Les donné au format extCSV pour WOUDC qui sont produites par le contributeur. Les fichiers de Level-0.5 contiennent toute l.information pour la station, les types de donné and des autres informations d.identification ou des médonné pour une session de mesure dans un fichier unique en format standard. Ces fichiers sont produits géralement par le contributeur en formatant des donné de Level-0 et en ajoutant les sections de médonné approprié pour se conformer aux normes <extCSV>. Contrairement au Level-1, le Level-0.5 peut contenir des donné préminaires qui ne sont pas prês pour la publication qui est néssaire pour les donné au Level-1. Les donné brutes (comme on se trouve pour les donné au Level-0) qui incluent les en-tês en format <extCSV> et les médonné peuvent êe consideré comme les donné au Level-0.5.
 - level 1: Les données au format extCSV pour WOUDC qui sont produites et évalueés par le contributeur pour faire un contrôle de qualité. Les fichiers au Level 1 contiennent toute l’information pour la station, le type de données, l’information pour l’identification de la station, et des métadonnées d'une session de mesure dans un seul fichier, dans un format standard. Ces fichiers sont généralement produits par le contributeur par le traitement de données de Level 0 et en ajoutant les sections de métadonnées appropriées. Par exemple, le logiciel O3Brewer (de [http://www.o3soft.eu/doc/o3brewer.pdf](http://www.o3soft.eu/doc/o3brewer.pdf)) produira extCSV pour WOUDC (Level 1) des fichiers à partir de fichiers au Level 0 dans le "B-fichier" pour Brewer.
-
 - level 2: les données de niveau 2 sont des données de niveau 1 (le format extCSV WOUDC) qui a été transformés (comme interpolée, remaillées, lissée ou autre) pour l'analyse ou l'entrée dans un autre logiciel. Par exemple, les fichiers pour Umkehr au Level 2 sont produites par un traitement supplémentaire de fichiers de Level 1 (les données de Level 2 est indiqué dans les fichiers en format extCSV par un "2" dans le champ du tableau de contenu de level. Voir Section 3.2.1.1) 
 
 ### 3.1.1 Règles de syntaxe du format CSV étendu
@@ -800,7 +799,7 @@ Le Tableau 3.3 6 présente les tableaux devant être remplis pour la catégorie 
 
 **MeanO3**: Valeur moyenne de la quantité totale d’ozone (O3) de la colonne (en unités Dobson, c.-à-d. m-atm-cm).
 
-**StdDevO3**: Écart-type de la mesure de la colonne d’ozone total (s’il y a lieu)
+**StdDevO3**: Écart-type de la mesure de la colonne d’ozone total (s’il y a lie) (Pour les codes d.observation de DS et ZS, l'ért maximal est par déut de 5. Le code FM a le nombre 12.0 par déut. Voir le tableau 3.3-8 pour les code d.observation.)
 
 #### 3.3.5.3 Tableaux de codes
 
@@ -861,7 +860,7 @@ Le Tableau 3.3 9 présente les tableaux devant être remplis pour la catégorie 
 
 **ObsCode**: Code désignant le type de mesure d’ozone total. (Voir le Tableau 3.3 8 à la [section 3.3.5.3](#3353-tableaux-de-codes).)
 
-**ColumnO3**: Valeur quotidienne de l’ozone total de la colonne (en unités Dobson, c.-à-d. m atm-cm) définie comme étant la « valeur la plus représentative » (généralement dans l’ordre suivant : DS, ZS et FM).
+**ColumnO3**: Valeur quotidienne de l’ozone total de la colonne (en unités Dobson, c.-à-d. m atm-cm) définie comme étant la « valeur la plus représentative » (généralement dans l’ordre suivant : DS, ZS et FM). (La valeur est dévéde la valeur de StdDev03. La plage valide pour la valeur est de 100 à00.)
 
 **StdDevO3**: Écart-type de la mesure de la quantité totale d’ozone utilisée pour la valeur quotidienne.
 
@@ -873,7 +872,7 @@ Le Tableau 3.3 9 présente les tableaux devant être remplis pour la catégorie 
 
 **nObs**: Nombre d’observations utilisées pour calculer la valeur de l’ozone total de la colonne.
 
-**mMu**: Moyenne harmonique de l’inversion relative dans la couche d’ozone à 22 km (1) de chaque observation servant à calculer la valeur quotidienne. Il s’agit d’une statistique utile relativement aux effets des incertitudes liées aux extrapolations faites à partir de l'absorption atmosphérique nulle et à la génération de données à partir de données indépendantes. mMu=NN/$\sum$ (1/$\mu$i).
+**mMu**: Moyenne harmonique de l’inversion relative dans la couche d’ozone à 22 km\( \mu \ M \)) de chaque observation servant à calculer la valeur quotidienne. Il s’agit d’une statistique utile relativement aux effets des incertitudes liées aux extrapolations faites à partir de l'absorption atmosphérique nulle et à la génération de données à partir de données indépendantes. mMu=NN\( \sigma \ \Sigma \) (1/\( \mu \ M \)).
 
 **ColumnSO2**: Quantité quotidienne totale de dioxyde de soufre (SO2) calculée en tant que moyenne des quantités individiduelles de SO2 (en unités Dobson, c.-à-d. m-atm-cm) relevées grâce aux mêmes observations ayant permis de déterminer la quantité d’O3.
 
