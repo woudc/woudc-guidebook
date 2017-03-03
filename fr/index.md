@@ -297,7 +297,7 @@ pour WOUDC (et donc les données sont prêtes à être soumis à WOUDC), ou "2" 
 **ScientificAuthority**: Nom de la ou des personnes responsables de la qualité des données au sein de l’organisation qui a soumis les données. 
 
 #### 3.2.1.3 Tableau PLATFORM
-**Type**: Type de plateforme d’observation : stationnaire (STN) ou mobile (c.-à-d., aéroportée [FLT], embarquée [SHP], etc.). La valeur par défaut est STN. Par exemple, ce champ permet de tenir compte de l’installation à bord d’un aéronef effectuant des sondages d’ozone d’un système GPS qui détermine l’emplacement exact des sondages. Le cas échéant, il faut choisir FLT au lieu de STN.
+**Type**: Type de plateforme d’observation : stationnaire (STN) ou mobile (c.-à-d., aéroportée [FLT], embarquée [SHP], etc.). La valeur par défaut est STN.
 
 **ID**: ID de station ou de vol unique attribué par le WOUDC à chacune des plateformes inscrites. 
 

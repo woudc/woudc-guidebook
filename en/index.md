@@ -290,7 +290,7 @@ Table 3.2-1 and Table 3.2-2 outline the tables required in all the WOUDC data fi
 **ScientificAuthority**: The person(s) responsible for the data quality at the submitting Agency.
 
 #### 3.2.1.3 Platform
-**Type**: Type of observing platform: Stationary (STN) or Moving (e.g., Airborne (FLT), Ship borne (SHP), etc.). The default is STN. This field, for example, will accommodate the future inclusion of an onboard GPS on ozonesonde flights which records exact location throughout a flight. Thus, FLT would be selected instead of STN.
+**Type**: Type of observing platform: Stationary (STN) or Moving (e.g., Airborne (FLT), Ship borne (SHP), etc.). The default is STN.
 
 **ID**: Unique station or flight ID assigned by the WOUDC to each registered platform.
 
