@@ -23,6 +23,7 @@ The WOUDC website is used to update information and serves as a virtual "bulleti
   * 2.1 [Contributor Registration](#21-contributor-registration)
   * 2.2 [Station Registration](#22-station-registration)
   * 2.3 [Data Submission](#23-data-submission)
+    * 2.3.1 [Upload Guidelines](#231-upload-guidelines)
   * 2.4 [Data Type](#24-data-types)
 
 [Chapter 3 Standard Data Format](#chapter-3-standard-data-format)
@@ -165,6 +166,17 @@ A flow chart highlighting the data submission procedure can be found in Figure 2
 
 !!! md-alert ""
     **Note:** The details of transferring files with FTP depend on your computer's operating system and FTP client software.
+
+## 2.3.1 Upload Guidelines
+The WOUDC FTP site allows contributors to upload data files in any directory/folder.  However, directories with the following conventions will be ignored for processing final data (Extended CSV files):
+
+- `/calibration`: submission area for calibration data
+- `/level-0`: submission area for raw data
+- `/provisional`: submission area for preliminary (not final) data/values
+
+These directory/folder names are reserved for specific workflows for near-real time or raw data ingest/processing.  Contributors are encouraged to create and use these directory/folder names to upload calibration, level 0, or provisional data only.
+
+Extended CSV files can be uploaded in any other directory including the root of the contributor's login area.
 
 ## 2.4 Data Types
 Presently, the following data categories are defined:
