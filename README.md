@@ -17,7 +17,7 @@ The official WOUDC guidebook is available at [http://guide.woudc.org](http://gui
 
 Ruby 2.0 or greater.
 
-## Dependencies
+### Dependencies
 
 This package uses [jekyll](https://jekyllrb.com) as a static site generator
 and requires the following dependencies to be installed on the system:
@@ -39,7 +39,7 @@ bundle install
 make setup
 ```
 
-### Workflow
+## Workflow
 
 ```bash
 # build local documentation
@@ -47,6 +47,14 @@ jekyll build  # output in _site/
 # serve on your host's IP, port 4000
 # docs are live rebuilt as you make changes
 make serve  # http://localhost:4000/
+# release a new version
+vi _config.yml
+# update version: value/key to x.y.z (as per http://producingoss.com/en/development-cycle.html#release-number-even-odd-strategy)
+git commit -m 'update release version' _config.yml
+git push origin master
+git tag -a x.y.z -m 'tagging WOUDC guidebook version x.y.z'
+git push --tags
+make publish
 ```
 
 ## Issues
