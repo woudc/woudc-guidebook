@@ -1,14 +1,15 @@
 ---
 layout: base-fr
-date: 2016-09-21
 ---
+
+{{ site.release_date }}
 
 # Avant-propos
 Le présent guide décrit les procédures pour la soumission de données au Centre mondial de données sur l’ozone et le rayonnement ultraviolet et fournit des renseignements sur le format, la structure et le contenu des fichiers, tant pour les données sur l’ozone que celles sur le rayonnement ultraviolet. Il est destiné à la fois aux fournisseurs de données (pour la soumission de données) qu’aux clients (renseignements sur la façon de lire les fichiers de données).
 
 Cette version du guide est le résultat de la combinaison de deux documents distincts; le premier sur la soumission de données sur l’ozone et le second, sur la soumission de données sur le rayonnement ultraviolet. Ils ont été combinés dans le but d’offrir un document plus clair et uniforme.
 
-Le site Web du WOUDC est utilisé pour mettre à jour les renseignements et comme « babillard » virtuel. Étant donné que ce guide est appelé à évoluer, vous pourrez récupérer la version la plus récente sur le site Web du WOUDC.
+Le [site Web du WOUDC](http://woudc.org/home.php?lang=fr) est utilisé pour mettre à jour les renseignements et comme « babillard » virtuel. Étant donné que ce guide est appelé à évoluer, vous pourrez récupérer la version la plus récente sur le site Web du WOUDC.
 
 
 # Table des matières

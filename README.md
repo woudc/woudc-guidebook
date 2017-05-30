@@ -50,6 +50,7 @@ make serve  # http://localhost:4000/
 # release a new version
 vi _config.yml
 # update version: value/key to x.y.z (as per http://producingoss.com/en/development-cycle.html#release-number-even-odd-strategy)
+# update release_date: value/key to date of release (format YYYY-MM-DD)
 git commit -m 'update release version' _config.yml
 git push origin master
 git tag -a x.y.z -m 'tagging WOUDC guidebook version x.y.z'
