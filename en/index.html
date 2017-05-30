@@ -24,7 +24,7 @@
     <meta content="summary" name="twitter:card">
     <meta content="WOUDC Contributor Guide" name="og:title">
     <meta content="website" name="og:type">
-    <meta content="http://guide.woudc.org//en/" name="og:url">
+    <meta content="http://0.0.0.0:4000//en/" name="og:url">
     <meta content="This document describes the procedures for data submission and information about file format, structure, and content for both ozone data and ultraviolet data for the World Ozone and Ultraviolet Data Centre (WOUDC)" name="og:description">
     <meta content="http://woudc.org/static/site/img/wmo_acronym_vertical_sm.jpg" name="og:image">
     <meta content="http://woudc.org/static/site/img/gaw_acronym_vertical_sm.jpg" name="og:image"><!--[if gte IE 9 | !IE ]><!-->
@@ -121,6 +121,7 @@
                 </div>
             </div>
         </nav>
+        <!--
         <nav id="wb-bc" property="breadcrumb" role="navigation">
             <h2>Breadcrumb trail</h2>
             <div class="container">
@@ -133,10 +134,12 @@
                     </ol>
                 </div>
             </div>
-        </nav><!-- HeaderEnd -->
+        </nav>
+        -->
+        <!-- HeaderEnd -->
     </header>
     <main class="container" property="mainContentOfPage" role="main">
-        <h1 id="wb-cont" property="name">WOUDC Contributor Guide (Version 2.0) <a title="PDF" href="http://woudc.org/archive/Documentation/GuideBooks/woudc-contributor-guide-en.pdf"><span class="fa fa-file-pdf-o"></span></a></h1><!-- MainContentStart -->
+        <h1 id="wb-cont" property="name">WOUDC Contributor Guide (Version 2.0.1)</h1><!-- MainContentStart -->
         <div itemscope itemtype="http://schema.org/AboutPage">
             <h1 id="foreward">Foreward</h1>
 <p>This document describes the procedures for data submission and information about file format, structure, and content for both ozone data and ultraviolet data for the World Ozone and Ultraviolet Data Centre (WOUDC). This guide is intended for use by both data originators (for data submission) and clients (information about reading data files). The current version of this guidebook is a combination of two separate documents; one for data submissions related to ozone data and one for data submissions related to ultraviolet data. This guidebook unifies them in order to provide more clear and consistent documentation.</p>
@@ -160,7 +163,11 @@
 <ul>
   <li>2.1 <a href="#21-contributor-registration">Contributor Registration</a></li>
   <li>2.2 <a href="#22-station-registration">Station Registration</a></li>
-  <li>2.3 <a href="#23-data-submission">Data Submission</a></li>
+  <li>2.3 <a href="#23-data-submission">Data Submission</a>
+    <ul>
+      <li>2.3.1 <a href="#231-upload-guidelines">Upload Guidelines</a></li>
+    </ul>
+  </li>
   <li>2.4 <a href="#24-data-types">Data Type</a></li>
 </ul>
 
@@ -184,7 +191,7 @@
       <li>3.3.3 <a href="#333-category-microwave">Category: Microwave</a></li>
       <li>3.3.4 <a href="#334-category-ozonesonde">Category: Ozonesonde</a></li>
       <li>3.3.5 <a href="#335-category-totalozoneobs">Category: TotalOzoneObs</a></li>
-      <li>3.3.6 <a href="#336-category-totalozone">Category: totalOzone</a></li>
+      <li>3.3.6 <a href="#336-category-totalozone">Category: TotalOzone</a></li>
       <li>3.3.7 <a href="#337-category-umkehr14">Category: UmkehrN14</a></li>
     </ul>
   </li>
@@ -195,7 +202,7 @@
       <li>3.4.3 <a href="#343-category-multiband">Category: Multiband</a></li>
       <li>3.4.4 <a href="#344-category-broadband">Category: Broadband</a></li>
       <li>3.4.5 <a href="#345-category-pyranometer">Category: Pyranometer</a></li>
-      <li>3.4.6 <a href="#346-category-ancillary-and-auxiliary-data">Ancillary and Auxiliary Data</a>i</li>
+      <li>3.4.6 <a href="#346-category-ancillary-and-auxiliary-data">Ancillary and Auxiliary Data</a></li>
     </ul>
   </li>
 </ul>
@@ -268,18 +275,18 @@
 <p>The WOUDC is the standard archive for ozone and ultraviolet data. By contributing data to the WOUDC, a contributor leverages the following benefits:</p>
 
 <ul>
-  <li>No cost, authoritative, independent storage and backup of their data.</li>
-  <li>24/7 web-based public access to their data via numerous data access mechanisms providing enhanced user experience as well as multi-application machine access.</li>
-  <li>Value added discovery, visualization and access capabilities for their data using international standards.</li>
-  <li>Value added products created from their data, such as geospatial/GIS data formats, maps, and graphs.</li>
+  <li>No cost, authoritative, independent storage and backup of their data</li>
+  <li>24/7 web-based public access to their data via numerous data access mechanisms providing enhanced user experience as well as multi-application machine access</li>
+  <li>Value added discovery, visualization and access capabilities for their data using international standards</li>
+  <li>Value added products created from their data, such as geospatial/GIS data formats, maps, and graphs</li>
 </ul>
 
 <p>In order for a contributor to be eligible to submit data, they must:</p>
 
 <ul>
-  <li>Be registered with the WOUDC (as well as GAW which is strongly recommended);</li>
-  <li>have their station registered with the WOUDC (and preferably GAW); and</li>
-  <li>have the data types that the WOUDC processes (ozone data and ultraviolet data) in the extCSV file format.</li>
+  <li>Be registered with the WOUDC (as well as GAW which is strongly recommended)</li>
+  <li>have their station registered with the WOUDC (and preferably GAW)</li>
+  <li>have the data types that the WOUDC processes (ozone data and ultraviolet data) in the extCSV file format</li>
 </ul>
 
 <p>If the data being submitted is not of ozone or ultraviolet, it may be eligible to be part of one of the other 5 world data centres:</p>
@@ -297,10 +304,10 @@
 <p>The application process consists of 4 steps:</p>
 
 <ol>
-  <li>A new contributor sends a <a href="http://woudc.org/contact.php">request</a> to WOUDC stating their interest in being a contributor.</li>
-  <li>The data centre operator will check the request and direct the contributor to either provide WOUDC the station GAW ID or to complete the registration process from <a href="https://gawsis.meteoswiss.ch">GAWSIS</a> to obtain a GAW ID.</li>
-  <li>Once the contributor has a valid GAW ID, the contributor will provide that ID to the data centre operator to complete the new station registration process by including the station into the WOUDC database.</li>
-  <li>Once the station is included in the WOUDC database, the data centre operator will send a new, private, FTP login credential to the contributor for use to upload data.</li>
+  <li>A new contributor sends a <a href="http://woudc.org/contact.php">request</a> to WOUDC stating their interest in being a contributor</li>
+  <li>The data centre operator will check the request and direct the contributor to either provide WOUDC the station GAW ID or to complete the registration process from <a href="https://gawsis.meteoswiss.ch">GAWSIS</a> to obtain a GAW ID</li>
+  <li>Once the contributor has a valid GAW ID, the contributor will provide that ID to the data centre operator to complete the new station registration process by including the station into the WOUDC database</li>
+  <li>Once the station is included in the WOUDC database, the data centre operator will send a new, private, FTP login credential to the contributor for use to upload data</li>
 </ol>
 
 <p>A flow chart highlighting the contributor registration procedure can be found in Figure 1.</p>
@@ -311,9 +318,9 @@
 <p>Once a contributor has registered with the WOUDC as indicated in <a href="#21-contributor-registration">section 2.1</a>, additional stations or amendments to existing station information can be registered by submitting a new GAW ID or updating station information with GAWSIS:</p>
 
 <ol>
-  <li>Contributor to obtain a new GAW ID for new station or make amendments to existing station through <a href="https://gawsis.meteoswiss.ch">GAWSIS</a>.</li>
-  <li>Contact <a href="http://woudc.org/contact.php">WOUDC</a> with the change request for adding a new station or making amendments to an existing station. Provide GAW ID to operator.</li>
-  <li>Operator includes new station into the WOUDC database or updates existing station.</li>
+  <li>Contributor to obtain a new GAW ID for new station or make amendments to existing station through <a href="https://gawsis.meteoswiss.ch">GAWSIS</a></li>
+  <li>Contact <a href="http://woudc.org/contact.php">WOUDC</a> with the change request for adding a new station or making amendments to an existing station. Provide GAW ID to operator</li>
+  <li>Operator includes new station into the WOUDC database or updates existing station</li>
 </ol>
 
 <h2 id="23-data-submission">2.3 Data Submission</h2>
@@ -325,12 +332,11 @@
 <p>Once a contributor has been registered:</p>
 
 <ol>
-  <li>The contributor uploads data in extCSV format to the FTP site.</li>
-  <li>The WOUDC collects data from the FTP.</li>
-  <li>There is a 72 hour waiting period before processing to allow for submission of revised data by the contributor.</li>
-  <li>The WOUDC processes data, validates contributor and site information.</li>
-  <li>If issues are discovered during validation, the WOUDC operator will inform the contributor.</li>
-  <li>If no issues are found, data will be published on the website and available for download from the website, geospatial web services or Web Accessible Folder (WAF).</li>
+  <li>The contributor uploads data in extCSV format to the FTP site</li>
+  <li>The WOUDC collects data from the FTP</li>
+  <li>The WOUDC processes data, validates contributor and site information</li>
+  <li>If issues are discovered during validation, the WOUDC operator will inform the contributor</li>
+  <li>If no issues are found, data will be published on the website and available for download from the website, geospatial web services or Web Accessible Folder (WAF)</li>
 </ol>
 
 <p>A flow chart highlighting the data submission procedure can be found in Figure 2.</p>
@@ -339,6 +345,19 @@
 
 <p>!!! md-alert “”
     <strong>Note:</strong> The details of transferring files with FTP depend on your computer’s operating system and FTP client software.</p>
+
+<h2 id="231-upload-guidelines">2.3.1 Upload Guidelines</h2>
+<p>The WOUDC FTP site allows contributors to upload data files in any directory/folder.  However, directories with the following conventions will be ignored for processing final data (Extended CSV files):</p>
+
+<ul>
+  <li><code class="highlighter-rouge">/calibration</code>: submission area for calibration data</li>
+  <li><code class="highlighter-rouge">/level-0</code>: submission area for raw data</li>
+  <li><code class="highlighter-rouge">/provisional</code>: submission area for preliminary (not final) data/values</li>
+</ul>
+
+<p>These directory/folder names are reserved for specific workflows for near-real time or raw data ingest/processing.  Contributors are encouraged to create and use these directory/folder names to upload calibration, level 0, or provisional data only.</p>
+
+<p>Extended CSV files can be uploaded in any other directory including the root of the contributor’s login area.</p>
 
 <h2 id="24-data-types">2.4 Data Types</h2>
 <p>Presently, the following data categories are defined:</p>
@@ -366,13 +385,14 @@
 
 <p>ExtCSV files are divided into two main parts: a metadata section and a data content section. The metadata section can be considered a data file “header” as this portion is common to all files within the WOUDC in terms of table format and content. The data portion will be unique to the individual data categories (or types) such as total ozone or ozonesonde.</p>
 
-<p>The extCSV files provide a common format that is independent of the type of instrument and the data type (Ozone/Ultraviolet and sub types as listed in 2.4). 
+<p>The extCSV files provide a common format that is independent of the type of instrument and the data type (Ozone/Ultraviolet and sub types as listed in 2.4).
 The extCSV format is not produced directly by the instruments, but by further processing of instrument data to produce standard extCSV files.   The following Field Names are used by WOUDC to distinguish between instrument data versus WOUDC extCSV format, or the “level of processing” of a data file:</p>
 
 <ul>
-  <li>level-0: “Raw” or unprocessed data directly from the Instrument. For example, “B-file” format ozone files produced by the Brewer operating software (<a href="http://kippzonen-brewer.com/wp-content/uploads/2014/10/KippZonen_Service_Manual_Brewer_MKIII_V1206-1.pdf">http://kippzonen-brewer.com/wp-content/uploads/2014/10/KippZonen_Service_Manual_Brewer_MKIII_V1206-1.pdf</a>). These files are not read or processed by WOUDC directly, but are used by software such as O3Brewer (<a href="http://www.o3soft.eu/doc/o3brewer.pdf">http://www.o3soft.eu/doc/o3brewer.pdf</a>).</li>
-  <li>level-1:  Data in WOUDC extCSV format, produced and quality controlled by the contributor.  The level-1 files contain all of the station, data type, and other identifying information or metadata of a measurement session in a single file, in a standard format. These files are typically produced by the contributor by formatting level-0 data and adding the appropriate metadata sections.  For example, O3Brewer software  (<a href="http://www.o3soft.eu/doc/o3brewer.pdf">http://www.o3soft.eu/doc/o3brewer.pdf</a>) will produce WOUDC extCSV (level-1) files from Brewer “B-file” (level-0) files.</li>
-  <li>level-2: level-2 data is level-1 data (WOUDC extCSV format) that has been further processed (such as interpolated, re-gridded, smoothed or other) for analysis, or input into other software etc.  For example, UMKEHR level-2 files are produced by additional processing of level-1 files.  (level-2 data is indicated within extCSV files by a “2” in the level field of the CONTENT table.  See Sec. 3.2.1.1).</li>
+  <li>level-0: “Raw” or unprocessed data directly from the Instrument. For example, “B-file” format ozone files produced by the Brewer operating software (<a href="http://kippzonen-brewer.com/wp-content/uploads/2014/10/KippZonen_Service_Manual_Brewer_MKIII_V1206-1.pdf">http://kippzonen-brewer.com/wp-content/uploads/2014/10/KippZonen_Service_Manual_Brewer_MKIII_V1206-1.pdf</a>). These files are not read or processed by WOUDC directly, but are used by software such as O3Brewer (<a href="http://www.o3soft.eu/doc/o3brewer.pdf">http://www.o3soft.eu/doc/o3brewer.pdf</a>)</li>
+  <li>level-0.5: Data in WOUDC extCSV format, produced by the contributor. Level-0.5 files contain all of the station, data type, and other identifying information or metadata of a measurement session in a single file, in a standard format. These files are typically produced by the contributor by formatting level-0 data and adding the appropriate metadata sections to comply with extCSV standards. Unlike level-1, level-0.5 may contain preliminary data that is not ready for publication as level-1. Raw instrument data such as level-0 but with extCSV headers and metadata for example, could be considered level-0.5</li>
+  <li>level-1:  Data in WOUDC extCSV format, produced and quality controlled by the contributor.  The level-1 files contain all of the station, data type, and other identifying information or metadata of a measurement session in a single file, in a standard format. These files are typically produced by the contributor by formatting level-0 data and adding the appropriate metadata sections.  For example, O3Brewer software  (<a href="http://www.o3soft.eu/doc/o3brewer.pdf">http://www.o3soft.eu/doc/o3brewer.pdf</a>) will produce WOUDC extCSV (level-1) files from Brewer “B-file” (level-0) files</li>
+  <li>level-2: level-2 data is level-1 data (WOUDC extCSV format) that has been further processed (such as interpolated, re-gridded, smoothed or other) for analysis, or input into other software etc.  For example, UMKEHR level-2 files are produced by additional processing of level-1 files.  (level-2 data is indicated within extCSV files by a “2” in the level field of the CONTENT table.  See Sec. 3.2.1.1)</li>
 </ul>
 
 <h3 id="311-extended-csv-syntax-rules">3.1.1 Extended CSV syntax Rules</h3>
@@ -383,12 +403,12 @@ The extCSV format is not produced directly by the instruments, but by further pr
 <p>The following are the extended CSV syntax rules:</p>
 
 <ul>
-  <li>Fields are seperated by comma characters (,) and the field width is variable.</li>
-  <li>If a field name or its value contains either comma (,) or double-quote (“) characters, then the entire field must be enclosed within double-quote (“) characters when written.</li>
-  <li>NULL values are represented as empty fields (,,) and blank lines are ignored.</li>
-  <li>Lines beginning with an asterisk (*) are comments.</li>
-  <li>Lines beginning with a pound (#) symbol are table names.</li>
-  <li>The first record following the <code class="highlighter-rouge">#TABLENAME</code> record specifies column (field) names. Each data column (field) requires a name separated by a comma.</li>
+  <li>Fields are seperated by comma characters (,) and the field width is variable</li>
+  <li>If a field name or its value contains either comma (,) or double-quote (“) characters, then the entire field must be enclosed within double-quote (“) characters when written</li>
+  <li>NULL values are represented as empty fields (,,) and blank lines are ignored</li>
+  <li>Lines beginning with an asterisk (*) are comments</li>
+  <li>Lines beginning with a pound (#) symbol are table names</li>
+  <li>The first record following the <code class="highlighter-rouge">#TABLENAME</code> record specifies column (field) names. Each data column (field) requires a name separated by a comma</li>
 </ul>
 
 <p>Example:</p>
@@ -406,12 +426,12 @@ Field1, Field2, Comment
 <p>The following are the WOUDC content rules:</p>
 
 <ul>
-  <li>Table names are written in UPPERCASE and denoted by the pound (#) symbol as the first character. Field names are case-sensitive.</li>
-  <li>A table is comprised of three sections: a table name, column (field) names, and one or more data records. Tables can also contain optional table comments.</li>
-  <li>Trailing nulls are assumed for unspecified data attributes.</li>
-  <li>Each file must contain only one (single) instance of the static metadata tables (<code class="highlighter-rouge">#CONTENT</code>, <code class="highlighter-rouge">#DATA_GENERATION</code>, <code class="highlighter-rouge">#INSTRUMENT</code>, and <code class="highlighter-rouge">#PLATFORM</code>) and apply to all data within the file.</li>
-  <li>Each file must contain at least one instance of the dynamic metadata tables (<code class="highlighter-rouge">#LOCATION</code>, and <code class="highlighter-rouge">#TIMESTAMP</code>) and are applied until they are re-stated. Class content that use the fields of these tables can modify the attributes (i.e., time can be updated by individual samples).</li>
-  <li>Further information about site conditions, meteorology, sky images, etc. may be included as comments or by other tables generated at the discretion of the data originator. For example, if a data originator wishes to indicate an occurrence of a special note (“instrument was bumped while sampling”) then a comment is reasonable. Dynamic variations occurring instantaneously such as meteorology (e.g. sky or wind conditions) or the reporting of calibration data would be represented in a table.</li>
+  <li>Table names are written in UPPERCASE and denoted by the pound (#) symbol as the first character. Field names are case-sensitive</li>
+  <li>A table is comprised of three sections: a table name, column (field) names, and one or more data records. Tables can also contain optional table comments</li>
+  <li>Trailing nulls are assumed for unspecified data attributes</li>
+  <li>Each file must contain only one (single) instance of the static metadata tables (<code class="highlighter-rouge">#CONTENT</code>, <code class="highlighter-rouge">#DATA_GENERATION</code>, <code class="highlighter-rouge">#INSTRUMENT</code>, and <code class="highlighter-rouge">#PLATFORM</code>) and apply to all data within the file</li>
+  <li>Each file must contain at least one instance of the dynamic metadata tables (<code class="highlighter-rouge">#LOCATION</code>, and <code class="highlighter-rouge">#TIMESTAMP</code>) and are applied until they are re-stated. Class content that use the fields of these tables can modify the attributes (i.e., time can be updated by individual samples)</li>
+  <li>Further information about site conditions, meteorology, sky images, etc. may be included as comments or by other tables generated at the discretion of the data originator. For example, if a data originator wishes to indicate an occurrence of a special note (“instrument was bumped while sampling”) then a comment is reasonable. Dynamic variations occurring instantaneously such as meteorology (e.g. sky or wind conditions) or the reporting of calibration data would be represented in a table</li>
 </ul>
 
 <p>Example:</p>
@@ -485,7 +505,7 @@ Date,Time,Temperature,Pressure,WindDirection,WindSpeed
   </tbody>
 </table>
 
-<p>!!! md-alert “” 
+<p>!!! md-alert “”
     <strong>Note:</strong> Contributors can optionally include revision history within an extCSV file by documenting within a comment block at the end of the file. Revision dates must be in descending order (latest date first).</p>
 
 <h4 id="3211-content">3.2.1.1 Content</h4>
@@ -507,7 +527,7 @@ Date,Time,Temperature,Pressure,WindDirection,WindSpeed
 <p><strong>ScientificAuthority</strong>: The person(s) responsible for the data quality at the submitting Agency.</p>
 
 <h4 id="3213-platform">3.2.1.3 Platform</h4>
-<p><strong>Type</strong>: Type of observing platform: Stationary (STN) or Moving (e.g., Airborne (FLT), Ship borne (SHP), etc.). The default is STN. This field, for example, will accommodate the future inclusion of an onboard GPS on ozonesonde flights which records exact location throughout a flight. Thus, FLT would be selected instead of STN.</p>
+<p><strong>Type</strong>: Type of observing platform: Stationary (STN) or Moving (e.g., Airborne (FLT), Ship borne (SHP), etc.). The default is STN.</p>
 
 <p><strong>ID</strong>: Unique station or flight ID assigned by the WOUDC to each registered platform.</p>
 
@@ -532,13 +552,13 @@ Date,Time,Temperature,Pressure,WindDirection,WindSpeed
 <p><strong>Height</strong>: Height is defined as the altitude, elevation, or height of the defined platform + instrument above sea level. Typically an instrument is located at a fixed location and shares the platform elevation. The format is metres above sea level (m.a.s.l.).</p>
 
 <h4 id="3216-timestamp">3.2.1.6 Timestamp</h4>
-<p><strong>UTCOffset</strong>: The UTCOffset is the amount of time to be subtracted from the local time in order to obtain UTC time (where East is positive and Local Time as defined by the data originator). UTCOffset is represented in the ISO-8601 standard of hh : mm : ss. The default is to report time in UTC, thus UTCOffset=+00:00:00. If Time is not given in UTC in the Data Content section, then Time represents local time and the UTCOffset must be specified by a non-zero value.</p>
+<p><strong>UTCOffset</strong>: The UTCOffset is the amount of time to be subtracted from the local time in order to obtain UTC time (where East is positive and Local Time as defined by the data originator). UTCOffset is represented in the ISO-8601 standard of hh:mm:ss. The default is to report time in UTC, thus UTCOffset=+00:00:00. If Time is not given in UTC in the Data Content section, then Time represents local time and the UTCOffset must be specified by a non-zero value.</p>
 
 <p>!!! md-alert “”
     <strong>Note:</strong> This is equivalent to UTC = time - UTCOffset.</p>
 
 <p><strong>Date</strong>: Date is represented in the ISO 8160 format standard, i.e., YYYY-MM-DD, corresponding to the time code. Example: 2015-12-31.
-<strong>Time</strong>: Time is represented in the ISO-8601 standard of hh : mm : ss.</p>
+<strong>Time</strong>: Time is represented in the ISO-8601 standard of hh:mm:ss.</p>
 
 <h4 id="3217-example">3.2.1.7 Example</h4>
 <p>Below is an example of a header. This header includes all the required header tables and fields, as well as comments.
@@ -887,11 +907,11 @@ Date,Time,Temperature,Pressure,WindDirection,WindSpeed
 
 <p><strong>StartDate</strong>: Start date determined by the observation period. ISO 8601 format for date yyyy-mm-dd is used.</p>
 
-<p><strong>StartTime</strong>: Start time determined by the observation period. ISO 8601 format for time hh : mm : ss is used.</p>
+<p><strong>StartTime</strong>: Start time determined by the observation period. ISO 8601 format for time hh:mm:ss is used.</p>
 
 <p><strong>EndDate</strong>: End date determined by the observation period. ISO 8601 format for date yyyy-mm-dd is used.</p>
 
-<p><strong>EndTime</strong>: End time determined by the observation period. ISO 8601 format for time hh : mm : ss is used.</p>
+<p><strong>EndTime</strong>: End time determined by the observation period. ISO 8601 format for time hh:mm:ss is used.</p>
 
 <p><strong>PulsesAveraged</strong>: Number of pulses used to integrate profile.</p>
 
@@ -1348,7 +1368,7 @@ at <a href="http://woudc.org/archive/Documentation/Examples-extCSV/Ozonesonde.cs
 
 <h4 id="3351-observations">3.3.5.1 OBSERVATIONS</h4>
 
-<p><strong>Time</strong> : hh : mm : ss</p>
+<p><strong>Time</strong> : hh:mm:ss</p>
 
 <p><strong>WLCode</strong>: Code to designate the wavelength pair(s) used for total ozone measurement. Codes 0-7 are used for Dobson instruments only, 8 for Filter instruments only and 9 for Brewer instruments only. Refer to Table 3.3-7 in <a href="#3353-code-tables">section 3.3.5.3</a>.</p>
 
@@ -1374,7 +1394,7 @@ at <a href="http://woudc.org/archive/Documentation/Examples-extCSV/Ozonesonde.cs
 
 <p><strong>MeanO3</strong>: Mean value of total column ozone (O3) amount (in Dobson Units, i.e., milli atm-cm).</p>
 
-<p><strong>StdDevO3</strong>: Standard Deviation of total column ozone measurement (where applicable).</p>
+<p><strong>StdDevO3</strong>: Standard Deviation of total column ozone measurement (where applicable). (For DS, and ZS the maximum deviation defaults to 5.0, for FM, default is 12.0. See Table 3.3-8 - Observation Codes in <a href="#3353-code-tables">section 3.3.5.3</a>).</p>
 
 <h4 id="3353-code-tables">3.3.5.3 Code Tables</h4>
 
@@ -1530,7 +1550,7 @@ at <a href="http://woudc.org/archive/Documentation/Examples-extCSV/Ozonesonde.cs
 
 <p><strong>ObsCode</strong>: Code to designate the type of total ozone measurement. Refer to Table 3.3-8 in <a href="#3353-code-tables">section 3.3.5.3</a>.</p>
 
-<p><strong>ColumnO3</strong>: Daily value of total column ozone amount (in Dobson Units, i.e., milli atm-cm) defined as the “best representative value”; typically in the order of DS, ZS and FM.</p>
+<p><strong>ColumnO3</strong>: Daily value of total column ozone amount (in Dobson Units, i.e., milli atm-cm) defined as the “best representative value”typically in the order of DS, ZS and FM. (Derived from StdDev03 value. Valid range is 100 to 700.)</p>
 
 <p><strong>StdDevO3</strong>: Is the estimated population standard deviation of the total column ozone measurements used for the daily value.</p>
 
@@ -1542,7 +1562,7 @@ at <a href="http://woudc.org/archive/Documentation/Examples-extCSV/Ozonesonde.cs
 
 <p><strong>nObs</strong>: Number of observations used to calculate the total column ozone value.</p>
 
-<p><strong>mMu</strong>: The harmonic mean of the relative slant path through the ozone layer at 22Km ($\mu$1) for each of the observations used to compute the daily value. It is a useful statistic in relation to the effects of uncertainties in the zero airmass extrapolations and in the generation of simulated data from independent data. mMu=NN/$\sum$ (1/$\mu$i).</p>
+<p><strong>mMu</strong>: The harmonic mean of the relative slant path through the ozone layer at 22Km ((\mu \ M )) for each of the observations used to compute the daily value. It is a useful statistic in relation to the effects of uncertainties in the zero airmass extrapolations and in the generation of simulated data from independent data. mMu=NN ( \sigma \ \Sigma ) (1/(\mu \ M )).</p>
 
 <p><strong>ColumnSO2</strong>: The daily total column sulphur dioxide (SO2) amount calculated as the mean of the individual SO2 amounts (in Dobson Units, i.e., milli-atm-cm) from the same observation used for the O3 amount.</p>
 
@@ -1718,7 +1738,7 @@ The originator of the data is encouraged to submit any ancillary and/or auxiliar
 
 <p><strong>S - Irradiance</strong>: Is the spectral irradiance measured in Wm^-2 nm^-1</p>
 
-<p><strong>Time</strong>: hh : mm : ss in ISO-8601 standard.</p>
+<p><strong>Time</strong>: hh:mm:ss in ISO-8601 standard.</p>
 
 <h4 id="3422-direct">3.4.2.2 DIRECT</h4>
 
@@ -1783,7 +1803,7 @@ The originator of the data is encouraged to submit any ancillary and/or auxiliar
 
 <p><strong>S - Irradiance</strong> : Is the spectral irradiance measured in Wm^-2 nm^-1</p>
 
-<p><strong>Time</strong>: hh : mm : ss in ISO-8601 standard.</p>
+<p><strong>Time</strong>: hh:mm:ss in ISO-8601 standard.</p>
 
 <h4 id="3432-direct">3.4.3.2 DIRECT</h4>
 
@@ -1807,7 +1827,7 @@ The originator of the data is encouraged to submit any ancillary and/or auxiliar
 
 <p><strong>DRS - Irradiance</strong>: Is the direct spectral irradiance measured in Wm^-2 nm^-1.</p>
 
-<p><strong>Time</strong>: hh : mm : ss in ISO-8601 standard.</p>
+<p><strong>Time</strong>: hh:mm:ss in ISO-8601 standard.</p>
 
 <p>!!! md-alert “”
     <strong>Note:</strong> The table <code class="highlighter-rouge">#SIMULTANEOUS</code> refers to a single detector whereby the measurements are made in a near-simultaneous mode, but reported on the same time scale. For example, measurements are recorded in 15 second intervals, first for global then for diffuse and an integrated value is reported every 15 minutes. This integrated value is considered “simultaneous” for inclusion in this table. Simultaneous measurements made using two or more independent detectors, requires a data file for each detector.</p>
@@ -1860,7 +1880,7 @@ The originator of the data is encouraged to submit any ancillary and/or auxiliar
 
 <h4 id="3441-global">3.4.4.1 GLOBAL</h4>
 
-<p><strong>Time</strong>: hh : mm : ss in ISO-8601 standard.</p>
+<p><strong>Time</strong>: hh:mm:ss in ISO-8601 standard.</p>
 
 <p><strong>S - Irradiance</strong>: Measured in Wm^-2.</p>
 
@@ -1878,7 +1898,7 @@ The originator of the data is encouraged to submit any ancillary and/or auxiliar
 
 <h4 id="3445-simultaneour">3.4.4.5 SIMULTANEOUR</h4>
 
-<p><strong>Time</strong>: hh : mm : ss in ISO-8601 standard.</p>
+<p><strong>Time</strong>: hh:mm:ss in ISO-8601 standard.</p>
 
 <p><strong>GL - Irradiance</strong>: Is the global irradiance measured in Wm^-2.</p>
 
@@ -1937,7 +1957,7 @@ The originator of the data is encouraged to submit any ancillary and/or auxiliar
 
 <h4 id="3451-global">3.4.5.1 GLOBAL</h4>
 
-<p><strong>Time</strong>: hh : mm : ss in ISO-8601 standard.</p>
+<p><strong>Time</strong>: hh:mm:ss in ISO-8601 standard.</p>
 
 <p><strong>S - Irradiance</strong>: Measured in Wm^-2.</p>
 
@@ -1951,7 +1971,7 @@ The originator of the data is encouraged to submit any ancillary and/or auxiliar
 
 <h4 id="3454-simultaneour">3.4.5.4 SIMULTANEOUR</h4>
 
-<p><strong>Time</strong>: hh : mm : ss in ISO-8601 standard.</p>
+<p><strong>Time</strong>: hh:mm:ss in ISO-8601 standard.</p>
 
 <p><strong>GL - Irradiance</strong>: Is the global irradiance measured in Wm^-2.</p>
 
@@ -2121,7 +2141,7 @@ The originator of the data is encouraged to submit any ancillary and/or auxiliar
     </tr>
     <tr>
       <td>Time</td>
-      <td>hh : mm : ss</td>
+      <td>hh:mm:ss</td>
       <td>ISO-8601 standard</td>
     </tr>
     <tr>
@@ -2157,10 +2177,10 @@ The originator of the data is encouraged to submit any ancillary and/or auxiliar
 <p>Essentially, data from contributors is received, processed, and archived. Once file is inputted into the system, the backend process is instantiated where the incoming file type is identified and validated to make sure it is in the standard WOUDC file format (extCSV). Once the file has been identified as valid extCSV, the system tries to create and validate the taxonomy and URI for the file. Next the file will undergo a rigorous set of validations called File Level Validation (FLV). FLV is used to ensure:</p>
 
 <ul>
-  <li>extCSV conforms syntactically to GAW-WOUDC specifications;</li>
-  <li>metadata validation which makes sure the values contained in the headers (<code class="highlighter-rouge">#TIMESTAMP</code>, <code class="highlighter-rouge">#PLATFORM</code>, <code class="highlighter-rouge">#INSTRUMENT</code>, <code class="highlighter-rouge">#CONTENT</code>, <code class="highlighter-rouge">#DATA_GENERATION</code>, <code class="highlighter-rouge">#LOCATION</code>) are accurate and consistent;</li>
-  <li>unique table validation which are sets of tests used to validate dataset specific tables; and</li>
-  <li>values are modified in accordance with “no-touch” policy (i.e., minimal syntactical updates).</li>
+  <li>extCSV conforms syntactically to GAW-WOUDC specifications</li>
+  <li>metadata validation which makes sure the values contained in the headers (<code class="highlighter-rouge">#TIMESTAMP</code>, <code class="highlighter-rouge">#PLATFORM</code>, <code class="highlighter-rouge">#INSTRUMENT</code>, <code class="highlighter-rouge">#CONTENT</code>, <code class="highlighter-rouge">#DATA_GENERATION</code>, <code class="highlighter-rouge">#LOCATION</code>) are accurate and consistent</li>
+  <li>unique table validation which are sets of tests used to validate dataset specific tables</li>
+  <li>values are modified in accordance with “no-touch” policy (i.e., minimal syntactical updates)</li>
 </ul>
 
 <p>The extCSV that emerges once it has gone through FLV is a clean version of the original form. Once the extCSV has successfully passed the taxonomy validation, URI validation, and FLV, the files is ready to be ingested into the database. Any errors compiled throughout the process are provided to the contributor in order to help remediate the errors for an easier ingestion of their data.</p>
@@ -2313,14 +2333,14 @@ SOMORA,???,???
 
 #LOCATION
 Latitude,Longitude,Height
-46.82,6.95,491 
+46.82,6.95,491
 
-* Observing technique: total power 
-* Center frequency: 142.175 GHz 
-* Inversion method: Optimal Estimation 
+* Observing technique: total power
+* Center frequency: 142.175 GHz
+* Inversion method: Optimal Estimation
 * Temp. and press. profiles : CIRA 86 + daily NCEP + Payerne radiosondes
-* A-priori profile: season standard atmosphere 
-* Measurement Error Cov.: variable, adjusted to wings BT 
+* A-priori profile: season standard atmosphere
+* Measurement Error Cov.: variable, adjusted to wings BT
 * A Priori Error Cov.: 0 - 1.5 ppm (correlation 3-5 km)
 
 #TIMESTAMP
@@ -2383,53 +2403,53 @@ Altitude,OzoneVMR,VariableError,FixedError,SmoothingError,TotalError,A-Priori,Te
 73500,0.53,0.03,0.02,0.11,0.12,66,216.68,,0.03
 76500,0.52,0.02,0.01,0.10,0.10,76,214.20,,0.02
 
-* RUFFIEUX D.,,,, MWAVE,,, PAYERNE,, OZONE,,, 09-Oct-2005 00:18:0009-Oct-2005 23:47:001001 
-* 47 2110 
-* RUFFIEUX, Dominique 
-* MeteoSwiss, Station Aerologique de Payerne, Switzerland 
-* Stratospheric Ozone Monitoring Radiometer (SOMORA) / Payerne 
-* NDSC / GAW 
-* 1 1 
-* 2005 10,9 2005 10 10 
-* 0.0 0.0 
-* Altitude (m) 
-* Fractional day (day of year) 
-* 8 
-* 1 1 1 1 1 1 1 100 
-* 99.99 99.99 99.99 99.99 99.99 999 999.99 9999.99 
-* Ozone VMR (ppm) 
-* Variable (stochastic) error for ozone VMR (ppm) 
-* Fixed (systematic) error for ozone VMR (ppm) 
-* Smoothing error (ppm) 
-* Total error (ppm) 
-* A-priori data contribution (%) 
-* Temperature profile used for retrieval (K) 
-* Pressure profile used for retrieval (Pa) 
-* 14 
-* 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-* 99 9999 99 99 99 99 999 99.99 99.99 999 99 9999 9.99 9.99 
-* Number of altitudes recorded in subsequent data records 
-* Year 
-* Month 
-* Day 
-* Hour (Time=UT) 
-* Minutes 
-* Averaging Time (Minutes) 
-* Latitude (Deg. north) 
-* Longitude (Deg. east) 
-* Altitude above sea level (m) 
-* Zenith angle (Deg.) 
-* Mean system noise temperature (K) 
-* Tropospheric Transmission Factor 
-* Std. of Meas. - Calc. Spectrum (K) 
-* 0 
-* 7 
-* Observing technique: total power 
-* Center frequency: 142.175 GHz 
-* Inversion method: Optimal Estimation 
+* RUFFIEUX D.,,,, MWAVE,,, PAYERNE,, OZONE,,, 09-Oct-2005 00:18:0009-Oct-2005 23:47:001001
+* 47 2110
+* RUFFIEUX, Dominique
+* MeteoSwiss, Station Aerologique de Payerne, Switzerland
+* Stratospheric Ozone Monitoring Radiometer (SOMORA) / Payerne
+* NDSC / GAW
+* 1 1
+* 2005 10,9 2005 10 10
+* 0.0 0.0
+* Altitude (m)
+* Fractional day (day of year)
+* 8
+* 1 1 1 1 1 1 1 100
+* 99.99 99.99 99.99 99.99 99.99 999 999.99 9999.99
+* Ozone VMR (ppm)
+* Variable (stochastic) error for ozone VMR (ppm)
+* Fixed (systematic) error for ozone VMR (ppm)
+* Smoothing error (ppm)
+* Total error (ppm)
+* A-priori data contribution (%)
+* Temperature profile used for retrieval (K)
+* Pressure profile used for retrieval (Pa)
+* 14
+* 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+* 99 9999 99 99 99 99 999 99.99 99.99 999 99 9999 9.99 9.99
+* Number of altitudes recorded in subsequent data records
+* Year
+* Month
+* Day
+* Hour (Time=UT)
+* Minutes
+* Averaging Time (Minutes)
+* Latitude (Deg. north)
+* Longitude (Deg. east)
+* Altitude above sea level (m)
+* Zenith angle (Deg.)
+* Mean system noise temperature (K)
+* Tropospheric Transmission Factor
+* Std. of Meas. - Calc. Spectrum (K)
+* 0
+* 7
+* Observing technique: total power
+* Center frequency: 142.175 GHz
+* Inversion method: Optimal Estimation
 * Temp. and press. profiles : CIRA 86 + daily NCEP + Payerne radiosondes
-* A-priori profile: season standard atmosphere 
-* Measurement Error Cov.: variable, adjusted to wings BT 
+* A-priori profile: season standard atmosphere
+* Measurement Error Cov.: variable, adjusted to wings BT
 * A Priori Error Cov.: 0 - 1.5 ppm (correlation 3-5 km)
 </code></pre>
 </div>
@@ -2462,8 +2482,8 @@ Latitude,Longitude,Height
 UTCOffset,Date,Time
 +00:00:00,2013-01-30,11:16:00
 
-*EXAMPLE OF NEW OZONESONDE 
-*FILE FORMAT* 
+*EXAMPLE OF NEW OZONESONDE
+*FILE FORMAT*
 * ----- correction applied for 1% KI solution in ENSCI sonde ----------
 * ----- correction applied for 2.5 cc of solution instead of 3.0 ---
 * ----- residual ozone interpolated from 2011 MLS climatology (McPeters and Labow) ---
@@ -2905,7 +2925,7 @@ Time,Irradiance
 </code></pre>
 </div>
 
-<h2 id="a10-pyranometer">A.10 Pyranometer</h2>
+<h2 id="a10-pyranometer-example">A.10 Pyranometer Example</h2>
 
 <p>Below is an example of a Pyranometer data submission.</p>
 
@@ -2962,10 +2982,10 @@ Time,Temperature
         </div><!-- MainContentEnd -->
         <dl id="wb-dtmd" property="dateModified" role="contentinfo">
             <dt>Version:</dt>
-            <dd>2.0</dd>
+            <dd>2.0.1</dd>
         </dl>
         <div class="wb-share pull-right text-right" data-wb-share='{"pnlId": "pnl1"}' id="share-wdg-woudc"></div>
-        <div class="pull-right text-right align-bottom hidden-xs hidden-sm" id="share-qr-woudc"><img alt="WOUDC Contributor Guide" height="50" src="https://chart.googleapis.com/chart?chs=50x50&cht=qr&chl=http://guide.woudc.org//en/" title="WOUDC Contributor Guide" width="50"></div>
+        <div class="pull-right text-right align-bottom hidden-xs hidden-sm" id="share-qr-woudc"><img alt="WOUDC Contributor Guide" height="50" src="https://chart.googleapis.com/chart?chs=50x50&cht=qr&chl=http://0.0.0.0:4000//en/" title="WOUDC Contributor Guide" width="50"></div>
     </main>
     <footer class="visible-sm visible-md visible-lg wb-navcurr" id="wb-info" role="contentinfo">
         <div class="container">
