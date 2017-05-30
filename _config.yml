@@ -11,5 +11,5 @@ markdown: kramdown
 highlighter: rouge
 timezone: GMT
 #baseurl: /
-exclude: [bin, stage, Makefile, README.md, setenv-ruby-gem.sh, LICENSE.txt, CNAME]
+exclude: [bin, stage, Makefile, README.md, setenv-ruby-gem.sh, LICENSE.txt, CNAME, Gemfile, Gemfile.lock]
 url: http://guide.woudc.org
