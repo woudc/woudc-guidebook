@@ -250,7 +250,6 @@ Example:
 Field1,Field2,Field3
 Datum1,Datum2,Datum3
 *Table comment
-</code></p>
 ```
 
 Example:
