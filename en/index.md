@@ -269,7 +269,7 @@ Table 3.2-1 and Table 3.2-2 outline the tables required in all the WOUDC data fi
 | Table Name | Field (Column) Names |
 |--------|--------|
 |`#CONTENT`|`Class, Category, Level, Form`|
-|`#DATA_GENERATION`|`Data, Agency, Version, ScientificAuthority`|
+|`#DATA_GENERATION`|`Date, Agency, Version, ScientificAuthority`|
 |`#PLATFORM`|`Type, ID, Name, Country, GAW_ID`|
 |`#INSTRUMENT`|`Name, Model, Number`|
 
@@ -284,7 +284,7 @@ Table 3.2-1 and Table 3.2-2 outline the tables required in all the WOUDC data fi
     **Note:** Contributors can optionally include revision history within an extCSV file by documenting within a comment block at the end of the file. Revision dates must be in descending order (latest date first).
 
 #### 3.2.1.1 Content
-**Class**: The general type of data to follow; WOUDC woud be used here.
+**Class**: The general type of data to follow; WOUDC would be used here.
 
 **Category**: Sub group of data submitted (i.e., Ozonesonde or Lidar)
 
