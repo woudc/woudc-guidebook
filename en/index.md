@@ -337,33 +337,36 @@ Table 3.2-1 and Table 3.2-2 outline the tables required in all the WOUDC data fi
 
 #### 3.2.1.7 Example
 Below is an example of a header. This header includes all the required header tables and fields, as well as comments.
-`*SOFTWARE: SNDPRO 1.3`
-`*TROPOPAUSE IN MB 320`
-`*M.S.C.-O3 T1200`
 
-`#CONTENT`
-`Class,Category,Level,Form`
-`WOUDC,OzoneSonde,1.0,1`
+```
+*SOFTWARE: SNDPRO 1.3
+*TROPOPAUSE IN MB 320
+*M.S.C.-O3 T1200
 
-`#DATA_GENERATION`
-`Date,Agency,Version,ScientificAuthority`
-`1999-05-07,MSC,1.0,Jonathan Davies`
+#CONTENT
+Class,Category,Level,Form
+WOUDC,OzoneSonde,1.0,1
 
-`#PLATFORM`
-`Type,ID,Name,Country,GAW_ID`
-`STN,315,Eureka,CAN,71917`
+#DATA_GENERATION
+Date,Agency,Version,ScientificAuthority
+1999-05-07,MSC,1.0,Jonathan Davies
 
-`#INSTRUMENT`
-`Name,Model,Number`
-`ECC,6a,6a2355`
+#PLATFORM
+Type,ID,Name,Country,GAW_ID
+STN,315,Eureka,CAN,71917
 
-`#LOCATION`
-`Latitude,Longitude,Height`
-`79.99,-85.94,10`
+#INSTRUMENT
+Name,Model,Number
+ECC,6a,6a2355
 
-`#TIMESTAMP`
-`UTCOffset,Date,Time`
-`+00:00:00,1999-04-28,23:15:00`
+#LOCATION
+Latitude,Longitude,Height
+79.99,-85.94,10
+
+#TIMESTAMP
+UTCOffset,Date,Time
++00:00:00,1999-04-28,23:15:00
+```
 
 #### 3.2.1.8 Metadata Table Configuration ####
 Below is a table that summarizes the required tables in WOUDC-EXTCSV file for different datasets.
