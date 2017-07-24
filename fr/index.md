@@ -277,7 +277,7 @@ Le Tableau 3.2 1 et le Tableau 3.2 2 présentent les tableaux devant se trouver 
 | Nom du tableau | Nom des champs (colonnes) |
 |--------|--------|
 |`#CONTENT`|`Class, Category, Level, Form`|
-|`#DATA_GENERATION`|`Data, Agency, Version, ScientificAuthority`|
+|`#DATA_GENERATION`|`Date, Agency, Version, ScientificAuthority`|
 |`#PLATFORM`|`Type, ID, Name, Country, GAW_ID`|
 |`#INSTRUMENT`|`Name, Model, Number`|
 
