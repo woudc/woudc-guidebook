@@ -306,7 +306,7 @@ pour WOUDC (et donc les données sont prêtes à être soumis à WOUDC), ou "2" 
 
 **Agency**: Sigle de l’organisation qui a soumis les données.
 
-**Version**: Version des données, telle qu’elle a été précisée par l’organisation ayant soumis les données. Le format de la version est « majeure.mineure » (p. ex., 3.2). La valeur « majeure » augmente lorsque des changements sont apportés à l’algorithme de traitement, et la valeur « mineur », lorsque des changements sont apportés aux valeurs de caractérisation ou d’étalonnage. Remarque : la valeur « mineure » est remise à zéro lorsque des changements sont apportés à l’algorithme de traitement.
+**Version**: Version des données, telle qu’elle a été précisée par l’organisation ayant soumis les données. Le format de la version est « majeure.mineure » (p. ex., 3.2). La valeur « majeure » augmente lorsque des changements sont métadonnées des fichiers de données ou apportés à l’algorithme de traitement, et la valeur « mineur », lorsque des changements sont apportés aux valeurs de caractérisation ou d’étalonnage. Remarque : la valeur « mineure » est remise à zéro lorsque des changements sont apportés à l’algorithme de traitement.
 
 **ScientificAuthority**: Nom de la ou des personnes responsables de la qualité des données au sein de l’organisation qui a soumis les données.
 
