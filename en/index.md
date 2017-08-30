@@ -297,7 +297,7 @@ Table 3.2-1 and Table 3.2-2 outline the tables required in all the WOUDC data fi
 
 **Agency**: The acronym of the submitting Agency.
 
-**Version**: Data version specified by the submitting Agency. These versions have the form "major.minor" (e.g., 3.2) where major values are incremented with changes to the processing algorithm and minor values are incremented when the characterisation or calibration values have changed. Note: minor values are reset to zero with changes to the processing algorithm.
+**Version**: Data version specified by the submitting Agency. These versions have the form "major.minor" (e.g., 3.2) where major values are incremented with a./ changes to data file metadata or b./ the processing algorithm.  Minor values are incremented when the characterisation or calibration values have changed. Note: minor values are reset to zero with changes to the processing algorithm.
 
 **ScientificAuthority**: The person(s) responsible for the data quality at the submitting Agency.
 
