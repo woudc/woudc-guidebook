@@ -273,7 +273,7 @@ Where:
 - `INSTRUMENT.Number`: Serial number of the instrument as assigned by the manufacturer
 - `DATA_GENERATION.Agency`: The acronym of the submitting Agency
 
-Example: http://woudc.org/archive/Archive-NewFormat/TotalOzone_1.0_1/stn010/brewer/1995/19950301.Brewer.MKIV.089.IMD.csv
+Example: [http://woudc.org/archive/Archive-NewFormat/TotalOzone_1.0_1/stn010/brewer/1995/19950301.Brewer.MKIV.089.IMD.csv](http://woudc.org/archive/Archive-NewFormat/TotalOzone_1.0_1/stn010/brewer/1995/19950301.Brewer.MKIV.089.IMD.csv)
 
 Note that WOUDC does not enforce file naming conventions as part of data submissions.
 

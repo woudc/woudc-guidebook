@@ -283,7 +283,7 @@ Explications :
 - `INSTRUMENT.Number`: numéro de série de l'instrument attribué par le fabricant
 - `DATA_GENERATION.Agency`:  l'acronyme de l'agence qui a soumis la donnée
 
-Exemple : http://woudc.org/archive/Archive-NewFormat/TotalOzone_1.0_1/stn010/brewer/1995/19950301.Brewer.MKIV.089.IMD.csv
+Exemple : [http://woudc.org/archive/Archive-NewFormat/TotalOzone_1.0_1/stn010/brewer/1995/19950301.Brewer.MKIV.089.IMD.csv](http://woudc.org/archive/Archive-NewFormat/TotalOzone_1.0_1/stn010/brewer/1995/19950301.Brewer.MKIV.089.IMD.csv)
 
 Notez que WOUDC n'impose pas de convention de nommage de fichiers dans le cadre des soumissions de données.
 
