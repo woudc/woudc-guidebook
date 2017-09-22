@@ -34,6 +34,7 @@ Le [site Web du WOUDC](http://woudc.org/home.php?lang=fr) est utilisé pour mett
 
   * 3.1 [Format de données standard du WOUDC ](#31-format-de-données-standard-du-woudc)
     * 3.1.1 [Règles de syntaxe du format CSV étendu](#311-règles-de-syntaxe-du-format-csv-étendu)
+    * 3.1.2 [Convention de nommage de fichier](#312-convention-de-nommage-de-fichier)
   * 3.2 [Métadonnées des fichiers de données extCSV du WOUDC](#32-métadonnées-des-fichiers-de-données-extcsv-du-woudc)
     * 3.2.1 [Introduction](#321-introduction)
   * 3.3 [Contenu des données propres à l’ozone ](#33-contenu-des-données-propres-à-lozone)
@@ -265,6 +266,27 @@ Example:
 #SITE_METEOROLOGY
 Date,Time,Temperature,Pressure,WindDirection,WindSpeed
 ```
+
+## 3.1.2 Convention de nommage de fichier
+
+La convention de nommage de fichier suivante est recommandée :
+
+```
+{TIMESTAMP.Date}.{INSTRUMENT.Name}.{INSTRUMENT.Model}.{INSTRUMENT.Number}.{DATA_GENERATION.Agency}.csv
+```
+
+Explications :
+
+- `TIMESTAMP.Date`: date de début des observations dans le fichier (format YYYYMMDD)
+- `INSTRUMENT.Name`: nom commun de l'instrument. Par exemple, le spectrophotomètre Brewer s'appelle 'Brewer' alors que l'ozonesonde Brewer-Mast s'appelle 'Brewer-Mast'. Reportez-vous au site web de WOUDC pour une liste : http://woudc.org/data/instruments
+- `INSTRUMENT.Model`: ID du modèle, le cas échéant. Reportez-vous à la liste des instruments WOUDC : http://woudc.org/data/instruments
+- `INSTRUMENT.Number`: numéro de série de l'instrument attribué par le fabricant
+- `DATA_GENERATION.Agency`:  l'acronyme de l'agence qui a soumis la donnée
+
+Exemple : http://woudc.org/archive/Archive-NewFormat/TotalOzone_1.0_1/stn010/brewer/1995/19950301.Brewer.MKIV.089.IMD.csv
+
+Notez que WOUDC n'impose pas de convention de nommage de fichiers dans le cadre des soumissions de données.
+
 
 ## 3.2 Métadonnées des fichiers de données extCSV du WOUDC
 ### 3.2.1 Introduction
