@@ -1292,7 +1292,7 @@ Le Tableau 3.4 6 énumère l’ensemble des champs obligatoires et facultatifs p
 
 Le logiciel gratuit suivant existe pour aider à la création de fichiers CSV étendus:
 
-- [o3soft](http://www.o3soft.eu): Les collaborateurs avec les spectrophotomètres Brewer et Dobson peuvent utiliser ce logiciel pour exporter CSV étendu
+- [o3soft](http://www.o3soft.eu): Les collaborateurs avec les spectrophotomètres [Brewer](http://www.o3soft.eu/o3brewer.html) et [Dobson](http://www.o3soft.eu/o3dobson.html) peuvent utiliser ce logiciel pour exporter CSV étendu
 - [woudc-format](https://github.com/woudc/woudc-formats): les collaborateurs avec les données SHADOZ, NASA AMES 2160 ou Vaisala peuvent utiliser ce paquet Python pour convertir en CSV étendu
 
 # Chapter 4 Chapitre 4 Traitement des données
