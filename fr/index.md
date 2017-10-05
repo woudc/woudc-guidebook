@@ -52,6 +52,7 @@ Le [site Web du WOUDC](http://woudc.org/home.php?lang=fr) est utilisé pour mett
     * 3.4.4 [Catégorie: Broadband](#344-catégorie--broadband)
     * 3.4.5 [Catégorie: Pyranometer](#345-catégorie--pyranometer)
     * 3.4.6 [Données accessoires et auxiliaires ](#346-données-accessoires-et-auxiliaires)
+  * 3.5 [Logiciel](#35-logiciel)
 
 [Chapitre 4 Traitement des données](#chapter-4-chapitre-4-traitement-des-données)
 
@@ -1286,6 +1287,13 @@ Le Tableau 3.4 6 énumère l’ensemble des champs obligatoires et facultatifs p
 |Wavelength|Nanomètres (nm)|Aucun commentaire|
 |WindSpeed|ms^-1|Aucun commentaire|
 |WindDirection|Degrés décimaux|Aucun commentaire|
+
+## 3.5 Logiciel
+
+Le logiciel gratuit suivant existe pour aider à la création de fichiers CSV étendus:
+
+- [o3soft](http://www.o3soft.eu): Les collaborateurs avec les spectrophotomètres Brewer et Dobson peuvent utiliser ce logiciel pour exporter CSV étendu
+- [woudc-format](https://github.com/woudc/woudc-formats): les collaborateurs avec les données SHADOZ, NASA AMES 2160 ou Vaisala peuvent utiliser ce paquet Python pour convertir en CSV étendu
 
 # Chapter 4 Chapitre 4 Traitement des données
 ## 4.1 Politique sur les données

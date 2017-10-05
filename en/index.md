@@ -49,6 +49,7 @@ The [WOUDC](http://woudc.org/home.php) website is used to update information and
     * 3.4.4 [Category: Broadband](#344-category-broadband)
     * 3.4.5 [Category: Pyranometer](#345-category-pyranometer)
     * 3.4.6 [Ancillary and Auxiliary Data](#346-category-ancillary-and-auxiliary-data)
+  * 3.5 [Software](#35-software)
 
 [Chapter 4 Data Handling](#chapter-4-data-handling)
 
@@ -1273,6 +1274,14 @@ The originator of the data is encouraged to submit any ancillary and/or auxiliar
 |Wavelength|Nanometres (nm)|No comments|
 |WindSpeed|ms^-1|No comments|
 |WindDirection|Decimal degrees|No comments|
+
+## 3.5 Software
+
+The following free software exist to help in the creation of Extended CSV files:
+
+- [o3soft](http://www.o3soft.eu): Contributors with [Brewer](http://www.o3soft.eu/o3brewer.html) and [Dobson](http://www.o3soft.eu/o3dobson.html) spectrophotometers can use this software to export Extended CSV
+
+- [woudc-formats](https://github.com/woudc/woudc-formats): Contributors with SHADOZ, NASA AMES 2160 or Vaisala data can use this Python package to convert into Extended CSV
 
 # Chapter 4 Data Handling
 ## 4.1 Data Policy
