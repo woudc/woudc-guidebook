@@ -1033,7 +1033,8 @@ Un pyranomètre sert à mesurer l'éclairement énergétique solaire.
 
 ### 3.4.2 Catégorie : Spectral
 
-La catégorie Spectral comporte quatre tableaux obligatoires : `#GLOBAL`, `#DIRECT`, `#DIFFUSE` et `#ACTINOMETRIC`.
+La catégorie Spectral comporte six tableaux obligatoires : `#GLOBAL`, `#DIRECT`, `#DIFFUSE`, `#ACTINOMETRIC`, `#GLOBAL_SUMMARY`, et `#GLOBAL_SUMMARY_NSF`.
+La table #GLOBAL_SUMMARY n'est pas requise si la table #GLOBAL_SUMMARY_NSF est présente et la table #GLOBAL_SUMMARY_NSF n'est pas requise si la table #GLOBAL_SUMMARY est présente.
 
 Le Tableau 3.4 1 présente les tableaux devant être remplis pour la catégorie Spectral (colonne Nom du tableau) et le nom de leurs champs respectifs. Les [sections 3.4.2.1](#3421-tableau-global) à [3.4.2.4](#3424-tableau-actinometric) renferment des descriptions plus détaillées des champs de l’ensemble des tableaux.
 
@@ -1041,10 +1042,13 @@ Le Tableau 3.4 1 présente les tableaux devant être remplis pour la catégorie 
 
 |Nom du tableau|Nom des champs (colonnes) (dans l’ordre)|
 |--------|--------|
-|`#GLOBAL`|`Wavelength, S - Irradiance, Time`|
-|`#DIRECT`|`Wavelength, S - Irradiance, Time`|
-|`#DIFFUSE`|`Wavelength, S - Irradiance, Time`|
-|`ACTINOMETRIC`|`Wavelength, S - Irradiance, Time`|
+|`#GLOBAL`|`Wavelength, S-Irradiance, Time`|
+|`#DIRECT`|`Wavelength, S-Irradiance, Time`|
+|`#DIFFUSE`|`Wavelength, S-Irradiance, Time`|
+|`ACTINOMETRIC`|`Wavelength, S-Irradiance, Time`|
+|`#GLOBAL_SUMMARY`|`Time, IntACGIH, IntCIE, ZenAngle, MuValue, AzimAngle, Flag, TempC, O3, Err_O3, SO2 ,Err_SO2, F324`|
+|`#GLOBAL_SUMMARY_NSF`|`Filename, Volume, SZA, Azimuth, Sky_condition, Minimum_useable_wavelength, E290-320, E320-400, UVIndex`|
+
 
 !!! md-alert ""
     **Remarque :** Time est en italiques pour indiquer qu’une place est réservée pour ce champ, mais qu’il ne doit pas obligatoirement être rempli.
@@ -1053,7 +1057,7 @@ Le Tableau 3.4 1 présente les tableaux devant être remplis pour la catégorie 
 
 **Wavelength**: Exprimée en nanomètres (nm).
 
-**S - Irradiance**: Éclairement énergétique spectral, exprimé en Wm^-2nm^-1
+**S-Irradiance**: Éclairement énergétique spectral, exprimé en Wm^-2nm^-1
 
 **Time**: Heure affichée selon le format de la norme ISO 8601, c’est-à-dire hh:mm:ss.
 
@@ -1069,7 +1073,11 @@ Pour une description des champs du tableau `#DIFFUSE`, voir la [section 3.4.2.1]
 
 Pour une description des champs du tableau `#ACTINOMETRIC`, voir la [section 3.4.2.1](#3421-tableau-global) sur le tableau `#GLOBAL`.
 
-#### 3.4.2.5 Exemple
+#### 3.4.2.5 Tableau GLOBAL_SUMMARY
+
+Les champs O3, Err_O3, SO2, Err_SO2, F324 sont optionnels.
+
+#### 3.4.2.6 Exemple
 Vous trouverez un exemple de fichier de données pour la catégorie Spectral à l’[annexe A.7](#a7-exemple-pour-la-catégorie-spectral) et en ligne à l’adresse [http://woudc.org/archive/Documentation/Examples-extCSV/Spectral.csv](#http://woudc.org/archive/Documentation/Examples-extCSV/Spectral.csv).
 
 ### 3.4.3 Catégorie : Multiband

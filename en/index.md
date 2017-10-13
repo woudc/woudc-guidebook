@@ -1020,7 +1020,8 @@ Pyranometer is a measurement of broadband solar irradiance.
 
 ### 3.4.2 Category: Spectral
 
-There are four tables required for the Spectral Category: `#GLOBAL, #DIRECT, #DIFFUSE`, and `#ACTINOMETRIC`.
+There are six tables required for the Spectral Category: `#GLOBAL, #DIRECT, #DIFFUSE`,`#ACTINOMETRIC`, `#GLOBAL_SUMMARY`, and `#GLOBAL_SUMMARY_NSF`.
+The #GLOBAL_SUMMARY table is not required if the #GLOBAL_SUMMARY_NSF table is present and the #GLOBAL_SUMMARY_NSF table is not required if the #GLOBAL_SUMMARY table is present.
 
 ***Table 3.4-1*** outlines the tables needed for the category Spectral (column Table Name) and their respective field names. In [section 3.4.2.1](#3421-global) to [section 3.4.2.4](#3424-actinometric), there are more thorough descriptions of what each field name for a particular table entails.
 
@@ -1028,10 +1029,12 @@ There are four tables required for the Spectral Category: `#GLOBAL, #DIRECT, #DI
 
 |Table Name|Field (Column) Names (in order)|
 |--------|--------|
-|`#GLOBAL`|`Wavelength, S - Irradiance, Time`|
-|`#DIRECT`|`Wavelength, S - Irradiance, Time`|
-|`#DIFFUSE`|`Wavelength, S - Irradiance, Time`|
-|`ACTINOMETRIC`|`Wavelength, S - Irradiance, Time`|
+|`#GLOBAL`|`Wavelength, S-Irradiance, Time`|
+|`#DIRECT`|`Wavelength, S-Irradiance, Time`|
+|`#DIFFUSE`|`Wavelength, S-Irradiance, Time`|
+|`ACTINOMETRIC`|`Wavelength, S-Irradiance, Time`|
+|`#GLOBAL_SUMMARY`|`Time, IntACGIH, IntCIE, ZenAngle, MuValue, AzimAngle, Flag, TempC, O3, Err_O3, SO2 ,Err_SO2, F324`|
+|`#GLOBAL_SUMMARY_NSF`|`Filename, Volume, SZA, Azimuth, Sky_condition, Minimum_useable_wavelength, E290-320, E320-400, UVIndex`|
 
 !!! md-alert ""
     **Note:** The Time field is in italics to indicate that field position is reserved but not required.
@@ -1040,7 +1043,7 @@ There are four tables required for the Spectral Category: `#GLOBAL, #DIRECT, #DI
 
 **Wavelength**: Measured in Nanometres (nm).
 
-**S - Irradiance**: Is the spectral irradiance measured in Wm^-2 nm^-1
+**S-Irradiance**: Is the spectral irradiance measured in Wm^-2 nm^-1
 
 **Time**: hh:mm:ss in ISO-8601 standard.
 
@@ -1056,7 +1059,11 @@ Refer to `#GLOBAL` in [section 3.4.2.1](#3421-global) for descriptors of the fie
 
 Refer to `#GLOBAL` in [section 3.4.2.1](#3421-global) for descriptors of the field names for table `#ACTINOMETRIC`.
 
-#### 3.4.2.5 Example
+#### 3.4.2.5 GLOBAL_SUMMARY
+
+Fields O3, Err_O3, SO2, Err_SO2, F324 are optional.
+
+#### 3.4.2.6 Example
 Example format for a Spectral data file can be found in [Appendix A.7](#a7-spectral-example) as well as online at [http://woudc.org/archive/Documentation/Examples-extCSV/Spectral.csv](#http://woudc.org/archive/Documentation/Examples-extCSV/Spectral.csv).
 
 ### 3.4.3 Category: Multiband
