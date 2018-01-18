@@ -163,15 +163,15 @@ Le WOUDC permet aux contributeurs de soumettre des données par le biais d’un 
 
 Une fois que le contributeur est dûment inscrit :
 
-1. Le contributeur téléverse des données dans le format extCSV vers le site FTP
-2. Le WOUDC récupère les données sur le site FTP
-3. Le WOUDC traite les données (validation du contributeur et des données)
-4. Si l’opérateur du WOUDC relève des problèmes pendant la validation, il doit en aviser le contributeur
-5. Si aucun problème n’est relevé, les données sont publiées sur le site Web et peuvent alors être téléchargées à partir du site Web, des services Web géospatiaux ou des dossiers accessibles sur le Web (WAF)
+1. Le contributeur télécharge des données (au format extCSV) sur le site FTP.
+2. Le WOUDC envoie un courriel au contributeur accusant réception des données téléchargées (les accusés de réception sont envoyés chaque matin à 0400 UTC.)
+3. Une fois par semaine (chaque lundi), le WOUDC collecte les données du site FTP. Ensuite, la base de données WOUDC valide les informations sur le contributeur, le site et l'instrument, traite les données et stocke les données originales et traitées dans la base de données WOUDC.
+4. Si des problèmes sont découverts pendant la validation ou le traitement des données, un rapport sera envoyé par courriel au contributeur afin que la soumission puisse être corrigée et téléchargée de nouveau.
+5. Si aucun problème de validation ou de traitement n'est détecté, les données seront publiées sur le site Web de WOUDC et pourront être téléchargées à partir du site Web de WOUDC, des services Web géospatiaux ou du dossier Web accessible (WAF). (Généralement dans les 24 heures.)
 
 La Figure 2 est un diagramme illustrant la procédure de soumission de données.
 
-![Figure 2 - Procédure de soumission de données](/static/site/img/data-submission-procedure-fr.jpg)
+![Figure 2 - Procédure de soumission de données](/static/site/img/data-submission-procedure-fr.png)
 
 !!! md-alert ""
     **Remarque :** La procédure détaillée pour le transfert de fichiers par FTP varie en fonction du système d’exploitation de votre ordinateur et de votre logiciel client FTP.
