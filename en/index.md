@@ -158,14 +158,14 @@ The WOUDC provides a File Transfer Protocol (FTP) capability for contributors to
 Once a contributor has been registered:
 
 1. The contributor uploads data in extCSV format to the FTP site
-2. The WOUDC collects data from the FTP
-3. The WOUDC processes data, validates contributor and site information
-4. If issues are discovered during validation, the WOUDC operator will inform the contributor
-5. If no issues are found, data will be published on the website and available for download from the website, geospatial web services or Web Accessible Folder (WAF)
+2. The WOUDC sends email to contributor acknowledging receipt of uploaded data (acknowledgments are sent each morning at 0400 UTC.)
+3. Once per week (on Monday), the WOUDC collects data from the FTP for processing, validates the contributor, site and instrument information and processes the data into the WOUDC database.
+4. If issues are discovered during validation or processing, a report will be emailed to the contributor so that the submission can be corrected and re-uploaded.  
+5. If no validation or processing issues are found, data will be published on the website and available for download from the WOUDC website, geospatial web services or Web Accessible Folder (WAF). (Typically within 24hrs.)
 
 A flow chart highlighting the data submission procedure can be found in Figure 2.
 
-![Figure 2 - Data submission procedure](/static/site/img/data-submission-procedure-en.jpg)
+![Figure 2 - Data submission procedure](/static/site/img/data-submission-procedure-en.png)
 
 !!! md-alert ""
     **Note:** The details of transferring files with FTP depend on your computer's operating system and FTP client software.
