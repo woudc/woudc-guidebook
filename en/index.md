@@ -7,7 +7,7 @@ layout: base-en
 # Foreward
 This document describes the procedures for data submission and information about file format, structure, and content for both ozone data and ultraviolet data for the World Ozone and Ultraviolet Data Centre (WOUDC). This guide is intended for use by both data originators (for data submission) and clients (information about reading data files). The current version of this guidebook is a combination of two separate documents; one for data submissions related to ozone data and one for data submissions related to ultraviolet data. This guidebook unifies them in order to provide more clear and consistent documentation.
 
-The [WOUDC](http://woudc.org/home.php) website is used to update information and serves as a virtual "bulletin board". As this guide is further developed, use the website to retrieve the latest version.
+The [WOUDC](https://woudc.org/home.php) website is used to update information and serves as a virtual "bulletin board". As this guide is further developed, use the website to retrieve the latest version.
 
 # Table of Contents
 [Chapter 1 Introduction](#chapter-1-introduction)
@@ -105,7 +105,7 @@ The canonical location of this document is [http://guide.woudc.org](http://guide
 In the past, the contributor's guidebook had been split into two different guidebooks: one for ozone data submissions [1] and one for ultraviolet data submissions [2]. This guidebook unifies them in order to provide more clear and consistent documentation.
 
 ## 1.5 Website
-The WOUDC website is location at [http://woudc.org](http://woudc.org) and provides a web-based application to disseminate ozone and ultraviolet radiation data, derived products and metadata.
+The WOUDC website is location at [https://woudc.org](https://woudc.org) and provides a web-based application to disseminate ozone and ultraviolet radiation data, derived products and metadata.
 
 ## 1.6 Contributing to WOUDC
 The WOUDC is the standard archive for ozone and ultraviolet data. By contributing data to the WOUDC, a contributor leverages the following benefits:
@@ -133,7 +133,7 @@ If the data being submitted is not of ozone or ultraviolet, it may be eligible t
 ## 2.1 Contributor Registration
 The application process consists of 4 steps:
 
-1. A new contributor sends a [request](http://woudc.org/contact.php) to WOUDC stating their interest in being a contributor
+1. A new contributor sends a [request](https://woudc.org/contact.php) to WOUDC stating their interest in being a contributor
 2. The data centre operator will check the request and direct the contributor to either provide WOUDC the station GAW ID or to complete the registration process from [GAWSIS](https://gawsis.meteoswiss.ch) to obtain a GAW ID
 3. Once the contributor has a valid GAW ID, the contributor will provide that ID to the data centre operator to complete the new station registration process by including the station into the WOUDC database
 4. Once the station is included in the WOUDC database, the data centre operator will send a new, private, FTP login credential to the contributor for use to upload data
@@ -146,14 +146,14 @@ A flow chart highlighting the contributor registration procedure can be found in
 Once a contributor has registered with the WOUDC as indicated in [section 2.1](#21-contributor-registration), additional stations or amendments to existing station information can be registered by submitting a new GAW ID or updating station information with GAWSIS:
 
 1. Contributor to obtain a new GAW ID for new station or make amendments to existing station through [GAWSIS](https://gawsis.meteoswiss.ch)
-2. Contact [WOUDC](http://woudc.org/contact.php) with the change request for adding a new station or making amendments to an existing station. Provide GAW ID to operator
+2. Contact [WOUDC](https://woudc.org/contact.php) with the change request for adding a new station or making amendments to an existing station. Provide GAW ID to operator
 3. Operator includes new station into the WOUDC database or updates existing station
 
 ## 2.3 Data Submission
 The WOUDC provides a File Transfer Protocol (FTP) capability for contributors to submit data. The WOUDC FTP site is located at [ftp://ftp.woudc.org](ftp://ftp.woudc.org). The site requires username and password credentials in order to transfer data to the WOUDC.
 
 !!! md-alert ""
-    **Note:** the FTP site does not provide data access capabilities (see [Data Access](http://woudc.org/about/data-access.php)).
+    **Note:** the FTP site does not provide data access capabilities (see [Data Access](https://woudc.org/about/data-access.php)).
 
 Once a contributor has been registered:
 
@@ -269,12 +269,12 @@ The following file naming convention is recommended:
 Where:
 
 - `TIMESTAMP.Date`: start date of observations in file (format YYYYMMDD)
-- `INSTRUMENT.Name`: Common name of instrument. For example, the Brewer spectrophotometer is called the 'Brewer' whereas the Brewer-Mast ozonesonde is called the 'Brewer-Mast'. Refer to the WOUDC website for a listing: http://woudc.org/data/instruments
-- `INSTRUMENT.Model`: Model ID where applicable. Refer to the WOUDC instrument list: http://woudc.org/data/instruments
+- `INSTRUMENT.Name`: Common name of instrument. For example, the Brewer spectrophotometer is called the 'Brewer' whereas the Brewer-Mast ozonesonde is called the 'Brewer-Mast'. Refer to the WOUDC website for a listing: https://woudc.org/data/instruments
+- `INSTRUMENT.Model`: Model ID where applicable. Refer to the WOUDC instrument list: https://woudc.org/data/instruments
 - `INSTRUMENT.Number`: Serial number of the instrument as assigned by the manufacturer
 - `DATA_GENERATION.Agency`: The acronym of the submitting Agency
 
-Example: [http://woudc.org/archive/Archive-NewFormat/TotalOzone_1.0_1/stn010/brewer/1995/19950301.Brewer.MKIV.089.IMD.csv](http://woudc.org/archive/Archive-NewFormat/TotalOzone_1.0_1/stn010/brewer/1995/19950301.Brewer.MKIV.089.IMD.csv)
+Example: [https://woudc.org/archive/Archive-NewFormat/TotalOzone_1.0_1/stn010/brewer/1995/19950301.Brewer.MKIV.089.IMD.csv](https://woudc.org/archive/Archive-NewFormat/TotalOzone_1.0_1/stn010/brewer/1995/19950301.Brewer.MKIV.089.IMD.csv)
 
 Note that WOUDC does not enforce file naming conventions as part of data submissions.
 
@@ -334,9 +334,9 @@ Table 3.2-1 and Table 3.2-2 outline the tables required in all the WOUDC data fi
 **GAW_ID**: three-letter GAW ID as issued by GAWSIS, if available (recommended).
 
 #### 3.2.1.4 Instrument
-**Name**: Common name of instrument. For example, the Brewer spectrophotometer is called the "Brewer" wheras the Brewer-Mast ozonesonde is called the "Brewer-Mast". Refer to the WOUDC website for a listing: [http://woudc.org/data/instruments](http://woudc.org/data/instruments).
+**Name**: Common name of instrument. For example, the Brewer spectrophotometer is called the "Brewer" wheras the Brewer-Mast ozonesonde is called the "Brewer-Mast". Refer to the WOUDC website for a listing: [https://woudc.org/data/instruments](https://woudc.org/data/instruments).
 
-**Model**: Model ID where applicable. Refer to the WOUDC instrument list: [http://woudc.org/data/instruments](http://woudc.org/data/instruments)
+**Model**: Model ID where applicable. Refer to the WOUDC instrument list: [https://woudc.org/data/instruments](https://woudc.org/data/instruments)
 
 **Number**: Serial number of the instrument as assigned by the manufacturer
 
@@ -500,7 +500,7 @@ Table 3.3-1 outlines the tables needed for the category Lidar (column Table Name
 **Temperature**: Temperature (Kelvin).
 
 #### 3.3.2.3 Example
-Example format for a Lidar data file can be found in [Appendix A.1](#a1-lidar-example) as well as online at [http://woudc.org/archive/Documentation/Examples-extCSV/Lidar.csv](http://woudc.org/archive/Documentation/Examples-extCSV/Lidar.csv).
+Example format for a Lidar data file can be found in [Appendix A.1](#a1-lidar-example) as well as online at [https://woudc.org/archive/Documentation/Examples-extCSV/Lidar.csv](https://woudc.org/archive/Documentation/Examples-extCSV/Lidar.csv).
 
 ### 3.3.3 Category: Microwave
 There are two tables required for the Microwave Category: `#PROFILE_SUMMARY`, and `#OZONE_PROFILE`.
@@ -657,9 +657,9 @@ Table 3.3-3 outlines the tables needed for the category Ozonesonde (column Table
 **SampleTemperatureType**: The method used to calculate the temperature of the air being sampled by the ozonesonde. This can be an estimated value, a constant, or a measurement from a thermistor located in the box, pump or inlet tube.
 
 #### 3.3.4.8 OZONE_REFERENCE
-**Name**: Common name of the total ozone reference instrument, for example "Brewer" or "TOMS". Refer to the WOUDC website for a listing: [http://woudc.org/data/instruments](http://woudc.org/data/instruments).
+**Name**: Common name of the total ozone reference instrument, for example "Brewer" or "TOMS". Refer to the WOUDC website for a listing: [https://woudc.org/data/instruments](https://woudc.org/data/instruments).
 
-**Model**: Model ID where applicable. Refer to the WOUDC Instrument list: [http://woudc.org/data/instruments](http://woudc.org/data/instruments).
+**Model**: Model ID where applicable. Refer to the WOUDC Instrument list: [https://woudc.org/data/instruments](https://woudc.org/data/instruments).
 
 **Number**: Serial number of the instrument as assigned by the manufacturer.
 
@@ -785,7 +785,7 @@ This can include data that was rejected due to suspected telemetry or instrument
 
 #### 3.3.4.14 Example
 Example format for an Ozonesonde data file can be found in [Appendix A.3](#a3-ozonesonde-example) as well as online
-at [http://woudc.org/archive/Documentation/Examples-extCSV/Ozonesonde.csv](http://woudc.org/archive/Documentation/Examples-extCSV/Ozonesonde.csv).
+at [https://woudc.org/archive/Documentation/Examples-extCSV/Ozonesonde.csv](https://woudc.org/archive/Documentation/Examples-extCSV/Ozonesonde.csv).
 
 ### 3.3.5 Category: TotalOzoneObs
 There are two tables required for the TotalOzoneObs Category: `#OBSERVATIONS`, and `#DAILY_SUMMARY`.
@@ -864,7 +864,7 @@ Table 3.3-6 outlines the tables needed for the category TotalOzoneObs (column Ta
 |GI|Total ozone value calculated from global irradiance (GI) type of measurement (specifically for Brewer instruments)|
 
 #### 3.3.5.4 Example
-Example format for a TotalOzoneObs data file can be found in [Appendix A.4](#a4-totalozoneobs-example) as well as online at [http://woudc.org/archive/Documentation/Examples-extCSV/TotalOzoneObs.csv.](#http://woudc.org/archive/Documentation/Examples-extCSV/TotalOzoneObs.csv.)
+Example format for a TotalOzoneObs data file can be found in [Appendix A.4](#a4-totalozoneobs-example) as well as online at [https://woudc.org/archive/Documentation/Examples-extCSV/TotalOzoneObs.csv.](#https://woudc.org/archive/Documentation/Examples-extCSV/TotalOzoneObs.csv.)
 
 ### 3.3.6 Category: TotalOzone
 
@@ -916,7 +916,7 @@ There are two tables required for the TotalOzone Category: `#DAILY`, and `#MONTH
 
 #### 3.3.6.3 Example
 
-Example format for a TotalOzone data file can be found in [Appendix A.5](#a5-totalozone-example) as well as online at [http://woudc.org/archive/Documentation/Examples-extCSV/TotalOzone-Brewer.csv](#http://woudc.org/archive/Documentation/Examples-extCSV/TotalOzone-Brewer.csv).
+Example format for a TotalOzone data file can be found in [Appendix A.5](#a5-totalozone-example) as well as online at [https://woudc.org/archive/Documentation/Examples-extCSV/TotalOzone-Brewer.csv](#https://woudc.org/archive/Documentation/Examples-extCSV/TotalOzone-Brewer.csv).
 
 ### 3.3.7 Category: Umkehr14
 
@@ -994,7 +994,7 @@ C = Climatological covariance matrix.
 
 #### 3.3.7.3 Example
 
-Example format for an Umkehr14 data file can be found in [Appendix A.6](#a6-umkkehrn14-example) as well as online at [http://woudc.org/archive/Documentation/Examples-extCSV/Umkehr-N_values-Dobson.csv](#http://woudc.org/archive/Documentation/Examples-extCSV/Umkehr-N_values-Dobson.csv) for level 1 and [http://woudc.org/archive/Documentation/Examples-extCSV/Umkehr_UMK92Retrieval-Dobson.csv](#http://woudc.org/archive/Documentation/Examples-extCSV/Umkehr_UMK92Retrieval-Dobson.csv) for level 2.
+Example format for an Umkehr14 data file can be found in [Appendix A.6](#a6-umkkehrn14-example) as well as online at [https://woudc.org/archive/Documentation/Examples-extCSV/Umkehr-N_values-Dobson.csv](#https://woudc.org/archive/Documentation/Examples-extCSV/Umkehr-N_values-Dobson.csv) for level 1 and [https://woudc.org/archive/Documentation/Examples-extCSV/Umkehr_UMK92Retrieval-Dobson.csv](#https://woudc.org/archive/Documentation/Examples-extCSV/Umkehr_UMK92Retrieval-Dobson.csv) for level 2.
 
 ## 3.4 Ultraviolet Specific Data Content
 ### 3.4.1 Introduction
@@ -1064,7 +1064,7 @@ Refer to `#GLOBAL` in [section 3.4.2.1](#3421-global) for descriptors of the fie
 Fields O3, Err_O3, SO2, Err_SO2, F324 are optional.
 
 #### 3.4.2.6 Example
-Example format for a Spectral data file can be found in [Appendix A.7](#a7-spectral-example) as well as online at [http://woudc.org/archive/Documentation/Examples-extCSV/Spectral.csv](#http://woudc.org/archive/Documentation/Examples-extCSV/Spectral.csv).
+Example format for a Spectral data file can be found in [Appendix A.7](#a7-spectral-example) as well as online at [https://woudc.org/archive/Documentation/Examples-extCSV/Spectral.csv](#https://woudc.org/archive/Documentation/Examples-extCSV/Spectral.csv).
 
 ### 3.4.3 Category: Multiband
 
@@ -1122,7 +1122,7 @@ Refer to `#GLOBAL` in [section 3.4.3.1](#3431-global) for descriptors of the fie
 
 #### 3.4.3.6 Example
 
-Example format for a Multiband data file can be found in [Appendix A.8](#a8-multiband-example) as well as online at [http://woudc.org/archive/Documentation/Examples-extCSV/Multi-band.csv](#http://woudc.org/archive/Documentation/Examples-extCSV/Multi-band.csv).
+Example format for a Multiband data file can be found in [Appendix A.8](#a8-multiband-example) as well as online at [https://woudc.org/archive/Documentation/Examples-extCSV/Multi-band.csv](#https://woudc.org/archive/Documentation/Examples-extCSV/Multi-band.csv).
 
 ### 3.4.4 Category: Broadband
 
@@ -1176,7 +1176,7 @@ Refer to `#GLOBAL` in [section 3.4.4.1](#3441-global) for descriptors of the fie
 
 #### 3.4.4.6 Example
 
-Example format for a Broadband data file can be found in [Appendix A.9](#a9-broadband-example) as well as online at [http://woudc.org/archive/Documentation/Examples-extCSV/Broad-band.csv](#http://woudc.org/archive/Documentation/Examples-extCSV/Broad-band.csv).
+Example format for a Broadband data file can be found in [Appendix A.9](#a9-broadband-example) as well as online at [https://woudc.org/archive/Documentation/Examples-extCSV/Broad-band.csv](#https://woudc.org/archive/Documentation/Examples-extCSV/Broad-band.csv).
 
 ### 3.4.5 Category: Pyranometer
 
@@ -1292,7 +1292,7 @@ The following free software exist to help in the creation of Extended CSV files:
 
 # Chapter 4 Data Handling
 ## 4.1 Data Policy
-Use of the WOUDC data are governed by the [WMO data policy](https://www.wmo.int/pages/about/exchangingdata_en.html) and [WMO GAW data use policy](https://gawsis.meteoswiss.ch/GAWSIS/index.html#/faq). More information about WOUDC's data policy can be found [online](http://woudc.org/about/data-policy.php).
+Use of the WOUDC data are governed by the [WMO data policy](https://www.wmo.int/pages/about/exchangingdata_en.html) and [WMO GAW data use policy](https://gawsis.meteoswiss.ch/GAWSIS/index.html#/faq). More information about WOUDC's data policy can be found [online](https://woudc.org/about/data-policy.php).
 
 ## 4.2 Data Flow and Processing
 [Section 2.3](#23-data-submission) provides detailed procedures regarding data processing. Successfully ingested data submissions are made available to the WAF, geospatial web services and search.
@@ -1331,13 +1331,13 @@ At a high level, the following is a summary of QA checks performed:
 Initially, a file will be tested for adherence to the file format specifications, but later, higher level statistical summaries may be generated, which identify anomalous values, calibration problems, etc.. Although the later examples involve more detailed knowledge of the data, the archive already includes enough data to make some critical judgments and general assessments about the data. As the volume and statistical knowledge increase, the scope of these assessments will be broadened.
 
 # Chapter 6 Access and Data Retrieval
-Data access and retrieval are core capabilities of the WOUDC. The WOUDC data is freely available for public use. For more information, see the WOUDC [Data Access page](http://woudc.org/about/data-access.php).
+Data access and retrieval are core capabilities of the WOUDC. The WOUDC data is freely available for public use. For more information, see the WOUDC [Data Access page](https://woudc.org/about/data-access.php).
 
 # Chapter 7 Contact
 The primary means of contacting the WOUDC is by the contact page on the WOUDC site, which is monitored on a daily basis by data centre operations. WOUDC operates with a service standard to response to all email inquiries within 2 business days.
 
 ## 7.1 Contact Page
-[http://woudc.org/contact.php](http://woudc.org/contact.php).
+[https://woudc.org/contact.php](https://woudc.org/contact.php).
 
 ## 7.2 Address
 
@@ -1369,7 +1369,7 @@ Canada
 # Appendix A Examples
 ## A.1 Lidar Example
 
-Below is an example of a Lidar data submission. An example can also be found online at [http://woudc.org/archive/Documentation/Examples-extCSV/Lidar.csv](#http://woudc.org/archive/Documentation/Examples-extCSV/Lidar.csv).
+Below is an example of a Lidar data submission. An example can also be found online at [https://woudc.org/archive/Documentation/Examples-extCSV/Lidar.csv](#https://woudc.org/archive/Documentation/Examples-extCSV/Lidar.csv).
 
 ```
 `*NOTE:One Event per file
@@ -1571,7 +1571,7 @@ Altitude,OzoneVMR,VariableError,FixedError,SmoothingError,TotalError,A-Priori,Te
 
 ## A.3 Ozonesonde Example
 
-Below is an example of an Ozonesonde data submission. An example can also be found online at [http://woudc.org/archive/Documentation/Examples-extCSV/Ozonesonde.csv](#http://woudc.org/archive/Documentation/Examples-extCSV/Ozonesonde.csv).
+Below is an example of an Ozonesonde data submission. An example can also be found online at [https://woudc.org/archive/Documentation/Examples-extCSV/Ozonesonde.csv](#https://woudc.org/archive/Documentation/Examples-extCSV/Ozonesonde.csv).
 
 ```
 #CONTENT
@@ -1674,7 +1674,7 @@ Duration,Pressure,O3PartialPressure,Temperature,WindSpeed,WindDirection,LevelCod
 
 ## A.4 TotalOzoneObs Example
 
-Below is an example of TotalOzoneObs data submission. An example can also be found online at [http://woudc.org/archive/Documentation/Examples-extCSV/TotalOzoneObs.csv](#http://woudc.org/archive/Documentation/Examples-extCSV/TotalOzoneObs.csv).
+Below is an example of TotalOzoneObs data submission. An example can also be found online at [https://woudc.org/archive/Documentation/Examples-extCSV/TotalOzoneObs.csv](#https://woudc.org/archive/Documentation/Examples-extCSV/TotalOzoneObs.csv).
 
 ```
 *Example of a single day of observations
@@ -1714,7 +1714,7 @@ WLcode,ObsCode,nObs,MeanO3,StdDevO3
 
 ## A.5 TotalOzone Example
 
-Below is an example of TotalOzone data submission. An example can also be found online at [http://woudc.org/archive/Documentation/Examples-extCSV/TotalOzone-Brewer.csv](#http://woudc.org/archive/Documentation/Examples-extCSV/TotalOzone-Brewer.csv).
+Below is an example of TotalOzone data submission. An example can also be found online at [https://woudc.org/archive/Documentation/Examples-extCSV/TotalOzone-Brewer.csv](#https://woudc.org/archive/Documentation/Examples-extCSV/TotalOzone-Brewer.csv).
 
 ```
 *Example of daily ozone values
@@ -1760,7 +1760,7 @@ Date,ColumnO3,StdDevO3,Npts
 
 ## A.6 UmkkehrN14 Example
 
-Below is an example of an UmkehrN14 data submission. An example can also be found online at [http://woudc.org/archive/Documentation/Examples-extCSV/Umkehr-N_values-Dobson.csv](#http://woudc.org/archive/Documentation/Examples-extCSV/Umkehr-N_values-Dobson.csv) for level 1.0 [http://woudc.org/archive/Documentation/Examples-extCSV/Umkehr_UMK92Retrieval-Dobson.csv](#http://woudc.org/archive/Documentation/Examples-extCSV/Umkehr_UMK92Retrieval-Dobson.csv) and for level 2.0.
+Below is an example of an UmkehrN14 data submission. An example can also be found online at [https://woudc.org/archive/Documentation/Examples-extCSV/Umkehr-N_values-Dobson.csv](#https://woudc.org/archive/Documentation/Examples-extCSV/Umkehr-N_values-Dobson.csv) for level 1.0 [https://woudc.org/archive/Documentation/Examples-extCSV/Umkehr_UMK92Retrieval-Dobson.csv](#https://woudc.org/archive/Documentation/Examples-extCSV/Umkehr_UMK92Retrieval-Dobson.csv) and for level 2.0.
 
 ```
 *NOAA-CMDL is the Agency acronym for the National Oceanographic and
@@ -1817,7 +1817,7 @@ Temperature,Pressure,Relative Humidity
 
 ## A.7 Spectral Example
 
-Below is an example of a Spectral data submission. An example can also be found online at [http://woudc.org/archive/Documentation/Examples-extCSV/Spectral.csv](#http://woudc.org/archive/Documentation/Examples-extCSV/Spectral.csv).
+Below is an example of a Spectral data submission. An example can also be found online at [https://woudc.org/archive/Documentation/Examples-extCSV/Spectral.csv](#https://woudc.org/archive/Documentation/Examples-extCSV/Spectral.csv).
 
 ```
 #CONTENT
@@ -1934,7 +1934,7 @@ Wavelength,S-Irradiance,Time
 
 ## A.8 Multiband Example
 
-Below is an example of a Multiband data submission. An example can also be found online at [http://woudc.org/archive/Documentation/Examples-extCSV/Multi-band.csv](#http://woudc.org/archive/Documentation/Examples-extCSV/Multi-band.csv).
+Below is an example of a Multiband data submission. An example can also be found online at [https://woudc.org/archive/Documentation/Examples-extCSV/Multi-band.csv](#https://woudc.org/archive/Documentation/Examples-extCSV/Multi-band.csv).
 
 ```
 #CONTENT
@@ -1991,7 +1991,7 @@ Wavelength,GLS-Irradiance,DFS-Irradiance,DRS-Irradiance,Time,Airmass,SZA
 
 ## A.9 Broadband Example
 
-Below is an example of a Broadband data submission. An example can also be found online at [http://woudc.org/archive/Documentation/Examples-extCSV/Broad-band.csv](#http://woudc.org/archive/Documentation/Examples-extCSV/Broad-band.csv).
+Below is an example of a Broadband data submission. An example can also be found online at [https://woudc.org/archive/Documentation/Examples-extCSV/Broad-band.csv](#https://woudc.org/archive/Documentation/Examples-extCSV/Broad-band.csv).
 
 ```
 * UV dekodavimas ExtCSV formavimas, V 1.018 beta

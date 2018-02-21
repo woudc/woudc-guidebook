@@ -9,7 +9,7 @@ Le présent guide décrit les procédures pour la soumission de données au Cent
 
 Cette version du guide est le résultat de la combinaison de deux documents distincts; le premier sur la soumission de données sur l’ozone et le second, sur la soumission de données sur le rayonnement ultraviolet. Ils ont été combinés dans le but d’offrir un document plus clair et uniforme.
 
-Le [site Web du WOUDC](http://woudc.org/home.php?lang=fr) est utilisé pour mettre à jour les renseignements et comme « babillard » virtuel. Étant donné que ce guide est appelé à évoluer, vous pourrez récupérer la version la plus récente sur le site Web du WOUDC.
+Le [site Web du WOUDC](https://woudc.org/home.php?lang=fr) est utilisé pour mettre à jour les renseignements et comme « babillard » virtuel. Étant donné que ce guide est appelé à évoluer, vous pourrez récupérer la version la plus récente sur le site Web du WOUDC.
 
 
 # Table des matières
@@ -110,7 +110,7 @@ L'emplacement de la version du document faisant autorité est le suivant [http:/
 Dans le passé, le guide du contributeur était divisé en deux guides distincts : le premier portait sur la soumission de données sur l’ozone [[1](#chapitre-8-références)] et le second, sur la soumission de données sur le rayonnement ultraviolet [[2](#chapitre-8-références)]. Ils ont été combinés dans le but d’offrir un document plus clair et uniforme.
 
 ## 1.5  Site Web
-L’adresse du site Web du WOUDC est [http://woudc.org](http://woudc.org). Il offre une application Web pour la diffusion de données sur l’ozone et le rayonnement ultraviolet, des produits dérivés et des métadonnées.
+L’adresse du site Web du WOUDC est [https://woudc.org](https://woudc.org). Il offre une application Web pour la diffusion de données sur l’ozone et le rayonnement ultraviolet, des produits dérivés et des métadonnées.
 
 ## 1.6 Contribution au WOUDC
 Le WOUDC est le système d’archivage standard pour les données sur l’ozone et le rayonnement ultraviolet. Les contributeurs de données profitent des avantages suivants :
@@ -138,7 +138,7 @@ Si les données à soumettre ne sont pas liées à l’ozone ni au rayonnement u
 ## 2.1 Inscription des contributeurs
 La demande d'inscription compte quatre étapes :
 
-1. Le nouveau contributeur envoie une [demande d'inscription](http://woudc.org/contact.php?lang=fr) à WOUDC, dans laquelle il indique pourquoi il souhaite contribuer au WOUDC
+1. Le nouveau contributeur envoie une [demande d'inscription](https://woudc.org/contact.php?lang=fr) à WOUDC, dans laquelle il indique pourquoi il souhaite contribuer au WOUDC
 2. L'opérateur du centre de données vérifie la demande et indique au contributeur de fournir au WOUDC l'ID VAG de la station ou de s'inscrire à partir de [GAWSIS](https://gawsis.meteoswiss.ch/) pour obtenir un ID VAG
 3. Une fois qu'il a un ID VAG valide, le contributeur le fournit à l'opérateur du centre de données pour inscrire la nouvelle station en incluant celle-ci dans la base de données du WOUDC
 4. Une fois la station incluse dans la base de données du WOUDC, l'opérateur du centre de données envoie au contributeur ses nouveaux justificatifs de connexion privés pour le client FTP, qu'il utilisera pour télécharger des données
@@ -151,7 +151,7 @@ La Figure 1 est un diagramme illustrant la procédure d’inscription des contri
 Après s'être inscrit au WOUDC de la façon indiquée à la [section 2.1](#21-inscription-des-contributeurs), le contributeur peut ajouter des stations ou modifier l’information sur une station existante en soumettant un nouveau ID VAG ou en mettant à jour l'information sur une station avec GAWSIS :
 
 1. Le contributeur obtient un nouvel ID VAG pour la nouvelle station ou modifie l'information sur une station existante à partir de [GAWSIS](https://gawsis.meteoswiss.ch/)
-2. Le contributeur envoie [WOUDC](http://http://woudc.org/contact.php?lang=fr), la demande de changement visant à ajouter une nouvelle station ou à modifier l'Information sur une station existante. Il lui envoie aussi l'ID VAG
+2. Le contributeur envoie [WOUDC](http://https://woudc.org/contact.php?lang=fr), la demande de changement visant à ajouter une nouvelle station ou à modifier l'Information sur une station existante. Il lui envoie aussi l'ID VAG
 3. L'opérateur inclut la nouvelle station dans la base de données du WOUDC ou met à jour l'information sur une station existante
 
 
@@ -159,7 +159,7 @@ Après s'être inscrit au WOUDC de la façon indiquée à la [section 2.1](#21-i
 Le WOUDC permet aux contributeurs de soumettre des données par le biais d’un client de protocole de transfert de fichiers (protocole FTP). Le site FTP du WOUDC est accessible à l’adresse suivante : [ftp://ftp.woudc.org](ftp://ftp.woudc.org). Il faut un nom d’utilisateur et un mot de passe valides pour pouvoir transférer des données au WOUDC.
 
 !!! md-alert ""
-    **Remarque:** Le site FTP ne permet pas d’accéder aux données (voir la page Accessbilité des données à l'adresse [http://woudc.org/about/data-access.php?lang=fr#ftp](http://woudc.org/about/data-access.php?lang=fr#ftp)).
+    **Remarque:** Le site FTP ne permet pas d’accéder aux données (voir la page Accessbilité des données à l'adresse [https://woudc.org/about/data-access.php?lang=fr#ftp](https://woudc.org/about/data-access.php?lang=fr#ftp)).
 
 Une fois que le contributeur est dûment inscrit :
 
@@ -279,12 +279,12 @@ La convention de nommage de fichier suivante est recommandée :
 Explications :
 
 - `TIMESTAMP.Date`: date de début des observations dans le fichier (format YYYYMMDD)
-- `INSTRUMENT.Name`: nom commun de l'instrument. Par exemple, le spectrophotomètre Brewer s'appelle 'Brewer' alors que l'ozonesonde Brewer-Mast s'appelle 'Brewer-Mast'. Reportez-vous au site web de WOUDC pour une liste : http://woudc.org/data/instruments
-- `INSTRUMENT.Model`: ID du modèle, le cas échéant. Reportez-vous à la liste des instruments WOUDC : http://woudc.org/data/instruments
+- `INSTRUMENT.Name`: nom commun de l'instrument. Par exemple, le spectrophotomètre Brewer s'appelle 'Brewer' alors que l'ozonesonde Brewer-Mast s'appelle 'Brewer-Mast'. Reportez-vous au site web de WOUDC pour une liste : https://woudc.org/data/instruments
+- `INSTRUMENT.Model`: ID du modèle, le cas échéant. Reportez-vous à la liste des instruments WOUDC : https://woudc.org/data/instruments
 - `INSTRUMENT.Number`: numéro de série de l'instrument attribué par le fabricant
 - `DATA_GENERATION.Agency`:  l'acronyme de l'agence qui a soumis la donnée
 
-Exemple : [http://woudc.org/archive/Archive-NewFormat/TotalOzone_1.0_1/stn010/brewer/1995/19950301.Brewer.MKIV.089.IMD.csv](http://woudc.org/archive/Archive-NewFormat/TotalOzone_1.0_1/stn010/brewer/1995/19950301.Brewer.MKIV.089.IMD.csv)
+Exemple : [https://woudc.org/archive/Archive-NewFormat/TotalOzone_1.0_1/stn010/brewer/1995/19950301.Brewer.MKIV.089.IMD.csv](https://woudc.org/archive/Archive-NewFormat/TotalOzone_1.0_1/stn010/brewer/1995/19950301.Brewer.MKIV.089.IMD.csv)
 
 Notez que WOUDC n'impose pas de convention de nommage de fichiers dans le cadre des soumissions de données.
 
@@ -345,9 +345,9 @@ pour WOUDC (et donc les données sont prêtes à être soumis à WOUDC), ou "2" 
 **GAW_ID**: ID VAG de trois lettres attribué par le système GAWSIS, s’il y a lieu (recommandé).
 
 #### 3.2.1.4 Tableau INSTRUMENT
-**Name**: Nom courant de l’instrument. Par exemple, le spectrophotomètre Brewer est appelé « Brewer » et la sonde d’ozone Brewer-Mast est appelée « Brewer-Mast ». Reportez-vous à la liste des instruments sur le site Web du WOUDC : [http://woudc.org/data/instruments/?lang=fr](http://woudc.org/data/instruments/?lang=fr).
+**Name**: Nom courant de l’instrument. Par exemple, le spectrophotomètre Brewer est appelé « Brewer » et la sonde d’ozone Brewer-Mast est appelée « Brewer-Mast ». Reportez-vous à la liste des instruments sur le site Web du WOUDC : [https://woudc.org/data/instruments/?lang=fr](https://woudc.org/data/instruments/?lang=fr).
 
-**Model**: ID du modèle, s’il y a lieu. Reportez-vous à la liste des instruments sur le site Web du WOUDC : [http://woudc.org/data/instruments/?lang=fr](http://woudc.org/data/instruments/?lang=fr)
+**Model**: ID du modèle, s’il y a lieu. Reportez-vous à la liste des instruments sur le site Web du WOUDC : [https://woudc.org/data/instruments/?lang=fr](https://woudc.org/data/instruments/?lang=fr)
 
 **Number**: Numéro de série de l’instrument, tel qu’il a été attribué par le fabricant.
 
@@ -511,7 +511,7 @@ Le Tableau 3.3 1 présente les tableaux devant être remplis pour la catégorie 
 **Temperature**: Température (Kelvin).
 
 #### 3.3.2.3 Exemple
-Vous trouverez un exemple de fichier de données pour la catégorie Lidar à l’[annexe A.1](#a1-exemple-pour-la-catégorie-lidar) et en ligne à l’adresse [http://woudc.org/archive/Documentation/Examples-extCSV/Lidar.csv](http://woudc.org/archive/Documentation/Examples-extCSV/Lidar.csv).
+Vous trouverez un exemple de fichier de données pour la catégorie Lidar à l’[annexe A.1](#a1-exemple-pour-la-catégorie-lidar) et en ligne à l’adresse [https://woudc.org/archive/Documentation/Examples-extCSV/Lidar.csv](https://woudc.org/archive/Documentation/Examples-extCSV/Lidar.csv).
 
 ### 3.3.3 Catégorie : Microwave
 La catégorie Microwave comporte deux tableaux obligatoires : `#PROFILE_SUMMARY` et `#OZONE_PROFILE`.
@@ -668,9 +668,9 @@ Le Tableau 3.3 3 présente les tableaux devant être remplis pour la catégorie 
 **SampleTemperatureType**: Méthode utilisée pour calculer la température de l’air échantillonné par la sonde d’ozone. Il peut s’agir d’une valeur estimative, d’une constante, ou d’une mesure prise par un capteur à thermistor installé dans la boîte, la pompe ou le tube d’admission.
 
 #### 3.3.4.8 Tableau OZONE_REFERENCE
-**Name**: Nom courant de l’instrument de mesure de l’ozone, par exemple « Brewer » ou « TOMS ». Pour la liste des instruments, voir le site Web du WOUDC :  [http://woudc.org/data/instruments/?lang=fr](http://woudc.org/data/instruments/?lang=fr).
+**Name**: Nom courant de l’instrument de mesure de l’ozone, par exemple « Brewer » ou « TOMS ». Pour la liste des instruments, voir le site Web du WOUDC :  [https://woudc.org/data/instruments/?lang=fr](https://woudc.org/data/instruments/?lang=fr).
 
-**Model**: ID du modèle, s’il y a lieu. Voir la liste des instruments du WOUDC :  [http://woudc.org/data/instruments/?lang=fr](http://woudc.org/data/instruments/?lang=fr).
+**Model**: ID du modèle, s’il y a lieu. Voir la liste des instruments du WOUDC :  [https://woudc.org/data/instruments/?lang=fr](https://woudc.org/data/instruments/?lang=fr).
 
 **Number**: Numéro de série de l’instrument, tel qu’il a été attribué par le fabricant.
 
@@ -797,7 +797,7 @@ Ozone résiduel (DU) = 7,892 * pression partielle de l’ozone (mPa) à la haute
 |Other codes|D’autres codes seront générés, au besoin, conformément au modèle simple ci-dessous :  <p></p>**Code de niveau – Description**: <table><tr><td>8</td><td>important pour la température</td></tr><tr><td>16</td><td>important pour l’ozone</td></tr><tr><td>32</td><td>important pour l’HR</td></tr> </table>P. ex., un niveau standard qui serait important pour la température et l’ozone serait établi comme suit : 1+2+8+16 = 27|
 
 #### 3.3.4.14 Exemple
-Vous trouverez un exemple de fichier de données pour la catégorie Ozonesonde à l’[annexe A.3](#a3-exemple-pour-la-catégorie-ozonesonde) et en ligne à l’adresse  [http://woudc.org/archive/Documentation/Examples-extCSV/Ozonesonde.csv](http://woudc.org/archive/Documentation/Examples-extCSV/Ozonesonde.csv).
+Vous trouverez un exemple de fichier de données pour la catégorie Ozonesonde à l’[annexe A.3](#a3-exemple-pour-la-catégorie-ozonesonde) et en ligne à l’adresse  [https://woudc.org/archive/Documentation/Examples-extCSV/Ozonesonde.csv](https://woudc.org/archive/Documentation/Examples-extCSV/Ozonesonde.csv).
 
 ### 3.3.5 Categorie : TotalOzoneObs
 La catégorie TotalOzoneObs comporte deux tableaux obligatoires : `#OBSERVATIONS` et `#DAILY_SUMMARY`.
@@ -876,7 +876,7 @@ Le Tableau 3.3 6 présente les tableaux devant être remplis pour la catégorie 
 |GI|Valeur de l’ozone total calculée à l’aide d’une mesure de l’éclairement énergétique (GI) global (pour les instruments Brewer).|
 
 #### 3.3.5.4 Exemple
-Vous trouverez un exemple de fichier de données pour la catégorie TotalOzoneObs à l’[annexe A.4](#a4-exemple-pour-la-catégorie-totalozoneobs) et en ligne à l’adresse [http://woudc.org/archive/Documentation/Examples-extCSV/TotalOzoneObs.csv.](#http://woudc.org/archive/Documentation/Examples-extCSV/TotalOzoneObs.csv.)
+Vous trouverez un exemple de fichier de données pour la catégorie TotalOzoneObs à l’[annexe A.4](#a4-exemple-pour-la-catégorie-totalozoneobs) et en ligne à l’adresse [https://woudc.org/archive/Documentation/Examples-extCSV/TotalOzoneObs.csv.](#https://woudc.org/archive/Documentation/Examples-extCSV/TotalOzoneObs.csv.)
 
 ### 3.3.6 Catégorie : TotalOzone
 
@@ -928,7 +928,7 @@ Le Tableau 3.3 9 présente les tableaux devant être remplis pour la catégorie 
 
 #### 3.3.6.3 Exemple
 
-Vous trouverez un exemple de fichier de données pour la catégorie TotalOzone à l’[annexe A.5](#a5-exemple-pour-la-catégorie-totalozone) et en ligne à l’adresse [http://woudc.org/archive/Documentation/Examples-extCSV/TotalOzone-Brewer.csv](#http://woudc.org/archive/Documentation/Examples-extCSV/TotalOzone-Brewer.csv).
+Vous trouverez un exemple de fichier de données pour la catégorie TotalOzone à l’[annexe A.5](#a5-exemple-pour-la-catégorie-totalozone) et en ligne à l’adresse [https://woudc.org/archive/Documentation/Examples-extCSV/TotalOzone-Brewer.csv](#https://woudc.org/archive/Documentation/Examples-extCSV/TotalOzone-Brewer.csv).
 
 ### 3.3.7 Catégorie : UmkehrN14
 
@@ -1006,7 +1006,7 @@ C = Matrice de covariance climatologique
 
 #### 3.3.7.3 Exemple
 
-Vous trouverez un exemple de fichier pour la catégorie Umkehr14 à l’[annexe A.6](#a6-exemple-pour-la-catégorie-umkehrn14) et en ligne aux adresses suivantes : [http://woudc.org/archive/Documentation/Examples-extCSV/Umkehr-N_values-Dobson.csv](#http://woudc.org/archive/Documentation/Examples-extCSV/Umkehr-N_values-Dobson.csv) (niveau 1) et  [http://woudc.org/archive/Documentation/Examples-extCSV/Umkehr_UMK92Retrieval-Dobson.csv](#http://woudc.org/archive/Documentation/Examples-extCSV/Umkehr_UMK92Retrieval-Dobson.csv) (niveau 2).
+Vous trouverez un exemple de fichier pour la catégorie Umkehr14 à l’[annexe A.6](#a6-exemple-pour-la-catégorie-umkehrn14) et en ligne aux adresses suivantes : [https://woudc.org/archive/Documentation/Examples-extCSV/Umkehr-N_values-Dobson.csv](#https://woudc.org/archive/Documentation/Examples-extCSV/Umkehr-N_values-Dobson.csv) (niveau 1) et  [https://woudc.org/archive/Documentation/Examples-extCSV/Umkehr_UMK92Retrieval-Dobson.csv](#https://woudc.org/archive/Documentation/Examples-extCSV/Umkehr_UMK92Retrieval-Dobson.csv) (niveau 2).
 
 ## 3.4 Contenu des données propres au rayonnement ultraviolet
 ### 3.4.1 Introduction
@@ -1078,7 +1078,7 @@ Pour une description des champs du tableau `#ACTINOMETRIC`, voir la [section 3.4
 Les champs O3, Err_O3, SO2, Err_SO2, F324 sont optionnels.
 
 #### 3.4.2.6 Exemple
-Vous trouverez un exemple de fichier de données pour la catégorie Spectral à l’[annexe A.7](#a7-exemple-pour-la-catégorie-spectral) et en ligne à l’adresse [http://woudc.org/archive/Documentation/Examples-extCSV/Spectral.csv](#http://woudc.org/archive/Documentation/Examples-extCSV/Spectral.csv).
+Vous trouverez un exemple de fichier de données pour la catégorie Spectral à l’[annexe A.7](#a7-exemple-pour-la-catégorie-spectral) et en ligne à l’adresse [https://woudc.org/archive/Documentation/Examples-extCSV/Spectral.csv](#https://woudc.org/archive/Documentation/Examples-extCSV/Spectral.csv).
 
 ### 3.4.3 Catégorie : Multiband
 
@@ -1136,7 +1136,7 @@ Pour une description des champs du tableau `#ACTINOMETRIC`, voir la [section 3.4
 
 #### 3.4.3.6 Exemple
 
-Vous trouverez un exemple de fichier de données pour la catégorie Multiband à l’[annexe A.8](#a8-exemple-pour-la-catégorie-multiband) et en ligne à l’adresse [http://woudc.org/archive/Documentation/Examples-extCSV/Multi-band.csv](#http://woudc.org/archive/Documentation/Examples-extCSV/Multi-band.csv).
+Vous trouverez un exemple de fichier de données pour la catégorie Multiband à l’[annexe A.8](#a8-exemple-pour-la-catégorie-multiband) et en ligne à l’adresse [https://woudc.org/archive/Documentation/Examples-extCSV/Multi-band.csv](#https://woudc.org/archive/Documentation/Examples-extCSV/Multi-band.csv).
 
 ### 3.4.4 Catégorie : Broadband
 
@@ -1190,7 +1190,7 @@ Pour une description des champs du tableau `#ACTINOMETRIC`, voir la [section 3.4
 
 #### 3.4.4.6 Exemple
 
-Vous trouverez un exemple de fichier de données pour la catégorie Broadband à l’[annexe A.9](#a9-exemple-pour-la-catégorie-broadband) et en ligne à l’adresse [http://woudc.org/archive/Documentation/Examples-extCSV/Broad-band.csv](#http://woudc.org/archive/Documentation/Examples-extCSV/Broad-band.csv).
+Vous trouverez un exemple de fichier de données pour la catégorie Broadband à l’[annexe A.9](#a9-exemple-pour-la-catégorie-broadband) et en ligne à l’adresse [https://woudc.org/archive/Documentation/Examples-extCSV/Broad-band.csv](#https://woudc.org/archive/Documentation/Examples-extCSV/Broad-band.csv).
 
 ### 3.4.5 Catégorie : Pyranometer
 
@@ -1305,7 +1305,7 @@ Le logiciel gratuit suivant existe pour aider à la création de fichiers CSV é
 
 # Chapter 4 Chapitre 4 Traitement des données
 ## 4.1 Politique sur les données
-L’utilisation des données du WOUDC est régie par la [politique sur les données de l’OMM](https://www.wmo.int/pages/about/exchangingdata_en.html) et par la [politique sur l’utilisation des données du programme VAG de l’OMM](https://gawsis.meteoswiss.ch/GAWSIS/index.html#/faq). Pour plus de renseignements sur la politique d’utilisation des données du WOUDC, allez à l’adresse [enligne](http://woudc.org/about/data-policy.php?lang=fr).
+L’utilisation des données du WOUDC est régie par la [politique sur les données de l’OMM](https://www.wmo.int/pages/about/exchangingdata_en.html) et par la [politique sur l’utilisation des données du programme VAG de l’OMM](https://gawsis.meteoswiss.ch/GAWSIS/index.html#/faq). Pour plus de renseignements sur la politique d’utilisation des données du WOUDC, allez à l’adresse [enligne](https://woudc.org/about/data-policy.php?lang=fr).
 
 ## 4.2 Flux et traitement des données
 La [section 2.3](#23-soumission-des-données) fournit des procédures détaillées concernant le traitement des données. Il est possible d’accéder aux données correctement soumises par le biais des dossiers accessibles sur le Web (WAF), des services Web géospatiaux et de la fonction de recherche.
@@ -1348,13 +1348,13 @@ Voici un résumé des vérifications effectuées aux fins de l’assurance de la
 Au départ, les fichiers sont validés pour confirmer qu’ils sont conformes aux spécifications relatives au format de fichier, mais, par la suite, des résumés statistiques plus généraux peuvent être générés, de manière à relever des valeurs erronées, des problèmes d’étalonnage, etc. Même si ces derniers exemples exigent une connaissance plus approfondie des données, les archives renferment déjà suffisamment de données pour porter des jugements critiques et faire des évaluations générales au sujet des données. À mesure que le volume de données augmentera et que les connaissances statistiques s’amélioreront, la portée de ces évaluations sera élargie.
 
 # Chapitre 6 Consultation et extraction de données
-La consultation et l’extraction de données sont des fonctions de base du WOUDC. Le grand public a accès gratuitement aux données du WOUDC. Pour des renseignements sur la façon de consulter les données, voir le page [Accessibilité des données](http://woudc.org/about/data-access.php?lang=fr).
+La consultation et l’extraction de données sont des fonctions de base du WOUDC. Le grand public a accès gratuitement aux données du WOUDC. Pour des renseignements sur la façon de consulter les données, voir le page [Accessibilité des données](https://woudc.org/about/data-access.php?lang=fr).
 
 # Chapitre 7 Coordonnées du WOUDC
 La principal moyenne de communication avec le WOUDC est par le page de contact. La boîte de réception est vérifiée sur une base quotidienne par les services opérationnels des centres de données. Conformément à sa norme de service, le WOUDC est tenu à répondre à toutes les demandes de renseignements transmises sur l'internet dans un délai de deux jours ouvrables.
 
 ## 7.1 Le page de contact
-[http://woudc.org/contact.php?lang=fr](http://woudc.org/contact.php?lang=fr).
+[https://woudc.org/contact.php?lang=fr](https://woudc.org/contact.php?lang=fr).
 
 ## 7.2 Adresse
 
@@ -1387,7 +1387,7 @@ Canada
 # Appendice A Exemples
 ## A.1  Exemple pour la catégorie Lidar
 
-Vous trouverez ci-dessous un exemple de soumission de données pour la catégorie Lidar. Vous pouvez aussi consulter un exemple en ligne à l’adresse  [http://woudc.org/archive/Documentation/Examples-extCSV/Lidar.csv](#http://woudc.org/archive/Documentation/Examples-extCSV/Lidar.csv).
+Vous trouverez ci-dessous un exemple de soumission de données pour la catégorie Lidar. Vous pouvez aussi consulter un exemple en ligne à l’adresse  [https://woudc.org/archive/Documentation/Examples-extCSV/Lidar.csv](#https://woudc.org/archive/Documentation/Examples-extCSV/Lidar.csv).
 
 ```
 `*NOTE:One Event per file
@@ -1589,7 +1589,7 @@ Altitude,OzoneVMR,VariableError,FixedError,SmoothingError,TotalError,A-Priori,Te
 
 ## A.3  Exemple pour la catégorie Ozonesonde
 
-Vous trouverez ci-dessous un exemple de soumission de données pour la catégorie Ozonesonde. Vous pouvez aussi consulter un exemple en ligne à l’adresse [http://woudc.org/archive/Documentation/Examples-extCSV/Ozonesonde.csv](#http://woudc.org/archive/Documentation/Examples-extCSV/Ozonesonde.csv).
+Vous trouverez ci-dessous un exemple de soumission de données pour la catégorie Ozonesonde. Vous pouvez aussi consulter un exemple en ligne à l’adresse [https://woudc.org/archive/Documentation/Examples-extCSV/Ozonesonde.csv](#https://woudc.org/archive/Documentation/Examples-extCSV/Ozonesonde.csv).
 
 ```
 #CONTENT
@@ -1692,7 +1692,7 @@ Duration,Pressure,O3PartialPressure,Temperature,WindSpeed,WindDirection,LevelCod
 
 ## A.4  Exemple pour la catégorie TotalOzoneObs
 
-Vous trouverez ci-dessous un exemple de soumission de données pour la catégorie TotalOzoneObs data submission. Vous pouvez aussi consulter un exemple en ligne à l’adresse [http://woudc.org/archive/Documentation/Examples-extCSV/TotalOzoneObs.csv](#http://woudc.org/archive/Documentation/Examples-extCSV/TotalOzoneObs.csv).
+Vous trouverez ci-dessous un exemple de soumission de données pour la catégorie TotalOzoneObs data submission. Vous pouvez aussi consulter un exemple en ligne à l’adresse [https://woudc.org/archive/Documentation/Examples-extCSV/TotalOzoneObs.csv](#https://woudc.org/archive/Documentation/Examples-extCSV/TotalOzoneObs.csv).
 
 ```
 *Example of a single day of observations
@@ -1732,7 +1732,7 @@ WLcode,ObsCode,nObs,MeanO3,StdDevO3
 
 ## A.5  Exemple pour la catégorie TotalOzone
 
-Vous trouverez ci-dessous un exemple de soumission de données pour la catégorie TotalOzone. Vous pouvez aussi consulter un exemple en ligne à l’adresse [http://woudc.org/archive/Documentation/Examples-extCSV/TotalOzone-Brewer.csv](#http://woudc.org/archive/Documentation/Examples-extCSV/TotalOzone-Brewer.csv).
+Vous trouverez ci-dessous un exemple de soumission de données pour la catégorie TotalOzone. Vous pouvez aussi consulter un exemple en ligne à l’adresse [https://woudc.org/archive/Documentation/Examples-extCSV/TotalOzone-Brewer.csv](#https://woudc.org/archive/Documentation/Examples-extCSV/TotalOzone-Brewer.csv).
 
 ```
 *Example of daily ozone values
@@ -1778,7 +1778,7 @@ Date,ColumnO3,StdDevO3,Npts
 
 ## A.6  Exemple pour la catégorie UmkehrN14
 
-Vous trouverez ci-dessous un exemple de soumission de données pour la catégorie UmkehrN14. Vous pouvez aussi consulter des exemples en ligne aux adresses suivantes :  [http://woudc.org/archive/Documentation/Examples-extCSV/Umkehr-N_values-Dobson.csv](#http://woudc.org/archive/Documentation/Examples-extCSV/Umkehr-N_values-Dobson.csv) (niveau 1.0) et [http://woudc.org/archive/Documentation/Examples-extCSV/Umkehr_UMK92Retrieval-Dobson.csv](#http://woudc.org/archive/Documentation/Examples-extCSV/Umkehr_UMK92Retrieval-Dobson.csv) (niveau 2.0).
+Vous trouverez ci-dessous un exemple de soumission de données pour la catégorie UmkehrN14. Vous pouvez aussi consulter des exemples en ligne aux adresses suivantes :  [https://woudc.org/archive/Documentation/Examples-extCSV/Umkehr-N_values-Dobson.csv](#https://woudc.org/archive/Documentation/Examples-extCSV/Umkehr-N_values-Dobson.csv) (niveau 1.0) et [https://woudc.org/archive/Documentation/Examples-extCSV/Umkehr_UMK92Retrieval-Dobson.csv](#https://woudc.org/archive/Documentation/Examples-extCSV/Umkehr_UMK92Retrieval-Dobson.csv) (niveau 2.0).
 
 ```
 *NOAA-CMDL is the Agency acronym for the National Oceanographic and
@@ -1835,7 +1835,7 @@ Temperature,Pressure,Relative Humidity
 
 ## A.7  Exemple pour la catégorie Spectral
 
-Vous trouverez ci-dessous un exemple de soumission de données pour la catégorie Spectral. Vous pouvez aussi consulter un exemple en ligne à l’adresse [http://woudc.org/archive/Documentation/Examples-extCSV/Spectral.csv](#http://woudc.org/archive/Documentation/Examples-extCSV/Spectral.csv).
+Vous trouverez ci-dessous un exemple de soumission de données pour la catégorie Spectral. Vous pouvez aussi consulter un exemple en ligne à l’adresse [https://woudc.org/archive/Documentation/Examples-extCSV/Spectral.csv](#https://woudc.org/archive/Documentation/Examples-extCSV/Spectral.csv).
 
 ```
 #CONTENT
@@ -1952,7 +1952,7 @@ Wavelength,S-Irradiance,Time
 
 ## A.8  Exemple pour la catégorie Multiband
 
-Vous trouverez ci-dessous un exemple de soumission de données pour la catégorie Multiband. Vous pouvez aussi consulter un exemple en ligne à l’adresse  [http://woudc.org/archive/Documentation/Examples-extCSV/Multi-band.csv](#http://woudc.org/archive/Documentation/Examples-extCSV/Multi-band.csv).
+Vous trouverez ci-dessous un exemple de soumission de données pour la catégorie Multiband. Vous pouvez aussi consulter un exemple en ligne à l’adresse  [https://woudc.org/archive/Documentation/Examples-extCSV/Multi-band.csv](#https://woudc.org/archive/Documentation/Examples-extCSV/Multi-band.csv).
 
 ```
 #CONTENT
@@ -2009,7 +2009,7 @@ Wavelength,GLS-Irradiance,DFS-Irradiance,DRS-Irradiance,Time,Airmass,SZA
 
 ## A.9  Exemple pour la catégorie Broadband
 
-Vous trouverez ci-dessous un exemple de soumission de données pour la catégorie Broadband. Vous pouvez aussi consulter un exemple en ligne à l’adresse  [http://woudc.org/archive/Documentation/Examples-extCSV/Broad-band.csv](#http://woudc.org/archive/Documentation/Examples-extCSV/Broad-band.csv).
+Vous trouverez ci-dessous un exemple de soumission de données pour la catégorie Broadband. Vous pouvez aussi consulter un exemple en ligne à l’adresse  [https://woudc.org/archive/Documentation/Examples-extCSV/Broad-band.csv](#https://woudc.org/archive/Documentation/Examples-extCSV/Broad-band.csv).
 
 ```
 * UV dekodavimas ExtCSV formavimas, V 1.018 beta
