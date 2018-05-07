@@ -99,7 +99,7 @@ The purpose of this document is to describe the procedures for data submissions 
 As the WOUDC is further developed, this guide will be updated accordingly and will continue to be posted electronically on the WOUDC website. The WOUDC website is used to update information and serve as a virtual "bulletin board". As this guide is further developed, use the website to retrieve the latest version.
 
 ## 1.3 Document Location
-The canonical location of this document is [http://guide.woudc.org](http://guide.woudc.org). In the event of discrepancy, the document location is to be considered normative.
+The canonical location of this document is [https://guide.woudc.org](https://guide.woudc.org). In the event of discrepancy, the document location is to be considered normative.
 
 ## 1.4 Document History and Update
 In the past, the contributor's guidebook had been split into two different guidebooks: one for ozone data submissions [1] and one for ultraviolet data submissions [2]. This guidebook unifies them in order to provide more clear and consistent documentation.

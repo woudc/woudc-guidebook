@@ -104,7 +104,7 @@ Le but de ce document est de décrire les procédures pour la soumission de donn
 Le guide sera mis à jour au fil de l’évolution du WOUDC et sera accessible électroniquement sur le site Web du WOUDC. Le site Web du WOUDC est utilisé pour mettre à jour les renseignements et comme « babillard » virtuel. Vous pouvez accéder au site Web pour télécharger la version la plus récente du guide, s’il y a lieu.
 
 ## 1.3 Emplacement du document
-L'emplacement de la version du document faisant autorité est le suivant [http://guide.woudc.org](http://guide.woudc.org). Les versions ou copies du document qui seraient disponibles ailleurs qu'à cet emplacement ne font pas autorité.
+L'emplacement de la version du document faisant autorité est le suivant [https://guide.woudc.org](https://guide.woudc.org). Les versions ou copies du document qui seraient disponibles ailleurs qu'à cet emplacement ne font pas autorité.
 
 ## 1.4 Historique et mise à jour du document
 Dans le passé, le guide du contributeur était divisé en deux guides distincts : le premier portait sur la soumission de données sur l’ozone [[1](#chapitre-8-références)] et le second, sur la soumission de données sur le rayonnement ultraviolet [[2](#chapitre-8-références)]. Ils ont été combinés dans le but d’offrir un document plus clair et uniforme.
@@ -151,7 +151,7 @@ La Figure 1 est un diagramme illustrant la procédure d’inscription des contri
 Après s'être inscrit au WOUDC de la façon indiquée à la [section 2.1](#21-inscription-des-contributeurs), le contributeur peut ajouter des stations ou modifier l’information sur une station existante en soumettant un nouveau ID VAG ou en mettant à jour l'information sur une station avec GAWSIS :
 
 1. Le contributeur obtient un nouvel ID VAG pour la nouvelle station ou modifie l'information sur une station existante à partir de [GAWSIS](https://gawsis.meteoswiss.ch/)
-2. Le contributeur envoie [WOUDC](http://https://woudc.org/contact.php?lang=fr), la demande de changement visant à ajouter une nouvelle station ou à modifier l'Information sur une station existante. Il lui envoie aussi l'ID VAG
+2. Le contributeur envoie [WOUDC](https://woudc.org/contact.php?lang=fr), la demande de changement visant à ajouter une nouvelle station ou à modifier l'Information sur une station existante. Il lui envoie aussi l'ID VAG
 3. L'opérateur inclut la nouvelle station dans la base de données du WOUDC ou met à jour l'information sur une station existante
 
 
