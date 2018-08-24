@@ -6,8 +6,8 @@ keywords_en: WOUDC, contributor guide, guidebook, ozone, ultraviolet radiation, 
 keywords_fr: WOUDC, instructions d’opération, ozone, rayons ultraviolets, ozone, données qualité, qa, qc, assurance de la qualité, contrôle de la qualité, PUN, normes, manuel
 creator_en: Government of Canada, Environment and Climate Change Canada, Meteorological Service of Canada, Weather and Environmental Monitoring, Monitoring Strategies and Data Management Division, Data Management Section
 creator_fr: Gouvernement du Canada, Environnement et Changement climatique Canada, Service météorologique du Canada, Surveillance météorologique et environnementale, Stratégies de surveillance et de gestion des données et de la Recherche climatique, Gestion de l’information et des données
-version: 2.1.0
-release_date: 2017-10-06
+version: 2.1.1
+release_date: 2018-08-24
 markdown: kramdown
 highlighter: rouge
 timezone: GMT
