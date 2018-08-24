@@ -864,7 +864,7 @@ Le Tableau 3.3 6 présente les tableaux devant être remplis pour la catégorie 
 |ObsCode|Description|
 |--------|--------|
 |0 ou DS|Lumière solaire directe |
-|1 ouFM|Lune dégagée|
+|1 ou FM|Lune dégagée|
 |2 ou B|Ciel bleu au zénith|
 |3 ou ZS|Nuages au zénith (couche peu opaque uniforme ou stratifiée)|
 |4 ou ZS|Nuages au zénith (couche moyennement opaque uniforme ou modérément variable)|
@@ -874,6 +874,7 @@ Le Tableau 3.3 6 présente les tableaux devant être remplis pour la catégorie 
 |8 ou UV|Ozone obtenu du spectre UV|
 |9-n|À déterminer par le WOUDC. On invite les contributeurs de données à communiquer avec le WOUDC pour proposer de nouveaux codes, au besoin.|
 |GI|Valeur de l’ozone total calculée à l’aide d’une mesure de l’éclairement énergétique (GI) global (pour les instruments Brewer).|
+|FS ou FZ|Soleil concentré|
 
 #### 3.3.5.4 Exemple
 Vous trouverez un exemple de fichier de données pour la catégorie TotalOzoneObs à l’[annexe A.4](#a4-exemple-pour-la-catégorie-totalozoneobs) et en ligne à l’adresse [https://woudc.org/archive/Documentation/Examples-extCSV/TotalOzoneObs.csv.](#https://woudc.org/archive/Documentation/Examples-extCSV/TotalOzoneObs.csv.)

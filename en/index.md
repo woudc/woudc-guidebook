@@ -862,6 +862,7 @@ Table 3.3-6 outlines the tables needed for the category TotalOzoneObs (column Ta
 |8 or UV|Ozone derived from UV spectrum|
 |9-n|To be assigned by the WOUDC. Data originators are encouraged to contact the WOUDC to register a new code when required.|
 |GI|Total ozone value calculated from global irradiance (GI) type of measurement (specifically for Brewer instruments)|
+|FS or FZ|Focused Sun|
 
 #### 3.3.5.4 Example
 Example format for a TotalOzoneObs data file can be found in [Appendix A.4](#a4-totalozoneobs-example) as well as online at [https://woudc.org/archive/Documentation/Examples-extCSV/TotalOzoneObs.csv.](#https://woudc.org/archive/Documentation/Examples-extCSV/TotalOzoneObs.csv.)
