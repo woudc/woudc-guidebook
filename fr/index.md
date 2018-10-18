@@ -564,7 +564,8 @@ Le Tableau 3.3 2 présente les tableaux devant être remplis pour la catégorie 
 Vous trouverez un exemple de fichier de données pour la catégorie Microwave à l’[annexe A.2](#a2-exemple-pour-la-catégorie-microwave).
 
 ### 3.3.4 Category: Ozonesonde
-La catégorie Ozonesonde comporte 12 tableaux obligatoires :  `#PREFLIGHT_SUMMARY`, `#RADIOSONDE`, `#INTERFACE_CARD`, `#SAMPLING_METHOD`, `#PUMP_SETTINGS`, `#PUMP_CORRECTION`, `#FLIGHT_SUMMARY`, `#OZONE_REFERENCE`, `#PROFILE`, `#PROFILE_UNCERTAINTY`, `#PRELAUNCH`, and `#DESELECTED_DATA`.
+La catégorie Ozonesonde comporte 2 tableaux obligatoires:  `#FLIGHT_SUMMARY` et `#PROFILE`.
+La catégorie Ozonesonde comporte 10 tableaux optionnelles:  `#PREFLIGHT_SUMMARY`, `#RADIOSONDE`, `#INTERFACE_CARD`, `#SAMPLING_METHOD`, `#PUMP_SETTINGS`, `#PUMP_CORRECTION`, `#OZONE_REFERENCE`, `#PROFILE_UNCERTAINTY`, `#PRELAUNCH`, et `#DESELECTED_DATA`.
 
 !!! md-alert ""
     **Remarque :** La valeur qui figure dans le champ `FORM` du tableau `#CONTENT` doit être « 2 ». La raison de cette modification est la suivante : la valeur du champ `FORM` (index) correspond à la version du format de données. Si un tableau existant est modifié ou qu’un nouveau tableau est ajouté, la valeur du champ `FORM` augmente de un après chaque modification. La valeur du champ `FORM` (indice) se veut un indicateur du lecteur de fichiers requis pour les tableaux de données qui suivent, pour aider les programmeurs à lire le fichier. Seul le WOUDC peut apporter des modifications à cet index. Par conséquent, l’ajout de tableaux ou les changements apportés aux tableaux originaux de la catégorie Ozonesonde exigent la modification de la valeur du champ `FORM`, qui, dans le présent cas, doit être réglée à « 2 » en date du « Jour Mois 2013 ». Pour plus de détails, veuillez vous reporter à la s[ection 3.2.1.1](#3211-tableau-content).
@@ -681,9 +682,9 @@ Le Tableau 3.3 3 présente les tableaux devant être remplis pour la catégorie 
 
 **TotalO3**: Valeur quotidienne de l’ozone total de la colonne (en unités Dobson, c.-à-d. m-atm-cm), définie comme étant la « valeur la plus représentative » (généralement dans l’ordre suivant : DS, ZS et FM).
 
-**WLCode**: Code désignant la ou les paires de longueurs d’onde utilisées pour mesurer l’ozone total. (Voir le Tableau 3.3 5 à la [section 3.3.4.13](#33413-tableaux-de-codes).)
+**WLCode**: Code désignant la ou les paires de longueurs d’onde utilisées pour mesurer l’ozone total. (Voir le Tableau 3.3-7 à la [section 3.3.5.3](#3353-tableaux-de-codes).)
 
-**ObsType**: Code désignant le type de mesure d’ozone total. (Voir le Tableau 3.3 5 à la [section 3.3.4.13](#33413-tableaux-de-codes).)
+**ObsType**: Code désignant le type de mesure d’ozone total. (Voir le Tableau 3.3-7 à la [section 3.3.5.3](#3353-tableaux-de-codes).)
 
 **UTC_Mean**: Durée moyenne des observations (en heures décimales, UTC).
 

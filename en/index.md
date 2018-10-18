@@ -553,7 +553,8 @@ Table 3.3-2 outlines the tables needed for the category Microwave (column Table 
 Example format for a Microwave data file can be found in [Appendix A.2](#a2-microwave-example).
 
 ### 3.3.4 Category: Ozonesonde
-There are 12 tables required for the Ozonesonde Category: `#PREFLIGHT_SUMMARY`, `#RADIOSONDE`, `#INTERFACE_CARD`, `#SAMPLING_METHOD`, `#PUMP_SETTINGS`, `#PUMP_CORRECTION`, `#FLIGHT_SUMMARY`, `#OZONE_REFERENCE`, `#PROFILE`, `#PROFILE_UNCERTAINTY`, `#PRELAUNCH`, and `#DESELECTED_DATA`.
+There are 2 tables required for the Ozonesonde Category:  `#FLIGHT_SUMMARY` and `#PROFILE`.
+There are 10 tables that are optional for the Ozonesonde Category: `#PREFLIGHT_SUMMARY`, `#RADIOSONDE`, `#INTERFACE_CARD`, `#SAMPLING_METHOD`, `#PUMP_SETTINGS`, `#PUMP_CORRECTION`, `#OZONE_REFERENCE`, `#PROFILE_UNCERTAINTY`, `#PRELAUNCH`, and `#DESELECTED_DATA`.
 
 !!! md-alert ""
     **Note:** There is an alternation to the header metadata where table name `#CONTENT` in the `FORM` field name shall be equal to two. The reason this change is occurring: `FORM` (index) is the version of the data format. If an existing table is altered or a new table added, the `FORM` index will be increased by one for each change. The form (index) value is intended as a file format reader indicator of the type of data tables to follow, to assist programmers with reading the file. Changes to this index will be made through the WOUDC only. Consequently the additional and altering of the original tables in the ozonesonde format the `FORM` index value needs to change, in this case it shall be equal to two as of "Month Day, 2013". For details, please refer to [Section 3.2.1.1](#3211-content).
@@ -670,9 +671,9 @@ Table 3.3-3 outlines the tables needed for the category Ozonesonde (column Table
 
 **TotalO3**: Daily value of total column ozone amount (in Dobson Units, i.e., milli atm-cm) defined as the "best representative value" (typically in the order of DS, ZS and FM).
 
-**WLCode**: Code to designate the wavelength pair(s) used for total ozone measurement. (Refer to Table 3.3-5 in [Section 3.3.4.13](#33413-code-tables)).
+**WLCode**: Code to designate the wavelength pair(s) used for total ozone measurement. (Refer to Table 3.3-7 in [Section 3.3.5.3](#3353-code-tables)).
 
-**ObsType**: Code to designate the type of total ozone measurement. (Refer to Table 3.3-5 in [Section 3.3.4.13](#33413-code-tables)).
+**ObsType**: Code to designate the type of total ozone measurement. (Refer to Table 3.3-7 in [Section 3.3.5.3](#3353-code-tables)).
 
 **UTC_Mean**: The mean time of observations (in decimal hours, UTC).
 
