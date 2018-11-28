@@ -878,7 +878,7 @@ Le Tableau 3.3 6 présente les tableaux devant être remplis pour la catégorie 
 |FS ou FZ|Soleil concentré|
 
 #### 3.3.5.4 Exemple
-Vous trouverez un exemple de fichier de données pour la catégorie TotalOzoneObs à l’[annexe A.4](#a4-exemple-pour-la-catégorie-totalozoneobs) et en ligne à l’adresse [https://woudc.org/archive/Documentation/Examples-extCSV/TotalOzoneObs.csv.](#https://woudc.org/archive/Documentation/Examples-extCSV/TotalOzoneObs.csv.)
+Vous trouverez un exemple de fichier de données pour la catégorie TotalOzoneObs à l’[annexe A.4](#a4-exemple-pour-la-catégorie-totalozoneobs) et en ligne à l’adresse [https://woudc.org/archive/Documentation/Examples-extCSV/TotalOzoneObs.csv.](https://woudc.org/archive/Documentation/Examples-extCSV/TotalOzoneObs.csv.)
 
 ### 3.3.6 Catégorie : TotalOzone
 
@@ -930,7 +930,7 @@ Le Tableau 3.3 9 présente les tableaux devant être remplis pour la catégorie 
 
 #### 3.3.6.3 Exemple
 
-Vous trouverez un exemple de fichier de données pour la catégorie TotalOzone à l’[annexe A.5](#a5-exemple-pour-la-catégorie-totalozone) et en ligne à l’adresse [https://woudc.org/archive/Documentation/Examples-extCSV/TotalOzone-Brewer.csv](#https://woudc.org/archive/Documentation/Examples-extCSV/TotalOzone-Brewer.csv).
+Vous trouverez un exemple de fichier de données pour la catégorie TotalOzone à l’[annexe A.5](#a5-exemple-pour-la-catégorie-totalozone) et en ligne à l’adresse [https://woudc.org/archive/Documentation/Examples-extCSV/TotalOzone-Brewer.csv](https://woudc.org/archive/Documentation/Examples-extCSV/TotalOzone-Brewer.csv).
 
 ### 3.3.7 Catégorie : UmkehrN14
 
@@ -1008,7 +1008,7 @@ C = Matrice de covariance climatologique
 
 #### 3.3.7.3 Exemple
 
-Vous trouverez un exemple de fichier pour la catégorie Umkehr14 à l’[annexe A.6](#a6-exemple-pour-la-catégorie-umkehrn14) et en ligne aux adresses suivantes : [https://woudc.org/archive/Documentation/Examples-extCSV/Umkehr-N_values-Dobson.csv](#https://woudc.org/archive/Documentation/Examples-extCSV/Umkehr-N_values-Dobson.csv) (niveau 1) et  [https://woudc.org/archive/Documentation/Examples-extCSV/Umkehr_UMK92Retrieval-Dobson.csv](#https://woudc.org/archive/Documentation/Examples-extCSV/Umkehr_UMK92Retrieval-Dobson.csv) (niveau 2).
+Vous trouverez un exemple de fichier pour la catégorie Umkehr14 à l’[annexe A.6](#a6-exemple-pour-la-catégorie-umkehrn14) et en ligne aux adresses suivantes : [https://woudc.org/archive/Documentation/Examples-extCSV/Umkehr-N_values-Dobson.csv](https://woudc.org/archive/Documentation/Examples-extCSV/Umkehr-N_values-Dobson.csv) (niveau 1) et  [https://woudc.org/archive/Documentation/Examples-extCSV/Umkehr_UMK92Retrieval-Dobson.csv](https://woudc.org/archive/Documentation/Examples-extCSV/Umkehr_UMK92Retrieval-Dobson.csv) (niveau 2).
 
 ## 3.4 Contenu des données propres au rayonnement ultraviolet
 ### 3.4.1 Introduction
@@ -1080,7 +1080,7 @@ Pour une description des champs du tableau `#ACTINOMETRIC`, voir la [section 3.4
 Les champs O3, Err_O3, SO2, Err_SO2, F324 sont optionnels.
 
 #### 3.4.2.6 Exemple
-Vous trouverez un exemple de fichier de données pour la catégorie Spectral à l’[annexe A.7](#a7-exemple-pour-la-catégorie-spectral) et en ligne à l’adresse [https://woudc.org/archive/Documentation/Examples-extCSV/Spectral.csv](#https://woudc.org/archive/Documentation/Examples-extCSV/Spectral.csv).
+Vous trouverez un exemple de fichier de données pour la catégorie Spectral à l’[annexe A.7](#a7-exemple-pour-la-catégorie-spectral) et en ligne à l’adresse [https://woudc.org/archive/Documentation/Examples-extCSV/Spectral.csv](https://woudc.org/archive/Documentation/Examples-extCSV/Spectral.csv).
 
 ### 3.4.3 Catégorie : Multiband
 
@@ -1138,7 +1138,7 @@ Pour une description des champs du tableau `#ACTINOMETRIC`, voir la [section 3.4
 
 #### 3.4.3.6 Exemple
 
-Vous trouverez un exemple de fichier de données pour la catégorie Multiband à l’[annexe A.8](#a8-exemple-pour-la-catégorie-multiband) et en ligne à l’adresse [https://woudc.org/archive/Documentation/Examples-extCSV/Multi-band.csv](#https://woudc.org/archive/Documentation/Examples-extCSV/Multi-band.csv).
+Vous trouverez un exemple de fichier de données pour la catégorie Multiband à l’[annexe A.8](#a8-exemple-pour-la-catégorie-multiband) et en ligne à l’adresse [https://woudc.org/archive/Documentation/Examples-extCSV/Multi-band.csv](https://woudc.org/archive/Documentation/Examples-extCSV/Multi-band.csv).
 
 ### 3.4.4 Catégorie : Broadband
 
@@ -1192,7 +1192,7 @@ Pour une description des champs du tableau `#ACTINOMETRIC`, voir la [section 3.4
 
 #### 3.4.4.6 Exemple
 
-Vous trouverez un exemple de fichier de données pour la catégorie Broadband à l’[annexe A.9](#a9-exemple-pour-la-catégorie-broadband) et en ligne à l’adresse [https://woudc.org/archive/Documentation/Examples-extCSV/Broad-band.csv](#https://woudc.org/archive/Documentation/Examples-extCSV/Broad-band.csv).
+Vous trouverez un exemple de fichier de données pour la catégorie Broadband à l’[annexe A.9](#a9-exemple-pour-la-catégorie-broadband) et en ligne à l’adresse [https://woudc.org/archive/Documentation/Examples-extCSV/Broad-band.csv](https://woudc.org/archive/Documentation/Examples-extCSV/Broad-band.csv).
 
 ### 3.4.5 Catégorie : Pyranometer
 
@@ -1389,7 +1389,7 @@ Canada
 # Appendice A Exemples
 ## A.1  Exemple pour la catégorie Lidar
 
-Vous trouverez ci-dessous un exemple de soumission de données pour la catégorie Lidar. Vous pouvez aussi consulter un exemple en ligne à l’adresse  [https://woudc.org/archive/Documentation/Examples-extCSV/Lidar.csv](#https://woudc.org/archive/Documentation/Examples-extCSV/Lidar.csv).
+Vous trouverez ci-dessous un exemple de soumission de données pour la catégorie Lidar. Vous pouvez aussi consulter un exemple en ligne à l’adresse  [https://woudc.org/archive/Documentation/Examples-extCSV/Lidar.csv](https://woudc.org/archive/Documentation/Examples-extCSV/Lidar.csv).
 
 ```
 `*NOTE:One Event per file
@@ -1591,7 +1591,7 @@ Altitude,OzoneVMR,VariableError,FixedError,SmoothingError,TotalError,A-Priori,Te
 
 ## A.3  Exemple pour la catégorie Ozonesonde
 
-Vous trouverez ci-dessous un exemple de soumission de données pour la catégorie Ozonesonde. Vous pouvez aussi consulter un exemple en ligne à l’adresse [https://woudc.org/archive/Documentation/Examples-extCSV/Ozonesonde.csv](#https://woudc.org/archive/Documentation/Examples-extCSV/Ozonesonde.csv).
+Vous trouverez ci-dessous un exemple de soumission de données pour la catégorie Ozonesonde. Vous pouvez aussi consulter un exemple en ligne à l’adresse [https://woudc.org/archive/Documentation/Examples-extCSV/Ozonesonde.csv](https://woudc.org/archive/Documentation/Examples-extCSV/Ozonesonde.csv).
 
 ```
 #CONTENT
@@ -1694,7 +1694,7 @@ Duration,Pressure,O3PartialPressure,Temperature,WindSpeed,WindDirection,LevelCod
 
 ## A.4  Exemple pour la catégorie TotalOzoneObs
 
-Vous trouverez ci-dessous un exemple de soumission de données pour la catégorie TotalOzoneObs data submission. Vous pouvez aussi consulter un exemple en ligne à l’adresse [https://woudc.org/archive/Documentation/Examples-extCSV/TotalOzoneObs.csv](#https://woudc.org/archive/Documentation/Examples-extCSV/TotalOzoneObs.csv).
+Vous trouverez ci-dessous un exemple de soumission de données pour la catégorie TotalOzoneObs data submission. Vous pouvez aussi consulter un exemple en ligne à l’adresse [https://woudc.org/archive/Documentation/Examples-extCSV/TotalOzoneObs.csv](https://woudc.org/archive/Documentation/Examples-extCSV/TotalOzoneObs.csv).
 
 ```
 *Example of a single day of observations
@@ -1734,7 +1734,7 @@ WLcode,ObsCode,nObs,MeanO3,StdDevO3
 
 ## A.5  Exemple pour la catégorie TotalOzone
 
-Vous trouverez ci-dessous un exemple de soumission de données pour la catégorie TotalOzone. Vous pouvez aussi consulter un exemple en ligne à l’adresse [https://woudc.org/archive/Documentation/Examples-extCSV/TotalOzone-Brewer.csv](#https://woudc.org/archive/Documentation/Examples-extCSV/TotalOzone-Brewer.csv).
+Vous trouverez ci-dessous un exemple de soumission de données pour la catégorie TotalOzone. Vous pouvez aussi consulter un exemple en ligne à l’adresse [https://woudc.org/archive/Documentation/Examples-extCSV/TotalOzone-Brewer.csv](https://woudc.org/archive/Documentation/Examples-extCSV/TotalOzone-Brewer.csv).
 
 ```
 *Example of daily ozone values
@@ -1780,7 +1780,7 @@ Date,ColumnO3,StdDevO3,Npts
 
 ## A.6  Exemple pour la catégorie UmkehrN14
 
-Vous trouverez ci-dessous un exemple de soumission de données pour la catégorie UmkehrN14. Vous pouvez aussi consulter des exemples en ligne aux adresses suivantes :  [https://woudc.org/archive/Documentation/Examples-extCSV/Umkehr-N_values-Dobson.csv](#https://woudc.org/archive/Documentation/Examples-extCSV/Umkehr-N_values-Dobson.csv) (niveau 1.0) et [https://woudc.org/archive/Documentation/Examples-extCSV/Umkehr_UMK92Retrieval-Dobson.csv](#https://woudc.org/archive/Documentation/Examples-extCSV/Umkehr_UMK92Retrieval-Dobson.csv) (niveau 2.0).
+Vous trouverez ci-dessous un exemple de soumission de données pour la catégorie UmkehrN14. Vous pouvez aussi consulter des exemples en ligne aux adresses suivantes :  [https://woudc.org/archive/Documentation/Examples-extCSV/Umkehr-N_values-Dobson.csv](https://woudc.org/archive/Documentation/Examples-extCSV/Umkehr-N_values-Dobson.csv) (niveau 1.0) et [https://woudc.org/archive/Documentation/Examples-extCSV/Umkehr_UMK92Retrieval-Dobson.csv](https://woudc.org/archive/Documentation/Examples-extCSV/Umkehr_UMK92Retrieval-Dobson.csv) (niveau 2.0).
 
 ```
 *NOAA-CMDL is the Agency acronym for the National Oceanographic and
@@ -1837,7 +1837,7 @@ Temperature,Pressure,Relative Humidity
 
 ## A.7  Exemple pour la catégorie Spectral
 
-Vous trouverez ci-dessous un exemple de soumission de données pour la catégorie Spectral. Vous pouvez aussi consulter un exemple en ligne à l’adresse [https://woudc.org/archive/Documentation/Examples-extCSV/Spectral.csv](#https://woudc.org/archive/Documentation/Examples-extCSV/Spectral.csv).
+Vous trouverez ci-dessous un exemple de soumission de données pour la catégorie Spectral. Vous pouvez aussi consulter un exemple en ligne à l’adresse [https://woudc.org/archive/Documentation/Examples-extCSV/Spectral.csv](https://woudc.org/archive/Documentation/Examples-extCSV/Spectral.csv).
 
 ```
 #CONTENT
@@ -1954,7 +1954,7 @@ Wavelength,S-Irradiance,Time
 
 ## A.8  Exemple pour la catégorie Multiband
 
-Vous trouverez ci-dessous un exemple de soumission de données pour la catégorie Multiband. Vous pouvez aussi consulter un exemple en ligne à l’adresse  [https://woudc.org/archive/Documentation/Examples-extCSV/Multi-band.csv](#https://woudc.org/archive/Documentation/Examples-extCSV/Multi-band.csv).
+Vous trouverez ci-dessous un exemple de soumission de données pour la catégorie Multiband. Vous pouvez aussi consulter un exemple en ligne à l’adresse  [https://woudc.org/archive/Documentation/Examples-extCSV/Multi-band.csv](https://woudc.org/archive/Documentation/Examples-extCSV/Multi-band.csv).
 
 ```
 #CONTENT
@@ -2011,7 +2011,7 @@ Wavelength,GLS-Irradiance,DFS-Irradiance,DRS-Irradiance,Time,Airmass,SZA
 
 ## A.9  Exemple pour la catégorie Broadband
 
-Vous trouverez ci-dessous un exemple de soumission de données pour la catégorie Broadband. Vous pouvez aussi consulter un exemple en ligne à l’adresse  [https://woudc.org/archive/Documentation/Examples-extCSV/Broad-band.csv](#https://woudc.org/archive/Documentation/Examples-extCSV/Broad-band.csv).
+Vous trouverez ci-dessous un exemple de soumission de données pour la catégorie Broadband. Vous pouvez aussi consulter un exemple en ligne à l’adresse  [https://woudc.org/archive/Documentation/Examples-extCSV/Broad-band.csv](https://woudc.org/archive/Documentation/Examples-extCSV/Broad-band.csv).
 
 ```
 * UV dekodavimas ExtCSV formavimas, V 1.018 beta
