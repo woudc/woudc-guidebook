@@ -1581,7 +1581,7 @@ Class,Category,Level,Form
 WOUDC,OzoneSonde,1.0,2
 
 #DATA_GENERATION
-Date, Agency, Version, ScientificAuthority
+Date,Agency,Version,ScientificAuthority
 2013-02-11, Environment Canada,1.0,Jonathan Davies
 
 #PLATFORM
