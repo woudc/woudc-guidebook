@@ -866,7 +866,7 @@ Table 3.3-6 outlines the tables needed for the category TotalOzoneObs (column Ta
 |FS or FZ|Focused Sun|
 
 #### 3.3.5.4 Example
-Example format for a TotalOzoneObs data file can be found in [Appendix A.4](#a4-totalozoneobs-example) as well as online at [https://woudc.org/archive/Documentation/Examples-extCSV/TotalOzoneObs.csv.](https://woudc.org/archive/Documentation/Examples-extCSV/TotalOzoneObs.csv.)
+Example format for a TotalOzoneObs data file can be found in [Appendix A.4](#a4-totalozoneobs-example) as well as online at [https://woudc.org/archive/Documentation/Examples-extCSV/TotalOzoneObs.csv.](https://woudc.org/archive/Documentation/Examples-extCSV/TotalOzoneObs.csv).
 
 ### 3.3.6 Category: TotalOzone
 
