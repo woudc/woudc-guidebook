@@ -878,7 +878,7 @@ Le Tableau 3.3 6 présente les tableaux devant être remplis pour la catégorie 
 |FS ou FZ|Soleil concentré|
 
 #### 3.3.5.4 Exemple
-Vous trouverez un exemple de fichier de données pour la catégorie TotalOzoneObs à l’[annexe A.4](#a4-exemple-pour-la-catégorie-totalozoneobs) et en ligne à l’adresse [https://woudc.org/archive/Documentation/Examples-extCSV/TotalOzoneObs.csv.](https://woudc.org/archive/Documentation/Examples-extCSV/TotalOzoneObs.csv.)
+Vous trouverez un exemple de fichier de données pour la catégorie TotalOzoneObs à l’[annexe A.4](#a4-exemple-pour-la-catégorie-totalozoneobs) et en ligne à l’adresse [https://woudc.org/archive/Documentation/Examples-extCSV/TotalOzoneObs.csv.](https://woudc.org/archive/Documentation/Examples-extCSV/TotalOzoneObs.csv).
 
 ### 3.3.6 Catégorie : TotalOzone
 
