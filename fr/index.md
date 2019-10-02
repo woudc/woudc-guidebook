@@ -423,7 +423,7 @@ Dessous est un tableau qui récapitule les tables requises dans le fichier WOUDC
 |`Multi-band`|`#GLOBAL`|`Required`|`1`|`#SIMULATANEOUS`|
 |`Multi-band`|`#SIMULATANEOUS`|`Required`|`1`|`#GLOBAL`|
 |`OzoneSonde`|`#TIMESTAMP`|`Reqiured`|`1`|`N/A`|
-|`OzoneSonde`|`#FLIGHT_SUMMRAY`|`Required`|`1`|`N/A`|
+|`OzoneSonde`|`#FLIGHT_SUMMARY`|`Required`|`1`|`N/A`|
 |`OzoneSonde`|`#PROFILE`|`Required`|`1`|`N/A`|
 |`OzoneSonde`|`#AUXILIARY_DATA`|`Optional`|`1`|`N/A`|
 |`OzoneSonde`|`#PUMP_CORRECTION`|`Optional`|`1`|`N/A`|
