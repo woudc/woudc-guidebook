@@ -17,18 +17,18 @@
     
     <!-- global link relations -->
     <link href="/" rel="canonical">
-    <link href="https://woudc.org/about/index.php?lang=fr" rel="author" title="Information à propos de l’auteur">
-    <link href="https://woudc.org/data/explore.php?lang=fr" rel="search" title="Rechercher sur le site">
-    <link href="https://woudc.org/home.php?lang=fr" rel="home" title="Page d’accueil">
-    <link href="https://woudc.org/about/data-policy.php?lang=fr" rel="license" title="Politiques en matière de données">
-    <link href="https://woudc.org/news/feed/?lang=fr" rel="alternate" title="Annonces" type="application/atom+xml"><!-- Twitter Cards / OpenGraph -->
+    <link href="https://woudc.org/fr/about" rel="author" title="Information à propos de l’auteur">
+    <link href="https://woudc.org/fr/donnees/rechercher-et-telecharger-de-donnees" rel="search" title="Rechercher sur le site">
+    <link href="https://woudc.org/fr" rel="home" title="Page d’accueil">
+    <link href="https://woudc.org/fr/a-propos" rel="license" title="Politiques en matière de données">
+    <link href="https://woudc.org/fr/nouvelles" rel="alternate" title="Nouvelles et mises à jour " type="text/html"><!-- Twitter Cards / OpenGraph -->
     <meta content="summary" name="twitter:card">
     <meta content="WOUDC Guide du contributeur" name="og:title">
     <meta content="website" name="og:type">
     <meta content="http://guide.woudc.org" name="og:url">
     <meta content="" name="og:description">
-    <meta content="https://woudc.org/static/site/img/wmo_acronym_vertical_sm.jpg" name="og:image">
-    <meta content="https://woudc.org/static/site/img/gaw_acronym_vertical_sm.jpg" name="og:image"><!--[if gte IE 9 | !IE ]><!-->
+    <meta content="https://woudc.org/_nuxt/img/wmo_acronym_vertical_sm.8645583.jpg" name="og:image">
+    <meta content="https://woudc.org/_nuxt/img/gaw_acronym_vertical_sm.5cbd12a.jpg" name="og:image"><!--[if gte IE 9 | !IE ]><!-->
     <link href="/static/libs/js/wet-boew-theme-gcwu-fegc/css/wet-boew.min.css" rel="stylesheet"><!--<![endif]-->
     <link href="/static/libs/js/wet-boew-theme-gcwu-fegc/css/theme.min.css" rel="stylesheet">
     <link href="/static/libs/css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
@@ -149,7 +149,7 @@
 
 <p>Cette version du guide est le résultat de la combinaison de deux documents distincts; le premier sur la soumission de données sur l’ozone et le second, sur la soumission de données sur le rayonnement ultraviolet. Ils ont été combinés dans le but d’offrir un document plus clair et uniforme.</p>
 
-<p>Le <a href="https://woudc.org/home.php?lang=fr">site Web du WOUDC</a> est utilisé pour mettre à jour les renseignements et comme « babillard » virtuel. Étant donné que ce guide est appelé à évoluer, vous pourrez récupérer la version la plus récente sur le site Web du WOUDC.</p>
+<p>Le <a href="https://woudc.org/fr">site Web du WOUDC</a> est utilisé pour mettre à jour les renseignements et comme « babillard » virtuel. Étant donné que ce guide est appelé à évoluer, vous pourrez récupérer la version la plus récente sur le site Web du WOUDC.</p>
 
 <h1 id="table-des-matières">Table des matières</h1>
 <p><a href="#chapitre-1-introduction">Chapitre 1 Introduction</a></p>
@@ -310,7 +310,7 @@
 <p>La demande d’inscription compte quatre étapes :</p>
 
 <ol>
-  <li>Le nouveau contributeur envoie une <a href="https://woudc.org/contact.php?lang=fr">demande d’inscription</a> à WOUDC, dans laquelle il indique pourquoi il souhaite contribuer au WOUDC</li>
+  <li>Le nouveau contributeur envoie une <a href="https://woudc.org/fr/contact">demande d’inscription</a> à WOUDC, dans laquelle il indique pourquoi il souhaite contribuer au WOUDC</li>
   <li>L’opérateur du centre de données vérifie la demande et indique au contributeur de fournir au WOUDC l’ID VAG de la station ou de s’inscrire à partir de <a href="https://gawsis.meteoswiss.ch/">GAWSIS</a> pour obtenir un ID VAG</li>
   <li>Une fois qu’il a un ID VAG valide, le contributeur le fournit à l’opérateur du centre de données pour inscrire la nouvelle station en incluant celle-ci dans la base de données du WOUDC</li>
   <li>Une fois la station incluse dans la base de données du WOUDC, l’opérateur du centre de données envoie au contributeur ses nouveaux justificatifs de connexion privés pour le client FTP, qu’il utilisera pour télécharger des données</li>
@@ -325,7 +325,7 @@
 
 <ol>
   <li>Le contributeur obtient un nouvel ID VAG pour la nouvelle station ou modifie l’information sur une station existante à partir de <a href="https://gawsis.meteoswiss.ch/">GAWSIS</a></li>
-  <li>Le contributeur envoie <a href="https://woudc.org/contact.php?lang=fr">WOUDC</a>, la demande de changement visant à ajouter une nouvelle station ou à modifier l’Information sur une station existante. Il lui envoie aussi l’ID VAG</li>
+  <li>Le contributeur envoie <a href="https://woudc.org/fr/contact">WOUDC</a>, la demande de changement visant à ajouter une nouvelle station ou à modifier l’Information sur une station existante. Il lui envoie aussi l’ID VAG</li>
   <li>L’opérateur inclut la nouvelle station dans la base de données du WOUDC ou met à jour l’information sur une station existante</li>
 </ol>
 
@@ -333,7 +333,7 @@
 <p>Le WOUDC permet aux contributeurs de soumettre des données par le biais d’un client de protocole de transfert de fichiers (protocole FTP). Le site FTP du WOUDC est accessible à l’adresse suivante : <a href="ftp://ftp.woudc.org">ftp://ftp.woudc.org</a>. Il faut un nom d’utilisateur et un mot de passe valides pour pouvoir transférer des données au WOUDC.</p>
 
 <p>!!! md-alert “”
-    <strong>Remarque:</strong> Le site FTP ne permet pas d’accéder aux données (voir la page Accessbilité des données à l’adresse <a href="https://woudc.org/about/data-access.php?lang=fr#ftp">https://woudc.org/about/data-access.php?lang=fr#ftp</a>).</p>
+    <strong>Remarque:</strong> Le site FTP ne permet pas d’accéder aux données (voir la page Accessbilité des données à l’adresse <a href="https://woudc.org/fr/donnees/accessibilite-des-donnees">https://woudc.org/fr/donnees/accessibilite-des-donnees</a>).</p>
 
 <p>Une fois que le contributeur est dûment inscrit :</p>
 
@@ -356,9 +356,9 @@
 <p>Le site FTP WOUDC permet aux contributeurs de télécharger des fichiers de données dans n’importe quel répertoire / dossier. Cependant, les répertoires avec les conventions suivantes seront ignorés pour le traitement des données finales (fichiers CSV étendus):</p>
 
 <ul>
-  <li><code class="highlighter-rouge">/calibration</code>: zone de soumission pour les données d’étalonnage</li>
-  <li><code class="highlighter-rouge">/level-0</code>: zone de soumission pour les données brutes</li>
-  <li><code class="highlighter-rouge">/provisional</code>: zone de soumission pour les données / valeurs préliminaires (non définies)</li>
+  <li><code class="language-plaintext highlighter-rouge">/calibration</code>: zone de soumission pour les données d’étalonnage</li>
+  <li><code class="language-plaintext highlighter-rouge">/level-0</code>: zone de soumission pour les données brutes</li>
+  <li><code class="language-plaintext highlighter-rouge">/provisional</code>: zone de soumission pour les données / valeurs préliminaires (non définies)</li>
 </ul>
 
 <p>Ces noms d’annuaire / dossier sont réservés pour des flux de travail spécifiques pour un temps presque réel ou des données brutes / traitement. Les collaborateurs sont encouragés à créer et à utiliser ces noms de répertoire / dossier pour télécharger le calibrage, le niveau 0 ou les données provisoires uniquement.</p>
@@ -413,20 +413,19 @@
   <li>Les valeurs NULLES sont représentées par des champs vides (,,) et les lignes vides sont ignorées</li>
   <li>Les lignes qui commencent par un astérisque (*) sont des commentaires</li>
   <li>Les lignes qui commencent par un carré (#) sont des noms de tableau</li>
-  <li>La première ligne après la ligne <code class="highlighter-rouge">#TABLENAME</code> sert à préciser le nom des colonnes (champs). Le nom de chaque colonne de données (champ) doit être séparé par une virgule</li>
+  <li>La première ligne après la ligne <code class="language-plaintext highlighter-rouge">#TABLENAME</code> sert à préciser le nom des colonnes (champs). Le nom de chaque colonne de données (champ) doit être séparé par une virgule</li>
 </ul>
 
 <p>Example:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>* The following data are simulated...
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>* The following data are simulated...
 #TABLENAME
 Field1, Field2, Comment
 12,35.6,Clear sky.
 12.5,,Thunderstorm (can't measure Y).
 13,55.5,"It's raining, it's pouring!"
 13.5,70,"Better start ""The Ark""."
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>Voici les règles relatives au contenu du WOUDC :</p>
 
@@ -434,41 +433,38 @@ Field1, Field2, Comment
   <li>Le nom des tableaux doit être saisi en MAJUSCULES et précédé du carré (#). Le nom des champs est sensible à la casse</li>
   <li>Un tableau se compose des trois sections suivantes : nom du tableau, nom des colonnes (champs) et un ou plusieurs enregistrements de données. Il est aussi possible d’insérer des commentaires dans les tableaux (facultatif)</li>
   <li>Les attributs de données non spécifiés se voient attribuer une valeur « nulle »</li>
-  <li>Chaque fichier doit contenir une seule occurrence de chacun des tableaux de métadonnées statiques (<code class="highlighter-rouge">#CONTENT, #DATA_GENERATION, #INSTRUMENT et #PLATFORM</code>) et les appliquer à l’ensemble des données du fichier</li>
-  <li>Chaque fichier doit contenir au moins une occurrence des tableaux de métadonnées dynamiques (<code class="highlighter-rouge">#LOCATION</code> et <code class="highlighter-rouge">#TIMESTAMP</code>), lesquelles sont en vigueur jusqu’à ce qu’elles soient mises à jour. Les données qui figurent dans les champs de ces tableaux peuvent modifier les attributs (p. ex., l’heure peut être mise à jour par des échantillons individuels)</li>
+  <li>Chaque fichier doit contenir une seule occurrence de chacun des tableaux de métadonnées statiques (<code class="language-plaintext highlighter-rouge">#CONTENT, #DATA_GENERATION, #INSTRUMENT et #PLATFORM</code>) et les appliquer à l’ensemble des données du fichier</li>
+  <li>Chaque fichier doit contenir au moins une occurrence des tableaux de métadonnées dynamiques (<code class="language-plaintext highlighter-rouge">#LOCATION</code> et <code class="language-plaintext highlighter-rouge">#TIMESTAMP</code>), lesquelles sont en vigueur jusqu’à ce qu’elles soient mises à jour. Les données qui figurent dans les champs de ces tableaux peuvent modifier les attributs (p. ex., l’heure peut être mise à jour par des échantillons individuels)</li>
   <li>Il est possible d’inclure d’autres renseignements sur les conditions et la météorologie des sites, des images du ciel, etc. sous forme de commentaires ou à l’aide d’autres tableaux générés à la discrétion du contributeur. Par exemple, si un contributeur souhaite insérer une remarque spéciale (« quelqu’un a heurté l’instrument pendant l’échantillonnage »), il est raisonnable de le faire au moyen d’un commentaire. Les variations dynamiques instantanées comme la météorologie (p. ex., conditions du ciel ou du vent) ou les données d’étalonnage doivent être présentées dans un tableau</li>
 </ul>
 
 <p>Example:</p>
-<div class="highlighter-rouge"><pre class="highlight"><code>#TABLENAME
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#TABLENAME
 Field1,Field2,Field3
 Datum1,Datum2,Datum3
 *Table comment
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>Example:</p>
-<div class="highlighter-rouge"><pre class="highlight"><code>#SITE_METEOROLOGY
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#SITE_METEOROLOGY
 Date,Time,Temperature,Pressure,WindDirection,WindSpeed
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <h2 id="312-convention-de-nommage-de-fichier">3.1.2 Convention de nommage de fichier</h2>
 
 <p>La convention de nommage de fichier suivante est recommandée :</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="p">{</span><span class="err">TIMESTAMP.Date</span><span class="p">}</span><span class="err">.</span><span class="p">{</span><span class="err">INSTRUMENT.Name</span><span class="p">}</span><span class="err">.</span><span class="p">{</span><span class="err">INSTRUMENT.Model</span><span class="p">}</span><span class="err">.</span><span class="p">{</span><span class="err">INSTRUMENT.Number</span><span class="p">}</span><span class="err">.</span><span class="p">{</span><span class="err">DATA_GENERATION.Agency</span><span class="p">}</span><span class="err">.csv</span><span class="w">
-</span></code></pre>
-</div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{TIMESTAMP.Date}.{INSTRUMENT.Name}.{INSTRUMENT.Model}.{INSTRUMENT.Number}.{DATA_GENERATION.Agency}.csv
+</code></pre></div></div>
 
 <p>Explications :</p>
 
 <ul>
-  <li><code class="highlighter-rouge">TIMESTAMP.Date</code>: date de début des observations dans le fichier (format YYYYMMDD)</li>
-  <li><code class="highlighter-rouge">INSTRUMENT.Name</code>: nom commun de l’instrument. Par exemple, le spectrophotomètre Brewer s’appelle ‘Brewer’ alors que l’ozonesonde Brewer-Mast s’appelle ‘Brewer-Mast’. Reportez-vous au site web de WOUDC pour une liste : https://woudc.org/data/instruments</li>
-  <li><code class="highlighter-rouge">INSTRUMENT.Model</code>: ID du modèle, le cas échéant. Reportez-vous à la liste des instruments WOUDC : https://woudc.org/data/instruments</li>
-  <li><code class="highlighter-rouge">INSTRUMENT.Number</code>: numéro de série de l’instrument attribué par le fabricant</li>
-  <li><code class="highlighter-rouge">DATA_GENERATION.Agency</code>:  l’acronyme de l’agence qui a soumis la donnée</li>
+  <li><code class="language-plaintext highlighter-rouge">TIMESTAMP.Date</code>: date de début des observations dans le fichier (format YYYYMMDD)</li>
+  <li><code class="language-plaintext highlighter-rouge">INSTRUMENT.Name</code>: nom commun de l’instrument. Par exemple, le spectrophotomètre Brewer s’appelle ‘Brewer’ alors que l’ozonesonde Brewer-Mast s’appelle ‘Brewer-Mast’. Reportez-vous au site web de WOUDC pour une liste : https://woudc.org/data/instruments</li>
+  <li><code class="language-plaintext highlighter-rouge">INSTRUMENT.Model</code>: ID du modèle, le cas échéant. Reportez-vous à la liste des instruments WOUDC : https://woudc.org/data/instruments</li>
+  <li><code class="language-plaintext highlighter-rouge">INSTRUMENT.Number</code>: numéro de série de l’instrument attribué par le fabricant</li>
+  <li><code class="language-plaintext highlighter-rouge">DATA_GENERATION.Agency</code>:  l’acronyme de l’agence qui a soumis la donnée</li>
 </ul>
 
 <p>Exemple : <a href="https://woudc.org/archive/Archive-NewFormat/TotalOzone_1.0_1/stn010/brewer/1995/19950301.Brewer.MKIV.089.IMD.csv">https://woudc.org/archive/Archive-NewFormat/TotalOzone_1.0_1/stn010/brewer/1995/19950301.Brewer.MKIV.089.IMD.csv</a></p>
@@ -492,20 +488,20 @@ Date,Time,Temperature,Pressure,WindDirection,WindSpeed
   </thead>
   <tbody>
     <tr>
-      <td><code class="highlighter-rouge">#CONTENT</code></td>
-      <td><code class="highlighter-rouge">Class, Category, Level, Form</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#CONTENT</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Class, Category, Level, Form</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">#DATA_GENERATION</code></td>
-      <td><code class="highlighter-rouge">Date, Agency, Version, ScientificAuthority</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#DATA_GENERATION</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Date, Agency, Version, ScientificAuthority</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">#PLATFORM</code></td>
-      <td><code class="highlighter-rouge">Type, ID, Name, Country, GAW_ID</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#PLATFORM</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Type, ID, Name, Country, GAW_ID</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">#INSTRUMENT</code></td>
-      <td><code class="highlighter-rouge">Name, Model, Number</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#INSTRUMENT</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Name, Model, Number</code></td>
     </tr>
   </tbody>
 </table>
@@ -521,12 +517,12 @@ Date,Time,Temperature,Pressure,WindDirection,WindSpeed
   </thead>
   <tbody>
     <tr>
-      <td><code class="highlighter-rouge">#LOCATION</code></td>
-      <td><code class="highlighter-rouge">Latitude, Longitude, Height</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#LOCATION</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Latitude, Longitude, Height</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">#TIMESTAMP</code></td>
-      <td><code class="highlighter-rouge">UTCOffset, Date, Time</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#TIMESTAMP</code></td>
+      <td><code class="language-plaintext highlighter-rouge">UTCOffset, Date, Time</code></td>
     </tr>
   </tbody>
 </table>
@@ -542,7 +538,7 @@ Date,Time,Temperature,Pressure,WindDirection,WindSpeed
 <p><strong>Level</strong>: Ce level se réfère au produit de données. Les valeurs acceptables sont “1” pour les données qui a été traité pour produire des données en format extCSV
 pour WOUDC (et donc les données sont prêtes à être soumis à WOUDC), ou “2” pour les données qui ont également été interpolées, re-quadrillées, lissées ou autrement traitées. (Notez que le Level n’est pas la même chose que la version qui est décrite dans 3.2.1.2. Le mot <Version> est utilisé pour indiquer qu’un fichier a été modifié ou révisées selon le processus utilisé par WOUDC tandis que le Level est utilisé pour indiquer « l’étapedu  traitement de données" dans un fichier (il est possible d’y avoir montré plusieurs versions pour les fichiers de Level 1 et les fichiers de Level 2).</Version></p>
 
-<p><strong>Form</strong>: La version du format des données qui suivent. La valeur initiale du champ <code class="highlighter-rouge">FORM</code> (valeur=1) fait référence à la description de base du tableau. Si un tableau existant est modifié ou qu’un nouveau tableau est ajouté, la valeur du champ <code class="highlighter-rouge">FORM</code> augmente. Prenons l’exemple d’un tableau composé d’un nombre donné de colonnes et dont la valeur du champ <code class="highlighter-rouge">FORM</code> est réglée à « 1 ». Si on ajoute une ou plusieurs colonnes au tableau, la valeur du champ <code class="highlighter-rouge">FORM</code> augmente de un après chaque modification. La valeur du champ <code class="highlighter-rouge">FORM</code> (index) se veut un indicateur du lecteur de fichiers requis pour les tableaux de données qui suivent, pour aider les programmeurs à lire le fichier. Seul le WOUDC peut apporter des modifications à cet index.</p>
+<p><strong>Form</strong>: La version du format des données qui suivent. La valeur initiale du champ <code class="language-plaintext highlighter-rouge">FORM</code> (valeur=1) fait référence à la description de base du tableau. Si un tableau existant est modifié ou qu’un nouveau tableau est ajouté, la valeur du champ <code class="language-plaintext highlighter-rouge">FORM</code> augmente. Prenons l’exemple d’un tableau composé d’un nombre donné de colonnes et dont la valeur du champ <code class="language-plaintext highlighter-rouge">FORM</code> est réglée à « 1 ». Si on ajoute une ou plusieurs colonnes au tableau, la valeur du champ <code class="language-plaintext highlighter-rouge">FORM</code> augmente de un après chaque modification. La valeur du champ <code class="language-plaintext highlighter-rouge">FORM</code> (index) se veut un indicateur du lecteur de fichiers requis pour les tableaux de données qui suivent, pour aider les programmeurs à lire le fichier. Seul le WOUDC peut apporter des modifications à cet index.</p>
 
 <h4 id="3212-tableau-data-generation">3.2.1.2 Tableau DATA GENERATION</h4>
 <p><strong>Date</strong>: Date à laquelle le fichier a été traité ou généré. La date est affichée selon le format de la norme ISO 8610, c.-à-d. AAAA-MM-JJ. Exemple : 2015-12-31.</p>
@@ -591,7 +587,7 @@ pour WOUDC (et donc les données sont prêtes à être soumis à WOUDC), ou “2
 <h4 id="3217-exemple">3.2.1.7 Exemple</h4>
 <p>Vous trouverez ci-dessous un exemple d’en tête. Cet en-tête renferme l’ensemble des tableaux et des champs obligatoires, ainsi que des commentaires.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>*SOFTWARE: SNDPRO 1.3
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>*SOFTWARE: SNDPRO 1.3
 *TROPOPAUSE IN MB 320
 *M.S.C.-O3 T1200
 
@@ -618,8 +614,7 @@ Latitude,Longitude,Height
 #TIMESTAMP
 UTCOffset,Date,Time
 +00:00:00,1999-04-28,23:15:00
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <h4 id="3218-configuration-des-tableau-de-métadonnées">3.2.1.8 Configuration des tableau de métadonnées</h4>
 <p>Dessous est un tableau qui récapitule les tables requises dans le fichier WOUDC-EXTCSV pour différents ensembles de données.</p>
@@ -639,241 +634,241 @@ UTCOffset,Date,Time
   <tbody>
     <tr>
       <td>Tout</td>
-      <td><code class="highlighter-rouge">#CONTENT</code></td>
-      <td><code class="highlighter-rouge">Required</code></td>
-      <td><code class="highlighter-rouge">1</code></td>
-      <td><code class="highlighter-rouge">N/A</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#CONTENT</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Required</code></td>
+      <td><code class="language-plaintext highlighter-rouge">1</code></td>
+      <td><code class="language-plaintext highlighter-rouge">N/A</code></td>
     </tr>
     <tr>
       <td>Tout</td>
-      <td><code class="highlighter-rouge">#DATA_GENERATION</code></td>
-      <td><code class="highlighter-rouge">Required</code></td>
-      <td><code class="highlighter-rouge">1</code></td>
-      <td><code class="highlighter-rouge">N/A</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#DATA_GENERATION</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Required</code></td>
+      <td><code class="language-plaintext highlighter-rouge">1</code></td>
+      <td><code class="language-plaintext highlighter-rouge">N/A</code></td>
     </tr>
     <tr>
       <td>Tout</td>
-      <td><code class="highlighter-rouge">#PLATFORM</code></td>
-      <td><code class="highlighter-rouge">Required</code></td>
-      <td><code class="highlighter-rouge">1</code></td>
-      <td><code class="highlighter-rouge">N/A</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#PLATFORM</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Required</code></td>
+      <td><code class="language-plaintext highlighter-rouge">1</code></td>
+      <td><code class="language-plaintext highlighter-rouge">N/A</code></td>
     </tr>
     <tr>
       <td>Tout</td>
-      <td><code class="highlighter-rouge">#INSTRUMENT</code></td>
-      <td><code class="highlighter-rouge">Required</code></td>
-      <td><code class="highlighter-rouge">1</code></td>
-      <td><code class="highlighter-rouge">N/A</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#INSTRUMENT</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Required</code></td>
+      <td><code class="language-plaintext highlighter-rouge">1</code></td>
+      <td><code class="language-plaintext highlighter-rouge">N/A</code></td>
     </tr>
     <tr>
       <td>Tout</td>
-      <td><code class="highlighter-rouge">#LOCATION</code></td>
-      <td><code class="highlighter-rouge">Required</code></td>
-      <td><code class="highlighter-rouge">1</code></td>
-      <td><code class="highlighter-rouge">N/A</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#LOCATION</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Required</code></td>
+      <td><code class="language-plaintext highlighter-rouge">1</code></td>
+      <td><code class="language-plaintext highlighter-rouge">N/A</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">Broad-band</code></td>
-      <td><code class="highlighter-rouge">#TIMESTAMP</code></td>
-      <td><code class="highlighter-rouge">Required</code></td>
-      <td><code class="highlighter-rouge">1</code></td>
-      <td><code class="highlighter-rouge">N/A</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Broad-band</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#TIMESTAMP</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Required</code></td>
+      <td><code class="language-plaintext highlighter-rouge">1</code></td>
+      <td><code class="language-plaintext highlighter-rouge">N/A</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">Broadband</code></td>
-      <td><code class="highlighter-rouge">#DIFFUSE</code></td>
-      <td><code class="highlighter-rouge">Required</code></td>
-      <td><code class="highlighter-rouge">1</code></td>
-      <td><code class="highlighter-rouge">#GLOBAL</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Broadband</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#DIFFUSE</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Required</code></td>
+      <td><code class="language-plaintext highlighter-rouge">1</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#GLOBAL</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">Broad-band</code></td>
-      <td><code class="highlighter-rouge">#GLOBAL</code></td>
-      <td><code class="highlighter-rouge">Required</code></td>
-      <td><code class="highlighter-rouge">1</code></td>
-      <td><code class="highlighter-rouge">#DIFFUSE</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Broad-band</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#GLOBAL</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Required</code></td>
+      <td><code class="language-plaintext highlighter-rouge">1</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#DIFFUSE</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">Lidar</code></td>
-      <td><code class="highlighter-rouge">#TIMASTAMP</code></td>
-      <td><code class="highlighter-rouge">Required</code></td>
-      <td><code class="highlighter-rouge">1</code></td>
-      <td><code class="highlighter-rouge">N/A</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Lidar</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#TIMASTAMP</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Required</code></td>
+      <td><code class="language-plaintext highlighter-rouge">1</code></td>
+      <td><code class="language-plaintext highlighter-rouge">N/A</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">Lidar</code></td>
-      <td><code class="highlighter-rouge">#OZONE_SUMMARY</code></td>
-      <td><code class="highlighter-rouge">Required</code></td>
-      <td><code class="highlighter-rouge">1+</code></td>
-      <td><code class="highlighter-rouge">N/A</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Lidar</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#OZONE_SUMMARY</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Required</code></td>
+      <td><code class="language-plaintext highlighter-rouge">1+</code></td>
+      <td><code class="language-plaintext highlighter-rouge">N/A</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">Lidar</code></td>
-      <td><code class="highlighter-rouge">#OZONE_PROFILE</code></td>
-      <td><code class="highlighter-rouge">Required</code></td>
-      <td><code class="highlighter-rouge">1+</code></td>
-      <td><code class="highlighter-rouge">N/A</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Lidar</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#OZONE_PROFILE</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Required</code></td>
+      <td><code class="language-plaintext highlighter-rouge">1+</code></td>
+      <td><code class="language-plaintext highlighter-rouge">N/A</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">Multi-band</code></td>
-      <td><code class="highlighter-rouge">#TIMESTAMP</code></td>
-      <td><code class="highlighter-rouge">Required</code></td>
-      <td><code class="highlighter-rouge">1</code></td>
-      <td><code class="highlighter-rouge">N/A</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Multi-band</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#TIMESTAMP</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Required</code></td>
+      <td><code class="language-plaintext highlighter-rouge">1</code></td>
+      <td><code class="language-plaintext highlighter-rouge">N/A</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">Multi-band</code></td>
-      <td><code class="highlighter-rouge">#GLOBAL</code></td>
-      <td><code class="highlighter-rouge">Required</code></td>
-      <td><code class="highlighter-rouge">1</code></td>
-      <td><code class="highlighter-rouge">#SIMULATANEOUS</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Multi-band</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#GLOBAL</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Required</code></td>
+      <td><code class="language-plaintext highlighter-rouge">1</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#SIMULATANEOUS</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">Multi-band</code></td>
-      <td><code class="highlighter-rouge">#SIMULATANEOUS</code></td>
-      <td><code class="highlighter-rouge">Required</code></td>
-      <td><code class="highlighter-rouge">1</code></td>
-      <td><code class="highlighter-rouge">#GLOBAL</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Multi-band</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#SIMULATANEOUS</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Required</code></td>
+      <td><code class="language-plaintext highlighter-rouge">1</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#GLOBAL</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">OzoneSonde</code></td>
-      <td><code class="highlighter-rouge">#TIMESTAMP</code></td>
-      <td><code class="highlighter-rouge">Reqiured</code></td>
-      <td><code class="highlighter-rouge">1</code></td>
-      <td><code class="highlighter-rouge">N/A</code></td>
+      <td><code class="language-plaintext highlighter-rouge">OzoneSonde</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#TIMESTAMP</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Reqiured</code></td>
+      <td><code class="language-plaintext highlighter-rouge">1</code></td>
+      <td><code class="language-plaintext highlighter-rouge">N/A</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">OzoneSonde</code></td>
-      <td><code class="highlighter-rouge">#FLIGHT_SUMMARY</code></td>
-      <td><code class="highlighter-rouge">Required</code></td>
-      <td><code class="highlighter-rouge">1</code></td>
-      <td><code class="highlighter-rouge">N/A</code></td>
+      <td><code class="language-plaintext highlighter-rouge">OzoneSonde</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#FLIGHT_SUMMARY</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Required</code></td>
+      <td><code class="language-plaintext highlighter-rouge">1</code></td>
+      <td><code class="language-plaintext highlighter-rouge">N/A</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">OzoneSonde</code></td>
-      <td><code class="highlighter-rouge">#PROFILE</code></td>
-      <td><code class="highlighter-rouge">Required</code></td>
-      <td><code class="highlighter-rouge">1</code></td>
-      <td><code class="highlighter-rouge">N/A</code></td>
+      <td><code class="language-plaintext highlighter-rouge">OzoneSonde</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#PROFILE</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Required</code></td>
+      <td><code class="language-plaintext highlighter-rouge">1</code></td>
+      <td><code class="language-plaintext highlighter-rouge">N/A</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">OzoneSonde</code></td>
-      <td><code class="highlighter-rouge">#AUXILIARY_DATA</code></td>
-      <td><code class="highlighter-rouge">Optional</code></td>
-      <td><code class="highlighter-rouge">1</code></td>
-      <td><code class="highlighter-rouge">N/A</code></td>
+      <td><code class="language-plaintext highlighter-rouge">OzoneSonde</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#AUXILIARY_DATA</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Optional</code></td>
+      <td><code class="language-plaintext highlighter-rouge">1</code></td>
+      <td><code class="language-plaintext highlighter-rouge">N/A</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">OzoneSonde</code></td>
-      <td><code class="highlighter-rouge">#PUMP_CORRECTION</code></td>
-      <td><code class="highlighter-rouge">Optional</code></td>
-      <td><code class="highlighter-rouge">1</code></td>
-      <td><code class="highlighter-rouge">N/A</code></td>
+      <td><code class="language-plaintext highlighter-rouge">OzoneSonde</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#PUMP_CORRECTION</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Optional</code></td>
+      <td><code class="language-plaintext highlighter-rouge">1</code></td>
+      <td><code class="language-plaintext highlighter-rouge">N/A</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">Spectral</code></td>
-      <td><code class="highlighter-rouge">#TIMESTAMP</code></td>
-      <td><code class="highlighter-rouge">Optional</code></td>
-      <td><code class="highlighter-rouge">1+</code></td>
-      <td><code class="highlighter-rouge">N/A</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Spectral</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#TIMESTAMP</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Optional</code></td>
+      <td><code class="language-plaintext highlighter-rouge">1+</code></td>
+      <td><code class="language-plaintext highlighter-rouge">N/A</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">Spectral</code></td>
-      <td><code class="highlighter-rouge">#GLOBAL_SUMMARY_NSF</code></td>
-      <td><code class="highlighter-rouge">Required</code></td>
-      <td><code class="highlighter-rouge">1+</code></td>
-      <td><code class="highlighter-rouge">#GLOBAL_SUMMARY</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Spectral</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#GLOBAL_SUMMARY_NSF</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Required</code></td>
+      <td><code class="language-plaintext highlighter-rouge">1+</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#GLOBAL_SUMMARY</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">Spectral</code></td>
-      <td><code class="highlighter-rouge">#GLOBAL_SUMMARY</code></td>
-      <td><code class="highlighter-rouge">Required</code></td>
-      <td><code class="highlighter-rouge">1+</code></td>
-      <td><code class="highlighter-rouge">#GLOBAL_SUMMARY_NSF</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Spectral</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#GLOBAL_SUMMARY</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Required</code></td>
+      <td><code class="language-plaintext highlighter-rouge">1+</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#GLOBAL_SUMMARY_NSF</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">Spectral</code></td>
-      <td><code class="highlighter-rouge">#GLOBAL</code></td>
-      <td><code class="highlighter-rouge">Required</code></td>
-      <td><code class="highlighter-rouge">1+</code></td>
-      <td><code class="highlighter-rouge">N/A</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Spectral</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#GLOBAL</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Required</code></td>
+      <td><code class="language-plaintext highlighter-rouge">1+</code></td>
+      <td><code class="language-plaintext highlighter-rouge">N/A</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">TotalOzone</code></td>
-      <td><code class="highlighter-rouge">#TIMESTAMP</code></td>
-      <td><code class="highlighter-rouge">Required</code></td>
-      <td><code class="highlighter-rouge">2</code></td>
-      <td><code class="highlighter-rouge">N/A</code></td>
+      <td><code class="language-plaintext highlighter-rouge">TotalOzone</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#TIMESTAMP</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Required</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+      <td><code class="language-plaintext highlighter-rouge">N/A</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">TotalOzone</code></td>
-      <td><code class="highlighter-rouge">#DAILY</code></td>
-      <td><code class="highlighter-rouge">Required</code></td>
-      <td><code class="highlighter-rouge">1</code></td>
-      <td><code class="highlighter-rouge">N/A</code></td>
+      <td><code class="language-plaintext highlighter-rouge">TotalOzone</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#DAILY</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Required</code></td>
+      <td><code class="language-plaintext highlighter-rouge">1</code></td>
+      <td><code class="language-plaintext highlighter-rouge">N/A</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">TotalOzone</code></td>
-      <td><code class="highlighter-rouge">#MONTHLY</code></td>
-      <td><code class="highlighter-rouge">Optional</code></td>
-      <td><code class="highlighter-rouge">1</code></td>
-      <td><code class="highlighter-rouge">N/A</code></td>
+      <td><code class="language-plaintext highlighter-rouge">TotalOzone</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#MONTHLY</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Optional</code></td>
+      <td><code class="language-plaintext highlighter-rouge">1</code></td>
+      <td><code class="language-plaintext highlighter-rouge">N/A</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">TotalOzone</code></td>
-      <td><code class="highlighter-rouge">#SAOZ_DATA_V2</code></td>
-      <td><code class="highlighter-rouge">Optional</code></td>
-      <td><code class="highlighter-rouge">1</code></td>
-      <td><code class="highlighter-rouge">N/A</code></td>
+      <td><code class="language-plaintext highlighter-rouge">TotalOzone</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#SAOZ_DATA_V2</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Optional</code></td>
+      <td><code class="language-plaintext highlighter-rouge">1</code></td>
+      <td><code class="language-plaintext highlighter-rouge">N/A</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">TotalOzoneObs</code></td>
-      <td><code class="highlighter-rouge">#TIMESTAMP</code></td>
-      <td><code class="highlighter-rouge">Required</code></td>
-      <td><code class="highlighter-rouge">1</code></td>
-      <td><code class="highlighter-rouge">N/A</code></td>
+      <td><code class="language-plaintext highlighter-rouge">TotalOzoneObs</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#TIMESTAMP</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Required</code></td>
+      <td><code class="language-plaintext highlighter-rouge">1</code></td>
+      <td><code class="language-plaintext highlighter-rouge">N/A</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">TotalOzoneObs</code></td>
-      <td><code class="highlighter-rouge">#OBSERVATIONS</code></td>
-      <td><code class="highlighter-rouge">Required</code></td>
-      <td><code class="highlighter-rouge">1</code></td>
-      <td><code class="highlighter-rouge">N/A</code></td>
+      <td><code class="language-plaintext highlighter-rouge">TotalOzoneObs</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#OBSERVATIONS</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Required</code></td>
+      <td><code class="language-plaintext highlighter-rouge">1</code></td>
+      <td><code class="language-plaintext highlighter-rouge">N/A</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">TotalOzoneObs</code></td>
-      <td><code class="highlighter-rouge">#DAILY_SUMMARY</code></td>
-      <td><code class="highlighter-rouge">Required</code></td>
-      <td><code class="highlighter-rouge">1</code></td>
-      <td><code class="highlighter-rouge">N/A</code></td>
+      <td><code class="language-plaintext highlighter-rouge">TotalOzoneObs</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#DAILY_SUMMARY</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Required</code></td>
+      <td><code class="language-plaintext highlighter-rouge">1</code></td>
+      <td><code class="language-plaintext highlighter-rouge">N/A</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">UmkehrN14</code></td>
-      <td><code class="highlighter-rouge">#TIMESTAMP</code></td>
-      <td><code class="highlighter-rouge">Required</code></td>
-      <td><code class="highlighter-rouge">2</code></td>
-      <td><code class="highlighter-rouge">N/A</code></td>
+      <td><code class="language-plaintext highlighter-rouge">UmkehrN14</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#TIMESTAMP</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Required</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+      <td><code class="language-plaintext highlighter-rouge">N/A</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">UmkehrN14</code></td>
-      <td><code class="highlighter-rouge">#N14_VALUES</code></td>
-      <td><code class="highlighter-rouge">Required</code></td>
-      <td><code class="highlighter-rouge">1</code></td>
-      <td><code class="highlighter-rouge">N/A</code></td>
+      <td><code class="language-plaintext highlighter-rouge">UmkehrN14</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#N14_VALUES</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Required</code></td>
+      <td><code class="language-plaintext highlighter-rouge">1</code></td>
+      <td><code class="language-plaintext highlighter-rouge">N/A</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">UmkehrN14 level 2</code></td>
-      <td><code class="highlighter-rouge">#TIMESTAMP</code></td>
-      <td><code class="highlighter-rouge">Required</code></td>
-      <td><code class="highlighter-rouge">2</code></td>
-      <td><code class="highlighter-rouge">N/A</code></td>
+      <td><code class="language-plaintext highlighter-rouge">UmkehrN14 level 2</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#TIMESTAMP</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Required</code></td>
+      <td><code class="language-plaintext highlighter-rouge">2</code></td>
+      <td><code class="language-plaintext highlighter-rouge">N/A</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">UmkehrN14 level 2</code></td>
-      <td><code class="highlighter-rouge">#C_PROFILE</code></td>
-      <td><code class="highlighter-rouge">Required</code></td>
-      <td><code class="highlighter-rouge">1</code></td>
-      <td><code class="highlighter-rouge">N/A</code></td>
+      <td><code class="language-plaintext highlighter-rouge">UmkehrN14 level 2</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#C_PROFILE</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Required</code></td>
+      <td><code class="language-plaintext highlighter-rouge">1</code></td>
+      <td><code class="language-plaintext highlighter-rouge">N/A</code></td>
     </tr>
   </tbody>
 </table>
@@ -901,7 +896,7 @@ UTCOffset,Date,Time
 <p>Les mesures Umkehr (UmkehrN14) sont des profils d’ozone établis à l’aide de 14 valeurs N (qui correspondent à 14 angles du zénith solaire). Il s’agit de données de télédétection dont la plage temporelle par fichier correspond à un mois de synthèses quotidiennes.</p>
 
 <h3 id="332-catégorie--lidar">3.3.2 Catégorie : Lidar</h3>
-<p>La catégorie Lidar comporte deux tableaux obligatoires : <code class="highlighter-rouge">#PROFILE_SUMMARY</code> et <code class="highlighter-rouge">#OZONE_PROFILE</code>.</p>
+<p>La catégorie Lidar comporte deux tableaux obligatoires : <code class="language-plaintext highlighter-rouge">#PROFILE_SUMMARY</code> et <code class="language-plaintext highlighter-rouge">#OZONE_PROFILE</code>.</p>
 
 <p>!!! md-alert “”
     <strong>Remarque :</strong> Les tableaux de la catégorie Lidar ont été tirés directement des fichiers formatés 2160 du Ames Research Centre de la NASA [3, 4] utilisés par le Network for the Detection of Atmospheric Composition Change (NDACC), anciennement appelé Network for Detection of Stratospheric Change (NDSC).</p>
@@ -919,12 +914,12 @@ UTCOffset,Date,Time
   </thead>
   <tbody>
     <tr>
-      <td><code class="highlighter-rouge">#PROFILE_SUMMARY</code></td>
-      <td><code class="highlighter-rouge">Altitudes, MinAltitude, MaxAltitude, StartDate, StartTime, EndDate, EndTime, PulsesAveraged</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#PROFILE_SUMMARY</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Altitudes, MinAltitude, MaxAltitude, StartDate, StartTime, EndDate, EndTime, PulsesAveraged</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">#OZONE_PROFILE</code></td>
-      <td><code class="highlighter-rouge">Altitude, OzoneDensity, StandardError, RangeResolution, AirDensity, Temperature</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#OZONE_PROFILE</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Altitude, OzoneDensity, StandardError, RangeResolution, AirDensity, Temperature</code></td>
     </tr>
   </tbody>
 </table>
@@ -963,7 +958,7 @@ UTCOffset,Date,Time
 <p>Vous trouverez un exemple de fichier de données pour la catégorie Lidar à l’<a href="#a1-exemple-pour-la-catégorie-lidar">annexe A.1</a> et en ligne à l’adresse <a href="https://woudc.org/archive/Documentation/Examples-extCSV/Lidar.csv">https://woudc.org/archive/Documentation/Examples-extCSV/Lidar.csv</a>.</p>
 
 <h3 id="333-catégorie--microwave">3.3.3 Catégorie : Microwave</h3>
-<p>La catégorie Microwave comporte deux tableaux obligatoires : <code class="highlighter-rouge">#PROFILE_SUMMARY</code> et <code class="highlighter-rouge">#OZONE_PROFILE</code>.</p>
+<p>La catégorie Microwave comporte deux tableaux obligatoires : <code class="language-plaintext highlighter-rouge">#PROFILE_SUMMARY</code> et <code class="language-plaintext highlighter-rouge">#OZONE_PROFILE</code>.</p>
 
 <p>!!! md-alert “”
     <strong>Remarque :</strong> Les tableaux de la catégorie Microwave sont fondés sur les sorties de données de la station météorologique de Payerne, en Suisse, qui est exploitée par MétéoSuisse [5].</p>
@@ -981,12 +976,12 @@ UTCOffset,Date,Time
   </thead>
   <tbody>
     <tr>
-      <td><code class="highlighter-rouge">#PROFILE_SUMMARY</code></td>
-      <td><code class="highlighter-rouge">Levels, AveragingTime, ZenithAngle, NoiseTemperature, TTF, CalculatedSpectrum</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#PROFILE_SUMMARY</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Levels, AveragingTime, ZenithAngle, NoiseTemperature, TTF, CalculatedSpectrum</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">#OZONE_PROFILE</code></td>
-      <td><code class="highlighter-rouge">Altitude, OzoneVMR, VariableError, FixedError, SmoothingError, TotalError, A-priori, Temperature, Pressure</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#OZONE_PROFILE</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Altitude, OzoneVMR, VariableError, FixedError, SmoothingError, TotalError, A-priori, Temperature, Pressure</code></td>
     </tr>
   </tbody>
 </table>
@@ -1027,11 +1022,11 @@ UTCOffset,Date,Time
 <p>Vous trouverez un exemple de fichier de données pour la catégorie Microwave à l’<a href="#a2-exemple-pour-la-catégorie-microwave">annexe A.2</a>.</p>
 
 <h3 id="334-category-ozonesonde">3.3.4 Category: Ozonesonde</h3>
-<p>La catégorie Ozonesonde comporte 2 tableaux obligatoires:  <code class="highlighter-rouge">#FLIGHT_SUMMARY</code> et <code class="highlighter-rouge">#PROFILE</code>.
-La catégorie Ozonesonde comporte 10 tableaux optionnelles:  <code class="highlighter-rouge">#PREFLIGHT_SUMMARY</code>, <code class="highlighter-rouge">#RADIOSONDE</code>, <code class="highlighter-rouge">#INTERFACE_CARD</code>, <code class="highlighter-rouge">#SAMPLING_METHOD</code>, <code class="highlighter-rouge">#PUMP_SETTINGS</code>, <code class="highlighter-rouge">#PUMP_CORRECTION</code>, <code class="highlighter-rouge">#OZONE_REFERENCE</code>, <code class="highlighter-rouge">#PROFILE_UNCERTAINTY</code>, <code class="highlighter-rouge">#PRELAUNCH</code>, et <code class="highlighter-rouge">#DESELECTED_DATA</code>.</p>
+<p>La catégorie Ozonesonde comporte 2 tableaux obligatoires:  <code class="language-plaintext highlighter-rouge">#FLIGHT_SUMMARY</code> et <code class="language-plaintext highlighter-rouge">#PROFILE</code>.
+La catégorie Ozonesonde comporte 10 tableaux optionnelles:  <code class="language-plaintext highlighter-rouge">#PREFLIGHT_SUMMARY</code>, <code class="language-plaintext highlighter-rouge">#RADIOSONDE</code>, <code class="language-plaintext highlighter-rouge">#INTERFACE_CARD</code>, <code class="language-plaintext highlighter-rouge">#SAMPLING_METHOD</code>, <code class="language-plaintext highlighter-rouge">#PUMP_SETTINGS</code>, <code class="language-plaintext highlighter-rouge">#PUMP_CORRECTION</code>, <code class="language-plaintext highlighter-rouge">#OZONE_REFERENCE</code>, <code class="language-plaintext highlighter-rouge">#PROFILE_UNCERTAINTY</code>, <code class="language-plaintext highlighter-rouge">#PRELAUNCH</code>, et <code class="language-plaintext highlighter-rouge">#DESELECTED_DATA</code>.</p>
 
 <p>!!! md-alert “”
-    <strong>Remarque :</strong> La valeur qui figure dans le champ <code class="highlighter-rouge">FORM</code> du tableau <code class="highlighter-rouge">#CONTENT</code> doit être « 2 ». La raison de cette modification est la suivante : la valeur du champ <code class="highlighter-rouge">FORM</code> (index) correspond à la version du format de données. Si un tableau existant est modifié ou qu’un nouveau tableau est ajouté, la valeur du champ <code class="highlighter-rouge">FORM</code> augmente de un après chaque modification. La valeur du champ <code class="highlighter-rouge">FORM</code> (indice) se veut un indicateur du lecteur de fichiers requis pour les tableaux de données qui suivent, pour aider les programmeurs à lire le fichier. Seul le WOUDC peut apporter des modifications à cet index. Par conséquent, l’ajout de tableaux ou les changements apportés aux tableaux originaux de la catégorie Ozonesonde exigent la modification de la valeur du champ <code class="highlighter-rouge">FORM</code>, qui, dans le présent cas, doit être réglée à « 2 » en date du « Jour Mois 2013 ». Pour plus de détails, veuillez vous reporter à la s<a href="#3211-tableau-content">ection 3.2.1.1</a>.</p>
+    <strong>Remarque :</strong> La valeur qui figure dans le champ <code class="language-plaintext highlighter-rouge">FORM</code> du tableau <code class="language-plaintext highlighter-rouge">#CONTENT</code> doit être « 2 ». La raison de cette modification est la suivante : la valeur du champ <code class="language-plaintext highlighter-rouge">FORM</code> (index) correspond à la version du format de données. Si un tableau existant est modifié ou qu’un nouveau tableau est ajouté, la valeur du champ <code class="language-plaintext highlighter-rouge">FORM</code> augmente de un après chaque modification. La valeur du champ <code class="language-plaintext highlighter-rouge">FORM</code> (indice) se veut un indicateur du lecteur de fichiers requis pour les tableaux de données qui suivent, pour aider les programmeurs à lire le fichier. Seul le WOUDC peut apporter des modifications à cet index. Par conséquent, l’ajout de tableaux ou les changements apportés aux tableaux originaux de la catégorie Ozonesonde exigent la modification de la valeur du champ <code class="language-plaintext highlighter-rouge">FORM</code>, qui, dans le présent cas, doit être réglée à « 2 » en date du « Jour Mois 2013 ». Pour plus de détails, veuillez vous reporter à la s<a href="#3211-tableau-content">ection 3.2.1.1</a>.</p>
 
 <p>Le Tableau 3.3 3 présente les tableaux devant être remplis pour la catégorie Ozonesonde (colonne Nom du tableau) et le nom de leurs champs respectifs. Les <a href="#3341-preflight_summary">sections 3.3.4.1</a> à <a href="#33412-tableau-deselected_data">section 3.3.4.12</a> renferment des descriptions plus détaillées des champs de l’ensemble des tableaux. La <a href="#33413-tableaux-de-codes">section 3.3.4.13</a> comporte deux tableaux de codes : le Tableau 3.3 4 – Codes d’algorithme de l’ozone résiduel (correction et le Tableau 3.3 5 – Codes de niveau .</p>
 
@@ -1046,52 +1041,52 @@ La catégorie Ozonesonde comporte 10 tableaux optionnelles:  <code class="highli
   </thead>
   <tbody>
     <tr>
-      <td><code class="highlighter-rouge">#PREFLIGHT_SUMMARY</code></td>
-      <td><code class="highlighter-rouge">Ib0, ib1, ib2, SolutionType, SolutionVolume, PumpFlowRate, OzoneSondeResponseTime</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#PREFLIGHT_SUMMARY</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Ib0, ib1, ib2, SolutionType, SolutionVolume, PumpFlowRate, OzoneSondeResponseTime</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">#RADIOSONDE</code></td>
-      <td><code class="highlighter-rouge">Manufacturer, Model, Number</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#RADIOSONDE</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Manufacturer, Model, Number</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">#INTERFACE_CARD</code></td>
-      <td><code class="highlighter-rouge">Manufacturer, Model, Number</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#INTERFACE_CARD</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Manufacturer, Model, Number</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">#SAMPLING_METHOD</code></td>
-      <td><code class="highlighter-rouge">TypeOzoneFreeAir, CorrectionWettingFlow, SurfaceOzone, DurationSurfaceOzoneExposure, LengthBG, WMOTropopausePressure, BurstOzonePressure, GroundEquipment, ProcessingSoftware</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#SAMPLING_METHOD</code></td>
+      <td><code class="language-plaintext highlighter-rouge">TypeOzoneFreeAir, CorrectionWettingFlow, SurfaceOzone, DurationSurfaceOzoneExposure, LengthBG, WMOTropopausePressure, BurstOzonePressure, GroundEquipment, ProcessingSoftware</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">#PUMP_SETTINGS</code></td>
-      <td><code class="highlighter-rouge">MotorCurrent, HeadPressure, VacuumPressure</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#PUMP_SETTINGS</code></td>
+      <td><code class="language-plaintext highlighter-rouge">MotorCurrent, HeadPressure, VacuumPressure</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">#PUMP_CORRECTION</code></td>
-      <td><code class="highlighter-rouge">Pressure, PumpCorrectionFactor</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#PUMP_CORRECTION</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Pressure, PumpCorrectionFactor</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">#FLIGHT_SUMMARY</code></td>
-      <td><code class="highlighter-rouge">IntegratedO3, CorrectionCode, SondeTotalO3, NormalizationFactor, BackgroundCorrection, SampleTemperatureType</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#FLIGHT_SUMMARY</code></td>
+      <td><code class="language-plaintext highlighter-rouge">IntegratedO3, CorrectionCode, SondeTotalO3, NormalizationFactor, BackgroundCorrection, SampleTemperatureType</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">#OZONE_REFERENCE</code></td>
-      <td><code class="highlighter-rouge">Name, Model, Number, Version, TotalO3, WLCode, ObsType, UTC_Mean</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#OZONE_REFERENCE</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Name, Model, Number, Version, TotalO3, WLCode, ObsType, UTC_Mean</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">#PROFILE</code></td>
-      <td><code class="highlighter-rouge">Duration, Pressure, O3PartialPressure, Temperature, WindSpeed, WindDirection, LevelCode, GPHeight, RelativeHumidity, SampleTemperature, SondeCurrent, PumpMotorCurrent, PumpMotorVoltage, Latitude, Longitude, Height</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#PROFILE</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Duration, Pressure, O3PartialPressure, Temperature, WindSpeed, WindDirection, LevelCode, GPHeight, RelativeHumidity, SampleTemperature, SondeCurrent, PumpMotorCurrent, PumpMotorVoltage, Latitude, Longitude, Height</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">#PROFILE_UNCERTAINTY</code></td>
-      <td>As in <code class="highlighter-rouge">#PROFILE</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#PROFILE_UNCERTAINTY</code></td>
+      <td>As in <code class="language-plaintext highlighter-rouge">#PROFILE</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">#PRELAUNCH</code></td>
-      <td>As in <code class="highlighter-rouge">#PROFILE</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#PRELAUNCH</code></td>
+      <td>As in <code class="language-plaintext highlighter-rouge">#PROFILE</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">#DESELECTED_DATA</code></td>
-      <td>As in <code class="highlighter-rouge">#PROFILE</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#DESELECTED_DATA</code></td>
+      <td>As in <code class="language-plaintext highlighter-rouge">#PROFILE</code></td>
     </tr>
   </tbody>
 </table>
@@ -1169,7 +1164,7 @@ La catégorie Ozonesonde comporte 10 tableaux optionnelles:  <code class="highli
 
 <p><strong>SondeTotalO3</strong>: Intégré + résiduel calculé (DU).</p>
 
-<p><strong>NormalizationFactor</strong>: Facteur en fonction duquel la pression partielle d’ozone apparente a été multipliée pour que la valeur du champ <code class="highlighter-rouge">SondeTotalO3</code> concorde avec la valeur du champ <code class="highlighter-rouge">TotalO3</code> du tableau <code class="highlighter-rouge">#OZONE_REFERENCE</code>. Un facteur négatif indique qu’une valeur a été calculée, mais qu’elle n’a pas été appliquée.</p>
+<p><strong>NormalizationFactor</strong>: Facteur en fonction duquel la pression partielle d’ozone apparente a été multipliée pour que la valeur du champ <code class="language-plaintext highlighter-rouge">SondeTotalO3</code> concorde avec la valeur du champ <code class="language-plaintext highlighter-rouge">TotalO3</code> du tableau <code class="language-plaintext highlighter-rouge">#OZONE_REFERENCE</code>. Un facteur négatif indique qu’une valeur a été calculée, mais qu’elle n’a pas été appliquée.</p>
 
 <p><strong>BackgroundCorrection</strong>: Méthode utilisée pour tenir compte du courant électrique de fond produit par la sonde d’ozone en l’absence d’ozone.</p>
 
@@ -1229,7 +1224,7 @@ La catégorie Ozonesonde comporte 10 tableaux optionnelles:  <code class="highli
 <p><strong>Height</strong>: Hauteur géographique (p. ex., à partir d’un GPS) (mètres au-dessus du niveau de la mer).</p>
 
 <h4 id="33410-tableau-profile_uncertainty">3.3.4.10 Tableau PROFILE_UNCERTAINTY</h4>
-<p>Il faut saisir le degré estimatif d’incertitude (si disponible) relatif à chacun des paramètres de profil mesurés dans le tableau <code class="highlighter-rouge">#PROFILE</code>, en fonction de la durée.</p>
+<p>Il faut saisir le degré estimatif d’incertitude (si disponible) relatif à chacun des paramètres de profil mesurés dans le tableau <code class="language-plaintext highlighter-rouge">#PROFILE</code>, en fonction de la durée.</p>
 
 <p><strong>Duration</strong>: Temps de vol écoulé depuis le lancement, exprimé en variables primaires.</p>
 
@@ -1266,12 +1261,12 @@ La catégorie Ozonesonde comporte 10 tableaux optionnelles:  <code class="highli
 <h4 id="33411-tableau-prelaunch">3.3.4.11 Tableau PRELAUNCH</h4>
 <p>Données enregistrées par un système de télémétrie (c.-à-d. d’acquisition de données) avant le lancement de la sonde, y compris les vérifications de prélancement et les mesures de surface.</p>
 
-<p>Comme la durée est relative à l’heure du lancement (délai avant le lancement, en secondes), il s’agit d’une valeur négative. Tous les autres paramètres du tableau correspondent à ceux du tableau <code class="highlighter-rouge">#PROFILE_UNCERTAINTY</code> (<a href="#33410-tableau-profile_uncertainty">section 3.3.4.10</a>).</p>
+<p>Comme la durée est relative à l’heure du lancement (délai avant le lancement, en secondes), il s’agit d’une valeur négative. Tous les autres paramètres du tableau correspondent à ceux du tableau <code class="language-plaintext highlighter-rouge">#PROFILE_UNCERTAINTY</code> (<a href="#33410-tableau-profile_uncertainty">section 3.3.4.10</a>).</p>
 
 <h4 id="33412-tableau-deselected_data">3.3.4.12 Tableau DESELECTED_DATA</h4>
-<p>Données enregistrées par la sonde d’ozone qui ne sont pas consignées dans le tableau <code class="highlighter-rouge">#PROFILE</code>.</p>
+<p>Données enregistrées par la sonde d’ozone qui ne sont pas consignées dans le tableau <code class="language-plaintext highlighter-rouge">#PROFILE</code>.</p>
 
-<p>Cela inclut les données qui ont été rejetées en raison de problèmes de télémétrie ou d’instrument présumés et les données enregistrées après l’éclatement du ballon (profil de descente). Les paramètres du tableau sont les mêmes que ceux du tableau <code class="highlighter-rouge">#PROFILE_UNCERTAINTY</code> (<a href="#33410-tableau-profile_uncertainty">section 3.3.4.10</a>). La valeur <code class="highlighter-rouge">O3PartialPressure</code> peut être calculée, mais elle n’est pas obligatoire.</p>
+<p>Cela inclut les données qui ont été rejetées en raison de problèmes de télémétrie ou d’instrument présumés et les données enregistrées après l’éclatement du ballon (profil de descente). Les paramètres du tableau sont les mêmes que ceux du tableau <code class="language-plaintext highlighter-rouge">#PROFILE_UNCERTAINTY</code> (<a href="#33410-tableau-profile_uncertainty">section 3.3.4.10</a>). La valeur <code class="language-plaintext highlighter-rouge">O3PartialPressure</code> peut être calculée, mais elle n’est pas obligatoire.</p>
 
 <h4 id="33413-tableaux-de-codes">3.3.4.13 Tableaux de codes</h4>
 <p><strong><em>Tableau 3.3 4 – Codes d’algorithme de l’ozone résiduel (correction)</em></strong></p>
@@ -1336,7 +1331,7 @@ Ozone résiduel (DU) = 7,892 * pression partielle de l’ozone (mPa) à la haute
 <p>Vous trouverez un exemple de fichier de données pour la catégorie Ozonesonde à l’<a href="#a3-exemple-pour-la-catégorie-ozonesonde">annexe A.3</a> et en ligne à l’adresse  <a href="https://woudc.org/archive/Documentation/Examples-extCSV/Ozonesonde.csv">https://woudc.org/archive/Documentation/Examples-extCSV/Ozonesonde.csv</a>.</p>
 
 <h3 id="335-categorie--totalozoneobs">3.3.5 Categorie : TotalOzoneObs</h3>
-<p>La catégorie TotalOzoneObs comporte deux tableaux obligatoires : <code class="highlighter-rouge">#OBSERVATIONS</code> et <code class="highlighter-rouge">#DAILY_SUMMARY</code>.</p>
+<p>La catégorie TotalOzoneObs comporte deux tableaux obligatoires : <code class="language-plaintext highlighter-rouge">#OBSERVATIONS</code> et <code class="language-plaintext highlighter-rouge">#DAILY_SUMMARY</code>.</p>
 
 <p>Le Tableau 3.3 6 présente les tableaux devant être remplis pour la catégorie TotalOzoneObs (colonne Nom du tableau) et le nom de leurs champs respectifs. Les <a href="#3351-tableau-observations">sections 3.3.5.1</a> et <a href="#3352-tableau-daily_summary">3.3.5.2</a> renferment des descriptions plus détaillées des champs de l’ensemble des tableaux. La <a href="#3353-tableaux-de-codes">section 3.3.5.3</a> comporte deux tableaux de codes : Tableau 3.3 7 – Codes de longueur d’onde et le Tableau 3.3 8 – .</p>
 
@@ -1351,12 +1346,12 @@ Ozone résiduel (DU) = 7,892 * pression partielle de l’ozone (mPa) à la haute
   </thead>
   <tbody>
     <tr>
-      <td><code class="highlighter-rouge">#OBERVATIONS</code></td>
-      <td><code class="highlighter-rouge">Time, WLCode, ObsCode, Airmass, ColumnO3, StdDevO3, ColumnSO2, StdDevSO2</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#OBERVATIONS</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Time, WLCode, ObsCode, Airmass, ColumnO3, StdDevO3, ColumnSO2, StdDevSO2</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">#DAILY_SUMMARY</code></td>
-      <td><code class="highlighter-rouge">WLCode, ObsCode, nObs, MeanO3, StdDevO3</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#DAILY_SUMMARY</code></td>
+      <td><code class="language-plaintext highlighter-rouge">WLCode, ObsCode, nObs, MeanO3, StdDevO3</code></td>
     </tr>
   </tbody>
 </table>
@@ -1516,7 +1511,7 @@ Ozone résiduel (DU) = 7,892 * pression partielle de l’ozone (mPa) à la haute
 
 <h3 id="336-catégorie--totalozone">3.3.6 Catégorie : TotalOzone</h3>
 
-<p>La catégorie TotalOzone comporte deux tableaux obligatoires : <code class="highlighter-rouge">#DAILY</code> et <code class="highlighter-rouge">#MONTHLY</code>.</p>
+<p>La catégorie TotalOzone comporte deux tableaux obligatoires : <code class="language-plaintext highlighter-rouge">#DAILY</code> et <code class="language-plaintext highlighter-rouge">#MONTHLY</code>.</p>
 
 <p>Le Tableau 3.3 9 présente les tableaux devant être remplis pour la catégorie TotalOzone (colonne Nom du tableau) et le nom de leurs champs respectifs. Les <a href="#3361-tableu-daily">sections 3.3.6.1</a> et <a href="#3362-tableau-monthly">3.3.6.2</a> renferment des descriptions plus détaillées des champs de l’ensemble des tableaux.</p>
 
@@ -1531,12 +1526,12 @@ Ozone résiduel (DU) = 7,892 * pression partielle de l’ozone (mPa) à la haute
   </thead>
   <tbody>
     <tr>
-      <td><code class="highlighter-rouge">#DAILY</code></td>
-      <td><code class="highlighter-rouge">Data, WLCode, ObsCode, ColumnO3, StdDevO3, UTC_Begin, UTC_End, UTC_Mean, nObs, mMu, ColumnSO2</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#DAILY</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Data, WLCode, ObsCode, ColumnO3, StdDevO3, UTC_Begin, UTC_End, UTC_Mean, nObs, mMu, ColumnSO2</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">#MONTHLY</code></td>
-      <td><code class="highlighter-rouge">Date, ColumnO3, StdDevO3, Npts</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#MONTHLY</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Date, ColumnO3, StdDevO3, Npts</code></td>
     </tr>
   </tbody>
 </table>
@@ -1581,7 +1576,7 @@ Ozone résiduel (DU) = 7,892 * pression partielle de l’ozone (mPa) à la haute
 
 <h3 id="337-catégorie--umkehrn14">3.3.7 Catégorie : UmkehrN14</h3>
 
-<p>La catégorie UmkehrN14 comporte deux tableaux obligatoires : <code class="highlighter-rouge">#N14_VALUES</code> et <code class="highlighter-rouge">#C_PROFILE</code>.</p>
+<p>La catégorie UmkehrN14 comporte deux tableaux obligatoires : <code class="language-plaintext highlighter-rouge">#N14_VALUES</code> et <code class="language-plaintext highlighter-rouge">#C_PROFILE</code>.</p>
 
 <p>Le Tableau 3.3 10 présente les tableaux devant être remplis pour la catégorie UmkehrN14 (colonne Nom du tableau) et le nom de leurs champs respectifs. Les <a href="#3371-tableau-n14_values">sections 3.3.7.1</a> à <a href="#3372-tableau-c_profile">3.3.7.2</a> renferment des descriptions plus détaillées des champs de l’ensemble des tableaux.</p>
 
@@ -1596,11 +1591,11 @@ Ozone résiduel (DU) = 7,892 * pression partielle de l’ozone (mPa) à la haute
   </thead>
   <tbody>
     <tr>
-      <td><code class="highlighter-rouge">#DAILY</code></td>
-      <td><code class="highlighter-rouge">Date, H, L, WLCode, ObsCode, ColumnO#, N600, N650, N700, N740, N750, N770, N800, N830, N840, N850, N865, N880, N890, N900</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#DAILY</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Date, H, L, WLCode, ObsCode, ColumnO#, N600, N650, N700, N740, N750, N770, N800, N830, N840, N850, N865, N880, N890, N900</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">#MONTHLY</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#MONTHLY</code></td>
       <td>`Date, H, L, ColumnO3Obs, ColumnO3Retr, Layer10, Layer9, Layer8, Layer7, Layer6, Layer5, Layer4, Layer3, Layer2, Layer1, ITER, SX, SZA_1, nSZA, DFMRS, FEPS, RMSRES</td>
     </tr>
   </tbody>
@@ -1696,7 +1691,7 @@ Ozone résiduel (DU) = 7,892 * pression partielle de l’ozone (mPa) à la haute
 
 <h3 id="342-catégorie--spectral">3.4.2 Catégorie : Spectral</h3>
 
-<p>La catégorie Spectral comporte six tableaux obligatoires : <code class="highlighter-rouge">#GLOBAL</code>, <code class="highlighter-rouge">#DIRECT</code>, <code class="highlighter-rouge">#DIFFUSE</code>, <code class="highlighter-rouge">#ACTINOMETRIC</code>, <code class="highlighter-rouge">#GLOBAL_SUMMARY</code>, et <code class="highlighter-rouge">#GLOBAL_SUMMARY_NSF</code>.
+<p>La catégorie Spectral comporte six tableaux obligatoires : <code class="language-plaintext highlighter-rouge">#GLOBAL</code>, <code class="language-plaintext highlighter-rouge">#DIRECT</code>, <code class="language-plaintext highlighter-rouge">#DIFFUSE</code>, <code class="language-plaintext highlighter-rouge">#ACTINOMETRIC</code>, <code class="language-plaintext highlighter-rouge">#GLOBAL_SUMMARY</code>, et <code class="language-plaintext highlighter-rouge">#GLOBAL_SUMMARY_NSF</code>.
 La table #GLOBAL_SUMMARY n’est pas requise si la table #GLOBAL_SUMMARY_NSF est présente et la table #GLOBAL_SUMMARY_NSF n’est pas requise si la table #GLOBAL_SUMMARY est présente.</p>
 
 <p>Le Tableau 3.4 1 présente les tableaux devant être remplis pour la catégorie Spectral (colonne Nom du tableau) et le nom de leurs champs respectifs. Les <a href="#3421-tableau-global">sections 3.4.2.1</a> à <a href="#3424-tableau-actinometric">3.4.2.4</a> renferment des descriptions plus détaillées des champs de l’ensemble des tableaux.</p>
@@ -1712,28 +1707,28 @@ La table #GLOBAL_SUMMARY n’est pas requise si la table #GLOBAL_SUMMARY_NSF est
   </thead>
   <tbody>
     <tr>
-      <td><code class="highlighter-rouge">#GLOBAL</code></td>
-      <td><code class="highlighter-rouge">Wavelength, S-Irradiance, Time</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#GLOBAL</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Wavelength, S-Irradiance, Time</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">#DIRECT</code></td>
-      <td><code class="highlighter-rouge">Wavelength, S-Irradiance, Time</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#DIRECT</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Wavelength, S-Irradiance, Time</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">#DIFFUSE</code></td>
-      <td><code class="highlighter-rouge">Wavelength, S-Irradiance, Time</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#DIFFUSE</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Wavelength, S-Irradiance, Time</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">ACTINOMETRIC</code></td>
-      <td><code class="highlighter-rouge">Wavelength, S-Irradiance, Time</code></td>
+      <td><code class="language-plaintext highlighter-rouge">ACTINOMETRIC</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Wavelength, S-Irradiance, Time</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">#GLOBAL_SUMMARY</code></td>
-      <td><code class="highlighter-rouge">Time, IntACGIH, IntCIE, ZenAngle, MuValue, AzimAngle, Flag, TempC, O3, Err_O3, SO2 ,Err_SO2, F324</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#GLOBAL_SUMMARY</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Time, IntACGIH, IntCIE, ZenAngle, MuValue, AzimAngle, Flag, TempC, O3, Err_O3, SO2 ,Err_SO2, F324</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">#GLOBAL_SUMMARY_NSF</code></td>
-      <td><code class="highlighter-rouge">Filename, Volume, SZA, Azimuth, Sky_condition, Minimum_useable_wavelength, E290-320, E320-400, UVIndex</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#GLOBAL_SUMMARY_NSF</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Filename, Volume, SZA, Azimuth, Sky_condition, Minimum_useable_wavelength, E290-320, E320-400, UVIndex</code></td>
     </tr>
   </tbody>
 </table>
@@ -1751,15 +1746,15 @@ La table #GLOBAL_SUMMARY n’est pas requise si la table #GLOBAL_SUMMARY_NSF est
 
 <h4 id="3422-tableau-direct">3.4.2.2 Tableau DIRECT</h4>
 
-<p>Pour une description des champs du tableau <code class="highlighter-rouge">#DIRECT</code>, voir la <a href="#3421-tableau-global">section 3.4.2.1</a> sur le tableau <code class="highlighter-rouge">#GLOBAL</code>.</p>
+<p>Pour une description des champs du tableau <code class="language-plaintext highlighter-rouge">#DIRECT</code>, voir la <a href="#3421-tableau-global">section 3.4.2.1</a> sur le tableau <code class="language-plaintext highlighter-rouge">#GLOBAL</code>.</p>
 
 <h4 id="3423-tableau-diffuse">3.4.2.3 Tableau DIFFUSE</h4>
 
-<p>Pour une description des champs du tableau <code class="highlighter-rouge">#DIFFUSE</code>, voir la <a href="#3421-tableau-global">section 3.4.2.1</a> sur le tableau <code class="highlighter-rouge">#GLOBAL</code>.</p>
+<p>Pour une description des champs du tableau <code class="language-plaintext highlighter-rouge">#DIFFUSE</code>, voir la <a href="#3421-tableau-global">section 3.4.2.1</a> sur le tableau <code class="language-plaintext highlighter-rouge">#GLOBAL</code>.</p>
 
 <h4 id="3424-tableau-actinometric">3.4.2.4 Tableau ACTINOMETRIC</h4>
 
-<p>Pour une description des champs du tableau <code class="highlighter-rouge">#ACTINOMETRIC</code>, voir la <a href="#3421-tableau-global">section 3.4.2.1</a> sur le tableau <code class="highlighter-rouge">#GLOBAL</code>.</p>
+<p>Pour une description des champs du tableau <code class="language-plaintext highlighter-rouge">#ACTINOMETRIC</code>, voir la <a href="#3421-tableau-global">section 3.4.2.1</a> sur le tableau <code class="language-plaintext highlighter-rouge">#GLOBAL</code>.</p>
 
 <h4 id="3425-tableau-global_summary">3.4.2.5 Tableau GLOBAL_SUMMARY</h4>
 
@@ -1770,7 +1765,7 @@ La table #GLOBAL_SUMMARY n’est pas requise si la table #GLOBAL_SUMMARY_NSF est
 
 <h3 id="343-catégorie--multiband">3.4.3 Catégorie : Multiband</h3>
 
-<p>La catégorie Multiband comporte cinq tableaux obligatoires : <code class="highlighter-rouge">#GLOBAL</code>, <code class="highlighter-rouge">#DIRECT</code>, <code class="highlighter-rouge">#DIFFUSE</code>, <code class="highlighter-rouge">#ACTINOMETRIC</code> et <code class="highlighter-rouge">#SIMULTANEOUS</code>.</p>
+<p>La catégorie Multiband comporte cinq tableaux obligatoires : <code class="language-plaintext highlighter-rouge">#GLOBAL</code>, <code class="language-plaintext highlighter-rouge">#DIRECT</code>, <code class="language-plaintext highlighter-rouge">#DIFFUSE</code>, <code class="language-plaintext highlighter-rouge">#ACTINOMETRIC</code> et <code class="language-plaintext highlighter-rouge">#SIMULTANEOUS</code>.</p>
 
 <p>Le Tableau 3.4 2 présente les tableaux devant être remplis pour la catégorie Multiband (colonne Nom du tableau) et le nom de leurs champs respectifs. Les <a href="#3431-tableau-global">sections 3.4.3.1</a> à <a href="#3435-tableau-simultaneous">3.4.3.5</a> renferment des descriptions plus détaillées des champs de l’ensemble des tableaux.</p>
 
@@ -1785,24 +1780,24 @@ La table #GLOBAL_SUMMARY n’est pas requise si la table #GLOBAL_SUMMARY_NSF est
   </thead>
   <tbody>
     <tr>
-      <td><code class="highlighter-rouge">#GLOBAL</code></td>
-      <td><code class="highlighter-rouge">Wavelength, S - Irradiance, Time</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#GLOBAL</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Wavelength, S - Irradiance, Time</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">#DIRECT</code></td>
-      <td><code class="highlighter-rouge">Wavelength, S - Irradiance, Time</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#DIRECT</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Wavelength, S - Irradiance, Time</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">#DIFFUSE</code></td>
-      <td><code class="highlighter-rouge">Wavelength, S - Irradiance, Time</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#DIFFUSE</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Wavelength, S - Irradiance, Time</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">ACTINOMETRIC</code></td>
-      <td><code class="highlighter-rouge">Wavelength, S - Irradiance, Time</code></td>
+      <td><code class="language-plaintext highlighter-rouge">ACTINOMETRIC</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Wavelength, S - Irradiance, Time</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">#SIMULTANEOUS</code></td>
-      <td><code class="highlighter-rouge">Wavelength, GLS - Irradiance, DFS - Irradiance, DRS - Irradiance, Time</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#SIMULTANEOUS</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Wavelength, GLS - Irradiance, DFS - Irradiance, DRS - Irradiance, Time</code></td>
     </tr>
   </tbody>
 </table>
@@ -1820,15 +1815,15 @@ La table #GLOBAL_SUMMARY n’est pas requise si la table #GLOBAL_SUMMARY_NSF est
 
 <h4 id="3432-tableau-direct">3.4.3.2 Tableau DIRECT</h4>
 
-<p>Pour une description des champs du tableau <code class="highlighter-rouge">#DIRECT</code>, voir la <a href="#3431-tableau-global">section 3.4.3.1</a> sur le tableau <code class="highlighter-rouge">#GLOBAL</code>.</p>
+<p>Pour une description des champs du tableau <code class="language-plaintext highlighter-rouge">#DIRECT</code>, voir la <a href="#3431-tableau-global">section 3.4.3.1</a> sur le tableau <code class="language-plaintext highlighter-rouge">#GLOBAL</code>.</p>
 
 <h4 id="3433-tableau-diffuse">3.4.3.3 Tableau DIFFUSE</h4>
 
-<p>Pour une description des champs du tableau <code class="highlighter-rouge">#DIFFUSE</code>, voir la <a href="#3431-tableau-global">section 3.4.3.1</a> sur le tableau <code class="highlighter-rouge">#GLOBAL</code>.</p>
+<p>Pour une description des champs du tableau <code class="language-plaintext highlighter-rouge">#DIFFUSE</code>, voir la <a href="#3431-tableau-global">section 3.4.3.1</a> sur le tableau <code class="language-plaintext highlighter-rouge">#GLOBAL</code>.</p>
 
 <h4 id="3434-tableau-actinometric">3.4.3.4 Tableau ACTINOMETRIC</h4>
 
-<p>Pour une description des champs du tableau <code class="highlighter-rouge">#ACTINOMETRIC</code>, voir la <a href="#3431-tableau-global">section 3.4.3.1</a> sur le tableau <code class="highlighter-rouge">#GLOBAL</code>.</p>
+<p>Pour une description des champs du tableau <code class="language-plaintext highlighter-rouge">#ACTINOMETRIC</code>, voir la <a href="#3431-tableau-global">section 3.4.3.1</a> sur le tableau <code class="language-plaintext highlighter-rouge">#GLOBAL</code>.</p>
 
 <h4 id="3435-tableau-simultaneous">3.4.3.5 Tableau SIMULTANEOUS</h4>
 
@@ -1843,7 +1838,7 @@ La table #GLOBAL_SUMMARY n’est pas requise si la table #GLOBAL_SUMMARY_NSF est
 <p><strong>Time</strong>: Heure affichée selon le format de la norme ISO 8601, c’est-à-dire hh:mm:ss.</p>
 
 <p>!!! md-alert “”
-    <strong>Remarque :</strong> Le tableau <code class="highlighter-rouge">#SIMULTANEOUS</code> fait référence à un détecteur unique à l’aide duquel des mesures sont prises en mode quasi simultané, mais rapporté sur la même échelle de temps. Par exemple, les mesures sont enregistrées à des intervalles de 15 secondes, d’abord pour l’éclairement énergétique spectral global, puis pour l’éclairement énergétique spectral diffus, après quoi une valeur intégrée est rapportée toutes les 15 minutes. Pour les besoins de ce tableau, cette valeur intégrée est jugée comme étant « simultanée ». En ce qui concerne les mesures simultanées réalisées à l’aide de deux détecteurs indépendants ou plus, il faut un fichier de données pour chacun des détecteurs.</p>
+    <strong>Remarque :</strong> Le tableau <code class="language-plaintext highlighter-rouge">#SIMULTANEOUS</code> fait référence à un détecteur unique à l’aide duquel des mesures sont prises en mode quasi simultané, mais rapporté sur la même échelle de temps. Par exemple, les mesures sont enregistrées à des intervalles de 15 secondes, d’abord pour l’éclairement énergétique spectral global, puis pour l’éclairement énergétique spectral diffus, après quoi une valeur intégrée est rapportée toutes les 15 minutes. Pour les besoins de ce tableau, cette valeur intégrée est jugée comme étant « simultanée ». En ce qui concerne les mesures simultanées réalisées à l’aide de deux détecteurs indépendants ou plus, il faut un fichier de données pour chacun des détecteurs.</p>
 
 <h4 id="3436-exemple">3.4.3.6 Exemple</h4>
 
@@ -1851,7 +1846,7 @@ La table #GLOBAL_SUMMARY n’est pas requise si la table #GLOBAL_SUMMARY_NSF est
 
 <h3 id="344-catégorie--broadband">3.4.4 Catégorie : Broadband</h3>
 
-<p>La catégorie Broadband comporte cinq tableaux obligatoires : <code class="highlighter-rouge">#GLOBAL</code>, <code class="highlighter-rouge">#DIRECT</code>,0 <code class="highlighter-rouge">#DIFFUSE</code>, <code class="highlighter-rouge">#ACTINOMETRIC</code> et <code class="highlighter-rouge">#SIMULTANEOUS</code>.</p>
+<p>La catégorie Broadband comporte cinq tableaux obligatoires : <code class="language-plaintext highlighter-rouge">#GLOBAL</code>, <code class="language-plaintext highlighter-rouge">#DIRECT</code>,0 <code class="language-plaintext highlighter-rouge">#DIFFUSE</code>, <code class="language-plaintext highlighter-rouge">#ACTINOMETRIC</code> et <code class="language-plaintext highlighter-rouge">#SIMULTANEOUS</code>.</p>
 
 <p>Le Tableau 3.4 3 présente les tableaux devant être remplis pour la catégorie Broadband (colonne Nom du tableau) et le nom de leurs champs respectifs. Les <a href="#3441-tableau-global">sections 3.4.4.1</a> à <a href="#3445-tableau-simultaneous">3.4.4.5</a> renferment des descriptions plus détaillées des champs de l’ensemble des tableaux.</p>
 
@@ -1866,24 +1861,24 @@ La table #GLOBAL_SUMMARY n’est pas requise si la table #GLOBAL_SUMMARY_NSF est
   </thead>
   <tbody>
     <tr>
-      <td><code class="highlighter-rouge">#GLOBAL</code></td>
-      <td><code class="highlighter-rouge">S - Irradiance, Time</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#GLOBAL</code></td>
+      <td><code class="language-plaintext highlighter-rouge">S - Irradiance, Time</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">#DIRECT</code></td>
-      <td><code class="highlighter-rouge">S - Irradiance, Time</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#DIRECT</code></td>
+      <td><code class="language-plaintext highlighter-rouge">S - Irradiance, Time</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">#DIFFUSE</code></td>
-      <td><code class="highlighter-rouge">S - Irradiance, Time</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#DIFFUSE</code></td>
+      <td><code class="language-plaintext highlighter-rouge">S - Irradiance, Time</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">ACTINOMETRIC</code></td>
-      <td><code class="highlighter-rouge">S - Irradiance, Time</code></td>
+      <td><code class="language-plaintext highlighter-rouge">ACTINOMETRIC</code></td>
+      <td><code class="language-plaintext highlighter-rouge">S - Irradiance, Time</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">#SIMULTANEOUS</code></td>
-      <td><code class="highlighter-rouge">Time, GL - Irradiance, DF - Irradiance, DR - Irradiance</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#SIMULTANEOUS</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Time, GL - Irradiance, DF - Irradiance, DR - Irradiance</code></td>
     </tr>
   </tbody>
 </table>
@@ -1899,15 +1894,15 @@ La table #GLOBAL_SUMMARY n’est pas requise si la table #GLOBAL_SUMMARY_NSF est
 
 <h4 id="3442-tableau-direct">3.4.4.2 Tableau DIRECT</h4>
 
-<p>Pour une description des champs du tableau <code class="highlighter-rouge">#DIRECT</code>, voir la <a href="#3441-tableau-global">section 3.4.4.1</a> sur le tableau <code class="highlighter-rouge">#GLOBAL</code>.</p>
+<p>Pour une description des champs du tableau <code class="language-plaintext highlighter-rouge">#DIRECT</code>, voir la <a href="#3441-tableau-global">section 3.4.4.1</a> sur le tableau <code class="language-plaintext highlighter-rouge">#GLOBAL</code>.</p>
 
 <h4 id="3443-tableau-diffuse">3.4.4.3 Tableau DIFFUSE</h4>
 
-<p>Pour une description des champs du tableau <code class="highlighter-rouge">#DIFFUSE</code>, voir la <a href="#3441-tableau-global">section 3.4.4.1</a> sur le tableau <code class="highlighter-rouge">#GLOBAL</code>.</p>
+<p>Pour une description des champs du tableau <code class="language-plaintext highlighter-rouge">#DIFFUSE</code>, voir la <a href="#3441-tableau-global">section 3.4.4.1</a> sur le tableau <code class="language-plaintext highlighter-rouge">#GLOBAL</code>.</p>
 
 <h4 id="3444-tableau-actinometric">3.4.4.4 Tableau ACTINOMETRIC</h4>
 
-<p>Pour une description des champs du tableau <code class="highlighter-rouge">#ACTINOMETRIC</code>, voir la <a href="#3441-tableau-global">section 3.4.4.1</a> sur le tableau <code class="highlighter-rouge">#GLOBAL</code>.</p>
+<p>Pour une description des champs du tableau <code class="language-plaintext highlighter-rouge">#ACTINOMETRIC</code>, voir la <a href="#3441-tableau-global">section 3.4.4.1</a> sur le tableau <code class="language-plaintext highlighter-rouge">#GLOBAL</code>.</p>
 
 <h4 id="3445-tableau-simultaneous">3.4.4.5 Tableau SIMULTANEOUS</h4>
 
@@ -1920,7 +1915,7 @@ La table #GLOBAL_SUMMARY n’est pas requise si la table #GLOBAL_SUMMARY_NSF est
 <p><strong>DR - Irradiance</strong>: Éclairement énergétique direct, exprimé en Wm^-2.</p>
 
 <p>!!! md-alert “”
-    **Remarque : ** Le tableau <code class="highlighter-rouge">#SIMULTANEOUS</code> fait référence à un détecteur unique à l’aide duquel des mesures sont prises en mode quasi simultané, mais rapporté sur la même échelle de temps. Par exemple, les mesures sont enregistrées à des intervalles de 15 secondes, d’abord pour l’irradiance globale, puis pour l’irradiance diffuse, après quoi une valeur intégrée est rapportée toutes les 15 minutes. Pour les besoins de ce tableau, cette valeur intégrée est jugée comme étant « simultanée ». En ce qui concerne les mesures simultanées réalisées à l’aide de deux détecteurs indépendants ou plus, il faut un fichier de données pour chacun des détecteurs.</p>
+    **Remarque : ** Le tableau <code class="language-plaintext highlighter-rouge">#SIMULTANEOUS</code> fait référence à un détecteur unique à l’aide duquel des mesures sont prises en mode quasi simultané, mais rapporté sur la même échelle de temps. Par exemple, les mesures sont enregistrées à des intervalles de 15 secondes, d’abord pour l’irradiance globale, puis pour l’irradiance diffuse, après quoi une valeur intégrée est rapportée toutes les 15 minutes. Pour les besoins de ce tableau, cette valeur intégrée est jugée comme étant « simultanée ». En ce qui concerne les mesures simultanées réalisées à l’aide de deux détecteurs indépendants ou plus, il faut un fichier de données pour chacun des détecteurs.</p>
 
 <h4 id="3446-exemple">3.4.4.6 Exemple</h4>
 
@@ -1928,7 +1923,7 @@ La table #GLOBAL_SUMMARY n’est pas requise si la table #GLOBAL_SUMMARY_NSF est
 
 <h3 id="345-catégorie--pyranometer">3.4.5 Catégorie : Pyranometer</h3>
 
-<p>La catégorie Pyranometer comporte quatre tableaux obligatoires : <code class="highlighter-rouge">#GLOBAL</code>, <code class="highlighter-rouge">#DIRECT</code>, <code class="highlighter-rouge">#DIFFUSE</code> et <code class="highlighter-rouge">#ACTINOMETRIC</code>.</p>
+<p>La catégorie Pyranometer comporte quatre tableaux obligatoires : <code class="language-plaintext highlighter-rouge">#GLOBAL</code>, <code class="language-plaintext highlighter-rouge">#DIRECT</code>, <code class="language-plaintext highlighter-rouge">#DIFFUSE</code> et <code class="language-plaintext highlighter-rouge">#ACTINOMETRIC</code>.</p>
 
 <p>Le Tableau 3.4 4 présente les tableaux devant être remplis pour la catégorie Pyranometer (colonne Nom du tableau) et le nom de leurs champs respectifs. Les <a href="#3451-tableau-global">sections 3.4.5.1</a> à <a href="#3454-tableau-simultaneous">3.4.5.4</a> renferment des descriptions plus détaillées des champs de l’ensemble des tableaux.</p>
 
@@ -1943,24 +1938,24 @@ La table #GLOBAL_SUMMARY n’est pas requise si la table #GLOBAL_SUMMARY_NSF est
   </thead>
   <tbody>
     <tr>
-      <td><code class="highlighter-rouge">#GLOBAL</code></td>
-      <td><code class="highlighter-rouge">S - Irradiance, Time</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#GLOBAL</code></td>
+      <td><code class="language-plaintext highlighter-rouge">S - Irradiance, Time</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">#DIRECT</code></td>
-      <td><code class="highlighter-rouge">S - Irradiance, Time</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#DIRECT</code></td>
+      <td><code class="language-plaintext highlighter-rouge">S - Irradiance, Time</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">#DIFFUSE</code></td>
-      <td><code class="highlighter-rouge">S - Irradiance, Time</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#DIFFUSE</code></td>
+      <td><code class="language-plaintext highlighter-rouge">S - Irradiance, Time</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">ACTINOMETRIC</code></td>
-      <td><code class="highlighter-rouge">S - Irradiance, Time</code></td>
+      <td><code class="language-plaintext highlighter-rouge">ACTINOMETRIC</code></td>
+      <td><code class="language-plaintext highlighter-rouge">S - Irradiance, Time</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">#SIMULTANEOUS</code></td>
-      <td><code class="highlighter-rouge">Time, GL - Irradiance, DF - Irradiance, DR - Irradiance</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#SIMULTANEOUS</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Time, GL - Irradiance, DF - Irradiance, DR - Irradiance</code></td>
     </tr>
   </tbody>
 </table>
@@ -1976,11 +1971,11 @@ La table #GLOBAL_SUMMARY n’est pas requise si la table #GLOBAL_SUMMARY_NSF est
 
 <h4 id="3452-tableau-direct">3.4.5.2 Tableau DIRECT</h4>
 
-<p>Pour une description des champs du tableau <code class="highlighter-rouge">#DIRECT</code>, voir la <a href="#3451-tableau-global">section 3.4.5.1</a> sur le tableau <code class="highlighter-rouge">#GLOBAL</code>.</p>
+<p>Pour une description des champs du tableau <code class="language-plaintext highlighter-rouge">#DIRECT</code>, voir la <a href="#3451-tableau-global">section 3.4.5.1</a> sur le tableau <code class="language-plaintext highlighter-rouge">#GLOBAL</code>.</p>
 
 <h4 id="3453-tableau-diffuse">3.4.5.3 Tableau DIFFUSE</h4>
 
-<p>Pour une description des champs du tableau <code class="highlighter-rouge">#DIFFUSE</code>, voir la <a href="#3451-tableau-global">section 3.4.5.1</a> sur le tableau <code class="highlighter-rouge">#GLOBAL</code>.</p>
+<p>Pour une description des champs du tableau <code class="language-plaintext highlighter-rouge">#DIFFUSE</code>, voir la <a href="#3451-tableau-global">section 3.4.5.1</a> sur le tableau <code class="language-plaintext highlighter-rouge">#GLOBAL</code>.</p>
 
 <h4 id="3454-tableau-simultaneous">3.4.5.4 Tableau SIMULTANEOUS</h4>
 
@@ -1993,7 +1988,7 @@ La table #GLOBAL_SUMMARY n’est pas requise si la table #GLOBAL_SUMMARY_NSF est
 <p><strong>DR - Irradiance</strong>: Éclairement énergétique direct, exprimé en Wm^-2.</p>
 
 <p>!!! md-alert “”
-    <strong>Remarque :</strong> Le tableau <code class="highlighter-rouge">#SIMULTANEOUS</code> fait référence à un détecteur unique à l’aide duquel des mesures sont prises en mode quasi simultané, mais rapporté sur la même échelle de temps. Par exemple, les mesures sont enregistrées à des intervalles de 15 secondes, d’abord pour l’éclairement énergétique global, puis pour l’éclairement énergétique diffus, après quoi une valeur intégrée est rapportée toutes les 15 minutes. Pour les besoins de ce tableau, cette valeur intégrée est jugée comme étant « simultanée ». En ce qui concerne les mesures simultanées réalisées à l’aide de deux détecteurs indépendants ou plus, il faut un fichier de données pour chacun des détecteurs.</p>
+    <strong>Remarque :</strong> Le tableau <code class="language-plaintext highlighter-rouge">#SIMULTANEOUS</code> fait référence à un détecteur unique à l’aide duquel des mesures sont prises en mode quasi simultané, mais rapporté sur la même échelle de temps. Par exemple, les mesures sont enregistrées à des intervalles de 15 secondes, d’abord pour l’éclairement énergétique global, puis pour l’éclairement énergétique diffus, après quoi une valeur intégrée est rapportée toutes les 15 minutes. Pour les besoins de ce tableau, cette valeur intégrée est jugée comme étant « simultanée ». En ce qui concerne les mesures simultanées réalisées à l’aide de deux détecteurs indépendants ou plus, il faut un fichier de données pour chacun des détecteurs.</p>
 
 <h4 id="3455-exemple">3.4.5.5 Exemple</h4>
 
@@ -2022,23 +2017,23 @@ La table #GLOBAL_SUMMARY n’est pas requise si la table #GLOBAL_SUMMARY_NSF est
   </thead>
   <tbody>
     <tr>
-      <td><code class="highlighter-rouge">#CALIBRATION</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#CALIBRATION</code></td>
       <td>Specified by the data originator (Scientific Authority)</td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">#METEOROLOGY</code></td>
+      <td><code class="language-plaintext highlighter-rouge">#METEOROLOGY</code></td>
       <td>Temperature, Pressure, Relative Humidity</td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">METEOROLOGY_SUMMARY</code></td>
+      <td><code class="language-plaintext highlighter-rouge">METEOROLOGY_SUMMARY</code></td>
       <td>Time, Temperature, Pressure, Relative Humidity</td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">SURFACE_CONDITIONS</code></td>
+      <td><code class="language-plaintext highlighter-rouge">SURFACE_CONDITIONS</code></td>
       <td>Albedo, Comments about Surface cover (Example: “Snow” or “Shrubland” or “Grassland”)</td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">IMAGE</code></td>
+      <td><code class="language-plaintext highlighter-rouge">IMAGE</code></td>
       <td>Filename, Comments (Example: sky97001.gif)</td>
     </tr>
   </tbody>
@@ -2191,7 +2186,7 @@ La table #GLOBAL_SUMMARY n’est pas requise si la table #GLOBAL_SUMMARY_NSF est
 
 <h1 id="chapter-4-chapitre-4-traitement-des-données">Chapter 4 Chapitre 4 Traitement des données</h1>
 <h2 id="41-politique-sur-les-données">4.1 Politique sur les données</h2>
-<p>L’utilisation des données du WOUDC est régie par la <a href="https://www.wmo.int/pages/about/exchangingdata_en.html">politique sur les données de l’OMM</a> et par la <a href="https://gawsis.meteoswiss.ch/GAWSIS/index.html#/faq">politique sur l’utilisation des données du programme VAG de l’OMM</a>. Pour plus de renseignements sur la politique d’utilisation des données du WOUDC, allez à l’adresse <a href="https://woudc.org/about/data-policy.php?lang=fr">enligne</a>.</p>
+<p>L’utilisation des données du WOUDC est régie par la <a href="https://www.wmo.int/pages/about/exchangingdata_en.html">politique sur les données de l’OMM</a> et par la <a href="https://gawsis.meteoswiss.ch/GAWSIS/index.html#/faq">politique sur l’utilisation des données du programme VAG de l’OMM</a>. Pour plus de renseignements sur la politique d’utilisation des données du WOUDC, allez à l’adresse <a href="https://woudc.org/fr/donnees/politique-d'utilisation-des-donnees">enligne</a>.</p>
 
 <h2 id="42-flux-et-traitement-des-données">4.2 Flux et traitement des données</h2>
 <p>La <a href="#23-soumission-des-données">section 2.3</a> fournit des procédures détaillées concernant le traitement des données. Il est possible d’accéder aux données correctement soumises par le biais des dossiers accessibles sur le Web (WAF), des services Web géospatiaux et de la fonction de recherche.</p>
@@ -2200,7 +2195,7 @@ La table #GLOBAL_SUMMARY n’est pas requise si la table #GLOBAL_SUMMARY_NSF est
 
 <ul>
   <li>de s’assurer que le fichier extCSV est conforme aux spécifications du programme VAG et du WOUDC sur le plan syntaxique</li>
-  <li>d’effectuer une validation des métadonnées pour s’assurer que les valeurs contenues dans les en têtes (<code class="highlighter-rouge">#TIMESTAMP</code>, <code class="highlighter-rouge">#PLATFORM</code>, <code class="highlighter-rouge">#INSTRUMENT</code>, <code class="highlighter-rouge">#CONTENT</code>, <code class="highlighter-rouge">#DATA_GENERATION</code>, <code class="highlighter-rouge">#LOCATION</code>) sont exactes et uniformes</li>
+  <li>d’effectuer une validation des métadonnées pour s’assurer que les valeurs contenues dans les en têtes (<code class="language-plaintext highlighter-rouge">#TIMESTAMP</code>, <code class="language-plaintext highlighter-rouge">#PLATFORM</code>, <code class="language-plaintext highlighter-rouge">#INSTRUMENT</code>, <code class="language-plaintext highlighter-rouge">#CONTENT</code>, <code class="language-plaintext highlighter-rouge">#DATA_GENERATION</code>, <code class="language-plaintext highlighter-rouge">#LOCATION</code>) sont exactes et uniformes</li>
   <li>d’effectuer une validation unique des tableaux, soit une série de tests servant à valider des tableaux d’ensemble de données spécifiques</li>
   <li>de s’assurer que les valeurs sont modifiées conformément à la politique de « non-intervention » (c.-à-d. avec le moins de modifications syntaxiques possible)</li>
 </ul>
@@ -2231,20 +2226,20 @@ La table #GLOBAL_SUMMARY n’est pas requise si la table #GLOBAL_SUMMARY_NSF est
 
 <ul>
   <li>Vérification de l’exactitude de l’ensemble des dates contenues dans le fichier (p. ex., la date de génération du fichier ne précède pas la date d’observation)</li>
-  <li>Vérification des valeurs dérivées contenues dans le fichier (p. ex., valeurs du champ TotalOzone dans le tableau <code class="highlighter-rouge">#MONTHLY</code>)
+  <li>Vérification des valeurs dérivées contenues dans le fichier (p. ex., valeurs du champ TotalOzone dans le tableau <code class="language-plaintext highlighter-rouge">#MONTHLY</code>)
       - Correction des valeurs incorrectes et insertion des données manquantes</li>
 </ul>
 
 <p>Au départ, les fichiers sont validés pour confirmer qu’ils sont conformes aux spécifications relatives au format de fichier, mais, par la suite, des résumés statistiques plus généraux peuvent être générés, de manière à relever des valeurs erronées, des problèmes d’étalonnage, etc. Même si ces derniers exemples exigent une connaissance plus approfondie des données, les archives renferment déjà suffisamment de données pour porter des jugements critiques et faire des évaluations générales au sujet des données. À mesure que le volume de données augmentera et que les connaissances statistiques s’amélioreront, la portée de ces évaluations sera élargie.</p>
 
 <h1 id="chapitre-6-consultation-et-extraction-de-données">Chapitre 6 Consultation et extraction de données</h1>
-<p>La consultation et l’extraction de données sont des fonctions de base du WOUDC. Le grand public a accès gratuitement aux données du WOUDC. Pour des renseignements sur la façon de consulter les données, voir le page <a href="https://woudc.org/about/data-access.php?lang=fr">Accessibilité des données</a>.</p>
+<p>La consultation et l’extraction de données sont des fonctions de base du WOUDC. Le grand public a accès gratuitement aux données du WOUDC. Pour des renseignements sur la façon de consulter les données, voir le page <a href="https://woudc.org/fr/donnees/accessibilite-des-donnees">Accessibilité des données</a>.</p>
 
 <h1 id="chapitre-7-coordonnées-du-woudc">Chapitre 7 Coordonnées du WOUDC</h1>
 <p>La principal moyenne de communication avec le WOUDC est par le page de contact. La boîte de réception est vérifiée sur une base quotidienne par les services opérationnels des centres de données. Conformément à sa norme de service, le WOUDC est tenu à répondre à toutes les demandes de renseignements transmises sur l’internet dans un délai de deux jours ouvrables.</p>
 
 <h2 id="71-le-page-de-contact">7.1 Le page de contact</h2>
-<p><a href="https://woudc.org/contact.php?lang=fr">https://woudc.org/contact.php?lang=fr</a>.</p>
+<p><a href="https://woudc.org/fr/contact">https://woudc.org/fr/contact</a>.</p>
 
 <h2 id="72-adresse">7.2 Adresse</h2>
 
@@ -2278,7 +2273,7 @@ La table #GLOBAL_SUMMARY n’est pas requise si la table #GLOBAL_SUMMARY_NSF est
 
 <p>Vous trouverez ci-dessous un exemple de soumission de données pour la catégorie Lidar. Vous pouvez aussi consulter un exemple en ligne à l’adresse  <a href="https://woudc.org/archive/Documentation/Examples-extCSV/Lidar.csv">https://woudc.org/archive/Documentation/Examples-extCSV/Lidar.csv</a>.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>`*NOTE:One Event per file
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>`*NOTE:One Event per file
 * This file was generated by NA2110LI - version 1.0.
 * Originating NASA-Ames file: NDSC\EUREKA\euo39302.cal
 * --- NASA-Ames MNAME ---
@@ -2321,13 +2316,12 @@ Altitude,OzoneDensity,StandardError,RangeResolution,AirDensity,Temperature
 12450.,2.761e+012,4.82e+010,1000
 12750.,2.996e+012,5.02e+010,1000
 … etc
-</code></pre>
-</div>
+</code></pre></div></div>
 <h2 id="a2--exemple-pour-la-catégorie-microwave">A.2  Exemple pour la catégorie Microwave</h2>
 
 <p>Vous trouverez ci-dessous un exemple de soumission de données pour la catégorie Microwave.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>*NOTE: One Event per file
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>*NOTE: One Event per file
 
 * This file was originally received in NASA-Ames 2110 format and has been
 * translated into WOUDC extCSV format using converter software XXX ver xx
@@ -2473,14 +2467,13 @@ Altitude,OzoneVMR,VariableError,FixedError,SmoothingError,TotalError,A-Priori,Te
 * A-priori profile: season standard atmosphere
 * Measurement Error Cov.: variable, adjusted to wings BT
 * A Priori Error Cov.: 0 - 1.5 ppm (correlation 3-5 km)
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <h2 id="a3--exemple-pour-la-catégorie-ozonesonde">A.3  Exemple pour la catégorie Ozonesonde</h2>
 
 <p>Vous trouverez ci-dessous un exemple de soumission de données pour la catégorie Ozonesonde. Vous pouvez aussi consulter un exemple en ligne à l’adresse <a href="https://woudc.org/archive/Documentation/Examples-extCSV/Ozonesonde.csv">https://woudc.org/archive/Documentation/Examples-extCSV/Ozonesonde.csv</a>.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>#CONTENT
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#CONTENT
 Class,Category,Level,Form
 WOUDC,OzoneSonde,1.0,2
 
@@ -2576,14 +2569,13 @@ Duration,Pressure,O3PartialPressure,Temperature,WindSpeed,WindDirection,LevelCod
 !!! md-alert ""
     **Note:** At present this is a placeholder for estimated uncertainty for each of the measured profile parameters listed here. Guidelines for this will be released probably first in 2014/2015
 
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <h2 id="a4--exemple-pour-la-catégorie-totalozoneobs">A.4  Exemple pour la catégorie TotalOzoneObs</h2>
 
 <p>Vous trouverez ci-dessous un exemple de soumission de données pour la catégorie TotalOzoneObs data submission. Vous pouvez aussi consulter un exemple en ligne à l’adresse <a href="https://woudc.org/archive/Documentation/Examples-extCSV/TotalOzoneObs.csv">https://woudc.org/archive/Documentation/Examples-extCSV/TotalOzoneObs.csv</a>.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>*Example of a single day of observations
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>*Example of a single day of observations
 *One observation day per file
 #CONTENT
 Class,Category,Level,Form
@@ -2616,14 +2608,13 @@ Time,WLcode,ObsCode,Airmass,ColumnO3,StdDevO3,ColumnSO2,StdDevSO2
 #DAILY_SUMMARY
 WLcode,ObsCode,nObs,MeanO3,StdDevO3
 9,DS,9,350.0,2.0
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <h2 id="a5--exemple-pour-la-catégorie-totalozone">A.5  Exemple pour la catégorie TotalOzone</h2>
 
 <p>Vous trouverez ci-dessous un exemple de soumission de données pour la catégorie TotalOzone. Vous pouvez aussi consulter un exemple en ligne à l’adresse <a href="https://woudc.org/archive/Documentation/Examples-extCSV/TotalOzone-Brewer.csv">https://woudc.org/archive/Documentation/Examples-extCSV/TotalOzone-Brewer.csv</a>.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>*Example of daily ozone values
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>*Example of daily ozone values
 *One month per file
 #CONTENT
 Class,Category,Level,Form
@@ -2662,14 +2653,13 @@ UTCOffset,Date,Time
 #MONTHLY
 Date,ColumnO3,StdDevO3,Npts
 1999-04-01,350.0,5.0,13
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <h2 id="a6--exemple-pour-la-catégorie-umkehrn14">A.6  Exemple pour la catégorie UmkehrN14</h2>
 
 <p>Vous trouverez ci-dessous un exemple de soumission de données pour la catégorie UmkehrN14. Vous pouvez aussi consulter des exemples en ligne aux adresses suivantes :  <a href="https://woudc.org/archive/Documentation/Examples-extCSV/Umkehr-N_values-Dobson.csv">https://woudc.org/archive/Documentation/Examples-extCSV/Umkehr-N_values-Dobson.csv</a> (niveau 1.0) et <a href="https://woudc.org/archive/Documentation/Examples-extCSV/Umkehr_UMK92Retrieval-Dobson.csv">https://woudc.org/archive/Documentation/Examples-extCSV/Umkehr_UMK92Retrieval-Dobson.csv</a> (niveau 2.0).</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>*NOAA-CMDL is the Agency acronym for the National Oceanographic and
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>*NOAA-CMDL is the Agency acronym for the National Oceanographic and
 *Atmospheric Administration-Climate Monitoring and Diagnostics Laboratory
 
 *One month per file
@@ -2719,14 +2709,13 @@ UTCOffset,Date,Time
 #METEOROLOGY
 Temperature,Pressure,Relative Humidity
 ,1642 
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <h2 id="a7--exemple-pour-la-catégorie-spectral">A.7  Exemple pour la catégorie Spectral</h2>
 
 <p>Vous trouverez ci-dessous un exemple de soumission de données pour la catégorie Spectral. Vous pouvez aussi consulter un exemple en ligne à l’adresse <a href="https://woudc.org/archive/Documentation/Examples-extCSV/Spectral.csv">https://woudc.org/archive/Documentation/Examples-extCSV/Spectral.csv</a>.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>#CONTENT
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#CONTENT
 Class,Category,Level,Form
 WOUDC,Spectral,1.0,1
 
@@ -2836,14 +2825,13 @@ Wavelength,S-Irradiance,Time
 293.5,0.000E+00
 294.0,0.000E+00
 294.5,0.000E+00
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <h2 id="a8--exemple-pour-la-catégorie-multiband">A.8  Exemple pour la catégorie Multiband</h2>
 
 <p>Vous trouverez ci-dessous un exemple de soumission de données pour la catégorie Multiband. Vous pouvez aussi consulter un exemple en ligne à l’adresse  <a href="https://woudc.org/archive/Documentation/Examples-extCSV/Multi-band.csv">https://woudc.org/archive/Documentation/Examples-extCSV/Multi-band.csv</a>.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>#CONTENT
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#CONTENT
 Class,Category,Level,Form
 WOUDC,Multi-band,1.0,1
 
@@ -2893,14 +2881,13 @@ Wavelength,GLS-Irradiance,DFS-Irradiance,DRS-Irradiance,Time,Airmass,SZA
 317.63,0.000000,0.000000,0.000000,05:06:00,29.2088,89.30
 325.34,0.002551,0.002551,0.000000,05:06:00,29.2088,89.30
 …
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <h2 id="a9--exemple-pour-la-catégorie-broadband">A.9  Exemple pour la catégorie Broadband</h2>
 
 <p>Vous trouverez ci-dessous un exemple de soumission de données pour la catégorie Broadband. Vous pouvez aussi consulter un exemple en ligne à l’adresse  <a href="https://woudc.org/archive/Documentation/Examples-extCSV/Broad-band.csv">https://woudc.org/archive/Documentation/Examples-extCSV/Broad-band.csv</a>.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>* UV dekodavimas ExtCSV formavimas, V 1.018 beta
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>* UV dekodavimas ExtCSV formavimas, V 1.018 beta
 
 #CONTENT
 Class,Category,Level,Form
@@ -2944,14 +2931,13 @@ Time,Irradiance
 01:05:00,0.0000000
 01:10:00,0.0000000
 …
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <h2 id="a10--exemple-pour-la-catégorie-pyranometer">A.10  Exemple pour la catégorie Pyranometer</h2>
 
 <p>Vous trouverez ci-dessous un exemple de soumission de données pour la catégorie Pyranometer.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>* Data file 2 Pyranometer Data (Global)
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>* Data file 2 Pyranometer Data (Global)
 #CONTENT
 Name,Category,Level,Form
 WOUDC,Pyranometer,1.0,1
@@ -2998,8 +2984,7 @@ Time,Temperature
 06:45:00,15.8
 07:00:00,16.0
 …
-</code></pre>
-</div>
+</code></pre></div></div>
 
         </div><!-- MainContentEnd -->
         <dl id="wb-dtmd" property="dateModified" role="contentinfo">
@@ -3032,9 +3017,6 @@ Time,Temperature
                             <li>
                                 <a href="http://ec.gc.ca/default.asp?lang=Fr&amp;n=B6832638-1">Le ministre</a>
                             </li>
-                            <li>
-                                <a href="https://woudc.org/sitemap.php?lang=fr">Plan du site</a>
-                            </li>
                         </ul>
                     </section>
                     <section class="col-sm-3">
@@ -3044,7 +3026,7 @@ Time,Temperature
                                 <a href="https://woudc.org/news/?lang=fr">Nouvelles</a>
                             </li>
                             <li>
-                                <a href="https://woudc.org/contact.php?lang=fr">Communiquez avec le WOUDC</a>
+                                <a href="https://woudc.org/fr/contact">Communiquez avec le WOUDC</a>
                             </li>
                         </ul>
                     </section>
