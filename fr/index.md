@@ -9,7 +9,7 @@ Le présent guide décrit les procédures pour la soumission de données au Cent
 
 Cette version du guide est le résultat de la combinaison de deux documents distincts; le premier sur la soumission de données sur l’ozone et le second, sur la soumission de données sur le rayonnement ultraviolet. Ils ont été combinés dans le but d’offrir un document plus clair et uniforme.
 
-Le [site Web du WOUDC](https://woudc.org/home.php?lang=fr) est utilisé pour mettre à jour les renseignements et comme « babillard » virtuel. Étant donné que ce guide est appelé à évoluer, vous pourrez récupérer la version la plus récente sur le site Web du WOUDC.
+Le [site Web du WOUDC](https://woudc.org/fr) est utilisé pour mettre à jour les renseignements et comme « babillard » virtuel. Étant donné que ce guide est appelé à évoluer, vous pourrez récupérer la version la plus récente sur le site Web du WOUDC.
 
 
 # Table des matières
@@ -138,7 +138,7 @@ Si les données à soumettre ne sont pas liées à l’ozone ni au rayonnement u
 ## 2.1 Inscription des contributeurs
 La demande d'inscription compte quatre étapes :
 
-1. Le nouveau contributeur envoie une [demande d'inscription](https://woudc.org/contact.php?lang=fr) à WOUDC, dans laquelle il indique pourquoi il souhaite contribuer au WOUDC
+1. Le nouveau contributeur envoie une [demande d'inscription](https://woudc.org/fr/contact) à WOUDC, dans laquelle il indique pourquoi il souhaite contribuer au WOUDC
 2. L'opérateur du centre de données vérifie la demande et indique au contributeur de fournir au WOUDC l'ID VAG de la station ou de s'inscrire à partir de [GAWSIS](https://gawsis.meteoswiss.ch/) pour obtenir un ID VAG
 3. Une fois qu'il a un ID VAG valide, le contributeur le fournit à l'opérateur du centre de données pour inscrire la nouvelle station en incluant celle-ci dans la base de données du WOUDC
 4. Une fois la station incluse dans la base de données du WOUDC, l'opérateur du centre de données envoie au contributeur ses nouveaux justificatifs de connexion privés pour le client FTP, qu'il utilisera pour télécharger des données
@@ -151,7 +151,7 @@ La Figure 1 est un diagramme illustrant la procédure d’inscription des contri
 Après s'être inscrit au WOUDC de la façon indiquée à la [section 2.1](#21-inscription-des-contributeurs), le contributeur peut ajouter des stations ou modifier l’information sur une station existante en soumettant un nouveau ID VAG ou en mettant à jour l'information sur une station avec GAWSIS :
 
 1. Le contributeur obtient un nouvel ID VAG pour la nouvelle station ou modifie l'information sur une station existante à partir de [GAWSIS](https://gawsis.meteoswiss.ch/)
-2. Le contributeur envoie [WOUDC](https://woudc.org/contact.php?lang=fr), la demande de changement visant à ajouter une nouvelle station ou à modifier l'Information sur une station existante. Il lui envoie aussi l'ID VAG
+2. Le contributeur envoie [WOUDC](https://woudc.org/fr/contact), la demande de changement visant à ajouter une nouvelle station ou à modifier l'Information sur une station existante. Il lui envoie aussi l'ID VAG
 3. L'opérateur inclut la nouvelle station dans la base de données du WOUDC ou met à jour l'information sur une station existante
 
 
@@ -159,7 +159,7 @@ Après s'être inscrit au WOUDC de la façon indiquée à la [section 2.1](#21-i
 Le WOUDC permet aux contributeurs de soumettre des données par le biais d’un client de protocole de transfert de fichiers (protocole FTP). Le site FTP du WOUDC est accessible à l’adresse suivante : [ftp://ftp.woudc.org](ftp://ftp.woudc.org). Il faut un nom d’utilisateur et un mot de passe valides pour pouvoir transférer des données au WOUDC.
 
 !!! md-alert ""
-    **Remarque:** Le site FTP ne permet pas d’accéder aux données (voir la page Accessbilité des données à l'adresse [https://woudc.org/about/data-access.php?lang=fr#ftp](https://woudc.org/about/data-access.php?lang=fr#ftp)).
+    **Remarque:** Le site FTP ne permet pas d’accéder aux données (voir la page Accessbilité des données à l'adresse [https://woudc.org/fr/donnees/accessibilite-des-donnees](https://woudc.org/fr/donnees/accessibilite-des-donnees)).
 
 Une fois que le contributeur est dûment inscrit :
 
@@ -1307,7 +1307,7 @@ Le logiciel gratuit suivant existe pour aider à la création de fichiers CSV é
 
 # Chapter 4 Chapitre 4 Traitement des données
 ## 4.1 Politique sur les données
-L’utilisation des données du WOUDC est régie par la [politique sur les données de l’OMM](https://www.wmo.int/pages/about/exchangingdata_en.html) et par la [politique sur l’utilisation des données du programme VAG de l’OMM](https://gawsis.meteoswiss.ch/GAWSIS/index.html#/faq). Pour plus de renseignements sur la politique d’utilisation des données du WOUDC, allez à l’adresse [enligne](https://woudc.org/about/data-policy.php?lang=fr).
+L’utilisation des données du WOUDC est régie par la [politique sur les données de l’OMM](https://www.wmo.int/pages/about/exchangingdata_en.html) et par la [politique sur l’utilisation des données du programme VAG de l’OMM](https://gawsis.meteoswiss.ch/GAWSIS/index.html#/faq). Pour plus de renseignements sur la politique d’utilisation des données du WOUDC, allez à l’adresse [enligne](https://woudc.org/fr/donnees/politique-d'utilisation-des-donnees).
 
 ## 4.2 Flux et traitement des données
 La [section 2.3](#23-soumission-des-données) fournit des procédures détaillées concernant le traitement des données. Il est possible d’accéder aux données correctement soumises par le biais des dossiers accessibles sur le Web (WAF), des services Web géospatiaux et de la fonction de recherche.
@@ -1350,13 +1350,13 @@ Voici un résumé des vérifications effectuées aux fins de l’assurance de la
 Au départ, les fichiers sont validés pour confirmer qu’ils sont conformes aux spécifications relatives au format de fichier, mais, par la suite, des résumés statistiques plus généraux peuvent être générés, de manière à relever des valeurs erronées, des problèmes d’étalonnage, etc. Même si ces derniers exemples exigent une connaissance plus approfondie des données, les archives renferment déjà suffisamment de données pour porter des jugements critiques et faire des évaluations générales au sujet des données. À mesure que le volume de données augmentera et que les connaissances statistiques s’amélioreront, la portée de ces évaluations sera élargie.
 
 # Chapitre 6 Consultation et extraction de données
-La consultation et l’extraction de données sont des fonctions de base du WOUDC. Le grand public a accès gratuitement aux données du WOUDC. Pour des renseignements sur la façon de consulter les données, voir le page [Accessibilité des données](https://woudc.org/about/data-access.php?lang=fr).
+La consultation et l’extraction de données sont des fonctions de base du WOUDC. Le grand public a accès gratuitement aux données du WOUDC. Pour des renseignements sur la façon de consulter les données, voir le page [Accessibilité des données](https://woudc.org/fr/donnees/accessibilite-des-donnees).
 
 # Chapitre 7 Coordonnées du WOUDC
 La principal moyenne de communication avec le WOUDC est par le page de contact. La boîte de réception est vérifiée sur une base quotidienne par les services opérationnels des centres de données. Conformément à sa norme de service, le WOUDC est tenu à répondre à toutes les demandes de renseignements transmises sur l'internet dans un délai de deux jours ouvrables.
 
 ## 7.1 Le page de contact
-[https://woudc.org/contact.php?lang=fr](https://woudc.org/contact.php?lang=fr).
+[https://woudc.org/fr/contact](https://woudc.org/fr/contact).
 
 ## 7.2 Adresse
 
