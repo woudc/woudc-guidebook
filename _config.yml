@@ -4,10 +4,10 @@ description_en: This document describes the procedures for data submission and i
 description_fr: Le présent guide décrit les procédures pour la soumission de données au Centre mondial de données sur l’ozone et le rayonnement ultraviolet et fournit des renseignements sur le format, la structure et le contenu des fichiers, tant pour les données sur l’ozone que celles sur le rayonnement ultraviolet.
 keywords_en: WOUDC, contributor guide, guidebook, ozone, ultraviolet radiation, WMO, GAW
 keywords_fr: WOUDC, instructions d’opération, ozone, rayons ultraviolets, ozone, données qualité, qa, qc, assurance de la qualité, contrôle de la qualité, PUN, normes, manuel
-creator_en: Government of Canada, Environment and Climate Change Canada, Meteorological Service of Canada, Weather and Environmental Monitoring, Monitoring Strategies and Data Management Division, Data Management Section
-creator_fr: Gouvernement du Canada, Environnement et Changement climatique Canada, Service météorologique du Canada, Surveillance météorologique et environnementale, Stratégies de surveillance et de gestion des données et de la Recherche climatique, Gestion de l’information et des données
-version: 2.1.3
-release_date: 2019-10-02
+creator_en: Government of Canada, Environment and Climate Change Canada, Meteorological Service of Canada, Canadian Centre for Meteorological and Environmental Prediction
+creator_fr: Gouvernement du Canada, Environnement et Changement climatique Canada, Service météorologique du Canada, Centre canadien de prévisions météorologiques et environnementales
+version: 2.1.4
+release_date: 2025-11-05
 markdown: kramdown
 highlighter: rouge
 timezone: GMT
