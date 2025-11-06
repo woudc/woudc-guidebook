@@ -7,7 +7,7 @@ layout: base-en
 # Foreward
 This document describes the procedures for data submission and information about file format, structure, and content for both ozone data and ultraviolet data for the World Ozone and Ultraviolet Data Centre (WOUDC). This guide is intended for use by both data originators (for data submission) and clients (information about reading data files). The current version of this guidebook is a combination of two separate documents; one for data submissions related to ozone data and one for data submissions related to ultraviolet data. This guidebook unifies them in order to provide more clear and consistent documentation.
 
-The [WOUDC](https://woudc.org/home.php) website is used to update information and serves as a virtual "bulletin board". As this guide is further developed, use the website to retrieve the latest version.
+The [WOUDC](https://woudc.org) website is used to update information and serves as a virtual "bulletin board". As this guide is further developed, use the website to retrieve the latest version.
 
 # Table of Contents
 [Chapter 1 Introduction](#chapter-1-introduction)
@@ -133,7 +133,7 @@ If the data being submitted is not of ozone or ultraviolet, it may be eligible t
 ## 2.1 Contributor Registration
 The application process consists of 4 steps:
 
-1. A new contributor sends a [request](https://woudc.org/contact.php) to WOUDC stating their interest in being a contributor
+1. A new contributor sends a [request](https://woudc.org/en/contact) to WOUDC stating their interest in being a contributor
 2. The data centre operator will check the request and direct the contributor to either provide WOUDC the station GAW ID or to complete the registration process from [GAWSIS](https://gawsis.meteoswiss.ch) to obtain a GAW ID
 3. Once the contributor has a valid GAW ID, the contributor will provide that ID to the data centre operator to complete the new station registration process by including the station into the WOUDC database
 4. Once the station is included in the WOUDC database, the data centre operator will send a new, private, FTP login credential to the contributor for use to upload data
@@ -146,14 +146,14 @@ A flow chart highlighting the contributor registration procedure can be found in
 Once a contributor has registered with the WOUDC as indicated in [section 2.1](#21-contributor-registration), additional stations or amendments to existing station information can be registered by submitting a new GAW ID or updating station information with GAWSIS:
 
 1. Contributor to obtain a new GAW ID for new station or make amendments to existing station through [GAWSIS](https://gawsis.meteoswiss.ch)
-2. Contact [WOUDC](https://woudc.org/contact.php) with the change request for adding a new station or making amendments to an existing station. Provide GAW ID to operator
+2. Contact [WOUDC](https://woudc.org/en/contact) with the change request for adding a new station or making amendments to an existing station. Provide GAW ID to operator
 3. Operator includes new station into the WOUDC database or updates existing station
 
 ## 2.3 Data Submission
 The WOUDC provides a File Transfer Protocol (FTP) capability for contributors to submit data. The WOUDC FTP site is located at [ftp://ftp.woudc.org](ftp://ftp.woudc.org). The site requires username and password credentials in order to transfer data to the WOUDC.
 
 !!! md-alert ""
-    **Note:** the FTP site does not provide data access capabilities (see [Data Access](https://woudc.org/about/data-access.php)).
+    **Note:** the FTP site does not provide data access capabilities (see [Data Access](https://woudc.org/en/data/data-access)).
 
 Once a contributor has been registered:
 
@@ -1294,7 +1294,7 @@ The following free software exist to help in the creation of Extended CSV files:
 
 # Chapter 4 Data Handling
 ## 4.1 Data Policy
-Use of the WOUDC data are governed by the [WMO data policy](https://www.wmo.int/pages/about/exchangingdata_en.html) and [WMO GAW data use policy](https://gawsis.meteoswiss.ch/GAWSIS/index.html#/faq). More information about WOUDC's data policy can be found [online](https://woudc.org/about/data-policy.php).
+Use of the WOUDC data are governed by the [WMO data policy](https://www.wmo.int/pages/about/exchangingdata_en.html) and [WMO GAW data use policy](https://gawsis.meteoswiss.ch/GAWSIS/index.html#/faq). More information about WOUDC's data policy can be found [online](https://woudc.org/en/data/data-use-policy).
 
 ## 4.2 Data Flow and Processing
 [Section 2.3](#23-data-submission) provides detailed procedures regarding data processing. Successfully ingested data submissions are made available to the WAF, geospatial web services and search.
@@ -1333,13 +1333,13 @@ At a high level, the following is a summary of QA checks performed:
 Initially, a file will be tested for adherence to the file format specifications, but later, higher level statistical summaries may be generated, which identify anomalous values, calibration problems, etc.. Although the later examples involve more detailed knowledge of the data, the archive already includes enough data to make some critical judgments and general assessments about the data. As the volume and statistical knowledge increase, the scope of these assessments will be broadened.
 
 # Chapter 6 Access and Data Retrieval
-Data access and retrieval are core capabilities of the WOUDC. The WOUDC data is freely available for public use. For more information, see the WOUDC [Data Access page](https://woudc.org/about/data-access.php).
+Data access and retrieval are core capabilities of the WOUDC. The WOUDC data is freely available for public use. For more information, see the WOUDC [Data Access page](https://woudc.org/en/data/data-access).
 
 # Chapter 7 Contact
 The primary means of contacting the WOUDC is by the contact page on the WOUDC site, which is monitored on a daily basis by data centre operations. WOUDC operates with a service standard to response to all email inquiries within 2 business days.
 
 ## 7.1 Contact Page
-[https://woudc.org/contact.php](https://woudc.org/contact.php).
+[https://woudc.org/en/contact](https://woudc.org/en/contact).
 
 ## 7.2 Address
 
